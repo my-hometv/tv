@@ -142,56 +142,56 @@ https://5a1178b42cc03.streamlock.net/8210/8210/playlist.m3u8
 http://kl.logicwebs.in:1935/sreemedia/sreemedia/playlist.m3u8
 
 
-#EXTINF:-1 tvg-id="GarshomTV.uk@SD" tvg-logo="https://i.imgur.com/KnbwUyb.png" group-title="Malayalam",Garshom TV (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="GarshomTV.uk@SD" tvg-logo="https://i.imgur.com/KnbwUyb.png" group-title="Malayalam Relegious",Garshom TV (360p) [Not 24/7]
 https://og2qd3aal7an-hls-live.5centscdn.com/garshomtv/d0dbe915091d400bd8ee7f27f0791303.sdp/playlist.m3u8
 
-#EXTINF:-1 tvg-id="GoodnessTV.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143091_ld_h15_aa.png?lock=720x540" group-title="Malayalam",Goodness TV (576p)
+#EXTINF:-1 tvg-id="GoodnessTV.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143091_ld_h15_aa.png?lock=720x540" group-title="Malayalam Relegious",Goodness TV (576p)
 https://mumt02.tangotv.in/GOODNESSTV/index.m3u8
 
-#EXTINF:-1 tvg-id="HarvestTV.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_HARVEST_TV_24X7/images/LOGO_HD/image.png" group-title="Malayalam",Harvest TV (720p)
+#EXTINF:-1 tvg-id="HarvestTV.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_HARVEST_TV_24X7/images/LOGO_HD/image.png" group-title="Malayalam Relegious",Harvest TV (720p)
 https://7mbd4ogkr3gx-hls-live.wmncdn.net/harvesttvlive1/bbb19eae240ec100af921d511efc86a0.sdp/index.m3u8
 
-#EXTINF:-1 tvg-id="HarvestTVKeralam.in@SD" tvg-logo="https://i.imgur.com/1DyPuIt.png" group-title="Malayalam",Harvest TV Keralam (720p)
+#EXTINF:-1 tvg-id="HarvestTVKeralam.in@SD" tvg-logo="https://i.imgur.com/1DyPuIt.png" group-title="Malayalam Relegious",Harvest TV Keralam (720p)
 https://7mbd4ogkr3gx-hls-live.wmncdn.net/harvestenglish/d1796a22d24e8696c7d5d0b5c349fdd2.sdp/index.m3u8
 
-#EXTINF:-1 tvg-id="JaihindTV.in@SD" tvg-logo="https://i.imgur.com/NaiA73p.png" group-title="Malayalam",Jaihind TV (576p)
+#EXTINF:-1 tvg-id="JaihindTV.in@SD" tvg-logo="https://i.imgur.com/NaiA73p.png" group-title="Malayalam News",Jaihind TV (576p)
 https://mumt03.tangotv.in/JAIHIND/index.m3u8
 
-#EXTINF:-1 tvg-id="JanamTV.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143221_ld_h15_aa.png?lock=720x540" group-title="Malayalam",Janam TV (576p)
+#EXTINF:-1 tvg-id="JanamTV.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143221_ld_h15_aa.png?lock=720x540" group-title="Malayalam News",Janam TV (576p)
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/janamtv_nim_https/140622/janamtv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ManoramaNews.in@SD" tvg-logo="https://i.imgur.com/adjRrVx.png" group-title="Malayalam",Manorama News (1080p)
+#EXTINF:-1 tvg-id="ManoramaNews.in@SD" tvg-logo="https://i.imgur.com/adjRrVx.png" group-title="Malayalam News",Manorama News (1080p)
 https://mmtvnews1.akamaized.net/v1/master/673630b269b766886555eebfddd4f27f3de3ab50/mmtvNewsCampaign1/index.m3u8
 
-#EXTINF:-1 tvg-id="MathrubhumiNews.in@SD" tvg-logo="https://i.imgur.com/diQftzP.png" group-title="Malayalam",Mathrubhumi News (576p)
+#EXTINF:-1 tvg-id="MathrubhumiNews.in@SD" tvg-logo="https://i.imgur.com/diQftzP.png" group-title="Malayalam News",Mathrubhumi News (576p)
 https://mumt02.tangotv.in/MATHRUBHUMINEWS/index.m3u8
 
-#EXTINF:-1 tvg-id="24News.in@SD" tvg-logo="https://sund-images.sunnxt.com/202222/300x300_24News_202222_d63feca0-79ae-47ea-b75a-66c17d456f4c.png" group-title="Malayalam",24 News (576p)
+#EXTINF:-1 tvg-id="24News.in@SD" tvg-logo="https://sund-images.sunnxt.com/202222/300x300_24News_202222_d63feca0-79ae-47ea-b75a-66c17d456f4c.png" group-title="Malayalam News",24 News (576p)
 https://mumt07.tangotv.in/zHjX9OFlTWENTYFOURNEWS/index.m3u8
 
-#EXTINF:-1 tvg-id="BigTV24x7.in@SD" tvg-logo="https://i.postimg.cc/rpHrRxR5/big_tv_malayalam.png" group-title="Malayalam",Big TV 24x7 (576i)
+#EXTINF:-1 tvg-id="BigTV24x7.in@SD" tvg-logo="https://i.postimg.cc/rpHrRxR5/big_tv_malayalam.png" group-title="Malayalam News",Big TV 24x7 (576i)
 https://d2gvyg6lvauoko.cloudfront.net/230226/bigtvmalyalam/chunks.m3u8
 
-#EXTINF:-1 tvg-id="KairaliNews.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143246_ld_h15_aa.png?lock=720x540" group-title="Malayalam",Kairali News (720p)
+#EXTINF:-1 tvg-id="KairaliNews.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143246_ld_h15_aa.png?lock=720x540" group-title="Malayalam News",Kairali News (720p)
 https://cdn-3.pishow.tv/live/1469/master.m3u8
 
-#EXTINF:-1 tvg-id="ZeeMalayalamNews.in@SD" tvg-logo="https://english.cdn.zeenews.com/images/logo/zee-malayalam-17.svg" group-title="Malayalam",Zee Malayalam News (720p)
+#EXTINF:-1 tvg-id="ZeeMalayalamNews.in@SD" tvg-logo="https://english.cdn.zeenews.com/images/logo/zee-malayalam-17.svg" group-title="Malayalam News",Zee Malayalam News (720p)
 https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
 
-#EXTINF:-1 tvg-id="TimeVisionNews.in@SD" tvg-logo="https://i.imgur.com/qvuOBP7.png" group-title="Malayalam",Time Vision News (720p)
+#EXTINF:-1 tvg-id="TimeVisionNews.in@SD" tvg-logo="https://i.imgur.com/qvuOBP7.png" group-title="Malayalam News",Time Vision News (720p)
 http://rtmp.logichost.in:1935/timevision/timevision/playlist.m3u8
 
-#EXTINF:-1 tvg-id="7SMusic.in@SD" tvg-logo="https://i.imgur.com/zDiIhdN.png" group-title="Tamil",7S Music (576p)
+#EXTINF:-1 tvg-id="7SMusic.in@SD" tvg-logo="https://i.imgur.com/zDiIhdN.png" group-title="Tamil Musci",7S Music (576p)
 https://mumt03.tangotv.in/Dsly5z3H7SMUSIC/index.m3u8
 
-#EXTINF:-1 tvg-id="MoviesNow.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_MOVIES_NOW/images/LOGO_HD/image.png" group-title="English",Movies Now HD (1080p)
+#EXTINF:-1 tvg-id="MoviesNow.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_MOVIES_NOW/images/LOGO_HD/image.png" group-title="English Movies",Movies Now HD (1080p)
 http://103.161.153.165:8000/play/mnh/index.m3u8
 
-#EXTINF:-1 tvg-id="RomedyNow.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ROMEDY_NOW/images/LOGO_HD/image.png" group-title="English",Romedy Now (576p)
+#EXTINF:-1 tvg-id="RomedyNow.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ROMEDY_NOW/images/LOGO_HD/image.png" group-title="English Movies",Romedy Now (576p)
 http://103.157.248.140:8000/play/a015/index.m3u8
 
-#EXTINF:-1 tvg-id="Zoom.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZOOM/images/LOGO_HD/image.png" group-title="Hindi",Zoom (720p)
+#EXTINF:-1 tvg-id="Zoom.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZOOM/images/LOGO_HD/image.png" group-title="Hindi Music",Zoom (720p)
 https://dai.google.com/linear/hls/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8
 
-#EXTINF:-1 tvg-id="Zoom.in@Global" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZOOM/images/LOGO_HD/image.png" group-title="Hindi",Zoom Global (720p)
+#EXTINF:-1 tvg-id="Zoom.in@Global" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZOOM/images/LOGO_HD/image.png" group-title="Hindi Music",Zoom Global (720p)
 https://d14c63magvk61v.cloudfront.net/strm/channels/zoom/master.m3u8
