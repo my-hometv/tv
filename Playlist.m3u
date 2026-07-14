@@ -214,4 +214,7 @@ http://kl.logicwebs.in:1935/sreemedia/sreemedia/playlist.m3u8
 #EXTINF:-1 tvg-id="ZeeMalayalamNews.in@SD" tvg-logo="https://english.cdn.zeenews.com/images/logo/zee-malayalam-17.svg" group-title="Malayalam",Zee Malayalam News (720p)
 https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
 
+#EXTINF:-1 tvg-id="Kaumudi.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143259_ld_h15_aa.png?lock=720x540" group-title="Malayalam",Kaumudi (720p)
+https://oqgdrkxby4rm-hls-live.5centscdn.com/kaumudytv/live.stream/playlist.m3u8
+
 
