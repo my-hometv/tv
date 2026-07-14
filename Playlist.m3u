@@ -217,5 +217,5 @@ https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
 #EXTINF:-1 tvg-id="Kaumudi.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143259_ld_h15_aa.png?lock=720x540" group-title="Malayalam",Kaumudi (720p)
 https://oqgdrkxby4rm-hls-live.5centscdn.com/kaumudytv/live.stream/playlist.m3u8
 
-#EXTINF:-1 tvg-id="pularitv.com" tvg-logo="https://pularitv.com/iptv/Pulari-Logo.png" group-title="Entertainment",Pulari TV
+#EXTINF:-1 tvg-id="pularitv.com" tvg-logo="https://pularitv.com/iptv/Pulari-Logo.png" group-title="Malayalam",Pulari TV
 https://royalstarindia.co.in/pularitv_hls/pularitv.m3u8
