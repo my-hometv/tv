@@ -333,4 +333,4 @@ https://mumt02.tangotv.in/BRIOTV/index.m3u8
 #EXTINF:-1 tvg-id="AaryaaTV.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/aryatvtamil.png" group-title="Tamil",Aaryaa TV (1080p)
 https://stream.ottlive.co.in/aryatvtamil/index.m3u8
 
-#EXTINF:-1 group-title="IPL", Asianet Plus (Malayalam) HS HQ http://asianetplus-i.akamaihd.net/hls/live/569922/asianetplus/master_2000.m3u8
+#EXTINF:-1 group-title="IPL", Asianet Plus (Malayalam) HS HQ https://cdn-3.pishow.tv/live/27/master.m3u8
