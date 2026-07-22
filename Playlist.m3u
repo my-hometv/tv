@@ -577,15 +577,15 @@ https://mumbai-edge.smartplaytv.in/utv/index.m3u8
 #EXTINF:-1 group-title="Hindi"   tvg-logo="https://cdn.tvivu.com/logos/ultimate-tv-160.webp" tvg-country="IN" tvg-language="tam" tvg-id="UltimateTV.in",Ultimate TV2
 https://stream.ottlive.co.in/utvtamil/index.m3u8
 
-#EXTINF:-1 group-title="Hindi"  tvg-logo="https://cdn.tvivu.com/logos/the-movie-club-160.webp" tvg-country="IN" tvg-language="hin" tvg-id="TheMovieClub.in",The Movie Club1
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/the-movie-club-160.webp" tvg-country="IN" tvg-language="hin" tvg-id="TheMovieClub.in",The Movie Club1
 https://sis-global.prod.samsungtv.plus/v1/tvpprd/sc-mp2ar4ca425xo.m3u8
-#EXTINF:-1 group-title="Hindi" tvg-logo="https://cdn.tvivu.com/logos/the-movie-club-160.webp" tvg-country="IN" tvg-language="hin" tvg-id="TheMovieClub.in",The Movie Club2
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/the-movie-club-160.webp" tvg-country="IN" tvg-language="hin" tvg-id="TheMovieClub.in",The Movie Club2
 https://d3gnyty2vddhsg.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-ytipwjqub3kf8/TMC2_IN.m3u8?ads.ads_cdn=cf&ads.cdn=cf
-#EXTINF:-1 group-title="Hindi" tvg-logo="https://cdn.tvivu.com/logos/the-movie-club-160.webp" tvg-country="IN" tvg-language="hin" tvg-id="TheMovieClub.in",The Movie Club3
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/the-movie-club-160.webp" tvg-country="IN" tvg-language="hin" tvg-id="TheMovieClub.in",The Movie Club3
 https://d3gnyty2vddhsg.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-ytipwjqub3kf8/TMC2_IN.m3u8?ads.ads_cdn=cf&ads.cdn=cf
-#EXTINF:-1 group-title="Hindi" tvg-logo="https://cdn.tvivu.com/logos/the-movie-club-160.webp" tvg-country="IN" tvg-language="hin" tvg-id="TheMovieClub.in",The Movie Club4
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/the-movie-club-160.webp" tvg-country="IN" tvg-language="hin" tvg-id="TheMovieClub.in",The Movie Club4
 https://jmp2.uk/stvp-IN38000072R
-#EXTINF:-1 group-title="Hindi" tvg-logo="https://cdn.tvivu.com/logos/the-movie-club-160.webp" tvg-country="IN" tvg-language="hin" tvg-id="TheMovieClub.in",The Movie Club5
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/the-movie-club-160.webp" tvg-country="IN" tvg-language="hin" tvg-id="TheMovieClub.in",The Movie Club5
 https://jmp2.uk/stvp-IN40000100Y
 #EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/starplus-160.webp" tvg-country="IN" tvg-language="hin" tvg-id="StarPlus.in",StarPlus1
 http://tvsen7.aynascope.net/sphdbd/index.m3u8
