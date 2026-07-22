@@ -74,7 +74,8 @@ http://cloud.logichost.in:1935/SWANTHAM/live/index.m3u8
 #EXTINF:-1 tvg-id="VCV.in@SD" tvg-logo="https://i.imgur.com/KbU36xI.png" group-title="1.Malayalam",VCV
 https://5a1178b42cc03.streamlock.net/8210/8210/playlist.m3u8
 
-#EXTINF:-1 group-title="1.Malayalam",Asianet Plus (Malayalam) HS HQ https://cdn-3.pishow.tv/live/27/master.m3u8
+#EXTINF:-1 group-title="1.Malayalam",Asianet Plus (Malayalam) HS HQ 
+https://cdn-3.pishow.tv/live/27/master.m3u8
 
 # ==================== 1.Malayalam Devotional ====================
 
