@@ -80,7 +80,7 @@ https://cdn-3.pishow.tv/live/27/master.m3u8
 #EXTINF:-1 group-title="1.Malayalam" tvg-logo="https://cdn.tvivu.com/logos/asianet-middle-east-160.webp" tvg-country="IN" tvg-language="mal" tvg-id="AsianetMiddleEast.in",Asianet Middle East
 https://mumt03.tangotv.in/Dsly5z3HASIANETMIDDLEEAST/index.m3u8
 
-#EXTINF:-1 group-title="1.Malayalam" tvg-logo="https://cdn.tvivu.com/logos/kerala-vision-news-24x7-160.webp" tvg-country="IN" tvg-language="mal",Kerala Vision News 24x7
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/kerala-vision-news-24x7-160.webp" tvg-country="IN" tvg-language="mal",Kerala Vision News 24x7
 https://www.youtube.com/watch?v=3446A6FzW3o
 
 
