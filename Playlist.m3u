@@ -77,13 +77,9 @@ https://5a1178b42cc03.streamlock.net/8210/8210/playlist.m3u8
 #EXTINF:-1 group-title="1.Malayalam",DD Malayalam
 https://cdn-3.pishow.tv/live/27/master.m3u8
 
-# ==================== 1.Malayalam Devotional ====================
-
-#EXTINF:-1 tvg-id="PottaDivineTVUSA.us@SD" tvg-logo="https://i.imgur.com/Yx0AnLW.png" group-title="1.Malayalam Devotional",Potta-Divine TV USA
-https://playout7multirtmp.tulix.tv/live21/Stream1/playlist.m3u8
-
 #EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/asianet-middle-east-160.webp" tvg-country="IN" tvg-language="mal" tvg-id="AsianetMiddleEast.in",Asianet Middle East
 https://mumt03.tangotv.in/Dsly5z3HASIANETMIDDLEEAST/index.m3u8
+
 
 # ==================== 1.Malayalam News ====================
 
@@ -129,7 +125,7 @@ https://cdn-3.pishow.tv/live/1469/master.m3u8
 #EXTINF:-1 tvg-id="ZeeMalayalamNews.in@SD" tvg-logo="https://english.cdn.zeenews.com/images/logo/zee-malayalam-17.svg" group-title="1.Malayalam News",Zee Malayalam News
 https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
 
-# ==================== 1.Malayalam Relegious ====================
+# ==================== 1.Malayalam Devotional ====================
 
 #EXTINF:-1 tvg-id="Shalom.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143774_ld_h15_aa.png?lock=720x540" group-title="1.Malayalam Relegious",Shalom
 https://d2c4zqo2rb5uf1.cloudfront.net/master.m3u8
@@ -148,6 +144,9 @@ https://7mbd4ogkr3gx-hls-live.wmncdn.net/harvesttvlive1/bbb19eae240ec100af921d51
 
 #EXTINF:-1 tvg-id="HarvestTVKeralam.in@SD" tvg-logo="https://i.imgur.com/1DyPuIt.png" group-title="1.Malayalam Relegious",Harvest TV Keralam
 https://7mbd4ogkr3gx-hls-live.wmncdn.net/harvestenglish/d1796a22d24e8696c7d5d0b5c349fdd2.sdp/index.m3u8
+
+#EXTINF:-1 tvg-id="PottaDivineTVUSA.us@SD" tvg-logo="https://i.imgur.com/Yx0AnLW.png" group-title="1.Malayalam Devotional",Potta-Divine TV USA
+https://playout7multirtmp.tulix.tv/live21/Stream1/playlist.m3u8
 
 # ==================== English ====================
 
@@ -204,6 +203,15 @@ https://list.iptvcat.com/my_list/s/efcc8059ce35552124de1a6a3a03748d.m3u8
 
 #EXTINF:-1 group-title="English",24 Hrs Free Movie 
 https://list.iptvcat.com/my_list/s/bd2cd8eedc449bb1a303fbd5eb18fe50.m3u8
+
+#EXTINF:-1 group-title="English" tvg-logo="https://cdn.tvivu.com/logos/360tunebox-160.webp" tvg-country="NL" tvg-language="eng" tvg-id="360TuneBox.nl",360TuneBox1
+https://dash3.antik.sk/live/test_360_tunebox_medium_atk/playlist.m3u8
+
+#EXTINF:-1 group-title="English" tvg-logo="https://cdn.tvivu.com/logos/360tunebox-160.webp" tvg-country="NL" tvg-language="eng" tvg-id="360TuneBox.nl",360TuneBox2
+https://iptv.prosto.tv/ch141/index.m3u8
+
+#EXTINF:-1 group-title="English" tvg-logo="https://cdn.tvivu.com/logos/360tunebox-160.webp" tvg-country="NL" tvg-language="eng" tvg-id="360TuneBox.nl",360TuneBox3
+https://iptv.prosto.tv/ch141/tracks-v1a1/mono.m3u8?live=1&ip=178.136.40.86&id=921233&secret=9szoe89y&21yo=0&e=1783319761&st=iVNWplSFICoBBURsjIVTwQ
 
 # ==================== Hindi ====================
 
