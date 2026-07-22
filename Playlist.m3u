@@ -82,6 +82,9 @@ https://cdn-3.pishow.tv/live/27/master.m3u8
 #EXTINF:-1 tvg-id="PottaDivineTVUSA.us@SD" tvg-logo="https://i.imgur.com/Yx0AnLW.png" group-title="1.Malayalam Devotional",Potta-Divine TV USA
 https://playout7multirtmp.tulix.tv/live21/Stream1/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/asianet-middle-east-160.webp" tvg-country="IN" tvg-language="mal" tvg-id="AsianetMiddleEast.in",Asianet Middle East
+https://mumt03.tangotv.in/Dsly5z3HASIANETMIDDLEEAST/index.m3u8
+
 # ==================== 1.Malayalam News ====================
 
 #EXTINF:-1 tvg-id="MalabarNews.in@SD" tvg-logo="https://i.imgur.com/Un2gxt4.png" group-title="1.Malayalam News",Malabar News
