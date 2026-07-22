@@ -211,7 +211,7 @@ https://30a-tv.com/gh.m3u8
 #EXTINF:-1 tvg-id="AE.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/A%26E_Network_logo.svg/960px-A%26E_Network_logo.svg.png" group-title="English",A&E
 http://23.239.31.26:8989/aande/index.m3u8
 
-#EXTINF:-1 group-title="English",English Club 
+#EXTINF:-1 English Club 
 https://list.iptvcat.com/my_list/s/efcc8059ce35552124de1a6a3a03748d.m3u8
 
 #EXTINF:-1 24 Hrs Free Movie 
@@ -290,11 +290,11 @@ https://d1kx9y4yhe8h6h.cloudfront.net/playlist.m3u8
 https://ef79b15c8c7c46c7a9de9d33001dbd07.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-859-DOCUMENTARYPLUS-DOCUMENTARYPLUS/mt/documentaryplus/859/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/documentary-160.webp" tvg-country="US" tvg-language="eng" tvg-id="DocumentaryPlus.us",Documentary+5
 https://d1kx9y4yhe8h6h.cloudfront.net/playlist.m3u8
-#EXTINF:-1 group-title="English"  tvg-logo="https://cdn.tvivu.com/logos/entrepreneurtv-160.webp" tvg-country="US" tvg-language="eng" tvg-id="EntrepreneurTV.us",EntrepreneurTV1
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/entrepreneurtv-160.webp" tvg-country="US" tvg-language="eng" tvg-id="EntrepreneurTV.us",EntrepreneurTV1
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=2506
-#EXTINF:-1 group-title="English"  tvg-logo="https://cdn.tvivu.com/logos/entrepreneurtv-160.webp" tvg-country="US" tvg-language="eng" tvg-id="EntrepreneurTV.us",EntrepreneurTV2
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/entrepreneurtv-160.webp" tvg-country="US" tvg-language="eng" tvg-id="EntrepreneurTV.us",EntrepreneurTV2
 https://cineverse-entrepreneurtv-entrepreneurtv-1-us.ono.wurl.tv/playlist.m3u8
-#EXTINF:-1 group-title="English"  tvg-logo="https://cdn.tvivu.com/logos/entrepreneurtv-160.webp" tvg-country="US" tvg-language="eng" tvg-id="EntrepreneurTV.us",EntrepreneurTV3
+#EXTINF:-1 group-title="English"  tvg-logo="https://cdn.tvivu.com/logos/entrepreneurtv-160.webp" tvg-country="US" tvg-language="eng" tvg-id="EntrepreneurTV.us",EntrepreneurTV
 https://a-cdn.klowdtv.com/live3/entrepreneurtv_720p/playlist.m3u8
 #EXTINF:-1 group-title="English" tvg-logo="https://cdn.tvivu.com/logos/epic-in-160.webp" tvg-country="IN" tvg-language="eng",Epic TV1
 https://cc-czbq30x55knit.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-czbq30x55knit/DIYC/PMSL/IN10/Epic_TV_IN_B/Epic_TV_IN_B.m3u8
