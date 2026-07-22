@@ -572,9 +572,9 @@ https://mumt03.tangotv.in/Dsly5z3HFOODFOOD/index.m3u8
 http://tvsen7.aynascope.net/FoodFoodTV/index.m3u8
 
 # ==================== Hindi ====================
-#EXTINF:-1 group-title="Hindi"  tvg-logo="https://cdn.tvivu.com/logos/ultimate-tv-160.webp" tvg-country="IN" tvg-language="tam" tvg-id="UltimateTV.in",Ultimate TV1
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/ultimate-tv-160.webp" tvg-country="IN" tvg-language="tam" tvg-id="UltimateTV.in",Ultimate TV1
 https://mumbai-edge.smartplaytv.in/utv/index.m3u8
-#EXTINF:-1 group-title="Hindi"   tvg-logo="https://cdn.tvivu.com/logos/ultimate-tv-160.webp" tvg-country="IN" tvg-language="tam" tvg-id="UltimateTV.in",Ultimate TV2
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/ultimate-tv-160.webp" tvg-country="IN" tvg-language="tam" tvg-id="UltimateTV.in",Ultimate TV2
 https://stream.ottlive.co.in/utvtamil/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/the-movie-club-160.webp" tvg-country="IN" tvg-language="hin" tvg-id="TheMovieClub.in",The Movie Club1
