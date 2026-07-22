@@ -560,15 +560,15 @@ https://www.youtube.com/watch?v=uyCtfs3fTdk
 
 #EXTINF:-1 group-title="Food" tvg-logo="https://cdn.tvivu.com/logos/bon-appetit-ca-160.webp" tvg-country="CA" tvg-language="eng",Bon Appétit
 https://jmp2.uk/stvp-CABC5200006AL
-#EXTINF:-1 group-title="Food"  tvg-logo="https://cdn.tvivu.com/logos/bon-appetit-us-160.webp" tvg-country="US" tvg-language="eng",Bon Appétit1
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/bon-appetit-us-160.webp" tvg-country="US" tvg-language="eng",Bon Appétit1
 https://bonappetit-samsung.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="Food"  tvg-logo="https://cdn.tvivu.com/logos/bon-appetit-us-160.webp" tvg-country="US" tvg-language="eng",Bon Appétit2
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/bon-appetit-us-160.webp" tvg-country="US" tvg-language="eng",Bon Appétit2
 https://bonappetit-samsung.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="Food" tvg-logo="https://cdn.tvivu.com/logos/bon-appetit-us-160.webp" tvg-country="US" tvg-language="eng",Bon Appétit3
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/bon-appetit-us-160.webp" tvg-country="US" tvg-language="eng",Bon Appétit3
 https://jmp2.uk/stvp-USBC44000226R
-#EXTINF:-1 group-title="Food" tvg-logo="https://cdn.tvivu.com/channels/food-food.webp" tvg-country="IN" tvg-language="hin" tvg-id="FoodFood.in",Food Food1
+#EXTINF:-1 group-title="Food" tvg-logo="https://cdn.tvivu.com/channels/food-food.webp" tvg-country="IN" tvg-language="hin" tvg-id="FoodFood.in",Food Food
 https://mumt03.tangotv.in/Dsly5z3HFOODFOOD/index.m3u8
-#EXTINF:-1 group-title="Food" tvg-logo="https://cdn.tvivu.com/channels/food-food.webp" tvg-country="IN" tvg-language="hin" tvg-id="FoodFood.in",Food Food2  
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/channels/food-food.webp" tvg-country="IN" tvg-language="hin" tvg-id="FoodFood.in",Food Food2  
 http://tvsen7.aynascope.net/FoodFoodTV/index.m3u8
 
 # ==================== Hindi ====================
