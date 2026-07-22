@@ -240,15 +240,15 @@ https://www.youtube.com/watch?v=s-0dpuBYGi4
 https://www.youtube.com/watch?v=Wn6u4Jd9MxQ
 #EXTINF:-1 group-title="English" tvg-logo="https://cdn.tvivu.com/channels/bold-and-the-beautiful.webp" tvg-country="US" tvg-language="eng",Bold and the Beautiful
 https://www.youtube.com/watch?v=qALTGOsXIkw
-#EXTINF:-1 group-title="English"  tvg-logo="https://cdn.tvivu.com/logos/brat-tv-160.webp" tvg-country="US" tvg-language="eng" tvg-id="BratTV.us",Brat TV1
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/brat-tv-160.webp" tvg-country="US" tvg-language="eng" tvg-id="BratTV.us",Brat TV1
 https://amg00350-amg00350c1-klowdtv-us-2536.playouts.now.amagi.tv/playlist/amg00350-bratstudiofast-brat-klowdtvus/playlist.m3u8
-#EXTINF:-1 group-title="English"  tvg-logo="https://cdn.tvivu.com/logos/brat-tv-160.webp" tvg-country="US" tvg-language="eng" tvg-id="BratTV.us",Brat TV2
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/brat-tv-160.webp" tvg-country="US" tvg-language="eng" tvg-id="BratTV.us",Brat TV2
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/04072b68-dc6a-4d5e-98af-f356ba8d5063/playlist.m3u8
-#EXTINF:-1 group-title="English"  tvg-logo="https://cdn.tvivu.com/logos/brat-tv-160.webp" tvg-country="US" tvg-language="eng" tvg-id="BratTV.us",Brat TV3
+#EXTINF:-1 group-title="English"  tvg-logo="https://cdn.tvivu.com/logos/brat-tv-160.webp" tvg-country="US" tvg-language="eng" tvg-id="BratTV.us",Brat TV
 https://brat-samsung-us.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="English"  tvg-logo="https://cdn.tvivu.com/logos/brat-tv-160.webp" tvg-country="US" tvg-language="eng" tvg-id="BratTV.us",Brat TV4
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/brat-tv-160.webp" tvg-country="US" tvg-language="eng" tvg-id="BratTV.us",Brat TV4
 https://brat-samsung-us.amagi.tv/playlist.m3u8
-#EXTINF:-1 group-title="English" tvg-logo="https://cdn.tvivu.com/logos/brat-tv-160.webp" tvg-country="US" tvg-language="eng" tvg-id="BratTV.us",Brat TV5
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/brat-tv-160.webp" tvg-country="US" tvg-language="eng" tvg-id="BratTV.us",Brat TV5
 https://amg00350-amg00350c1-klowdtv-us-2536.playouts.now.amagi.tv/playlist/amg00350-bratstudiofast-brat-klowdtvus/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/britbox-mysteries-us-160.webp" tvg-country="US" tvg-language="eng",BritBox Mysteries1
 https://jmp2.uk/plu-60f5d389985a0c0007357304.m3u8
