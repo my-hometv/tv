@@ -27,29 +27,29 @@ jobs:
           pip install yt-dlp
 
       - name: Update Playlist
-  run: |
-    pwd
-    ls -la
-    ls -la .github/workflows
-    python .github/workflows/update.py
+        run: |
+          pwd
+          ls -la
+          ls -la .github/workflows
+          python .github/workflows/update.py
 
-     - name: Commit Changes
-  run: |
-    ls -la
+      - name: Commit Changes
+        run: |
+          ls -la
 
-    git config user.name "github-actions"
-    git config user.email "github-actions@github.com"
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
 
-    if [ -f Playlist-live.m3u ]; then
-      git add Playlist-live.m3u
-    else
-      echo "Playlist-live.m3u was not created!"
-      exit 1
-    fi
+          if [ -f Playlist-live.m3u ]; then
+            git add Playlist-live.m3u
+          else
+            echo "Playlist-live.m3u was not created!"
+            exit 1
+          fi
 
-    if git diff --cached --quiet; then
-      echo "No changes"
-    else
-      git commit -m "Update YouTube streams"
-      git push
-    fi
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Update YouTube streams"
+            git push
+          fi
