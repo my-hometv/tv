@@ -281,11 +281,6 @@ https://lightning-fnf-samsungaus.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-group="06" group-title="Kids" tvg-logo="https://cdn.tvivu.com/logos/kidsflix-160.webp" tvg-country="US" tvg-language="eng" tvg-id="KidsFlix.us",KidsFlix
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50
 
-#EXTINF:-1 tvg-group="06" group-title="Kids" tvg-logo="https://cdn.tvivu.com/logos/pokemon-kids-tv-english-160.webp" tvg-country="JP" tvg-language="eng" tvg-id="PokemonKidsTVEnglish.jp",Pokemon Kids TV English1
-https://www.youtube.com/watch?v=F4EdE37uOTc
-
-#EXTINF:-1 tvg-group="06" group-title="Kids" tvg-logo="https://cdn.tvivu.com/logos/pokemon-kids-tv-english-160.webp" tvg-country="JP" tvg-language="eng" tvg-id="PokemonKidsTVEnglish.jp",Pokemon Kids TV English2
-https://www.youtube.com/watch?v=-y41mkUkix8
 
 # ==================== Food ====================
 
