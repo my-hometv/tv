@@ -83,7 +83,7 @@ https://livestream.vibgyortv.com/hls/stream.m3u8
 #EXTINF:-1 tvg-name="NTV" tvg-group="01" group-title="1.Malayalam",NTV
 https://stream.logichost.in/NTV/live/playlist.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Asianet
+#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Trial
 https://mumt03.tangotv.in/Dsly5z3HKAIRALIARABIA/tracks-v1a1/mono.m3u8
 
 # ==================== 1.Malayalam News ====================
