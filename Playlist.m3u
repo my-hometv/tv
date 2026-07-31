@@ -84,7 +84,8 @@ https://livestream.vibgyortv.com/hls/stream.m3u8
 https://stream.logichost.in/NTV/live/playlist.m3u8
 
 #EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Asianet
-https://livetv-channels.b-cdn.net/8020/chunklist0.m3u8
+https://mumt03.tangotv.in/Dsly5z3HKAIRALIARABIA/tracks-v1a1/mono.m3u8
+
 # ==================== 1.Malayalam News ====================
 
 #EXTINF:-1 tvg-id="24News.in@SD" tvg-logo="https://sund-images.sunnxt.com/202222/300x300_24News_202222_d63feca0-79ae-47ea-b75a-66c17d456f4c.png" tvg-group="02" group-title="2.Malayalam News",24 News
