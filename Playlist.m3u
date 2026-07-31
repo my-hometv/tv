@@ -86,6 +86,35 @@ https://stream.logichost.in/NTV/live/playlist.m3u8
 #EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Trial
 https://mumt03.tangotv.in/Dsly5z3HKAIRALIARABIA/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 tvg-name="FlowersTV" tvg-group="01" group-title="1.Malayalam",Flowers TV
+https://keralive.com/geo/live.m3u8?id=634&vtoken=st=1785504318~exp=1785504978~data=e41d6474be6ca4f6df7043a03db1cbb40754ad3a~id=634~ip=83.110.151.18~hmac=677b2719213487abc8f181822b101d0d2584fe4f233987094071367e938e611f
+
+#EXTINF:-1 tvg-name="RajMusix Malayalam" tvg-group="01" group-title="1.Malayalam",RajMusix Malayalam
+https://mumt04.tangotv.in/m18aqlK4RAJMUSIXMALAYALAM/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Asianet
+https://anet.keralive.workers.dev/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/starasianet1_live_https/index.m3u8
+
+#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Asianet
+https://anet.keralive.workers.dev/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/asianet_us_https/index.m3u8
+
+#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Kerala Vision
+https://yuppnimrestreammum.akamaized.net/181224/smil:keralavision.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+
+#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Asianet Movies
+https://anet.keralive.workers.dev/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/asianetmovies_live_https/index.m3u8
+
+#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Asianet Plus
+https://anet.keralive.workers.dev/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/asianetplus_live_https/index.m3u8
+
+#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Kasargod Vision
+https://live.skystream.in/live/kasaragodvsn/index.m3u8
+
+#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",K7 Keralam
+https://live.skystream.in/live/keralam2742/index.m3u8
+
+#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",KCN
+https://live.skystream.in/live/kcnksrgod/index.m3u8
 # ==================== 1.Malayalam News ====================
 
 #EXTINF:-1 tvg-id="24News.in@SD" tvg-logo="https://sund-images.sunnxt.com/202222/300x300_24News_202222_d63feca0-79ae-47ea-b75a-66c17d456f4c.png" tvg-group="02" group-title="2.Malayalam News",24 News
