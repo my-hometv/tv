@@ -2,6 +2,9 @@
 
 # ==================== 1.Malayalam ====================
 
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",24
+https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1785542480/ei/8OJsaraTB5_E0u8PjKOX0Ac/ip/31.219.230.51/id/1wECsnGZcfc.5/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/hfr/1/playlist_duration/30/manifest_duration/30/bui/AZFlqhOf3Y3SFUMmLpHtTEpwzfYp8uqRuC1hlnxkw7b4ufzGlzz3iJEKnBkCnVSpYBpv1JK_FOhhM-tK/spc/KBGBcnixruHeG4RsvNsCl8q4-8MyhaiqPUGaeDc27-mWYniZ8g/vprv/1/go/1/rqh/5/reg/0/pacing/0/nvgoi/1/ncsapi/1/keepalive/yes/fexp/51565115/dover/11/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cbui%2Cspc%2Cvprv%2Cgo%2Crqh%2Creg%2Citag%2Cplaylist_type/sig/AE0s2JYwRQIhAMupHANAiYrqZ9NVq_Ffd97-xYXnJgP3CLxGhBqGgczWAiBilb-2DIlXoMis5Q3hGvNRBDOFHCRwBtmev_wB7TOJKw%3D%3D/file/index.m3u8
+
 #EXTINF:-1 tvg-id="AmritaTV.in@SD" tvg-logo="https://i.imgur.com/WdSjlPl.png" tvg-group="01" group-title="1.Malayalam",Amrita TV
 https://ddash74r36xqp.cloudfront.net/master.m3u8
 
