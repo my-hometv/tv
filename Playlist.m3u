@@ -392,11 +392,23 @@ https://mumt03.tangotv.in/Dsly5z3HFOODFOOD/index.m3u8
 
 # ==================== Hindi ====================
 
-#EXTINF:-1 tvg-group="01" group-title="4.Hindi",Epic Musci
+#EXTINF:-1 tvg-group="01" group-title="4.Hindi",Epic Music
 https://cc-3cyxq80qusspd.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-3cyxq80qusspd/playlist.m3u8?ads.device_did=PSID&ads.device_dnt=TARGETOPT&ads.app_domain=APP_DOMAIN&ads.app_name=APP_NAME&ads.ssai_vendor=SSSLIVE&ads.afsdk_params=AFSDK_VALUE&ads.service_id=IN8000196E
 
 #EXTINF:-1 tvg-group="01" group-title="4.Hindi",B4U Music
 https://s3.itcnbd.live/channel/6f6b7b6d25fbd0e6.m3u8
+
+#EXTINF:-1 tvg-group="01" group-title="4.Hindi",B4U Movies
+https://d3kdywbtdfbp9z.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/dff423e0-3c82-46d6-9ecb-3baa96b5694a/6331fe55-785e-4fcf-bfab-53584ae275ef/3.m3u8
+
+#EXTINF:-1 tvg-group="01" group-title="4.Hindi",MTV India
+https://maamusic.keralive.workers.dev/out/v1/a797c00cba954265ba781f92a57e2cf5/index.m3u8
+
+#EXTINF:-1 tvg-group="01" group-title="4.Hindi",Superfine Films
+https://runn-tv.keralive.workers.dev/runntv/stream/p_supjio/playlist.m3u8
+
+#EXTINF:-1 tvg-group="01" group-title="4.Hindi",NH BollyFlix
+https://d1bnb20pevkrom.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-8xs28buuqfw19/BollyFlix_IN.m3u8?ads.ads_cdn=cf&ads.afsdk_params=AFSDK_VALUE&ads.app_domain=APP_DOMAIN&ads.app_name=APP_NAME&ads.cdn=cf&ads.device_did=PSID&ads.device_dnt=TARGETOPT&ads.service_id=IN46000140Q&ads.ssai_vendor=SSSLIVE&pb_type=pb-8xs28buuqfw19_cloudfront
 
 #EXTINF:-1 tvg-id="9XMMusicIndia.in@SD"  tvg-group="09" group-title="4.Hindi",9XM
 https://9xjio.wiseplayout.com/9XM/master.m3u8
