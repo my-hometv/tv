@@ -397,6 +397,9 @@ https://jmp2.uk/stvp-CABC5200006AL
 https://mumt03.tangotv.in/Dsly5z3HFOODFOOD/index.m3u8
 
 # ==================== Hindi ====================
+#EXTINF:-1 tvg-group="01" group-title="4.Hindi",Superfine Movies
+https://runn-tv.keralive.workers.dev/runntv/stream/p_supjio/playlist.m3u8
+
 #EXTINF:-1 tvg-group="01" group-title="4.Hindi",M Tunes
 https://rpn3.bozztv.com/dvrfl07/ushba-t4/playlist.m3u8
 
