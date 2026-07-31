@@ -83,7 +83,7 @@ https://livestream.vibgyortv.com/hls/stream.m3u8
 #EXTINF:-1 tvg-name="NTV" tvg-group="01" group-title="1.Malayalam",NTV
 https://stream.logichost.in/NTV/live/playlist.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",New Star
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",New Star
 https://live.skystream.in/live/newsstar2924/index.m3u8?hls_ctx=ix6cvu58
 
 #EXTINF:-1 tvg-name="FlowersTV" tvg-group="01" group-title="1.Malayalam",South Vision
@@ -92,92 +92,93 @@ https://live.skystream.in/live/southvsnklm/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-name="RajMusix Malayalam" tvg-group="01" group-title="1.Malayalam",RajMusix Malayalam
 https://mumt04.tangotv.in/m18aqlK4RAJMUSIXMALAYALAM/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Media Plus
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",Media Plus
 https://live.applelive.in/mediaplus/mediaplus/index.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",V9
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",V9
 https://5a1178b42cc03.streamlock.net/8212/8212/playlist.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Kerala Vision
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",Kerala Vision
 https://yuppnimrestreammum.akamaized.net/181224/smil:keralavision.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Drishya Pala
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",Drishya Pala
 https://live.skystream.in/live/DrisyaPala2924/index.m3u8?hls_ctx=351ad30d
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",New Vision
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",New Vision
 https://live.skystream.in/live/newvision2924/index.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Kasargod Vision
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",Kasargod Vision
 https://live.skystream.in/live/kasaragodvsn/index.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",K7 Keralam
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",K7 Keralam
 https://live.skystream.in/live/keralam2742/index.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",KCN
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",KCN
 https://live.skystream.in/live/kcnksrgod/index.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",TCN
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",TCN
 https://live.skystream.in/live/tcn8909/index.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",City Channel
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",City Channel
 https://live.skystream.in/live/citytv2924/index.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",City Vision Kannur
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",City Vision Kannur
 https://live.skystream.in/live/citykannurcity/index.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Network
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",Network
 https://live.skystream.in/live/networkpayyanur/index.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",UTV Utsav
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",UTV Utsav
 https://em4qj6nedyvg-hls-live.wmncdn.net/liveunit/89b1e919eed04e59383cf820d644c20e.sdp/chunks.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Drishya
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",Drishya
 https://live.skystream.in/live/drishya5060/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",CTV Mukkam
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",CTV Mukkam
 https://live.skystream.in/live/ctv1805/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Drishya
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",Drishya
 https://live.skystream.in/live/drishyakarunagapally/index.m3u8?hls_ctx=64s22r57
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Media Today
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",Media Today
 https://live.skystream.in/live/mediatday/index.m3u8?hls_ctx=p080313v
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",G TV
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",G TV
 https://play.applelive.in/gtv/gtv.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",G TV Max
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",G TV Max
 https://play.applelive.in/gtvmax/gtvmax.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam", Periyar Vision
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam", Periyar Vision
 https://stream.onecloudlive.in/periyarvision/periyarvision/index.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam", Powran
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam", Powran
 https://stream.onecloudlive.in/powranmedia/livestream/index.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam", CCTV Kunnamkulam
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam", CCTV Kunnamkulam
 https://96vd9q4kyxq7-hls-live.5centscdn.com/livestream/f25aeb3e9210967d546a077de6e105e4.sdp/playlist.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam", Pravasi Channel
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam", Pravasi Channel
 https://m6gdavepdn93-hls-live.5centscdn.com/indialife/d0dbe915091d400bd8ee7f27f0791303.sdp/chunks.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam", UTV
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam", UTV
 https://em4qj6nedyvg-hls-live.wmncdn.net/utv/ab2de115318ae40bdd434e193a2f2e7f.sdp/playlist.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",N Vision
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",N Vision
 https://ipcloud.live/nvision/nvisionhd/index.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Koickal
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",Koickal
 https://play.applelive.in/koickalnews/koickalnews.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Metro Live
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",Metro Live
 https://kcnsdhlsapp.ylivestream.com/kcnsdapphls/tracks-v1/mono.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Malabar Plus
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",Malabar Plus
 https://logichost.keralive.workers.dev/live/mplus/chunklist_w1043342244.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",KV TV
+#EXTINF:-1  tvg-group="01" group-title="1.Malayalam",KV TV
 https://2-fss-2.themediacdn.com/pl_138/206324-3157542-1/chunklist.m3u8
+
 # ==================== 1.Malayalam News ====================
 
 #EXTINF:-1 tvg-id="24News.in@SD" tvg-logo="https://sund-images.sunnxt.com/202222/300x300_24News_202222_d63feca0-79ae-47ea-b75a-66c17d456f4c.png" tvg-group="02" group-title="2.Malayalam News",24 News
