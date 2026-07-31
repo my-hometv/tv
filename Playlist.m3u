@@ -5,9 +5,6 @@
 #EXTINF:-1 tvg-id="AmritaTV.in@SD" tvg-logo="https://i.imgur.com/WdSjlPl.png" tvg-group="01" group-title="1.Malayalam",Amrita TV
 https://ddash74r36xqp.cloudfront.net/master.m3u8
 
-#EXTINF:-1 tvg-group="01" group-title="1.Malayalam",B4U Music
-https://s3.itcnbd.live/channel/6f6b7b6d25fbd0e6.m3u8
-
 #EXTINF:-1 tvg-id="AnandTV.uk@SD" tvg-logo="https://i.imgur.com/5VOPFzs.png" tvg-group="01" group-title="1.Malayalam",Anand TV
 https://live-anandtv.anandmedia.net/anandtvapp/anandtv/index.m3u8
 
@@ -394,6 +391,12 @@ https://jmp2.uk/stvp-CABC5200006AL
 https://mumt03.tangotv.in/Dsly5z3HFOODFOOD/index.m3u8
 
 # ==================== Hindi ====================
+
+#EXTINF:-1 tvg-group="01" group-title="4.Hindi",Epic Musci
+https://cc-3cyxq80qusspd.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-3cyxq80qusspd/playlist.m3u8?ads.device_did=PSID&ads.device_dnt=TARGETOPT&ads.app_domain=APP_DOMAIN&ads.app_name=APP_NAME&ads.ssai_vendor=SSSLIVE&ads.afsdk_params=AFSDK_VALUE&ads.service_id=IN8000196E
+
+#EXTINF:-1 tvg-group="01" group-title="4.Hindi",B4U Music
+https://s3.itcnbd.live/channel/6f6b7b6d25fbd0e6.m3u8
 
 #EXTINF:-1 tvg-id="9XMMusicIndia.in@SD"  tvg-group="09" group-title="4.Hindi",9XM
 https://9xjio.wiseplayout.com/9XM/master.m3u8
