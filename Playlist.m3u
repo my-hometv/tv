@@ -171,10 +171,10 @@ https://ipcloud.live/nvision/nvisionhd/index.m3u8
 https://play.applelive.in/koickalnews/koickalnews.m3u8
 
 #EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Metro Live
-https://kcnsdhlsapp.ylivestream.com/kcnsdapphls/index.m3u8
+https://kcnsdhlsapp.ylivestream.com/kcnsdapphls/tracks-v1/mono.m3u8
 
 #EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Malabar Plus
-https://logichost.keralive.workers.dev/live/mplus/index.m3u8
+https://logichost.keralive.workers.dev/live/mplus/chunklist_w1043342244.m3u8
 
 #EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",KV TV
 https://2-fss-2.themediacdn.com/pl_138/206324-3157542-1/chunklist.m3u8
