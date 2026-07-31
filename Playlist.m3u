@@ -156,6 +156,9 @@ https://segment.yuppcdn.net/050522/reporter/playlist.m3u8
 #EXTINF:-1 tvg-id="ZeeMalayalamNews.in@SD" tvg-logo="https://english.cdn.zeenews.com/images/logo/zee-malayalam-17.svg" tvg-group="02" group-title="2.Malayalam News",Zee Malayalam News
 https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
 
+#EXTINF:-1 tvg-name="FlowersTV" tvg-group="01" group-title="1.Malayalam",Flowers TV1
+https://keralive.com/geo/live.m3u8
+
 # ==================== 1.Malayalam Relegious ====================
 
 #EXTINF:-1 tvg-id="HarvestTV.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_HARVEST_TV_24X7/images/LOGO_HD/image.png" tvg-group="03" group-title="3.Malayalam Religious",Harvest TV
