@@ -83,8 +83,8 @@ https://livestream.vibgyortv.com/hls/stream.m3u8
 #EXTINF:-1 tvg-name="NTV" tvg-group="01" group-title="1.Malayalam",NTV
 https://stream.logichost.in/NTV/live/playlist.m3u8
 
-#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",Trial
-https://mumt03.tangotv.in/Dsly5z3HKAIRALIARABIA/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-name="Asianet" tvg-group="01" group-title="1.Malayalam",NewStar
+https://live.skystream.in/live/newsstar2924/index.m3u8?hls_ctx=ix6cvu58
 
 #EXTINF:-1 tvg-name="FlowersTV" tvg-group="01" group-title="1.Malayalam",Flowers TV
 https://keralive.com/geo/live.m3u8?id=634&vtoken=st=1785504318~exp=1785504978~data=e41d6474be6ca4f6df7043a03db1cbb40754ad3a~id=634~ip=83.110.151.18~hmac=677b2719213487abc8f181822b101d0d2584fe4f233987094071367e938e611f
