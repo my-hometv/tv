@@ -397,6 +397,14 @@ https://jmp2.uk/stvp-CABC5200006AL
 https://mumt03.tangotv.in/Dsly5z3HFOODFOOD/index.m3u8
 
 # ==================== Hindi ====================
+#EXTINF:-1 tvg-group="01" group-title="4.Hindi",M Tunes
+https://rpn3.bozztv.com/dvrfl07/ushba-t4/playlist.m3u8
+
+#EXTINF:-1 tvg-group="01" group-title="4.Hindi",Evergreen Hits
+https://mumt07.tangotv.in/zHjX9OFlEVERGREENHITS2/index.m3u8
+
+#EXTINF:-1 tvg-group="01" group-title="4.Hindi",Hindi Hits HD
+https://bhoomtv.me/tv/restream-tv/stream.m3u8?id=29d7f16babf8&t=1785520327
 
 #EXTINF:-1 tvg-group="01" group-title="4.Hindi",Epic Music
 https://cc-3cyxq80qusspd.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-3cyxq80qusspd/playlist.m3u8?ads.device_did=PSID&ads.device_dnt=TARGETOPT&ads.app_domain=APP_DOMAIN&ads.app_name=APP_NAME&ads.ssai_vendor=SSSLIVE&ads.afsdk_params=AFSDK_VALUE&ads.service_id=IN8000196E
