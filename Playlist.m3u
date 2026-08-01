@@ -158,7 +158,7 @@ https://stream.onecloudlive.in/powranmedia/livestream/index.m3u8
 #EXTINF:-1  tvg-group="01" group-title="1.Malayalam", CCTV Kunnamkulam
 https://96vd9q4kyxq7-hls-live.5centscdn.com/livestream/f25aeb3e9210967d546a077de6e105e4.sdp/playlist.m3u8
 
-#EXTINF:-1  tvg-group="01" group-title="1.Malayalam", Pravasi Channel
+#EXTINF:-1   tvg-id="PravasiChannel.in@SD" tvg-logo="https://i.imgur.com/1dHarb7.png"tvg-group="01" group-title="1.Malayalam", Pravasi Channel
 https://m6gdavepdn93-hls-live.5centscdn.com/indialife/d0dbe915091d400bd8ee7f27f0791303.sdp/chunks.m3u8
 
 #EXTINF:-1  tvg-group="01" group-title="1.Malayalam", UTV
