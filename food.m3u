@@ -1,0 +1,10 @@
+#EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"
+
+
+# ==================== Food ====================
+
+#EXTINF:-1 tvg-group="07" group-title="8.Food" tvg-logo="https://cdn.tvivu.com/logos/bon-appetit-ca-160.webp" tvg-country="CA" tvg-language="eng",Bon Appétit
+https://jmp2.uk/stvp-CABC5200006AL
+
+#EXTINF:-1 tvg-group="07" group-title="8.Food" tvg-logo="https://cdn.tvivu.com/channels/food-food.webp" tvg-country="IN" tvg-language="hin" tvg-id="FoodFood.in",Food Food
+https://mumt03.tangotv.in/Dsly5z3HFOODFOOD/index.m3u8
