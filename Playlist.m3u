@@ -86,13 +86,13 @@ https://kcltv.livebox.co.in/kclhls/live.m3u8
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",KCN
 https://live.skystream.in/live/kcnksrgod/index.m3u8
 
-#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",Kerala Vision
+#EXTINF:-1 tvg-logo="https://commons.wikimedia.org/wiki/File:Kerala_Vision_TV_Logo.png"group-title="1.Malayalam" tvg-group="01",Kerala Vision
 https://yuppnimrestreammum.akamaized.net/181224/smil:keralavision.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 
 #EXTINF:-1 tvg-id="KiteVicters.in@SD" tvg-logo="https://i.imgur.com/kj4OEsb.png" group-title="1.Malayalam" tvg-group="01",KITE Victers
 https://932y4x26ljv8-hls-live.5centscdn.com/victers/tv.stream/playlist.m3u8
 
-#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",Koickal
+#EXTINF:-1 tvg-logo="https://www.facebook.com/photo/?fbid=454812486663235&set=a.454812446663239"group-title="1.Malayalam" tvg-group="01",Koickal
 https://play.applelive.in/koickalnews/koickalnews.m3u8
 
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",KV TV
@@ -128,7 +128,7 @@ https://live.skystream.in/live/newsstar2924/index.m3u8?hls_ctx=ix6cvu58
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",New Vision
 https://live.skystream.in/live/newvision2924/index.m3u8
 
-#EXTINF:-1 tvg-name="NTV" group-title="1.Malayalam" tvg-group="01",NTV
+#EXTINF:-1 tvg-logo="https://www.facebook.com/photo/?fbid=1300140362154625&set=a.594783942690274"tvg-name="NTV" group-title="1.Malayalam" tvg-group="01",NTV
 https://stream.logichost.in/NTV/live/playlist.m3u8
 
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",Periyar Vision
@@ -203,7 +203,7 @@ https://edge1.tikilive.com/livehttporigin_tikilive/56275/amlst:mainstream/playli
 #EXTINF:-1 tvg-id="MalabarNews.in@SD" tvg-logo="https://i.imgur.com/Un2gxt4.png" group-title="2.Malayalam News" tvg-group="02",Malabar News
 http://cloud.logichost.in:1935/live/malabarnews/index.m3u8
 
-#EXTINF:-1 tvg-name="FlowersTV" group-title="2.Malayalam News" tvg-group="01",News Malayalalm 24x7
+#EXTINF:-1 tvg-name="NewsMalayalam24x7" group-title="2.Malayalam News" tvg-group="01",News Malayalalm 24x7
 https://vglivessai.akamaized.net/ptnr-lg/title-News_Malayalam_LGIndia/us/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/23b1b63f-0419-4eb7-8816-d502a77d3f50/index.m3u8
 
 #EXTINF:-1 tvg-id="ManoramaNews.in@SD" tvg-logo="https://i.imgur.com/adjRrVx.png" group-title="2.Malayalam News" tvg-group="02",Manorama News
