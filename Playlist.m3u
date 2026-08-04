@@ -373,7 +373,11 @@ https://jmp2.uk/stvp-GBBB5000002PL
 #EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/logos/wild-tv-160.webp" tvg-country="CA" tvg-language="eng" tvg-id="WildTV.ca",Wild TV
 https://dfhsahpa45kk2.cloudfront.net/scheduler/scheduleMaster/476.m3u8
 
+#EXTINF:-1 tvg-group="04" group-title="5.English",ENT Family
+https://cdn.40mediagroup.com/live/c7eds/ENT_Family/SA_LIVE_hls_enc/master.m3u8
 
+#EXTINF:-1 tvg-group="04" group-title="5.English",Comedy Plus
+https://m3uplay.com/stream.m3u8?id=comedyplus
 # ==================== Sports ====================
 
 #EXTINF:-1 tvg-group="05" group-title="8.Sports" tvg-logo="https://cdn.tvivu.com/logos/cricket-gold-160.webp" tvg-country="AU" tvg-language="eng" tvg-id="CricketGold.au",Cricket Gold
