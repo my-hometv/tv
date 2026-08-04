@@ -493,6 +493,12 @@ https://dfhsahpa45kk2.cloudfront.net/scheduler/scheduleMaster/476.m3u8
 #EXTINF:-1  group-title="5.English" tvg-language="eng" tvg-country="CA" tvg-group="04",FTV 
 https://ftv1.b-cdn.net/bfdbb576-83f7-11f0-9f89-0200170e3e04_1000028043_HLS/video_10801920_p_0.m3u8
 
+#EXTINF:-1  group-title="5.English" tvg-language="eng" tvg-country="CA" tvg-group="04",BXX TV
+https://fl1004.bozztv.com/ushba-mafia/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1  group-title="5.English" tvg-language="eng" tvg-country="CA" tvg-group="04",Kaloopi
+https://streamingserver000.viewtv.cloud/VIEWTVNETWORK-KALOOPY/tracks-v1a1/mono.ts.m3u8
+
 
 # ===== 6.Tamil =====
 
