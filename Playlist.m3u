@@ -334,7 +334,7 @@ https://shemaroo.keralive.workers.dev/du_filmigaane/du_filmigaane_1080/playlist.
 #EXTINF:-1 tvg-id="ShemarooTV.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SHEMAROO_TV/images/LOGO_HD/image.png" group-title="4.Hindi" tvg-group="08",Shemaroo TV
 https://airtelapp.shemaroo.com/shemarootv/smil:shemarootvadp.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="4.Hindi" tvg-group="01",Sony Movies
+#EXTINF:-1 group-title="5.English" tvg-group="01",Sony Movies
 https://a-cdn.klowdtv.com/live1/smc_720p/playlist.m3u8
 
 #EXTINF:-1 tvg-id="SouthStation.in@HD" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN3800008CX_20260325T012316SQUARE.png" group-title="4.Hindi" tvg-group="08",South Station
