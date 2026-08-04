@@ -11,13 +11,10 @@ https://live-anandtv.anandmedia.net/anandtvapp/anandtv/index.m3u8
 #EXTINF:-1 tvg-id="AsianetMiddleEast.in" tvg-logo="https://cdn.tvivu.com/logos/asianet-middle-east-160.webp" group-title="1.Malayalam" tvg-language="mal" tvg-country="IN" tvg-group="01",Asianet Middle East
 https://mumt03.tangotv.in/Dsly5z3HASIANETMIDDLEEAST/index.m3u8
 
-#EXTINF:-1 tvg-name="FlowersTV" group-title="1.Malayalam" tvg-group="01",Asianet News
-https://asianetnews.vgcdn.net/ptnr-Embed/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/1c19363c-e4a0-4e4d-ba28-771d5615b88e/playlist.m3u8?aws.manifestfilter=video_height%3A100-720
-
 #EXTINF:-1 tvg-id="CMalayalamTV.ca@SD" tvg-logo="https://i.imgur.com/rpg0bQA.png" group-title="1.Malayalam" tvg-group="01",C Malayalam TV
 https://2-fss-2.streamhoster.com/pl_120/206508-3261972-1/playlist.m3u8
 
-#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",CCTV Kunnamkulam
+#EXTINF:-1 group-title="1.Malayalam" tvg-logo="https://www.facebook.com/photo/?fbid=1016387497972990&set=a.104545892490493" tvg-group="01",CCTV Kunnamkulam
 https://96vd9q4kyxq7-hls-live.5centscdn.com/livestream/f25aeb3e9210967d546a077de6e105e4.sdp/playlist.m3u8
 
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",City Channel
@@ -184,6 +181,9 @@ https://livestream.vibgyortv.com/hls/stream.m3u8
 
 #EXTINF:-1 tvg-id="24News.in@SD" tvg-logo="https://sund-images.sunnxt.com/202222/300x300_24News_202222_d63feca0-79ae-47ea-b75a-66c17d456f4c.png" group-title="2.Malayalam News" tvg-group="02",24 News
 https://mumt07.tangotv.in/zHjX9OFlTWENTYFOURNEWS/index.m3u8
+
+#EXTINF:-1 tvg-name="AsianetNews" tvg-logo="https://en.wikipedia.org/wiki/Asianet_News#/media/File:Asianet_News_New_logo.jpg"group-title="2.Malayalam News" tvg-group="01",Asianet News
+https://asianetnews.vgcdn.net/ptnr-Embed/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/1c19363c-e4a0-4e4d-ba28-771d5615b88e/playlist.m3u8?aws.manifestfilter=video_height%3A100-720
 
 #EXTINF:-1 tvg-id="BigTV24x7.in@SD" tvg-logo="https://i.postimg.cc/rpHrRxR5/big_tv_malayalam.png" group-title="2.Malayalam News" tvg-group="02",Big TV 24x7
 https://d2gvyg6lvauoko.cloudfront.net/230226/bigtvmalyalam/chunks.m3u8
