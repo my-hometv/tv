@@ -400,6 +400,9 @@ https://jmp2.uk/stvp-CABC5200006AL
 https://mumt03.tangotv.in/Dsly5z3HFOODFOOD/index.m3u8
 
 # ==================== Hindi ====================
+#EXTINF:-1 tvg-group="01" group-title="4.Hindi",Sony Movies
+https://a-cdn.klowdtv.com/live1/smc_720p/playlist.m3u8
+
 #EXTINF:-1 tvg-group="01" group-title="4.Hindi",Superfine Movies
 https://runn-tv.keralive.workers.dev/runntv/stream/p_supjio/playlist.m3u8
 
