@@ -17,13 +17,13 @@ https://2-fss-2.streamhoster.com/pl_120/206508-3261972-1/playlist.m3u8
 #EXTINF:-1 group-title="1.Malayalam" tvg-logo="https://www.facebook.com/photo/?fbid=1016387497972990&set=a.104545892490493" tvg-group="01",CCTV Kunnamkulam
 https://96vd9q4kyxq7-hls-live.5centscdn.com/livestream/f25aeb3e9210967d546a077de6e105e4.sdp/playlist.m3u8
 
-#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",City Channel
+#EXTINF:-1 group-title="1.Malayalam" tvg-logo="https://coakerala.com/wp-content/uploads/2014/12/city-channel-kanhangad.jpg"tvg-group="01",City Channel
 https://live.skystream.in/live/citytv2924/index.m3u8
 
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",City Vision Kannur
 https://live.skystream.in/live/citykannurcity/index.m3u8
 
-#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",CTV Mukkam
+#EXTINF:-1 group-title="1.Malayalam" tvg-logo="https://www.facebook.com/photo/?fbid=4250871585231102&set=a.1395254334126189"tvg-group="01",CTV Mukkam
 https://live.skystream.in/live/ctv1805/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",Darshana
