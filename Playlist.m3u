@@ -486,13 +486,29 @@ https://sis-global.prod.samsungtv.plus/v1/tvpprd/sc-mp2ar4ca425xo.m3u8
 #EXTINF:-1 tvg-group="09" group-title="4.Hindi" tvg-logo="https://cdn.tvivu.com/logos/yrf-music-160.webp" tvg-country="IN" tvg-language="hin" tvg-id="YRFMusic.in",YRF Music
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8
 
-
+#EXTINF:-1 tvg-group="09" group-title="4.Hindi",Loop HD
+https://yet-plus.keralive.workers.dev/LiveApp/streams/loophd.m3u8
 
 #EXTINF:-1 tvg-id="ZeeCinema.in@ME" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_CINEMA/images/LOGO_HD/LOGO_HD_image.png" tvg-group="08" group-title="4.Hindi",Zee Cinema ME
 http://41.205.77.102/ZEE-CINEMA/index.m3u8
 
 #EXTINF:-1 tvg-id="Zoom.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZOOM/images/LOGO_HD/image.png" tvg-group="09" group-title="4.Hindi",Zoom
 https://dai.google.com/linear/hls/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8
+
+#EXTINF:-1 tvg-group="09" group-title="4.Hindi",Super Fine
+https://runn-tv.keralive.workers.dev/runntv/stream/p_supjio/playlist.m3u8
+
+#EXTINF:-1 tvg-group="09" group-title="4.Hindi",Shemaroo Comedy
+https://shemaroo.keralive.workers.dev/du_comedy/du_comedy_1080/playlist.m3u8
+
+#EXTINF:-1 tvg-group="09" group-title="4.Hindi",Shemaroo Josh
+https://airtelapp.shemaroo.com/shemarooChumbakTV/smil:shemarooChumbakTVadp.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-group="09" group-title="4.Hindi",Shemaroo Filmi Gaane
+https://runn-tv.keralive.workers.dev/shemaroo/stream/smrfgn/playlist.m3u8
+
+#EXTINF:-1 tvg-group="09" group-title="4.Hindi",Shemaroo Bollywood
+https://shemaroo-bollywood.keralive.workers.dev/playlist/amg00864-shemarooenterta-shemabollywood-ono/playlist.m3u8
 
 # ==================== Tamil ====================
 
@@ -560,3 +576,6 @@ https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/Raj_Musix/master_1.m3u
 
 #EXTINF:-1 group-title="6.Tamil",Movies HD
 https://yet-plus.keralive.workers.dev/LiveApp/streams/movieshd.m3u8
+
+#EXTINF:-1 group-title="6.Tamil",Loop Tamil
+https://yet-plus.keralive.workers.dev/LiveApp/streams/looptamil.m3u8
