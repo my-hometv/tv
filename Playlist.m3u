@@ -54,7 +54,7 @@ https://play.applelive.in/gtvmax/gtvmax.m3u8
 #EXTINF:-1 tvg-id="JeevanTV.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Jeevan_TV.png" group-title="1.Malayalam" tvg-group="01",Jeevan TV
 https://livegeoroueu.akamaized.net/120723/smil:jeevan.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 
-#EXTINF:-1 tvg-id="JeevanTV.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Jeevan_TV.png" group-title="1.Malayalam" tvg-group="01",Jeevan TV
+#EXTINF:-1 tvg-id="JeevanTV.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Jeevan_TV.png" group-title="1.Malayalam" tvg-group="01",Jeevan TV.
 https://livegeoroueu.akamaized.net/120723/smil:jeevan.smil/playlist.m3u8
 
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",K7 Keralam
