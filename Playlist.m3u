@@ -375,6 +375,10 @@ http://41.205.77.102/ZEE-CINEMA/index.m3u8
 https://dai.google.com/linear/hls/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8
 
 
+#EXTINF:-1 tvg-id="Zoom.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZOOM/images/LOGO_HD/image.png" group-title="4.Hindi" tvg-group="09",ZBollywood
+https://s3.itcnbd.live/channel/a5979fd53c01d1b2.m3u8
+
+
 # ===== 5.English =====
 
 #EXTINF:-1 tvg-id="30AGeorgiaHollywoodReview.us@SD" tvg-logo="https://images.axios.com/JiG3RuYBwpU_WZFeU6HHjt03FAU=/111x0:1191x1080/320x320/2023/11/09/1699558891265.jpg" group-title="5.English" tvg-group="04",30A Georgia Hollywood Review TV
@@ -511,6 +515,9 @@ https://streamingserver000.viewtv.cloud/VIEWTVNETWORK-KALOOPY/tracks-v1a1/mono.t
 
 #EXTINF:-1  group-title="5.English" tvg-language="eng" tvg-country="CA" tvg-group="04",Carac One
 https://edge17.vedge.infomaniak.com/livecast/rougetv/chunklist_w968669534.m3u8
+
+#EXTINF:-1  group-title="5.English" tvg-language="eng" tvg-country="CA" tvg-group="04",World Fashion
+https://t.freetv.fun/live/world-fashion-channel-en.m3u8
 
 
 # ===== 6.Tamil =====
