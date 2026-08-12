@@ -7,14 +7,11 @@ if not playlist.exists():
 
 text = playlist.read_text(encoding="utf-8")
 
-# Normalize line endings
 text = text.replace("\r\n", "\n").replace("\r", "\n")
 
-# Ensure M3U header
 if not text.startswith("#EXTM3U"):
     text = "#EXTM3U\n" + text
 
-# Remove trailing whitespace and excessive blank lines
 lines = [line.rstrip() for line in text.split("\n")]
 
 cleaned = []
