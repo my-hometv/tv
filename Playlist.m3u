@@ -56,7 +56,7 @@ https://livegeoroueu.akamaized.net/120723/smil:jeevan.smil/playlist.m3u8?hdnts=s
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",K7 Keralam
 https://live.skystream.in/live/keralam2742/index.m3u8
 
-#EXTINF:-1 tvg-id="KairaliArabia.in@SD" tvg-logo="https://i.imgur.com/BBEfplL.png" group-title="1.Malayalam" tvg-group="01",Kairali Arabia
+#EXTINF:-1 tvg-id="KairaliArabia.in@SD" tvg-logo="https://i.imgur.com/BBEfplL.png" group-title="99.Offline" tvg-group="01" original-group="1.Malayalam",Kairali Arabia
 https://mumt03.tangotv.in/Dsly5z3HKAIRALIARABIA/index.m3u8
 
 #EXTINF:-1 tvg-id="KairaliTV.in@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Kairali_TV.svg/500px-Kairali_TV.svg.png" group-title="1.Malayalam" tvg-group="01",Kairali TV
@@ -83,7 +83,7 @@ https://oqgdrkxby4rm-hls-live.5centscdn.com/kaumudytv/live.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="KCLTV.in@SD" tvg-logo="https://i.imgur.com/bkp9dIm.png" group-title="1.Malayalam" tvg-group="01",KCL TV
 https://kcltv.livebox.co.in/kclhls/live.m3u8
 
-#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",KCN
+#EXTINF:-1 group-title="99.Offline" tvg-group="01" original-group="1.Malayalam",KCN
 https://live.skystream.in/live/kcnksrgod/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://commons.wikimedia.org/wiki/File:Kerala_Vision_TV_Logo.png"group-title="1.Malayalam" tvg-group="01",Kerala Vision
@@ -101,7 +101,7 @@ https://2-fss-2.themediacdn.com/pl_138/206324-3157542-1/chunklist.m3u8
 #EXTINF:-1 tvg-id="MagnavisionTV.uk" tvg-logo="https://cdn.tvivu.com/logos/magnavision-tv-160.webp" group-title="1.Malayalam" tvg-language="mal" tvg-country="UK" tvg-group="01",Magnavision TV
 https://j78dpa3edq5r-hls-live.5centscdn.com/abr/0864028584026e6ad9cdf922473177a4/playlist.m3u8
 
-#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",Malabar Plus
+#EXTINF:-1 group-title="99.Offline" tvg-group="01" original-group="1.Malayalam",Malabar Plus
 https://logichost.keralive.workers.dev/live/mplus/index.m3u8
 
 #EXTINF:-1 tvg-id="MazhavilManorama.in@SD" tvg-logo="https://i.imgur.com/fjgzW20.png" group-title="1.Malayalam" tvg-group="01",Mazhavil Manorama
@@ -116,7 +116,7 @@ https://live.skystream.in/live/mediatday/index.m3u8?hls_ctx=p080313v
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",Metro Live
 https://kcnsdhlsapp.ylivestream.com/kcnsdapphls/index.m3u8
 
-#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",N Vision
+#EXTINF:-1 group-title="99.Offline" tvg-group="01" original-group="1.Malayalam",N Vision
 https://ipcloud.live/nvision/nvisionhd/index.m3u8
 
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",Network
@@ -134,7 +134,7 @@ https://stream.logichost.in/NTV/live/playlist.m3u8
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",Periyar Vision
 https://stream.onecloudlive.in/periyarvision/periyarvision/index.m3u8
 
-#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",Powran
+#EXTINF:-1 group-title="99.Offline" tvg-group="01" original-group="1.Malayalam",Powran
 https://stream.onecloudlive.in/powranmedia/livestream/index.m3u8
 
 #EXTINF:-1 tvg-id="PravasiChannel.in@SD" tvg-logo="https://i.imgur.com/1dHarb7.png" group-title="1.Malayalam" tvg-group="01",Pravasi Channel
@@ -158,7 +158,7 @@ https://5a1178b42cc03.streamlock.net/8220/8220/playlist.m3u8
 #EXTINF:-1 tvg-id="Swantham.in@SD" tvg-logo="https://i.imgur.com/ye6v4GP.png" group-title="1.Malayalam" tvg-group="01",Swantham
 http://cloud.logichost.in:1935/SWANTHAM/live/index.m3u8
 
-#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",TCN
+#EXTINF:-1 group-title="99.Offline" tvg-group="01" original-group="1.Malayalam",TCN
 https://live.skystream.in/live/tcn8909/index.m3u8
 
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",UTV
@@ -205,7 +205,7 @@ https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccda
 #EXTINF:-1 tvg-id="KairaliNews.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143246_ld_h15_aa.png?lock=720x540" group-title="2.Malayalam News" tvg-group="02",Kairali News
 https://cdn-3.pishow.tv/live/1469/master.m3u8
 
-#EXTINF:-1 tvg-name="FlowersTV" group-title="2.Malayalam News" tvg-group="01",KVTV News
+#EXTINF:-1 tvg-name="FlowersTV" group-title="99.Offline" tvg-group="01" original-group="2.Malayalam News",KVTV News
 https://edge1.tikilive.com/livehttporigin_tikilive/56275/amlst:mainstream/playlist.m3u8?p=local&op_id=19&ts_chunk_length=6&userId=0&channelId=56275&stime=1785566373&etime=1785652773&token=07297ac249a446629979d&ip=31.219.230.51&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F150.0.0.0+Safari%2F537.36&live=1&site_page=https%253A%252F%252Fwww.tikilive.com%252Fchannel%252Fnone-1&domain=tikilive.com&cb=1785566100&ccpa=1---&consent=0&device_type=&did=&gdpr=0&h=720&w=1080&livestream=1&min_ad_duration=5&max_ad_duration=66&site_domain=https%3A%2F%2Fwww.tikilive.com%2F&site_name=TikiLIVE%C2%AE+v9.3.0&hls_marker=1&debug=true&gender=&age=&preroll=1&preroll_duration=66&content_genre=News&content_id=56275&content_title=KVTV%2BNEWS%2BCHANNEL&network_name=kvtv&content_owner=147230&viewing_user=guest&oid=19&bid=147230
 
 #EXTINF:-1 tvg-id="MalabarNews.in@SD" tvg-logo="https://i.imgur.com/Un2gxt4.png" group-title="2.Malayalam News" tvg-group="02",Malabar News
@@ -220,19 +220,19 @@ https://mmtvnews1.akamaized.net/v1/master/673630b269b766886555eebfddd4f27f3de3ab
 #EXTINF:-1 tvg-id="Mathrubhumi" group-title="2.Malayalam News" tvg-group="02",Mathrubhumi
 https://mathrubhumicdn.vidgyor.com/mathrubhumi-origin/liveabr/playlist.m3u8
 
-#EXTINF:-1 tvg-id="MediaOne.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_MEDIA_ONE/images/LOGO_HD/image.png" group-title="2.Malayalam News" tvg-group="02",Media One
+#EXTINF:-1 tvg-id="MediaOne.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_MEDIA_ONE/images/LOGO_HD/image.png" group-title="99.Offline" tvg-group="02" original-group="2.Malayalam News",Media One
 https://www.youtube.com/watch?v=-8d8-c0yvyU
 
 #EXTINF:-1 tvg-id="News18Kerala.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS18_KERALA/images/LOGO_HD/image.png" group-title="2.Malayalam News" tvg-group="02",News18 Kerala
 https://n18syndication.akamaized.net/bpk-tv/News18_Kerala_NW18_MOB/output01/master.m3u8
 
-#EXTINF:-1 tvg-id="RealNewsKerala.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Real_News_Kerala.png" group-title="2.Malayalam News" tvg-group="02",Real News Kerala
+#EXTINF:-1 tvg-id="RealNewsKerala.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Real_News_Kerala.png" group-title="99.Offline" tvg-group="02" original-group="2.Malayalam News",Real News Kerala
 https://bk7l298nyx53-hls-live.5centscdn.com/realnews/e7dee419f91aa9e65939d3677fb9c4f5.sdp/playlist.m3u8
 
 #EXTINF:-1 tvg-id="ReporterTV.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s85096_ld_h15_aa.png?lock=720x540" group-title="2.Malayalam News" tvg-group="02",Reporter TV
 https://segment.yuppcdn.net/050522/reporter/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ZeeMalayalamNews.in@SD" tvg-logo="https://english.cdn.zeenews.com/images/logo/zee-malayalam-17.svg" group-title="2.Malayalam News" tvg-group="02",Zee Malayalam News
+#EXTINF:-1 tvg-id="ZeeMalayalamNews.in@SD" tvg-logo="https://english.cdn.zeenews.com/images/logo/zee-malayalam-17.svg" group-title="99.Offline" tvg-group="02" original-group="2.Malayalam News",Zee Malayalam News
 https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
 
 # ===== 3.Malayalam Religious =====
@@ -252,7 +252,7 @@ https://d2c4zqo2rb5uf1.cloudfront.net/master.m3u8
 #EXTINF:-1 tvg-id="Shalom.in@Global" tvg-logo="https://dtil.tmsimg.com/assets/s143774_ld_h15_aa.png?lock=720x540" group-title="3.Malayalam Religious" tvg-group="03",Shalom Global
 https://d28xtgmk9tfk6b.cloudfront.net/master.m3u8
 
-#EXTINF:-1 tvg-id="ShalomAmerica.us@SD" tvg-logo="https://i.imgur.com/qUjsV79.png" group-title="3.Malayalam Religious" tvg-group="03",Shalom TV
+#EXTINF:-1 tvg-id="ShalomAmerica.us@SD" tvg-logo="https://i.imgur.com/qUjsV79.png" group-title="99.Offline" tvg-group="03" original-group="3.Malayalam Religious",Shalom TV
 https://livestreamcdn.net:444/ShalomTV/ShalomTV/playlist.m3u8
 
 #EXTINF:-1 tvg-id="ShekinahTV.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Shekinah.png" group-title="3.Malayalam Religious" tvg-group="03",Shekinah TV
@@ -266,7 +266,7 @@ https://9xjio.wiseplayout.com/9XM/master.m3u8
 #EXTINF:-1 tvg-id="9XMMusicIndia.in@SD" group-title="4.Hindi" tvg-group="09",Bollyood Masala
 https://sofast-lg.vgcdn.net/sofastplayout/751631cf-7a0d-356e-676e-b84cfec03391_0_HLS/manifest.m3u8
 
-#EXTINF:-1 tvg-id="AllTimeMovies.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ALL_TIME_MOVIES/images/LOGO_HD/image.png" group-title="4.Hindi" tvg-group="08",All Time Movies
+#EXTINF:-1 tvg-id="AllTimeMovies.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ALL_TIME_MOVIES/images/LOGO_HD/image.png" group-title="99.Offline" tvg-group="08" original-group="4.Hindi",All Time Movies
 https://mumt03.tangotv.in/Dsly5z3HALLTIMEMOVIES/index.m3u8
 
 #EXTINF:-1 group-title="4.Hindi" tvg-group="01",B4U Movies
@@ -293,10 +293,10 @@ https://mumt07.tangotv.in/zHjX9OFlEVERGREENHITS2/index.m3u8
 #EXTINF:-1 tvg-id="GoldminesBollywood.in" tvg-logo="https://cdn.tvivu.com/logos/goldmines-bollywood-160.webp" group-title="4.Hindi" tvg-language="hin" tvg-country="IN" tvg-group="08",Goldmines Bollywood
 https://mumt03.tangotv.in/Dsly5z3HGOLDMINESBOLLYWOOD/tracks-v2a1/mono.m3u8
 
-#EXTINF:-1 group-title="4.Hindi Music" tvg-group="01",Hindi Hits HD
+#EXTINF:-1 group-title="99.Offline" tvg-group="01" original-group="4.Hindi Music",Hindi Hits HD
 https://bhoomtv.me/tv/restream-tv/stream.m3u8?id=29d7f16babf8&t=1785520327
 
-#EXTINF:-1 group-title="4.Hindi" tvg-group="09",Loop HD
+#EXTINF:-1 group-title="99.Offline" tvg-group="09" original-group="4.Hindi",Loop HD
 https://yet-plus.keralive.workers.dev/LiveApp/streams/loophd.m3u8
 
 #EXTINF:-1 group-title="4.Hindi Music" tvg-group="01",M Tunes
@@ -305,10 +305,10 @@ https://rpn3.bozztv.com/dvrfl07/ushba-t4/playlist.m3u8
 #EXTINF:-1 tvg-id="ManoranjanGrand.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143302_ld_h15_aa.png?lock=720x540" group-title="4.Hindi" tvg-group="08",Manoranjan Grand
 https://cdn-1.pishow.tv/live/1011/master.m3u8
 
-#EXTINF:-1 tvg-id="MoviePlex.in@SD" tvg-logo="https://i.imgur.com/THJEAqJ.png" group-title="4.Hindi" tvg-group="08",MoviePlex
+#EXTINF:-1 tvg-id="MoviePlex.in@SD" tvg-logo="https://i.imgur.com/THJEAqJ.png" group-title="99.Offline" tvg-group="08" original-group="4.Hindi",MoviePlex
 https://mumt04.tangotv.in/m18aqlK4MOVIEPLEX/index.m3u8
 
-#EXTINF:-1 group-title="4.Hindi Music" tvg-group="01",MTV India
+#EXTINF:-1 group-title="99.Offline" tvg-group="01" original-group="4.Hindi Music",MTV India
 https://maamusic.keralive.workers.dev/out/v1/a797c00cba954265ba781f92a57e2cf5/index.m3u8
 
 #EXTINF:-1 tvg-id="MusicIndia.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143563_ld_h15_aa.png?lock=720x540" group-title="4.Hindi Music" tvg-group="09",Music India
@@ -323,19 +323,19 @@ https://d2gvyg6lvauoko.cloudfront.net/230226/ndtvgoodtimes/chunks.m3u8
 #EXTINF:-1 group-title="4.Hindi" tvg-group="01",NH BollyFlix
 https://d1bnb20pevkrom.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-8xs28buuqfw19/BollyFlix_IN.m3u8?ads.ads_cdn=cf&ads.afsdk_params=AFSDK_VALUE&ads.app_domain=APP_DOMAIN&ads.app_name=APP_NAME&ads.cdn=cf&ads.device_did=PSID&ads.device_dnt=TARGETOPT&ads.service_id=IN46000140Q&ads.ssai_vendor=SSSLIVE&pb_type=pb-8xs28buuqfw19_cloudfront
 
-#EXTINF:-1 group-title="4.Hindi" tvg-group="09",Shemaroo Bollywood
+#EXTINF:-1 group-title="99.Offline" tvg-group="09" original-group="4.Hindi",Shemaroo Bollywood
 https://shemaroo-bollywood.keralive.workers.dev/playlist/amg00864-shemarooenterta-shemabollywood-ono/playlist.m3u8
 
-#EXTINF:-1 group-title="4.Hindi" tvg-group="09",Shemaroo Comedy
+#EXTINF:-1 group-title="99.Offline" tvg-group="09" original-group="4.Hindi",Shemaroo Comedy
 https://shemaroo.keralive.workers.dev/du_comedy/du_comedy_1080/playlist.m3u8
 
-#EXTINF:-1 group-title="4.Hindi Music" tvg-group="09",Shemaroo Filmi Gaane
+#EXTINF:-1 group-title="99.Offline" tvg-group="09" original-group="4.Hindi Music",Shemaroo Filmi Gaane
 https://runn-tv.keralive.workers.dev/shemaroo/stream/smrfgn/playlist.m3u8
 
 #EXTINF:-1 group-title="4.Hindi" tvg-group="09",Shemaroo Josh
 https://airtelapp.shemaroo.com/shemarooChumbakTV/smil:shemarooChumbakTVadp.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="4.Hindi Music" tvg-group="09",Shemaroo Music Hits
+#EXTINF:-1 group-title="99.Offline" tvg-group="09" original-group="4.Hindi Music",Shemaroo Music Hits
 https://shemaroo.keralive.workers.dev/du_filmigaane/du_filmigaane_1080/playlist.m3u8
 
 #EXTINF:-1 tvg-id="ShemarooTV.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SHEMAROO_TV/images/LOGO_HD/image.png" group-title="4.Hindi" tvg-group="08",Shemaroo TV
@@ -347,13 +347,13 @@ https://a-cdn.klowdtv.com/live1/smc_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="SouthStation.in@HD" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN3800008CX_20260325T012316SQUARE.png" group-title="4.Hindi" tvg-group="08",South Station
 https://cc-yw7ztecy8do3q.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-yw7ztecy8do3q/SS_IN.m3u8
 
-#EXTINF:-1 tvg-id="StarPlus.in" tvg-logo="https://cdn.tvivu.com/logos/starplus-160.webp" group-title="4.Hindi" tvg-language="hin" tvg-country="IN" tvg-group="08",StarPlus
+#EXTINF:-1 tvg-id="StarPlus.in" tvg-logo="https://cdn.tvivu.com/logos/starplus-160.webp" group-title="99.Offline" tvg-language="hin" tvg-country="IN" tvg-group="08" original-group="4.Hindi",StarPlus
 http://103.253.18.58:8000/play/a00l
 
 #EXTINF:-1 tvg-id="SteelbirdMusic.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Steelbird_Music.png" group-title="4.Hindi Music" tvg-group="09",Steelbird Music
 https://cdn2.in/SteelbirdMusicTVhls/live.m3u8
 
-#EXTINF:-1 group-title="4.Hindi" tvg-group="01",Superfine Movies
+#EXTINF:-1 group-title="99.Offline" tvg-group="01" original-group="4.Hindi",Superfine Movies
 https://runn-tv.keralive.workers.dev/runntv/stream/p_supjio/playlist.m3u8
 
 #EXTINF:-1 tvg-id="TheMovieClub.in@HD" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN38000072R_20260325T012318SQUARE.png" group-title="4.Hindi" tvg-group="08",The Movie Club
@@ -365,7 +365,7 @@ https://m6gdavepdn93-hls-live.5centscdn.com/pravasi/d0dbe915091d400bd8ee7f27f079
 #EXTINF:-1 tvg-id="YRFMusic.in" tvg-logo="https://cdn.tvivu.com/logos/yrf-music-160.webp" group-title="4.Hindi Music" tvg-language="hin" tvg-country="IN" tvg-group="09",YRF Music
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ZeeCinema.in@ME" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_CINEMA/images/LOGO_HD/LOGO_HD_image.png" group-title="4.Hindi" tvg-group="08",Zee Cinema ME
+#EXTINF:-1 tvg-id="ZeeCinema.in@ME" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_CINEMA/images/LOGO_HD/LOGO_HD_image.png" group-title="99.Offline" tvg-group="08" original-group="4.Hindi",Zee Cinema ME
 http://41.205.77.102/ZEE-CINEMA/index.m3u8
 
 #EXTINF:-1 tvg-id="Zoom.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZOOM/images/LOGO_HD/image.png" group-title="4.Hindi Music" tvg-group="09",Zoom
@@ -415,7 +415,7 @@ https://amogonetworx-artflix-1-nl.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Baywatch.us" tvg-logo="https://cdn.tvivu.com/logos/baywatch-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",Baywatch
 https://amg00145-fremantlemedian-baywatch-samsungau-gtsd6.amagi.tv/playlist/amg00145-fremantlemedian-baywatch-samsungau/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/channels/bold-and-the-beautiful.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",Bold and the Beautiful
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/channels/bold-and-the-beautiful.webp" group-title="99.Offline" tvg-language="eng" tvg-country="US" tvg-group="04" original-group="5.English",Bold and the Beautiful
 https://www.youtube.com/watch?v=qALTGOsXIkw
 
 #EXTINF:-1 tvg-id="BratTV.us" tvg-logo="https://cdn.tvivu.com/logos/brat-tv-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",Brat TV
@@ -427,7 +427,7 @@ https://aegis-cloudfront-1.tubi.video/c95700f8-e51c-4a36-ad46-56f70fc9f1d9/playl
 #EXTINF:-1 tvg-id="CGTNDocumentary.cn" tvg-logo="https://cdn.tvivu.com/logos/cgtn-documentary-160.webp" group-title="5.English" tvg-language="eng" tvg-country="CN" tvg-group="04",CGTN Documentary
 https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8
 
-#EXTINF:-1 group-title="5.English" tvg-group="04",Comedy Plus
+#EXTINF:-1 group-title="99.Offline" tvg-group="04" original-group="5.English",Comedy Plus
 https://m3uplay.com/stream.m3u8?id=comedyplus
 
 #EXTINF:-1 tvg-id="DocumentaryPlus.us" tvg-logo="https://cdn.tvivu.com/logos/documentary-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",Documentary+
@@ -466,10 +466,10 @@ https://dbrb49pjoymg4.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae04
 #EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/hot-ones-gb-160.webp" group-title="5.English" tvg-language="eng" tvg-country="UK" tvg-group="04",Hot Ones
 https://jmp2.uk/stvp-GB4600001W9
 
-#EXTINF:-1 tvg-id="24HourFreeMovies.us@SD" tvg-logo="https://i.imgur.com/iSVnzR1.png" group-title="5.English" tvg-group="04",like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" tvg-group="04" group-title="5.English",24 Hour Free Movies
+#EXTINF:-1 tvg-id="24HourFreeMovies.us@SD" tvg-logo="https://i.imgur.com/iSVnzR1.png" group-title="99.Offline" tvg-group="04",like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" tvg-group="04" group-title="5.English" original-group="5.English",24 Hour Free Movies
 https://d1b5mlajbmvkjv.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDU-DistroTV/145.m3u8?ads.vf=7FhdsxqVxOi
 
-#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/love-nature-3-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",Love Nature
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/love-nature-3-160.webp" group-title="99.Offline" tvg-language="eng" tvg-country="US" tvg-group="04" original-group="5.English",Love Nature
 https://www.youtube.com/watch?v=QhahoVG0BfI
 
 #EXTINF:-1 tvg-id="MidnightPulp.us" tvg-logo="https://cdn.tvivu.com/logos/midnight-pulp-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",Midnight Pulp
@@ -528,13 +528,13 @@ https://eu.streamjo.com/eetlive/eettv.m3u8
 #EXTINF:-1 tvg-id="KalaignarMurasu.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143561_ld_h15_aa.png?lock=720x540" group-title="6.Tamil" tvg-group="10",Kalaignar Murasu
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/murasu_nim_https/050522/murasu/playlist.m3u8
 
-#EXTINF:-1 group-title="6.Tamil",Loop Tamil
+#EXTINF:-1 group-title="99.Offline" original-group="6.Tamil",Loop Tamil
 https://yet-plus.keralive.workers.dev/LiveApp/streams/looptamil.m3u8
 
 #EXTINF:-1 tvg-id="MKSix.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/MK_Six.png" group-title="6.Tamil" tvg-group="10",MK Six
 https://cdn-3.pishow.tv/live/1253/master.m3u8
 
-#EXTINF:-1 group-title="6.Tamil",Movies HD
+#EXTINF:-1 group-title="99.Offline" original-group="6.Tamil",Movies HD
 https://yet-plus.keralive.workers.dev/LiveApp/streams/movieshd.m3u8
 
 #EXTINF:-1 tvg-id="NTCTV.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ntvtamil.png" group-title="6.Tamil" tvg-group="10",NTC TV
@@ -564,7 +564,7 @@ https://stream.galaxyott.live/live/subintv/index.m3u8
 #EXTINF:-1 tvg-id="SuriyaTV.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/suryatvtamil.png" group-title="6.Tamil" tvg-group="10",Suriya TV
 https://stream.ottlive.co.in/suryatvtamil/index.m3u8
 
-#EXTINF:-1 tvg-id="SuriyanTV.in@SD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Suriyan-tv-logo_2000_X_1125_Transpharent.png" group-title="6.Tamil" tvg-group="10",Suriyan TV
+#EXTINF:-1 tvg-id="SuriyanTV.in@SD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Suriyan-tv-logo_2000_X_1125_Transpharent.png" group-title="99.Offline" tvg-group="10" original-group="6.Tamil",Suriyan TV
 https://stream.sscloud7.com/live/suriyantv/index.m3u8
 
 #EXTINF:-1 tvg-id="TamilanTV.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Tamilan_Television.png" group-title="6.Tamil" tvg-group="10",Tamilan TV
@@ -614,7 +614,7 @@ https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50
 #EXTINF:-1 group-title="7.Kids"  tvg-group="06",Kids TV
 https://wurljansonmedia.global.transmit.live/hls/69029561e0b3f0f215eef867/playlist.m3u8?wurl_channel=1379&wurl_name=KidsTV&coppa=1&uid=[DEVICE_ID]&rdid=[IFA]&ifatype=[IFA_TYPE]&dnt=[LMT]&donotsell=[DNS]&isgdpr=[GDPR]&gdpr=[GDPR_CONSENT]&country=[COUNTRY]&pr=[US_PRIVACY]&appstoreurl=[APP_STOREURL]&bundleid=[APP_BUNDLE]&appname=[APP_NAME]&appversion=[APP_VERSION]&dt=[DEVICE_TYPE]&make=[DEVICE_MAKE]&model=[DEVICE_MODEL]&targetad=[TARGETAD_ALLOWED]&fck=[FCK]&viewsize=[VIEWSIZE]&nonce=[NONCE]
 
-#EXTINF:-1 group-title="7.Kids"  tvg-group="06",My Toonz
+#EXTINF:-1 group-title="99.Offline"  tvg-group="06" original-group="7.Kids",My Toonz
 https://m3uplay.com/stream.m3u8?id=mytoonz
 
 #EXTINF:-1 group-title="7.Kids"  tvg-group="06",Sparkle Power
