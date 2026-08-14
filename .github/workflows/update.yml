@@ -50,7 +50,7 @@ jobs:
           path: playlist_report.txt
           if-no-files-found: error
 
-      - name: Commit updates
+            - name: Commit updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -58,6 +58,7 @@ jobs:
           git add Playlist.m3u
           git add playlist_status.json
           git add playlist_report.txt
+          git add source_update_report.txt
 
           if git diff --cached --quiet; then
             echo "No changes."
