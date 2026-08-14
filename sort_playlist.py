@@ -4,6 +4,7 @@ from pathlib import Path
 
 PLAYLIST_FILE = Path("Playlist.m3u")
 OFFLINE_GROUP = "99.Offline"
+UNGROUPED_GROUP = "98.Ungrouped"
 
 
 def get_channel_name(extinf):
@@ -23,42 +24,51 @@ def get_group(extinf):
     if match:
         return match.group(1).strip()
 
-    return "98.Ungrouped"
+    return UNGROUPED_GROUP
 
 
 def natural_key(text):
-    """
-    Natural sorting:
-    1.Malayalam
-    2.Malayalam News
-    3.Malayalam Religious
-    10.Other
+    parts = re.split(
+        r"(\d+)",
+        text.lower()
+    )
 
-    instead of:
-    1...
-    10...
-    2...
-    """
-
-    parts = re.split(r"(\d+)", text.lower())
-
-    result = []
+    key = []
 
     for part in parts:
         if part.isdigit():
-            result.append((0, int(part)))
+            key.append(
+                (0, int(part))
+            )
         else:
-            result.append((1, part))
+            key.append(
+                (1, part)
+            )
 
-    return result
+    return key
 
 
 def group_sort_key(group):
-    # Always force Offline to the bottom.
-    if group.lower() == OFFLINE_GROUP.lower():
-        return (1, [])
+    group_lower = group.lower()
 
-    return (0, natural_key(group))
+    # Offline is ALWAYS at the very bottom.
+    if group_lower == OFFLINE_GROUP.lower():
+        return (
+            2,
+            [],
+        )
+
+    # Ungrouped goes just before Offline.
+    if group_lower == UNGROUPED_GROUP.lower():
+        return (
+            1,
+            natural_key(group),
+        )
+
+    return (
+        0,
+        natural_key(group),
+    )
 
 
 def parse_playlist(text):
@@ -69,8 +79,12 @@ def parse_playlist(text):
 
     i = 0
 
-    # Preserve #EXTM3U header.
-    if lines and lines[0].strip().startswith("#EXTM3U"):
+    if (
+        lines
+        and lines[0].strip().startswith(
+            "#EXTM3U"
+        )
+    ):
         header = lines[0].strip()
         i = 1
 
@@ -81,16 +95,19 @@ def parse_playlist(text):
             i += 1
             continue
 
-        # Ignore old section comments such as:
-        # ===== 1.Malayalam =====
+        # Ignore section comments.
         if (
             line.startswith("#")
-            and not line.startswith("#EXTINF:")
+            and not line.startswith(
+                "#EXTINF:"
+            )
         ):
             i += 1
             continue
 
-        if not line.startswith("#EXTINF:"):
+        if not line.startswith(
+            "#EXTINF:"
+        ):
             i += 1
             continue
 
@@ -100,26 +117,30 @@ def parse_playlist(text):
 
         i += 1
 
-        # Preserve everything belonging to this channel
-        # until the next #EXTINF.
         while i < len(lines):
             next_line = lines[i].strip()
 
-            if next_line.startswith("#EXTINF:"):
+            if next_line.startswith(
+                "#EXTINF:"
+            ):
                 break
 
             if next_line:
-                block.append(next_line)
+                block.append(
+                    next_line
+                )
 
             i += 1
 
-        channel_name = get_channel_name(extinf)
         group = get_group(extinf)
+        name = get_channel_name(
+            extinf
+        )
 
         entries.append(
             {
                 "group": group,
-                "name": channel_name,
+                "name": name,
                 "block": block,
             }
         )
@@ -129,27 +150,39 @@ def parse_playlist(text):
 
 def main():
     if not PLAYLIST_FILE.exists():
-        raise SystemExit("Playlist.m3u not found")
+        raise SystemExit(
+            "Playlist.m3u not found"
+        )
 
     text = PLAYLIST_FILE.read_text(
         encoding="utf-8",
         errors="replace",
     )
 
-    header, entries = parse_playlist(text)
+    header, entries = (
+        parse_playlist(text)
+    )
 
-    print(f"Channels found: {len(entries)}")
+    print(
+        f"Channels found: "
+        f"{len(entries)}"
+    )
 
-    # First sort channels alphabetically.
-    # Then sort groups.
     entries.sort(
         key=lambda entry: (
-            group_sort_key(entry["group"]),
-            natural_key(entry["name"]),
+            group_sort_key(
+                entry["group"]
+            ),
+            natural_key(
+                entry["name"]
+            ),
         )
     )
 
-    output = [header, ""]
+    output = [
+        header,
+        "",
+    ]
 
     previous_group = None
     group_count = 0
@@ -161,7 +194,6 @@ def main():
             if previous_group is not None:
                 output.append("")
 
-            # Add a readable section marker.
             output.append(
                 f"# ===== {group} ====="
             )
@@ -170,18 +202,36 @@ def main():
             previous_group = group
             group_count += 1
 
-        output.extend(entry["block"])
+        output.extend(
+            entry["block"]
+        )
         output.append("")
 
     PLAYLIST_FILE.write_text(
-        "\n".join(output).rstrip() + "\n",
+        "\n".join(output).rstrip()
+        + "\n",
         encoding="utf-8",
     )
 
-    print(f"Groups found: {group_count}")
-    print("Playlist sorted successfully.")
+    offline_count = sum(
+        1
+        for entry in entries
+        if entry["group"].lower()
+        == OFFLINE_GROUP.lower()
+    )
+
     print(
-        "Sort order: group -> channel name"
+        f"Groups found: "
+        f"{group_count}"
+    )
+
+    print(
+        f"Offline channels moved "
+        f"to bottom: {offline_count}"
+    )
+
+    print(
+        "Playlist sorted successfully."
     )
 
 
