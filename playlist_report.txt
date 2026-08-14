@@ -1,7 +1,7 @@
 # Playlist URL Check Report
 
 Checked 205 URLs
-Time: 2026-08-14 17:46:39 UTC
+Time: 2026-08-14 19:02:08 UTC
 
 ## Amrita TV
 Status: OK
@@ -129,13 +129,6 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://live.skystream.in/live/keralam2742/index.m3u8
 
-## Kairali Arabia
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 404
-URL: https://mumt03.tangotv.in/Dsly5z3HKAIRALIARABIA/index.m3u8
-
 ## Kairali TV
 Status: OK
 Classification: WORKING
@@ -192,13 +185,6 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://kcltv.livebox.co.in/kclhls/live.m3u8
 
-## KCN
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 404
-URL: https://live.skystream.in/live/kcnksrgod/index.m3u8
-
 ## Kerala Vision
 Status: OK
 Classification: WORKING
@@ -234,13 +220,6 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://j78dpa3edq5r-hls-live.5centscdn.com/abr/0864028584026e6ad9cdf922473177a4/playlist.m3u8
 
-## Malabar Plus
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 403
-URL: https://logichost.keralive.workers.dev/live/mplus/index.m3u8
-
 ## Mazhavil Manorama
 Status: OK
 Classification: WORKING
@@ -269,13 +248,6 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://kcnsdhlsapp.ylivestream.com/kcnsdapphls/index.m3u8
 
-## N Vision
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 403
-URL: https://ipcloud.live/nvision/nvisionhd/index.m3u8
-
 ## Network
 Status: OK
 Classification: WORKING
@@ -290,13 +262,6 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://live.skystream.in/live/newsstar2924/index.m3u8?hls_ctx=ix6cvu58
 
-## New Vision
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 3
-Detail: HTTP 404
-URL: https://live.skystream.in/live/newvision2924/index.m3u8
-
 ## NTV
 Status: OK
 Classification: WORKING
@@ -310,13 +275,6 @@ Classification: WORKING
 Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://stream.onecloudlive.in/periyarvision/periyarvision/index.m3u8
-
-## Powran
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 4
-Detail: HTTP 404
-URL: https://stream.onecloudlive.in/powranmedia/livestream/index.m3u8
 
 ## Pravasi Channel
 Status: OK
@@ -366,13 +324,6 @@ Classification: WORKING
 Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: http://cloud.logichost.in:1935/SWANTHAM/live/index.m3u8
-
-## TCN
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 404
-URL: https://live.skystream.in/live/tcn8909/index.m3u8
 
 ## UTV
 Status: OK
@@ -472,26 +423,12 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://cdn-3.pishow.tv/live/1469/master.m3u8
 
-## KVTV News
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 401
-URL: https://edge1.tikilive.com/livehttporigin_tikilive/56275/amlst:mainstream/playlist.m3u8?p=local&op_id=19&ts_chunk_length=6&userId=0&channelId=56275&stime=1785566373&etime=1785652773&token=07297ac249a446629979d&ip=31.219.230.51&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F150.0.0.0+Safari%2F537.36&live=1&site_page=https%253A%252F%252Fwww.tikilive.com%252Fchannel%252Fnone-1&domain=tikilive.com&cb=1785566100&ccpa=1---&consent=0&device_type=&did=&gdpr=0&h=720&w=1080&livestream=1&min_ad_duration=5&max_ad_duration=66&site_domain=https%3A%2F%2Fwww.tikilive.com%2F&site_name=TikiLIVE%C2%AE+v9.3.0&hls_marker=1&debug=true&gender=&age=&preroll=1&preroll_duration=66&content_genre=News&content_id=56275&content_title=KVTV%2BNEWS%2BCHANNEL&network_name=kvtv&content_owner=147230&viewing_user=guest&oid=19&bid=147230
-
 ## Malabar News
 Status: OK
 Classification: WORKING
 Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: http://cloud.logichost.in:1935/live/malabarnews/index.m3u8
-
-## News Malayalalm 24x7
-Status: OK
-Classification: WORKING
-Consecutive failures: 0
-Detail: HTTP 200, HLS playlist
-URL: https://vglivessai.akamaized.net/ptnr-lg/title-News_Malayalam_LGIndia/us/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/23b1b63f-0419-4eb7-8816-d502a77d3f50/index.m3u8
 
 ## Manorama News
 Status: OK
@@ -507,13 +444,6 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://mathrubhumicdn.vidgyor.com/mathrubhumi-origin/liveabr/playlist.m3u8
 
-## Media One
-Status: WEBPAGE_OR_UNKNOWN
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 200
-URL: https://www.youtube.com/watch?v=-8d8-c0yvyU
-
 ## News18 Kerala
 Status: OK
 Classification: WORKING
@@ -521,12 +451,12 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://n18syndication.akamaized.net/bpk-tv/News18_Kerala_NW18_MOB/output01/master.m3u8
 
-## Real News Kerala
-Status: ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTPSConnectionPool(host='bk7l298nyx53-hls-live.5centscdn.com', port=443): Max retries exceeded with url: /realnews/e7dee419f91aa9e65939d3677fb9c4f5.sdp/playlist.m3u8 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)')))
-URL: https://bk7l298nyx53-hls-live.5centscdn.com/realnews/e7dee419f91aa9e65939d3677fb9c4f5.sdp/playlist.m3u8
+## News Malayalalm 24x7
+Status: OK
+Classification: WORKING
+Consecutive failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://vglivessai.akamaized.net/ptnr-lg/title-News_Malayalam_LGIndia/us/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/23b1b63f-0419-4eb7-8816-d502a77d3f50/index.m3u8
 
 ## Reporter TV
 Status: OK
@@ -534,13 +464,6 @@ Classification: WORKING
 Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://segment.yuppcdn.net/050522/reporter/playlist.m3u8
-
-## Zee Malayalam News
-Status: ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTPSConnectionPool(host='d1ty2af03alkwd.cloudfront.net', port=443): Max retries exceeded with url: /index_4.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='d1ty2af03alkwd.cloudfront.net', port=443): Failed to resolve 'd1ty2af03alkwd.cloudfront.net' ([Errno -5] No address associated with hostname)"))
-URL: https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
 
 ## Harvest TV
 Status: OK
@@ -577,40 +500,12 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://d28xtgmk9tfk6b.cloudfront.net/master.m3u8
 
-## Shalom TV
-Status: ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTPSConnectionPool(host='livestreamcdn.net', port=444): Max retries exceeded with url: /ShalomTV/ShalomTV/playlist.m3u8 (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'livestreamcdn.net'. (_ssl.c:1082)")))
-URL: https://livestreamcdn.net:444/ShalomTV/ShalomTV/playlist.m3u8
-
 ## Shekinah TV
 Status: OK
 Classification: WORKING
 Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://livetv.timeiptv.in/ShekinahNewsIndia/955ad3298db330b5ee880c2c9e6f23a0.sdp/playlist.m3u8
-
-## 9XM
-Status: OK
-Classification: WORKING
-Consecutive failures: 0
-Detail: HTTP 200, HLS playlist
-URL: https://9xjio.wiseplayout.com/9XM/master.m3u8
-
-## Bollyood Masala
-Status: OK
-Classification: WORKING
-Consecutive failures: 0
-Detail: HTTP 200, HLS playlist
-URL: https://sofast-lg.vgcdn.net/sofastplayout/751631cf-7a0d-356e-676e-b84cfec03391_0_HLS/manifest.m3u8
-
-## All Time Movies
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 404
-URL: https://mumt03.tangotv.in/Dsly5z3HALLTIMEMOVIES/index.m3u8
 
 ## B4U Movies
 Status: OK
@@ -619,19 +514,19 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://d3kdywbtdfbp9z.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/dff423e0-3c82-46d6-9ecb-3baa96b5694a/6331fe55-785e-4fcf-bfab-53584ae275ef/3.m3u8
 
-## B4U Music
-Status: OK
-Classification: WORKING
-Consecutive failures: 0
-Detail: HTTP 200, HLS playlist
-URL: https://s3.itcnbd.live/channel/6f6b7b6d25fbd0e6.m3u8
-
 ## Bollygold
 Status: OK
 Classification: WORKING
 Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://jmp2.uk/stvp-IN4000600Q
+
+## Bollyood Masala
+Status: OK
+Classification: WORKING
+Consecutive failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://sofast-lg.vgcdn.net/sofastplayout/751631cf-7a0d-356e-676e-b84cfec03391_0_HLS/manifest.m3u8
 
 ## DD National SD
 Status: OK
@@ -640,26 +535,12 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/40492a64c1db4a1385ba1a397d357d3a/index.m3u8
 
-## Epic Music
-Status: OK
-Classification: WORKING
-Consecutive failures: 0
-Detail: HTTP 200, HLS playlist
-URL: https://cc-3cyxq80qusspd.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-3cyxq80qusspd/playlist.m3u8?ads.device_did=PSID&ads.device_dnt=TARGETOPT&ads.app_domain=APP_DOMAIN&ads.app_name=APP_NAME&ads.ssai_vendor=SSSLIVE&ads.afsdk_params=AFSDK_VALUE&ads.service_id=IN8000196E
-
 ## Epic TV
 Status: OK
 Classification: WORKING
 Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://cc-czbq30x55knit.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-czbq30x55knit/DIYC/PMSL/IN10/Epic_TV_IN_B/Epic_TV_IN_B.m3u8
-
-## Evergreen Hits
-Status: HTTP_ERROR
-Classification: REPEATED_FAILURE
-Consecutive failures: 2
-Detail: HTTP 404
-URL: https://mumt07.tangotv.in/zHjX9OFlEVERGREENHITS2/index.m3u8
 
 ## Goldmines Bollywood
 Status: OK
@@ -668,26 +549,12 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://mumt03.tangotv.in/Dsly5z3HGOLDMINESBOLLYWOOD/tracks-v2a1/mono.m3u8
 
-## Hindi Hits HD
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 403
-URL: https://bhoomtv.me/tv/restream-tv/stream.m3u8?id=29d7f16babf8&t=1785520327
-
-## Loop HD
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 403
-URL: https://yet-plus.keralive.workers.dev/LiveApp/streams/loophd.m3u8
-
-## M Tunes
+## India Life
 Status: OK
 Classification: WORKING
 Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
-URL: https://rpn3.bozztv.com/dvrfl07/ushba-t4/playlist.m3u8
+URL: https://m6gdavepdn93-hls-live.5centscdn.com/pravasi/d0dbe915091d400bd8ee7f27f0791303.sdp/playlist.m3u8
 
 ## Manoranjan Grand
 Status: OK
@@ -695,27 +562,6 @@ Classification: WORKING
 Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://cdn-1.pishow.tv/live/1011/master.m3u8
-
-## MoviePlex
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 404
-URL: https://mumt04.tangotv.in/m18aqlK4MOVIEPLEX/index.m3u8
-
-## MTV India
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 403
-URL: https://maamusic.keralive.workers.dev/out/v1/a797c00cba954265ba781f92a57e2cf5/index.m3u8
-
-## Music India
-Status: OK
-Classification: WORKING
-Consecutive failures: 0
-Detail: HTTP 200, HLS playlist
-URL: https://cdn-2.pishow.tv/live/226/master.m3u8
 
 ## Nazara
 Status: OK
@@ -738,40 +584,12 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://d1bnb20pevkrom.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-8xs28buuqfw19/BollyFlix_IN.m3u8?ads.ads_cdn=cf&ads.afsdk_params=AFSDK_VALUE&ads.app_domain=APP_DOMAIN&ads.app_name=APP_NAME&ads.cdn=cf&ads.device_did=PSID&ads.device_dnt=TARGETOPT&ads.service_id=IN46000140Q&ads.ssai_vendor=SSSLIVE&pb_type=pb-8xs28buuqfw19_cloudfront
 
-## Shemaroo Bollywood
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 403
-URL: https://shemaroo-bollywood.keralive.workers.dev/playlist/amg00864-shemarooenterta-shemabollywood-ono/playlist.m3u8
-
-## Shemaroo Comedy
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 403
-URL: https://shemaroo.keralive.workers.dev/du_comedy/du_comedy_1080/playlist.m3u8
-
-## Shemaroo Filmi Gaane
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 403
-URL: https://runn-tv.keralive.workers.dev/shemaroo/stream/smrfgn/playlist.m3u8
-
 ## Shemaroo Josh
 Status: OK
 Classification: WORKING
 Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://airtelapp.shemaroo.com/shemarooChumbakTV/smil:shemarooChumbakTVadp.smil/playlist.m3u8
-
-## Shemaroo Music Hits
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 403
-URL: https://shemaroo.keralive.workers.dev/du_filmigaane/du_filmigaane_1080/playlist.m3u8
 
 ## Shemaroo TV
 Status: OK
@@ -780,40 +598,12 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://airtelapp.shemaroo.com/shemarootv/smil:shemarootvadp.smil/playlist.m3u8
 
-## Sony Movies
-Status: OK
-Classification: WORKING
-Consecutive failures: 0
-Detail: HTTP 200, HLS playlist
-URL: https://a-cdn.klowdtv.com/live1/smc_720p/playlist.m3u8
-
 ## South Station
 Status: OK
 Classification: WORKING
 Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://cc-yw7ztecy8do3q.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-yw7ztecy8do3q/SS_IN.m3u8
-
-## StarPlus
-Status: WEBPAGE_OR_UNKNOWN
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 200
-URL: http://103.253.18.58:8000/play/a00l
-
-## Steelbird Music
-Status: OK
-Classification: WORKING
-Consecutive failures: 0
-Detail: HTTP 200, HLS playlist
-URL: https://cdn2.in/SteelbirdMusicTVhls/live.m3u8
-
-## Superfine Movies
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 403
-URL: https://runn-tv.keralive.workers.dev/runntv/stream/p_supjio/playlist.m3u8
 
 ## The Movie Club
 Status: OK
@@ -822,12 +612,61 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://sis-global.prod.samsungtv.plus/v1/tvpprd/sc-mp2ar4ca425xo.m3u8
 
-## India Life
+## ZBollywood
 Status: OK
 Classification: WORKING
 Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
-URL: https://m6gdavepdn93-hls-live.5centscdn.com/pravasi/d0dbe915091d400bd8ee7f27f0791303.sdp/playlist.m3u8
+URL: https://s3.itcnbd.live/channel/a5979fd53c01d1b2.m3u8
+
+## 9XM
+Status: OK
+Classification: WORKING
+Consecutive failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://9xjio.wiseplayout.com/9XM/master.m3u8
+
+## B4U Music
+Status: OK
+Classification: WORKING
+Consecutive failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://s3.itcnbd.live/channel/6f6b7b6d25fbd0e6.m3u8
+
+## Epic Music
+Status: OK
+Classification: WORKING
+Consecutive failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://cc-3cyxq80qusspd.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-3cyxq80qusspd/playlist.m3u8?ads.device_did=PSID&ads.device_dnt=TARGETOPT&ads.app_domain=APP_DOMAIN&ads.app_name=APP_NAME&ads.ssai_vendor=SSSLIVE&ads.afsdk_params=AFSDK_VALUE&ads.service_id=IN8000196E
+
+## Evergreen Hits
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 3
+Detail: HTTP 404
+URL: https://mumt07.tangotv.in/zHjX9OFlEVERGREENHITS2/index.m3u8
+
+## M Tunes
+Status: OK
+Classification: WORKING
+Consecutive failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://rpn3.bozztv.com/dvrfl07/ushba-t4/playlist.m3u8
+
+## Music India
+Status: OK
+Classification: WORKING
+Consecutive failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://cdn-2.pishow.tv/live/226/master.m3u8
+
+## Steelbird Music
+Status: OK
+Classification: WORKING
+Consecutive failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://cdn2.in/SteelbirdMusicTVhls/live.m3u8
 
 ## YRF Music
 Status: OK
@@ -836,13 +675,6 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8
 
-## Zee Cinema ME
-Status: ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTPConnectionPool(host='41.205.77.102', port=80): Max retries exceeded with url: /ZEE-CINEMA/index.m3u8 (Caused by NewConnectionError("HTTPConnection(host='41.205.77.102', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))
-URL: http://41.205.77.102/ZEE-CINEMA/index.m3u8
-
 ## Zoom
 Status: OK
 Classification: WORKING
@@ -850,26 +682,12 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://dai.google.com/linear/hls/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8
 
-## ZBollywood
-Status: OK
-Classification: WORKING
-Consecutive failures: 0
-Detail: HTTP 200, HLS playlist
-URL: https://s3.itcnbd.live/channel/a5979fd53c01d1b2.m3u8
-
 ## 30A Georgia Hollywood Review TV
 Status: OK
 Classification: WORKING
 Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://30a-tv.com/gh.m3u8
-
-## 30A Music
-Status: OK
-Classification: WORKING
-Consecutive failures: 0
-Detail: HTTP 200, HLS playlist
-URL: https://30a-tv.com/music.m3u8
 
 ## 30A Ridiculous TV
 Status: OK
@@ -913,13 +731,6 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://30a-tv.com/feeds/vidaa/cars.m3u8
 
-## 360TuneBox
-Status: OK
-Classification: WORKING
-Consecutive failures: 0
-Detail: HTTP 200, HLS playlist
-URL: https://dash3.antik.sk/live/test_360_tunebox_medium_atk/playlist.m3u8
-
 ## A&E
 Status: OK
 Classification: WORKING
@@ -948,13 +759,6 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://amg00145-fremantlemedian-baywatch-samsungau-gtsd6.amagi.tv/playlist/amg00145-fremantlemedian-baywatch-samsungau/playlist.m3u8
 
-## Bold and the Beautiful
-Status: WEBPAGE_OR_UNKNOWN
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 200
-URL: https://www.youtube.com/watch?v=qALTGOsXIkw
-
 ## Brat TV
 Status: OK
 Classification: WORKING
@@ -969,19 +773,26 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://aegis-cloudfront-1.tubi.video/c95700f8-e51c-4a36-ad46-56f70fc9f1d9/playlist.m3u8
 
+## BXX TV
+Status: OK
+Classification: WORKING
+Consecutive failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://fl1004.bozztv.com/ushba-mafia/tracks-v1a1/mono.m3u8
+
+## Carac One
+Status: OK
+Classification: WORKING
+Consecutive failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://edge17.vedge.infomaniak.com/livecast/rougetv/chunklist_w968669534.m3u8
+
 ## CGTN Documentary
 Status: OK
 Classification: WORKING
 Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8
-
-## Comedy Plus
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 403
-URL: https://m3uplay.com/stream.m3u8?id=comedyplus
 
 ## Documentary+
 Status: OK
@@ -1032,6 +843,13 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://aegis-cloudfront-1.tubi.video/2a9fb8e7-51c2-40d0-9cc0-6eb963199568/playlist.m3u8
 
+## FTV
+Status: OK
+Classification: WORKING
+Consecutive failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://ftv1.b-cdn.net/bfdbb576-83f7-11f0-9f89-0200170e3e04_1000028043_HLS/video_10801920_p_0.m3u8
+
 ## FunBox UHD
 Status: OK
 Classification: WORKING
@@ -1067,19 +885,12 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://jmp2.uk/stvp-GB4600001W9
 
-## like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" tvg-group="04" group-title="5.English" original-group="5.English",24 Hour Free Movies
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 404
-URL: https://d1b5mlajbmvkjv.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDU-DistroTV/145.m3u8?ads.vf=7FhdsxqVxOi
-
-## Love Nature
-Status: WEBPAGE_OR_UNKNOWN
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 200
-URL: https://www.youtube.com/watch?v=QhahoVG0BfI
+## Kaloopi
+Status: OK
+Classification: WORKING
+Consecutive failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://streamingserver000.viewtv.cloud/VIEWTVNETWORK-KALOOPY/tracks-v1a1/mono.ts.m3u8
 
 ## Midnight Pulp
 Status: OK
@@ -1123,6 +934,13 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://jmp2.uk/stvp-CA800002TN
 
+## Sony Movies
+Status: OK
+Classification: WORKING
+Consecutive failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://a-cdn.klowdtv.com/live1/smc_720p/playlist.m3u8
+
 ## Wanted: Dead or Alive
 Status: OK
 Classification: WORKING
@@ -1144,40 +962,26 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://dfhsahpa45kk2.cloudfront.net/scheduler/scheduleMaster/476.m3u8
 
-## FTV
-Status: OK
-Classification: WORKING
-Consecutive failures: 0
-Detail: HTTP 200, HLS playlist
-URL: https://ftv1.b-cdn.net/bfdbb576-83f7-11f0-9f89-0200170e3e04_1000028043_HLS/video_10801920_p_0.m3u8
-
-## BXX TV
-Status: OK
-Classification: WORKING
-Consecutive failures: 0
-Detail: HTTP 200, HLS playlist
-URL: https://fl1004.bozztv.com/ushba-mafia/tracks-v1a1/mono.m3u8
-
-## Kaloopi
-Status: OK
-Classification: WORKING
-Consecutive failures: 0
-Detail: HTTP 200, HLS playlist
-URL: https://streamingserver000.viewtv.cloud/VIEWTVNETWORK-KALOOPY/tracks-v1a1/mono.ts.m3u8
-
-## Carac One
-Status: OK
-Classification: WORKING
-Consecutive failures: 0
-Detail: HTTP 200, HLS playlist
-URL: https://edge17.vedge.infomaniak.com/livecast/rougetv/chunklist_w968669534.m3u8
-
 ## World Fashion
 Status: OK
 Classification: WORKING
 Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://t.freetv.fun/live/world-fashion-channel-en.m3u8
+
+## 30A Music
+Status: OK
+Classification: WORKING
+Consecutive failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://30a-tv.com/music.m3u8
+
+## 360TuneBox
+Status: OK
+Classification: WORKING
+Consecutive failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://dash3.antik.sk/live/test_360_tunebox_medium_atk/playlist.m3u8
 
 ## 7S Music
 Status: OK
@@ -1207,26 +1011,12 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/murasu_nim_https/050522/murasu/playlist.m3u8
 
-## Loop Tamil
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 403
-URL: https://yet-plus.keralive.workers.dev/LiveApp/streams/looptamil.m3u8
-
 ## MK Six
 Status: OK
 Classification: WORKING
 Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://cdn-3.pishow.tv/live/1253/master.m3u8
-
-## Movies HD
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 403
-URL: https://yet-plus.keralive.workers.dev/LiveApp/streams/movieshd.m3u8
 
 ## NTC TV
 Status: OK
@@ -1291,13 +1081,6 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://stream.ottlive.co.in/suryatvtamil/index.m3u8
 
-## Suriyan TV
-Status: ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTPSConnectionPool(host='stream.sscloud7.com', port=443): Max retries exceeded with url: /live/suriyantv/index.m3u8 (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'stream.sscloud7.com'. (_ssl.c:1082)")))
-URL: https://stream.sscloud7.com/live/suriyantv/index.m3u8
-
 ## Tamilan TV
 Status: OK
 Classification: WORKING
@@ -1354,13 +1137,6 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=264
 
-## Epic Kids
-Status: OK
-Classification: WORKING
-Consecutive failures: 0
-Detail: HTTP 200, HLS playlist
-URL: https://cc-t8lqe1o99pszu.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-t8lqe1o99pszu/playlist.m3u8?ads.device_did=PSID&ads.device_dnt=TARGETOPT&ads.app_domain=APP_DOMAIN&ads.app_name=APP_NAME&ads.ssai_vendor=SSSLIVE&ads.afsdk_params=AFSDK_VALUE&ads.service_id=IN800021X7&coppa=1
-
 ## D2h Kids
 Status: OK
 Classification: WORKING
@@ -1374,6 +1150,13 @@ Classification: WORKING
 Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://dash3.antik.sk/live/test_duck_plus/playlist.m3u8
+
+## Epic Kids
+Status: OK
+Classification: WORKING
+Consecutive failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://cc-t8lqe1o99pszu.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-t8lqe1o99pszu/playlist.m3u8?ads.device_did=PSID&ads.device_dnt=TARGETOPT&ads.app_domain=APP_DOMAIN&ads.app_name=APP_NAME&ads.ssai_vendor=SSSLIVE&ads.afsdk_params=AFSDK_VALUE&ads.service_id=IN800021X7&coppa=1
 
 ## Happy Kids TV
 Status: OK
@@ -1389,13 +1172,6 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://lightning-fnf-samsungaus.amagi.tv/playlist.m3u8
 
-## KidsFlix
-Status: OK
-Classification: WORKING
-Consecutive failures: 0
-Detail: HTTP 200, HLS playlist
-URL: https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50
-
 ## Kids TV
 Status: OK
 Classification: WORKING
@@ -1403,12 +1179,12 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://wurljansonmedia.global.transmit.live/hls/69029561e0b3f0f215eef867/playlist.m3u8?wurl_channel=1379&wurl_name=KidsTV&coppa=1&uid=[DEVICE_ID]&rdid=[IFA]&ifatype=[IFA_TYPE]&dnt=[LMT]&donotsell=[DNS]&isgdpr=[GDPR]&gdpr=[GDPR_CONSENT]&country=[COUNTRY]&pr=[US_PRIVACY]&appstoreurl=[APP_STOREURL]&bundleid=[APP_BUNDLE]&appname=[APP_NAME]&appversion=[APP_VERSION]&dt=[DEVICE_TYPE]&make=[DEVICE_MAKE]&model=[DEVICE_MODEL]&targetad=[TARGETAD_ALLOWED]&fck=[FCK]&viewsize=[VIEWSIZE]&nonce=[NONCE]
 
-## My Toonz
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive failures: 13
-Detail: HTTP 403
-URL: https://m3uplay.com/stream.m3u8?id=mytoonz
+## KidsFlix
+Status: OK
+Classification: WORKING
+Consecutive failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50
 
 ## Sparkle Power
 Status: OK
@@ -1438,6 +1214,230 @@ Consecutive failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://d382r3rgbxdixq.cloudfront.net/scheduler/scheduleMaster/418.m3u8
 
+## All Time Movies
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 404
+URL: https://mumt03.tangotv.in/Dsly5z3HALLTIMEMOVIES/index.m3u8
+
+## Bold and the Beautiful
+Status: WEBPAGE_OR_UNKNOWN
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 200
+URL: https://www.youtube.com/watch?v=qALTGOsXIkw
+
+## Comedy Plus
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 403
+URL: https://m3uplay.com/stream.m3u8?id=comedyplus
+
+## Hindi Hits HD
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 403
+URL: https://bhoomtv.me/tv/restream-tv/stream.m3u8?id=29d7f16babf8&t=1785520327
+
+## Kairali Arabia
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 404
+URL: https://mumt03.tangotv.in/Dsly5z3HKAIRALIARABIA/index.m3u8
+
+## KCN
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 404
+URL: https://live.skystream.in/live/kcnksrgod/index.m3u8
+
+## KVTV News
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 401
+URL: https://edge1.tikilive.com/livehttporigin_tikilive/56275/amlst:mainstream/playlist.m3u8?p=local&op_id=19&ts_chunk_length=6&userId=0&channelId=56275&stime=1785566373&etime=1785652773&token=07297ac249a446629979d&ip=31.219.230.51&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F150.0.0.0+Safari%2F537.36&live=1&site_page=https%253A%252F%252Fwww.tikilive.com%252Fchannel%252Fnone-1&domain=tikilive.com&cb=1785566100&ccpa=1---&consent=0&device_type=&did=&gdpr=0&h=720&w=1080&livestream=1&min_ad_duration=5&max_ad_duration=66&site_domain=https%3A%2F%2Fwww.tikilive.com%2F&site_name=TikiLIVE%C2%AE+v9.3.0&hls_marker=1&debug=true&gender=&age=&preroll=1&preroll_duration=66&content_genre=News&content_id=56275&content_title=KVTV%2BNEWS%2BCHANNEL&network_name=kvtv&content_owner=147230&viewing_user=guest&oid=19&bid=147230
+
+## like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" tvg-group="04" group-title="5.English" original-group="5.English",24 Hour Free Movies
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 404
+URL: https://d1b5mlajbmvkjv.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDU-DistroTV/145.m3u8?ads.vf=7FhdsxqVxOi
+
+## Loop HD
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 403
+URL: https://yet-plus.keralive.workers.dev/LiveApp/streams/loophd.m3u8
+
+## Loop Tamil
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 403
+URL: https://yet-plus.keralive.workers.dev/LiveApp/streams/looptamil.m3u8
+
+## Love Nature
+Status: WEBPAGE_OR_UNKNOWN
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 200
+URL: https://www.youtube.com/watch?v=QhahoVG0BfI
+
+## Malabar Plus
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 403
+URL: https://logichost.keralive.workers.dev/live/mplus/index.m3u8
+
+## Media One
+Status: WEBPAGE_OR_UNKNOWN
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 200
+URL: https://www.youtube.com/watch?v=-8d8-c0yvyU
+
+## MoviePlex
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 404
+URL: https://mumt04.tangotv.in/m18aqlK4MOVIEPLEX/index.m3u8
+
+## Movies HD
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 403
+URL: https://yet-plus.keralive.workers.dev/LiveApp/streams/movieshd.m3u8
+
+## MTV India
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 403
+URL: https://maamusic.keralive.workers.dev/out/v1/a797c00cba954265ba781f92a57e2cf5/index.m3u8
+
+## My Toonz
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 403
+URL: https://m3uplay.com/stream.m3u8?id=mytoonz
+
+## N Vision
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 403
+URL: https://ipcloud.live/nvision/nvisionhd/index.m3u8
+
+## New Vision
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 4
+Detail: HTTP 404
+URL: https://live.skystream.in/live/newvision2924/index.m3u8
+
+## Powran
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 5
+Detail: HTTP 404
+URL: https://stream.onecloudlive.in/powranmedia/livestream/index.m3u8
+
+## Real News Kerala
+Status: ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTPSConnectionPool(host='bk7l298nyx53-hls-live.5centscdn.com', port=443): Max retries exceeded with url: /realnews/e7dee419f91aa9e65939d3677fb9c4f5.sdp/playlist.m3u8 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)')))
+URL: https://bk7l298nyx53-hls-live.5centscdn.com/realnews/e7dee419f91aa9e65939d3677fb9c4f5.sdp/playlist.m3u8
+
+## Shalom TV
+Status: ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTPSConnectionPool(host='livestreamcdn.net', port=444): Max retries exceeded with url: /ShalomTV/ShalomTV/playlist.m3u8 (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'livestreamcdn.net'. (_ssl.c:1082)")))
+URL: https://livestreamcdn.net:444/ShalomTV/ShalomTV/playlist.m3u8
+
+## Shemaroo Bollywood
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 403
+URL: https://shemaroo-bollywood.keralive.workers.dev/playlist/amg00864-shemarooenterta-shemabollywood-ono/playlist.m3u8
+
+## Shemaroo Comedy
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 403
+URL: https://shemaroo.keralive.workers.dev/du_comedy/du_comedy_1080/playlist.m3u8
+
+## Shemaroo Filmi Gaane
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 403
+URL: https://runn-tv.keralive.workers.dev/shemaroo/stream/smrfgn/playlist.m3u8
+
+## Shemaroo Music Hits
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 403
+URL: https://shemaroo.keralive.workers.dev/du_filmigaane/du_filmigaane_1080/playlist.m3u8
+
+## StarPlus
+Status: WEBPAGE_OR_UNKNOWN
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 200
+URL: http://103.253.18.58:8000/play/a00l
+
+## Superfine Movies
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 403
+URL: https://runn-tv.keralive.workers.dev/runntv/stream/p_supjio/playlist.m3u8
+
+## Suriyan TV
+Status: ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTPSConnectionPool(host='stream.sscloud7.com', port=443): Max retries exceeded with url: /live/suriyantv/index.m3u8 (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'stream.sscloud7.com'. (_ssl.c:1082)")))
+URL: https://stream.sscloud7.com/live/suriyantv/index.m3u8
+
+## TCN
+Status: HTTP_ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTP 404
+URL: https://live.skystream.in/live/tcn8909/index.m3u8
+
+## Zee Cinema ME
+Status: ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTPConnectionPool(host='41.205.77.102', port=80): Max retries exceeded with url: /ZEE-CINEMA/index.m3u8 (Caused by NewConnectionError("HTTPConnection(host='41.205.77.102', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))
+URL: http://41.205.77.102/ZEE-CINEMA/index.m3u8
+
+## Zee Malayalam News
+Status: ERROR
+Classification: CONSISTENTLY_BROKEN
+Consecutive failures: 14
+Detail: HTTPSConnectionPool(host='d1ty2af03alkwd.cloudfront.net', port=443): Max retries exceeded with url: /index_4.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='d1ty2af03alkwd.cloudfront.net', port=443): Failed to resolve 'd1ty2af03alkwd.cloudfront.net' ([Errno -5] No address associated with hostname)"))
+URL: https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
+
 # SUMMARY BY STATUS
 
 ERROR: 5
@@ -1449,5 +1449,5 @@ WEBPAGE_OR_UNKNOWN: 4
 
 WORKING: 172
 TEMPORARY_FAILURE: 0
-REPEATED_FAILURE: 1
-CONSISTENTLY_BROKEN: 32
+REPEATED_FAILURE: 0
+CONSISTENTLY_BROKEN: 33
