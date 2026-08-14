@@ -31,7 +31,11 @@ jobs:
         run: |
           python update_playlist.py
 
-      - name: Check playlist URLs
+      - name: Refresh configured sources
+        run: |
+          python update_sources.py
+
+      - name: Check playlist
         run: |
           python check_playlist.py
 
@@ -42,7 +46,7 @@ jobs:
           path: playlist_report.txt
           if-no-files-found: error
 
-      - name: Commit playlist status
+      - name: Commit updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -54,6 +58,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes."
           else
-            git commit -m "Update playlist status"
+            git commit -m "Update playlist and status"
+            git pull --rebase
             git push
           fi
