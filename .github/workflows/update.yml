@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
 
   schedule:
+    # Run every 6 hours
     - cron: "0 */6 * * *"
 
 permissions:
@@ -14,36 +15,69 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      # ---------------------------------------
+      # 1. Checkout repository
+      # ---------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # ---------------------------------------
+      # 2. Setup Python
+      # ---------------------------------------
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
+      # ---------------------------------------
+      # 3. Install Python packages
+      # ---------------------------------------
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests
+          pip install requests yt-dlp
 
+      # ---------------------------------------
+      # 4. Clean / normalize Playlist.m3u
+      # ---------------------------------------
       - name: Clean playlist
         run: |
           python update_playlist.py
 
-      - name: Check existing streams
+      # ---------------------------------------
+      # 5. Check all current streams
+      #
+      # IMPORTANT:
+      # Run only ONCE so one GitHub Action run
+      # equals one failure count.
+      # ---------------------------------------
+      - name: Check playlist
         run: |
           python check_playlist.py
 
+      # ---------------------------------------
+      # 6. Try to refresh broken stream URLs
+      # ---------------------------------------
       - name: Refresh broken stream URLs
         run: |
           python update_sources.py
 
-      - name: Recheck playlist after refresh
+      # ---------------------------------------
+      # 7. Move consistently broken channels
+      # to 99.Offline.
+      #
+      # Working channels previously in
+      # 99.Offline are restored automatically.
+      # ---------------------------------------
+      - name: Reorganize offline channels
         run: |
-          python check_playlist.py
+          python reorganize_playlist.py
 
-      - name: Upload playlist report
+      # ---------------------------------------
+      # 8. Upload reports as GitHub artifact
+      # ---------------------------------------
+      - name: Upload playlist reports
         uses: actions/upload-artifact@v4
         with:
           name: playlist-report
@@ -52,6 +86,9 @@ jobs:
             source_update_report.txt
           if-no-files-found: warn
 
+      # ---------------------------------------
+      # 9. Commit changed files
+      # ---------------------------------------
       - name: Commit updates
         run: |
           git config user.name "github-actions[bot]"
@@ -66,9 +103,9 @@ jobs:
           fi
 
           if git diff --cached --quiet; then
-            echo "No changes."
+            echo "No changes to commit."
           else
-            git commit -m "Update playlist stream URLs and status"
+            git commit -m "Update playlist streams and offline groups"
             git pull --rebase
             git push
           fi
