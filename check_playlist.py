@@ -15,9 +15,12 @@ TIMEOUT = 15
 
 HEADERS = {
     "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/151.0.0.0 Safari/537.36"
+        "Mozilla/5.0 "
+        "(Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 "
+        "(KHTML, like Gecko) "
+        "Chrome/151.0.0.0 "
+        "Safari/537.36"
     ),
     "Accept": "*/*",
 }
@@ -37,10 +40,10 @@ def load_status():
         return {}
 
 
-def save_status(status_data):
+def save_status(data):
     STATUS_FILE.write_text(
         json.dumps(
-            status_data,
+            data,
             indent=2,
             sort_keys=True,
         )
@@ -51,7 +54,9 @@ def save_status(status_data):
 
 def get_entries():
     if not PLAYLIST_FILE.exists():
-        raise SystemExit("Playlist.m3u not found")
+        raise SystemExit(
+            "Playlist.m3u not found"
+        )
 
     lines = PLAYLIST_FILE.read_text(
         encoding="utf-8",
@@ -59,37 +64,35 @@ def get_entries():
     ).splitlines()
 
     entries = []
-
     current_name = "Unknown channel"
-    current_extinf = ""
 
     for line in lines:
         line = line.strip()
 
         if line.startswith("#EXTINF:"):
-            current_extinf = line
-
             if "," in line:
                 current_name = (
-                    line.split(",", 1)[1].strip()
+                    line.split(",", 1)[1]
+                    .strip()
                 )
-            else:
-                current_name = "Unknown channel"
 
-        elif line and not line.startswith("#"):
-            if line.startswith(
+        elif (
+            line
+            and not line.startswith("#")
+            and line.startswith(
                 ("http://", "https://")
-            ):
-                entries.append(
-                    {
-                        "name": current_name,
-                        "url": line,
-                        "extinf": current_extinf,
-                    }
-                )
+            )
+        ):
+            entries.append(
+                {
+                    "name": current_name,
+                    "url": line,
+                }
+            )
 
-                current_name = "Unknown channel"
-                current_extinf = ""
+            current_name = (
+                "Unknown channel"
+            )
 
     return entries
 
@@ -101,10 +104,10 @@ def check_url(url):
         "http",
         "https",
     ):
-        return {
-            "status": "INVALID",
-            "detail": "Unsupported URL scheme",
-        }
+        return (
+            "INVALID",
+            "Unsupported URL scheme",
+        )
 
     try:
         response = requests.get(
@@ -115,27 +118,32 @@ def check_url(url):
             stream=True,
         )
 
-        status_code = response.status_code
-        content_type = response.headers.get(
-            "Content-Type",
-            "",
+        status_code = (
+            response.status_code
+        )
+
+        content_type = (
+            response.headers.get(
+                "Content-Type",
+                "",
+            )
         )
 
         if status_code >= 400:
             response.close()
 
-            return {
-                "status": "HTTP_ERROR",
-                "detail": f"HTTP {status_code}",
-            }
-
-        is_m3u8_url = ".m3u8" in url.lower()
+            return (
+                "HTTP_ERROR",
+                f"HTTP {status_code}",
+            )
 
         sample = b""
 
         try:
-            for chunk in response.iter_content(
-                chunk_size=4096
+            for chunk in (
+                response.iter_content(
+                    chunk_size=4096
+                )
             ):
                 sample += chunk
 
@@ -152,66 +160,57 @@ def check_url(url):
         looks_like_hls = (
             "#EXTM3U" in sample_text
             or "#EXT-X-" in sample_text
-            or "application/vnd.apple.mpegurl"
+            or
+            "application/vnd.apple.mpegurl"
             in content_type.lower()
-            or "application/x-mpegurl"
+            or
+            "application/x-mpegurl"
             in content_type.lower()
         )
 
         if looks_like_hls:
-            return {
-                "status": "OK",
-                "detail": (
-                    f"HTTP {status_code}, "
-                    "HLS playlist"
-                ),
-            }
-
-        if is_m3u8_url:
-            return {
-                "status": "SUSPECT",
-                "detail": (
-                    f"HTTP {status_code}, "
-                    "URL ends in .m3u8 but "
-                    "response does not look like HLS"
-                ),
-            }
-
-        return {
-            "status": "WEBPAGE_OR_UNKNOWN",
-            "detail": (
+            return (
+                "OK",
                 f"HTTP {status_code}, "
-                "response does not look like HLS"
-            ),
-        }
+                "HLS playlist",
+            )
 
-    except requests.exceptions.Timeout:
-        return {
-            "status": "TIMEOUT",
-            "detail": (
-                f"Timed out after "
-                f"{TIMEOUT}s"
-            ),
-        }
+        if ".m3u8" in url.lower():
+            return (
+                "SUSPECT",
+                f"HTTP {status_code}, "
+                "not recognized as HLS",
+            )
 
-    except requests.exceptions.RequestException as exc:
-        return {
-            "status": "ERROR",
-            "detail": str(exc),
-        }
+        return (
+            "WEBPAGE_OR_UNKNOWN",
+            f"HTTP {status_code}",
+        )
 
-    except Exception as exc:
-        return {
-            "status": "ERROR",
-            "detail": str(exc),
-        }
+    except requests.Timeout:
+        return (
+            "TIMEOUT",
+            f"Timed out after "
+            f"{TIMEOUT}s",
+        )
+
+    except (
+        requests.RequestException
+    ) as exc:
+        return (
+            "ERROR",
+            str(exc),
+        )
 
 
-def classify(status, failures):
+def classify(
+    status,
+    failures,
+):
     if status == "OK":
         return "WORKING"
 
-    if failures <= 1:
+    if failures == 1:
         return "TEMPORARY_FAILURE"
 
     if failures == 2:
@@ -223,52 +222,41 @@ def classify(status, failures):
 def main():
     entries = get_entries()
 
-    previous_status = load_status()
-    new_status = {}
-
-    print(
-        f"Found {len(entries)} playlist URLs."
-    )
-    print()
-
-    report = []
-
-    report.append(
-        "# Playlist URL Check Report"
-    )
-    report.append("")
-    report.append(
-        f"Checked {len(entries)} URLs"
-    )
-    report.append(
-        time.strftime(
-            "Time: %Y-%m-%d %H:%M:%S UTC",
-            time.gmtime(),
-        )
-    )
-    report.append("")
+    previous = load_status()
+    current = {}
 
     raw_counts = {}
-    classification_counts = {}
+    class_counts = {}
 
-    for index, entry in enumerate(
+    report = [
+        "# Playlist URL Check Report",
+        "",
+        f"Checked {len(entries)} URLs",
+        time.strftime(
+            "Time: %Y-%m-%d "
+            "%H:%M:%S UTC",
+            time.gmtime(),
+        ),
+        "",
+    ]
+
+    for number, entry in enumerate(
         entries,
-        start=1,
+        1,
     ):
         name = entry["name"]
         url = entry["url"]
 
         print(
-            f"[{index}/{len(entries)}] "
-            f"{name}"
+            f"[{number}/"
+            f"{len(entries)}] {name}"
         )
 
-        result = check_url(url)
+        status, detail = check_url(
+            url
+        )
 
-        status = result["status"]
-        detail = result["detail"]
-
-        old = previous_status.get(
+        old = previous.get(
             url,
             {},
         )
@@ -290,18 +278,20 @@ def main():
             failures,
         )
 
-        checked_time = time.strftime(
-            "%Y-%m-%d %H:%M:%S UTC",
-            time.gmtime(),
-        )
-
-        new_status[url] = {
+        current[url] = {
             "name": name,
             "last_status": status,
             "last_detail": detail,
-            "consecutive_failures": failures,
-            "classification": classification,
-            "last_checked_utc": checked_time,
+            "consecutive_failures":
+                failures,
+            "classification":
+                classification,
+            "last_checked_utc":
+                time.strftime(
+                    "%Y-%m-%d "
+                    "%H:%M:%S UTC",
+                    time.gmtime(),
+                ),
         }
 
         raw_counts[status] = (
@@ -312,20 +302,14 @@ def main():
             + 1
         )
 
-        classification_counts[
+        class_counts[
             classification
         ] = (
-            classification_counts.get(
+            class_counts.get(
                 classification,
                 0,
             )
             + 1
-        )
-
-        print(
-            f"    {status} | "
-            f"{classification} | "
-            f"failures={failures}"
         )
 
         report.extend(
@@ -346,9 +330,15 @@ def main():
             ]
         )
 
+        print(
+            f"  {status} | "
+            f"{classification} | "
+            f"{failures}"
+        )
+
         time.sleep(0.2)
 
-    save_status(new_status)
+    save_status(current)
 
     report.extend(
         [
@@ -373,15 +363,15 @@ def main():
         ]
     )
 
-    for classification in [
+    for key in [
         "WORKING",
         "TEMPORARY_FAILURE",
         "REPEATED_FAILURE",
         "CONSISTENTLY_BROKEN",
     ]:
         report.append(
-            f"{classification}: "
-            f"{classification_counts.get(classification, 0)}"
+            f"{key}: "
+            f"{class_counts.get(key, 0)}"
         )
 
     REPORT_FILE.write_text(
@@ -391,12 +381,10 @@ def main():
 
     print()
     print(
-        "Report written to "
-        "playlist_report.txt"
+        "playlist_report.txt created"
     )
     print(
-        "Status history written to "
-        "playlist_status.json"
+        "playlist_status.json updated"
     )
 
     sys.exit(0)
