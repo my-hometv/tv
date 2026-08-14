@@ -1,5 +1,4 @@
 import json
-import re
 import sys
 import time
 from pathlib import Path
@@ -30,7 +29,9 @@ def load_status():
 
     try:
         return json.loads(
-            STATUS_FILE.read_text(encoding="utf-8")
+            STATUS_FILE.read_text(
+                encoding="utf-8"
+            )
         )
     except Exception:
         return {}
@@ -69,17 +70,23 @@ def get_entries():
             current_extinf = line
 
             if "," in line:
-                current_name = line.split(",", 1)[1].strip()
+                current_name = (
+                    line.split(",", 1)[1].strip()
+                )
             else:
                 current_name = "Unknown channel"
 
         elif line and not line.startswith("#"):
-            if line.startswith(("http://", "https://")):
-                entries.append({
-                    "name": current_name,
-                    "url": line,
-                    "extinf": current_extinf,
-                })
+            if line.startswith(
+                ("http://", "https://")
+            ):
+                entries.append(
+                    {
+                        "name": current_name,
+                        "url": line,
+                        "extinf": current_extinf,
+                    }
+                )
 
                 current_name = "Unknown channel"
                 current_extinf = ""
@@ -90,7 +97,10 @@ def get_entries():
 def check_url(url):
     parsed = urlparse(url)
 
-    if parsed.scheme not in ("http", "https"):
+    if parsed.scheme not in (
+        "http",
+        "https",
+    ):
         return {
             "status": "INVALID",
             "detail": "Unsupported URL scheme",
@@ -178,7 +188,10 @@ def check_url(url):
     except requests.exceptions.Timeout:
         return {
             "status": "TIMEOUT",
-            "detail": f"Timed out after {TIMEOUT}s",
+            "detail": (
+                f"Timed out after "
+                f"{TIMEOUT}s"
+            ),
         }
 
     except requests.exceptions.RequestException as exc:
@@ -209,17 +222,24 @@ def classify(status, failures):
 
 def main():
     entries = get_entries()
+
     previous_status = load_status()
     new_status = {}
 
-    print(f"Found {len(entries)} playlist URLs.")
+    print(
+        f"Found {len(entries)} playlist URLs."
+    )
     print()
 
     report = []
 
-    report.append("# Playlist URL Check Report")
+    report.append(
+        "# Playlist URL Check Report"
+    )
     report.append("")
-    report.append(f"Checked {len(entries)} URLs")
+    report.append(
+        f"Checked {len(entries)} URLs"
+    )
     report.append(
         time.strftime(
             "Time: %Y-%m-%d %H:%M:%S UTC",
@@ -239,7 +259,8 @@ def main():
         url = entry["url"]
 
         print(
-            f"[{index}/{len(entries)}] {name}"
+            f"[{index}/{len(entries)}] "
+            f"{name}"
         )
 
         result = check_url(url)
@@ -247,7 +268,11 @@ def main():
         status = result["status"]
         detail = result["detail"]
 
-        old = previous_status.get(url, {})
+        old = previous_status.get(
+            url,
+            {},
+        )
+
         previous_failures = old.get(
             "consecutive_failures",
             0,
@@ -256,11 +281,18 @@ def main():
         if status == "OK":
             failures = 0
         else:
-            failures = previous_failures + 1
+            failures = (
+                previous_failures + 1
+            )
 
         classification = classify(
             status,
             failures,
+        )
+
+        checked_time = time.strftime(
+            "%Y-%m-%d %H:%M:%S UTC",
+            time.gmtime(),
         )
 
         new_status[url] = {
@@ -269,17 +301,20 @@ def main():
             "last_detail": detail,
             "consecutive_failures": failures,
             "classification": classification,
-            "last_checked_utc": time.strftime(
-                "%Y-%m-%d %H:%M:%S UTC",
-                time.gmtime(),
-            ),
+            "last_checked_utc": checked_time,
         }
 
         raw_counts[status] = (
-            raw_counts.get(status, 0) + 1
+            raw_counts.get(
+                status,
+                0,
+            )
+            + 1
         )
 
-        classification_counts[classification] = (
+        classification_counts[
+            classification
+        ] = (
             classification_counts.get(
                 classification,
                 0,
@@ -293,35 +328,50 @@ def main():
             f"failures={failures}"
         )
 
-        report.extend([
-            f"## {name}",
-            f"Status: {status}",
-            f"Classification: {classification}",
-            f"Consecutive failures: {failures}",
-            f"Detail: {detail}",
-            f"URL: {url}",
-            "",
-        ])
+        report.extend(
+            [
+                f"## {name}",
+                f"Status: {status}",
+                (
+                    "Classification: "
+                    f"{classification}"
+                ),
+                (
+                    "Consecutive failures: "
+                    f"{failures}"
+                ),
+                f"Detail: {detail}",
+                f"URL: {url}",
+                "",
+            ]
+        )
 
         time.sleep(0.2)
 
     save_status(new_status)
 
-    report.extend([
-        "# SUMMARY BY STATUS",
-        "",
-    ])
+    report.extend(
+        [
+            "# SUMMARY BY STATUS",
+            "",
+        ]
+    )
 
-    for status in sorted(raw_counts):
+    for status in sorted(
+        raw_counts
+    ):
         report.append(
-            f"{status}: {raw_counts[status]}"
+            f"{status}: "
+            f"{raw_counts[status]}"
         )
 
-    report.extend([
-        "",
-        "# SUMMARY BY CLASSIFICATION",
-        "",
-    ])
+    report.extend(
+        [
+            "",
+            "# SUMMARY BY CLASSIFICATION",
+            "",
+        ]
+    )
 
     for classification in [
         "WORKING",
@@ -341,7 +391,8 @@ def main():
 
     print()
     print(
-        "Report written to playlist_report.txt"
+        "Report written to "
+        "playlist_report.txt"
     )
     print(
         "Status history written to "
