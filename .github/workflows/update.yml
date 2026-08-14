@@ -1,57 +1,15 @@
-name: Update and Check Playlist
-
-on:
-  workflow_dispatch:
-
-  schedule:
-    - cron: "0 */6 * * *"
-
-permissions:
-  contents: write
-
-jobs:
-  update:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.x"
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests
-
-      - name: Clean playlist
-        run: |
-          python update_playlist.py
-
-      - name: Check playlist URLs
-        run: |
-          python check_playlist.py
-
-      - name: Upload playlist report
-        uses: actions/upload-artifact@v4
-        with:
-          name: playlist-report
-          path: playlist_report.txt
-          if-no-files-found: error
-
-      - name: Commit playlist changes
+      - name: Commit playlist status
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add Playlist.m3u
+          git add playlist_status.json
+          git add playlist_report.txt
 
           if git diff --cached --quiet; then
-            echo "No playlist changes."
+            echo "No changes."
           else
-            git commit -m "Clean playlist"
+            git commit -m "Update playlist status"
             git push
           fi
