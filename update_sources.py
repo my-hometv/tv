@@ -1,5 +1,7 @@
 import json
+import re
 from pathlib import Path
+from urllib.parse import urljoin
 
 import requests
 
@@ -7,6 +9,7 @@ import requests
 PLAYLIST_FILE = Path("Playlist.m3u")
 STATUS_FILE = Path("playlist_status.json")
 SOURCES_FILE = Path("sources.json")
+REPORT_FILE = Path("source_update_report.txt")
 
 TIMEOUT = 15
 
@@ -26,52 +29,15 @@ def load_json(path, default):
 
     try:
         return json.loads(
-            path.read_text(encoding="utf-8")
+            path.read_text(
+                encoding="utf-8"
+            )
         )
     except Exception as exc:
-        print(f"Could not read {path}: {exc}")
+        print(
+            f"Could not read {path}: {exc}"
+        )
         return default
-
-
-def download_source(url):
-    response = requests.get(
-        url,
-        headers=HEADERS,
-        timeout=TIMEOUT,
-        allow_redirects=True,
-    )
-
-    response.raise_for_status()
-
-    return response.text
-
-
-def parse_m3u(text):
-    entries = {}
-
-    current_name = None
-
-    for raw_line in text.splitlines():
-        line = raw_line.strip()
-
-        if line.startswith("#EXTINF:"):
-            if "," in line:
-                current_name = (
-                    line.split(",", 1)[1].strip()
-                )
-            else:
-                current_name = None
-
-        elif (
-            current_name
-            and line.startswith(
-                ("http://", "https://")
-            )
-        ):
-            entries[current_name] = line
-            current_name = None
-
-    return entries
 
 
 def check_hls(url):
@@ -84,9 +50,11 @@ def check_hls(url):
             stream=True,
         )
 
-        if response.status_code >= 400:
+        status = response.status_code
+
+        if status >= 400:
             response.close()
-            return False, f"HTTP {response.status_code}"
+            return False, f"HTTP {status}"
 
         content_type = response.headers.get(
             "Content-Type",
@@ -123,14 +91,155 @@ def check_hls(url):
         if valid:
             return True, "Valid HLS"
 
-        return False, "Response does not look like HLS"
+        return (
+            False,
+            "Response does not look like HLS",
+        )
 
     except Exception as exc:
         return False, str(exc)
 
 
-def build_channel_status(status_data):
-    result = {}
+def parse_m3u(text):
+    entries = {}
+
+    current_name = None
+
+    for raw_line in text.splitlines():
+        line = raw_line.strip()
+
+        if line.startswith("#EXTINF:"):
+            if "," in line:
+                current_name = (
+                    line.split(",", 1)[1]
+                    .strip()
+                )
+            else:
+                current_name = None
+
+        elif (
+            current_name
+            and line.startswith(
+                ("http://", "https://")
+            )
+        ):
+            entries[current_name] = line
+            current_name = None
+
+    return entries
+
+
+def get_from_feed(feed_url, channel_name):
+    try:
+        response = requests.get(
+            feed_url,
+            headers=HEADERS,
+            timeout=TIMEOUT,
+            allow_redirects=True,
+        )
+
+        response.raise_for_status()
+
+        entries = parse_m3u(
+            response.text
+        )
+
+        url = entries.get(
+            channel_name
+        )
+
+        if not url:
+            return (
+                None,
+                "Channel not found in source feed",
+            )
+
+        return (
+            url,
+            "Found in source feed",
+        )
+
+    except Exception as exc:
+        return None, str(exc)
+
+
+def get_from_source_page(source_page):
+    try:
+        response = requests.get(
+            source_page,
+            headers=HEADERS,
+            timeout=TIMEOUT,
+            allow_redirects=True,
+        )
+
+        response.raise_for_status()
+
+        html = response.text
+
+        patterns = [
+            r'https?://[^"\'<>\s]+\.m3u8(?:\?[^"\'<>\s]*)?',
+            r'["\']([^"\']+\.m3u8(?:\?[^"\']*)?)["\']',
+        ]
+
+        candidates = []
+
+        for pattern in patterns:
+            matches = re.findall(
+                pattern,
+                html,
+                flags=re.IGNORECASE,
+            )
+
+            for match in matches:
+                if isinstance(match, tuple):
+                    match = match[0]
+
+                candidate = match.strip()
+
+                if not candidate.startswith(
+                    ("http://", "https://")
+                ):
+                    candidate = urljoin(
+                        source_page,
+                        candidate,
+                    )
+
+                if candidate not in candidates:
+                    candidates.append(
+                        candidate
+                    )
+
+        if not candidates:
+            return (
+                None,
+                "No direct .m3u8 exposed in page HTML",
+            )
+
+        for candidate in candidates:
+            valid, detail = check_hls(
+                candidate
+            )
+
+            if valid:
+                return (
+                    candidate,
+                    "Direct public HLS found in page HTML",
+                )
+
+        return (
+            None,
+            (
+                f"Found {len(candidates)} "
+                "candidate(s), none passed HLS check"
+            ),
+        )
+
+    except Exception as exc:
+        return None, str(exc)
+
+
+def build_status_by_name(status_data):
+    channels = {}
 
     for url, info in status_data.items():
         name = info.get("name")
@@ -138,7 +247,7 @@ def build_channel_status(status_data):
         if not name:
             continue
 
-        result[name] = {
+        channels[name] = {
             "url": url,
             "classification": info.get(
                 "classification",
@@ -150,13 +259,13 @@ def build_channel_status(status_data):
             ),
         }
 
-    return result
+    return channels
 
 
 def replace_stream_url(
     playlist_text,
     channel_name,
-    expected_old_url,
+    old_url,
     new_url,
 ):
     lines = playlist_text.splitlines()
@@ -168,7 +277,10 @@ def replace_stream_url(
         if "," not in line:
             continue
 
-        name = line.split(",", 1)[1].strip()
+        name = (
+            line.split(",", 1)[1]
+            .strip()
+        )
 
         if name != channel_name:
             continue
@@ -176,21 +288,25 @@ def replace_stream_url(
         j = i + 1
 
         while j < len(lines):
-            value = lines[j].strip()
+            current = lines[j].strip()
 
-            if value.startswith("#EXTINF:"):
+            if current.startswith(
+                "#EXTINF:"
+            ):
                 break
 
-            if value.startswith(
+            if current.startswith(
                 ("http://", "https://")
             ):
-                if value != expected_old_url:
-                    print(
-                        f"SKIP {channel_name}: "
-                        "playlist URL no longer matches "
-                        "status history"
+                if current != old_url:
+                    return (
+                        playlist_text,
+                        False,
+                        (
+                            "Playlist URL differs from "
+                            "status history"
+                        ),
                     )
-                    return playlist_text, False
 
                 lines[j] = new_url
 
@@ -198,11 +314,16 @@ def replace_stream_url(
                     "\n".join(lines).rstrip()
                     + "\n",
                     True,
+                    "URL replaced",
                 )
 
             j += 1
 
-    return playlist_text, False
+    return (
+        playlist_text,
+        False,
+        "Channel not found in playlist",
+    )
 
 
 def main():
@@ -216,137 +337,173 @@ def main():
         {},
     )
 
-    source_config = load_json(
+    sources = load_json(
         SOURCES_FILE,
         [],
     )
 
-    if not source_config:
+    if not sources:
         print(
             "No replacement sources configured."
         )
         return
 
-    channel_status = build_channel_status(
+    status_by_name = build_status_by_name(
         status_data
     )
 
-    playlist_text = PLAYLIST_FILE.read_text(
-        encoding="utf-8",
-        errors="replace",
+    playlist_text = (
+        PLAYLIST_FILE.read_text(
+            encoding="utf-8",
+            errors="replace",
+        )
     )
 
+    report = []
     updated = 0
 
-    for source in source_config:
-        feed_url = source.get("feed_url")
-        allowed_channels = source.get(
-            "channels",
-            [],
+    for source in sources:
+        channel_name = source.get(
+            "channel"
         )
 
-        if not feed_url:
+        if not channel_name:
             continue
 
-        print()
-        print(
-            f"Reading source feed: {feed_url}"
+        report.append(
+            f"CHANNEL: {channel_name}"
         )
 
-        try:
-            source_text = download_source(
-                feed_url
+        info = status_by_name.get(
+            channel_name
+        )
+
+        if not info:
+            report.append(
+                "RESULT: Channel not found in status file"
             )
-        except Exception as exc:
-            print(
-                f"Could not download source: {exc}"
-            )
+            report.append("")
             continue
 
-        source_entries = parse_m3u(
-            source_text
+        old_url = info["url"]
+        classification = info[
+            "classification"
+        ]
+        failures = info["failures"]
+
+        report.append(
+            f"CURRENT URL: {old_url}"
+        )
+        report.append(
+            f"CLASSIFICATION: {classification}"
+        )
+        report.append(
+            f"FAILURES: {failures}"
         )
 
-        for channel_name in allowed_channels:
-            info = channel_status.get(
-                channel_name
+        if classification != (
+            "CONSISTENTLY_BROKEN"
+        ):
+            report.append(
+                "RESULT: Current URL not eligible for refresh"
+            )
+            report.append("")
+            continue
+
+        candidate_url = None
+        source_detail = ""
+
+        feed_url = source.get(
+            "feed_url"
+        )
+
+        source_page = source.get(
+            "source_page"
+        )
+
+        if feed_url:
+            candidate_url, source_detail = (
+                get_from_feed(
+                    feed_url,
+                    channel_name,
+                )
             )
 
-            if not info:
-                print(
-                    f"SKIP {channel_name}: "
-                    "not found in status file"
+        elif source_page:
+            candidate_url, source_detail = (
+                get_from_source_page(
+                    source_page
                 )
-                continue
-
-            classification = info[
-                "classification"
-            ]
-
-            failures = info["failures"]
-            old_url = info["url"]
-
-            if classification != (
-                "CONSISTENTLY_BROKEN"
-            ):
-                print(
-                    f"KEEP {channel_name}: "
-                    f"{classification}, "
-                    f"failures={failures}"
-                )
-                continue
-
-            new_url = source_entries.get(
-                channel_name
             )
 
-            if not new_url:
-                print(
-                    f"NO UPDATE {channel_name}: "
-                    "not found in source feed"
-                )
-                continue
-
-            if new_url == old_url:
-                print(
-                    f"NO UPDATE {channel_name}: "
-                    "source still has same URL"
-                )
-                continue
-
-            print(
-                f"Candidate update: {channel_name}"
-            )
-            print(f"OLD: {old_url}")
-            print(f"NEW: {new_url}")
-
-            valid, detail = check_hls(
-                new_url
+        else:
+            source_detail = (
+                "No feed_url or source_page configured"
             )
 
-            if not valid:
-                print(
-                    f"REJECTED {channel_name}: "
-                    f"{detail}"
-                )
-                continue
+        report.append(
+            f"SOURCE RESULT: {source_detail}"
+        )
 
-            (
-                playlist_text,
-                changed,
-            ) = replace_stream_url(
-                playlist_text,
-                channel_name,
-                old_url,
-                new_url,
+        if not candidate_url:
+            report.append(
+                "RESULT: No replacement found"
+            )
+            report.append("")
+            continue
+
+        report.append(
+            f"CANDIDATE URL: {candidate_url}"
+        )
+
+        if candidate_url == old_url:
+            report.append(
+                "RESULT: Source still provides same URL"
+            )
+            report.append("")
+            continue
+
+        valid, detail = check_hls(
+            candidate_url
+        )
+
+        report.append(
+            f"CANDIDATE CHECK: {detail}"
+        )
+
+        if not valid:
+            report.append(
+                "RESULT: Candidate rejected"
+            )
+            report.append("")
+            continue
+
+        (
+            playlist_text,
+            changed,
+            replace_detail,
+        ) = replace_stream_url(
+            playlist_text,
+            channel_name,
+            old_url,
+            candidate_url,
+        )
+
+        report.append(
+            f"REPLACE RESULT: {replace_detail}"
+        )
+
+        if changed:
+            updated += 1
+            report.append(
+                "RESULT: UPDATED"
+            )
+        else:
+            report.append(
+                "RESULT: NO CHANGE"
             )
 
-            if changed:
-                updated += 1
-
-                print(
-                    f"UPDATED {channel_name}"
-                )
+        report.append("")
 
     if updated:
         PLAYLIST_FILE.write_text(
@@ -354,9 +511,17 @@ def main():
             encoding="utf-8",
         )
 
-    print()
+    report.append(
+        f"TOTAL URLS UPDATED: {updated}"
+    )
+
+    REPORT_FILE.write_text(
+        "\n".join(report) + "\n",
+        encoding="utf-8",
+    )
+
     print(
-        f"Stream URLs updated: {updated}"
+        "\n".join(report)
     )
 
 
