@@ -1,0 +1,39 @@
+name: Check YouTube Sources
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  check-youtube:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Check YouTube sources
+        run: python check_youtube.py
+
+      - name: Commit report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add youtube_report.txt
+
+          if git diff --cached --quiet; then
+            echo "No report changes."
+          else
+            git commit -m "Update YouTube source report"
+            git push
+          fi
