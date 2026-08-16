@@ -2,9 +2,6 @@
 
 # ===== 4.Hindi =====
 
-#EXTINF:-1 tvg-id="AllTimeMovies.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ALL_TIME_MOVIES/images/LOGO_HD/image.png" group-title="4.Hindi" tvg-group="08",All Time Movies
-https://mumt03.tangotv.in/Dsly5z3HALLTIMEMOVIES/index.m3u8
-
 #EXTINF:-1 group-title="4.Hindi" tvg-group="01",B4U Movies
 https://d3kdywbtdfbp9z.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/dff423e0-3c82-46d6-9ecb-3baa96b5694a/6331fe55-785e-4fcf-bfab-53584ae275ef/3.m3u8
 
@@ -34,9 +31,6 @@ https://yet-plus.keralive.workers.dev/LiveApp/streams/loophd.m3u8
 
 #EXTINF:-1 tvg-id="ManoranjanGrand.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143302_ld_h15_aa.png?lock=720x540" group-title="4.Hindi" tvg-group="08",Manoranjan Grand
 https://cdn-1.pishow.tv/live/1011/master.m3u8
-
-#EXTINF:-1 tvg-id="MoviePlex.in@SD" tvg-logo="https://i.imgur.com/THJEAqJ.png" group-title="4.Hindi" tvg-group="08",MoviePlex
-https://mumt04.tangotv.in/m18aqlK4MOVIEPLEX/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/ndtv-goodtimes-in-160.webp" group-title="4.Hindi" tvg-language="eng" tvg-country="IN" tvg-group="08",NDTV GoodTimes
 https://d2gvyg6lvauoko.cloudfront.net/230226/ndtvgoodtimes/chunks.m3u8
@@ -70,9 +64,6 @@ https://sis-global.prod.samsungtv.plus/v1/tvpprd/sc-mp2ar4ca425xo.m3u8
 
 #EXTINF:-1 tvg-id="Zoom.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZOOM/images/LOGO_HD/image.png" group-title="4.Hindi" tvg-group="09",ZBollywood
 https://s3.itcnbd.live/channel/a5979fd53c01d1b2.m3u8
-
-#EXTINF:-1 tvg-id="ZeeCinema.in@ME" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_CINEMA/images/LOGO_HD/LOGO_HD_image.png" group-title="4.Hindi" tvg-group="08",Zee Cinema ME
-http://41.205.77.102/ZEE-CINEMA/index.m3u8
 
 
 # ===== 4.Hindi Music =====

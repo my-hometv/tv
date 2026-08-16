@@ -23,9 +23,6 @@ https://live.skystream.in/live/citytv2924/index.m3u8
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",City Vision Kannur
 https://live.skystream.in/live/citykannurcity/index.m3u8
 
-#EXTINF:-1 group-title="1.Malayalam" tvg-logo="https://www.facebook.com/photo/?fbid=4250871585231102&set=a.1395254334126189"tvg-group="01",CTV Mukkam
-https://live.skystream.in/live/ctv1805/tracks-v1a1/mono.m3u8
-
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",Darshana
 https://yuppnimrestreammum.akamaized.net/181224/smil:darshanatv.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 
@@ -82,9 +79,6 @@ https://oqgdrkxby4rm-hls-live.5centscdn.com/kaumudytv/live.stream/playlist.m3u8
 
 #EXTINF:-1 tvg-id="KCLTV.in@SD" tvg-logo="https://i.imgur.com/bkp9dIm.png" group-title="1.Malayalam" tvg-group="01",KCL TV
 https://kcltv.livebox.co.in/kclhls/live.m3u8
-
-#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",KCN
-https://live.skystream.in/live/kcnksrgod/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://commons.wikimedia.org/wiki/File:Kerala_Vision_TV_Logo.png"group-title="1.Malayalam" tvg-group="01",Kerala Vision
 https://yuppnimrestreammum.akamaized.net/181224/smil:keralavision.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
@@ -182,9 +176,6 @@ https://online.wayanadvision.in/hls/wayanadvision.m3u8
 #EXTINF:-1 tvg-id="WayanadVision.in" group-title="1.Malayalam", Wayanad Vision Movies
 https://online.wayanadvision.in/hls/wvmovies.m3u8
 
-#EXTINF:-1 tvg-id="WayanadVision.in" group-title="1.Malayalam", Wayanad Vision Plus
-https://online.wayanadvision.in/hls/streaming1.m3u8
-
 
 # ===== 2.Malayalam News =====
 
@@ -232,9 +223,6 @@ https://bk7l298nyx53-hls-live.5centscdn.com/realnews/e7dee419f91aa9e65939d3677fb
 
 #EXTINF:-1 tvg-id="ReporterTV.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s85096_ld_h15_aa.png?lock=720x540" group-title="2.Malayalam News" tvg-group="02",Reporter TV
 https://segment.yuppcdn.net/050522/reporter/playlist.m3u8
-
-#EXTINF:-1 tvg-id="ZeeMalayalamNews.in@SD" tvg-logo="https://english.cdn.zeenews.com/images/logo/zee-malayalam-17.svg" group-title="2.Malayalam News" tvg-group="02",Zee Malayalam News
-https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
 
 
 # ===== 3.Malayalam Religious =====
