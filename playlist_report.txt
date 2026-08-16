@@ -1,7 +1,7 @@
 # Playlist URL Check Report
 
 Checked 200 URLs
-Time: 2026-08-16 18:33:44 UTC
+Time: 2026-08-16 18:36:45 UTC
 
 ## Amrita TV
 Group: 1.Malayalam
@@ -109,18 +109,18 @@ URL: https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b
 
 ## G TV
 Group: 1.Malayalam
-Status: OK
-Classification: WORKING
-Consecutive hard failures: 0
-Detail: HTTP 200, HLS playlist
+Status: HTTP_ERROR
+Classification: TEMPORARY_FAILURE
+Consecutive hard failures: 1
+Detail: HTTP 404
 URL: https://play.applelive.in/gtv/gtv.m3u8
 
 ## G TV Max
 Group: 1.Malayalam
-Status: OK
-Classification: WORKING
-Consecutive hard failures: 0
-Detail: HTTP 200, HLS playlist
+Status: HTTP_ERROR
+Classification: TEMPORARY_FAILURE
+Consecutive hard failures: 1
+Detail: HTTP 404
 URL: https://play.applelive.in/gtvmax/gtvmax.m3u8
 
 ## Jeevan TV
@@ -759,7 +759,7 @@ URL: https://cc-3cyxq80qusspd.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b
 Group: 4.Hindi Music
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 4
+Consecutive hard failures: 5
 Detail: HTTP 404
 URL: https://mumt07.tangotv.in/zHjX9OFlEVERGREENHITS2/index.m3u8
 
@@ -1374,8 +1374,8 @@ URL: https://d382r3rgbxdixq.cloudfront.net/scheduler/scheduleMaster/418.m3u8
 ## All Time Movies
 Group: 4.Hindi
 Status: HTTP_ERROR
-Classification: TEMPORARY_FAILURE
-Consecutive hard failures: 1
+Classification: REPEATED_FAILURE
+Consecutive hard failures: 2
 Detail: HTTP 404
 URL: https://mumt03.tangotv.in/Dsly5z3HALLTIMEMOVIES/index.m3u8
 
@@ -1398,8 +1398,8 @@ URL: https://m3uplay.com/stream.m3u8?id=comedyplus
 ## CTV Mukkam
 Group: 1.Malayalam
 Status: HTTP_ERROR
-Classification: TEMPORARY_FAILURE
-Consecutive hard failures: 1
+Classification: REPEATED_FAILURE
+Consecutive hard failures: 2
 Detail: HTTP 404
 URL: https://live.skystream.in/live/ctv1805/tracks-v1a1/mono.m3u8
 
@@ -1414,8 +1414,8 @@ URL: https://bhoomtv.me/tv/restream-tv/stream.m3u8?id=29d7f16babf8&t=1785520327
 ## KCN
 Group: 1.Malayalam
 Status: HTTP_ERROR
-Classification: TEMPORARY_FAILURE
-Consecutive hard failures: 1
+Classification: REPEATED_FAILURE
+Consecutive hard failures: 2
 Detail: HTTP 404
 URL: https://live.skystream.in/live/kcnksrgod/index.m3u8
 
@@ -1430,8 +1430,8 @@ URL: https://edge1.tikilive.com/livehttporigin_tikilive/56275/amlst:mainstream/p
 ## like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" tvg-group="04" group-title="5.English",24 Hour Free Movies
 Group: 5.English
 Status: HTTP_ERROR
-Classification: TEMPORARY_FAILURE
-Consecutive hard failures: 1
+Classification: REPEATED_FAILURE
+Consecutive hard failures: 2
 Detail: HTTP 404
 URL: https://d1b5mlajbmvkjv.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDU-DistroTV/145.m3u8?ads.vf=7FhdsxqVxOi
 
@@ -1478,8 +1478,8 @@ URL: https://www.youtube.com/watch?v=-8d8-c0yvyU
 ## MoviePlex
 Group: 4.Hindi
 Status: HTTP_ERROR
-Classification: TEMPORARY_FAILURE
-Consecutive hard failures: 1
+Classification: REPEATED_FAILURE
+Consecutive hard failures: 2
 Detail: HTTP 404
 URL: https://mumt04.tangotv.in/m18aqlK4MOVIEPLEX/index.m3u8
 
@@ -1582,24 +1582,24 @@ URL: https://stream.sscloud7.com/live/suriyantv/index.m3u8
 ## Wayanad Vision Plus
 Group: 1.Malayalam
 Status: HTTP_ERROR
-Classification: TEMPORARY_FAILURE
-Consecutive hard failures: 1
+Classification: REPEATED_FAILURE
+Consecutive hard failures: 2
 Detail: HTTP 404
 URL: https://online.wayanadvision.in/hls/streaming1.m3u8
 
 ## Zee Cinema ME
 Group: 4.Hindi
 Status: ERROR
-Classification: TEMPORARY_FAILURE
-Consecutive hard failures: 1
+Classification: REPEATED_FAILURE
+Consecutive hard failures: 2
 Detail: HTTPConnectionPool(host='41.205.77.102', port=80): Max retries exceeded with url: /ZEE-CINEMA/index.m3u8 (Caused by NewConnectionError("HTTPConnection(host='41.205.77.102', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))
 URL: http://41.205.77.102/ZEE-CINEMA/index.m3u8
 
 ## Zee Malayalam News
 Group: 2.Malayalam News
 Status: ERROR
-Classification: TEMPORARY_FAILURE
-Consecutive hard failures: 1
+Classification: REPEATED_FAILURE
+Consecutive hard failures: 2
 Detail: HTTPSConnectionPool(host='d1ty2af03alkwd.cloudfront.net', port=443): Max retries exceeded with url: /index_4.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='d1ty2af03alkwd.cloudfront.net', port=443): Failed to resolve 'd1ty2af03alkwd.cloudfront.net' ([Errno -5] No address associated with hostname)"))
 URL: https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
 
@@ -1607,15 +1607,15 @@ URL: https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
 
 ACCESS_RESTRICTED: 15
 ERROR: 6
-HTTP_ERROR: 8
-OK: 168
+HTTP_ERROR: 10
+OK: 166
 WEBPAGE_OR_UNKNOWN: 3
 
 # SUMMARY BY CLASSIFICATION
 
-WORKING: 168
+WORKING: 166
 ACCESS_RESTRICTED: 15
 CHECK_REQUIRED: 8
-TEMPORARY_FAILURE: 8
-REPEATED_FAILURE: 0
+TEMPORARY_FAILURE: 2
+REPEATED_FAILURE: 8
 CONSISTENTLY_BROKEN: 1
