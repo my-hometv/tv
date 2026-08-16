@@ -6,7 +6,7 @@ from urllib.parse import urljoin
 import requests
 
 
-PLAYLIST_FILE = Path("Playlist.m3u")
+PLAYLIST_FILE = Path("Master.m3u")
 STATUS_FILE = Path("playlist_status.json")
 SOURCES_FILE = Path("sources.json")
 REPORT_FILE = Path("source_update_report.txt")
@@ -129,7 +129,10 @@ def parse_m3u(text):
     return entries
 
 
-def get_from_feed(feed_url, channel_name):
+def get_from_feed(
+    feed_url,
+    channel_name,
+):
     try:
         response = requests.get(
             feed_url,
@@ -163,7 +166,9 @@ def get_from_feed(feed_url, channel_name):
         return None, str(exc)
 
 
-def get_from_source_page(source_page):
+def get_from_source_page(
+    source_page,
+):
     try:
         response = requests.get(
             source_page,
@@ -191,20 +196,31 @@ def get_from_source_page(source_page):
             )
 
             for match in matches:
-                if isinstance(match, tuple):
+                if isinstance(
+                    match,
+                    tuple,
+                ):
                     match = match[0]
 
-                candidate = match.strip()
+                candidate = (
+                    match.strip()
+                )
 
                 if not candidate.startswith(
-                    ("http://", "https://")
+                    (
+                        "http://",
+                        "https://",
+                    )
                 ):
                     candidate = urljoin(
                         source_page,
                         candidate,
                     )
 
-                if candidate not in candidates:
+                if (
+                    candidate
+                    not in candidates
+                ):
                     candidates.append(
                         candidate
                     )
@@ -212,7 +228,10 @@ def get_from_source_page(source_page):
         if not candidates:
             return (
                 None,
-                "No direct .m3u8 exposed in page HTML",
+                (
+                    "No direct .m3u8 exposed "
+                    "in page HTML"
+                ),
             )
 
         for candidate in candidates:
@@ -223,14 +242,18 @@ def get_from_source_page(source_page):
             if valid:
                 return (
                     candidate,
-                    "Direct public HLS found in page HTML",
+                    (
+                        "Direct public HLS found "
+                        "in page HTML"
+                    ),
                 )
 
         return (
             None,
             (
                 f"Found {len(candidates)} "
-                "candidate(s), none passed HLS check"
+                "candidate(s), none passed "
+                "HLS check"
             ),
         )
 
@@ -238,7 +261,9 @@ def get_from_source_page(source_page):
         return None, str(exc)
 
 
-def build_status_by_name(status_data):
+def build_status_by_name(
+    status_data,
+):
     channels = {}
 
     for url, info in status_data.items():
@@ -249,13 +274,20 @@ def build_status_by_name(status_data):
 
         channels[name] = {
             "url": url,
-            "classification": info.get(
-                "classification",
-                "",
+            "classification": (
+                info.get(
+                    "classification",
+                    "",
+                )
             ),
-            "failures": info.get(
-                "consecutive_failures",
-                0,
+            "failures": (
+                info.get(
+                    "consecutive_hard_failures",
+                    info.get(
+                        "consecutive_failures",
+                        0,
+                    ),
+                )
             ),
         }
 
@@ -288,7 +320,9 @@ def replace_stream_url(
         j = i + 1
 
         while j < len(lines):
-            current = lines[j].strip()
+            current = (
+                lines[j].strip()
+            )
 
             if current.startswith(
                 "#EXTINF:"
@@ -296,15 +330,18 @@ def replace_stream_url(
                 break
 
             if current.startswith(
-                ("http://", "https://")
+                (
+                    "http://",
+                    "https://",
+                )
             ):
                 if current != old_url:
                     return (
                         playlist_text,
                         False,
                         (
-                            "Playlist URL differs from "
-                            "status history"
+                            "Master URL differs "
+                            "from status history"
                         ),
                     )
 
@@ -322,14 +359,14 @@ def replace_stream_url(
     return (
         playlist_text,
         False,
-        "Channel not found in playlist",
+        "Channel not found in Master.m3u",
     )
 
 
 def main():
     if not PLAYLIST_FILE.exists():
         raise SystemExit(
-            "Playlist.m3u not found"
+            "Master.m3u not found"
         )
 
     status_data = load_json(
@@ -348,8 +385,10 @@ def main():
         )
         return
 
-    status_by_name = build_status_by_name(
-        status_data
+    status_by_name = (
+        build_status_by_name(
+            status_data
+        )
     )
 
     playlist_text = (
@@ -380,32 +419,48 @@ def main():
 
         if not info:
             report.append(
-                "RESULT: Channel not found in status file"
+                (
+                    "RESULT: Channel not "
+                    "found in status file"
+                )
             )
             report.append("")
             continue
 
         old_url = info["url"]
-        classification = info[
-            "classification"
-        ]
-        failures = info["failures"]
+
+        classification = (
+            info["classification"]
+        )
+
+        failures = (
+            info["failures"]
+        )
 
         report.append(
             f"CURRENT URL: {old_url}"
         )
+
         report.append(
-            f"CLASSIFICATION: {classification}"
+            (
+                "CLASSIFICATION: "
+                f"{classification}"
+            )
         )
+
         report.append(
             f"FAILURES: {failures}"
         )
 
-        if classification != (
-            "CONSISTENTLY_BROKEN"
+        if (
+            classification
+            != "CONSISTENTLY_BROKEN"
         ):
             report.append(
-                "RESULT: Current URL not eligible for refresh"
+                (
+                    "RESULT: Current URL not "
+                    "eligible for refresh"
+                )
             )
             report.append("")
             continue
@@ -422,23 +477,26 @@ def main():
         )
 
         if feed_url:
-            candidate_url, source_detail = (
-                get_from_feed(
-                    feed_url,
-                    channel_name,
-                )
+            (
+                candidate_url,
+                source_detail,
+            ) = get_from_feed(
+                feed_url,
+                channel_name,
             )
 
         elif source_page:
-            candidate_url, source_detail = (
-                get_from_source_page(
-                    source_page
-                )
+            (
+                candidate_url,
+                source_detail,
+            ) = get_from_source_page(
+                source_page
             )
 
         else:
             source_detail = (
-                "No feed_url or source_page configured"
+                "No feed_url or source_page "
+                "configured"
             )
 
         report.append(
@@ -453,12 +511,18 @@ def main():
             continue
 
         report.append(
-            f"CANDIDATE URL: {candidate_url}"
+            (
+                "CANDIDATE URL: "
+                f"{candidate_url}"
+            )
         )
 
         if candidate_url == old_url:
             report.append(
-                "RESULT: Source still provides same URL"
+                (
+                    "RESULT: Source still "
+                    "provides same URL"
+                )
             )
             report.append("")
             continue
@@ -468,7 +532,10 @@ def main():
         )
 
         report.append(
-            f"CANDIDATE CHECK: {detail}"
+            (
+                "CANDIDATE CHECK: "
+                f"{detail}"
+            )
         )
 
         if not valid:
@@ -490,7 +557,10 @@ def main():
         )
 
         report.append(
-            f"REPLACE RESULT: {replace_detail}"
+            (
+                "REPLACE RESULT: "
+                f"{replace_detail}"
+            )
         )
 
         if changed:
@@ -516,7 +586,8 @@ def main():
     )
 
     REPORT_FILE.write_text(
-        "\n".join(report) + "\n",
+        "\n".join(report)
+        + "\n",
         encoding="utf-8",
     )
 
