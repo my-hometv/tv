@@ -18,68 +18,92 @@ jobs:
       # -------------------------------------
       # 1. Checkout repository
       # -------------------------------------
-
       - name: Checkout repository
         uses: actions/checkout@v7
 
       # -------------------------------------
-      # 2. Python
+      # 2. Set up Python
       # -------------------------------------
-
       - name: Set up Python
         uses: actions/setup-python@v7
         with:
           python-version: "3.13"
 
       # -------------------------------------
-      # 3. Dependencies
+      # 3. Install dependencies
       # -------------------------------------
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests yt-dlp
 
       # -------------------------------------
-      # 4. Refresh configured stream URLs
+      # 4. ONE-TIME MASTER REPAIR
       #
-      # update_sources.py should modify
-      # Master.m3u
+      # Restores old:
+      #
+      # group-title="99.Offline"
+      # original-group="..."
+      #
+      # back to the real original group.
+      #
+      # REMOVE THIS STEP after the first
+      # successful repaired run.
       # -------------------------------------
+      - name: Repair master playlist
+        run: |
+          python repair_master.py
 
+      # -------------------------------------
+      # 5. Try to refresh eligible stream URLs
+      #
+      # update_sources.py must use:
+      #
+      # PLAYLIST_FILE = Path("Master.m3u")
+      # -------------------------------------
       - name: Refresh eligible stream URLs
         run: |
           python update_sources.py
 
       # -------------------------------------
-      # 5. Check every stream in Master.m3u
-      # exactly once
+      # 6. Check every channel in Master.m3u
+      # exactly ONCE.
+      #
+      # Updates:
+      # playlist_status.json
+      # playlist_report.txt
       # -------------------------------------
-
       - name: Check master playlist
         run: |
           python check_playlist.py
 
       # -------------------------------------
-      # 6. Build active Playlist.m3u and
-      # Offline.m3u
+      # 7. Generate active/offline playlists
+      #
+      # Master.m3u remains complete.
+      #
+      # Playlist.m3u = visible channels
+      # Offline.m3u  = persistent hard failures
       # -------------------------------------
-
       - name: Generate active and offline playlists
         run: |
           python reorganize_playlist.py
 
       # -------------------------------------
-      # 7. Sort Playlist.m3u and Offline.m3u
-      # group first, channel second
+      # 8. Sort Playlist.m3u + Offline.m3u
+      #
+      # First:
+      # group-title
+      #
+      # Then:
+      # channel name
       # -------------------------------------
-
       - name: Sort generated playlists
         run: |
           python sort_playlist.py
 
       # -------------------------------------
-      # 8. Build individual category files
+      # 9. Generate individual category files
       #
       # Malayalam.m3u
       # Hindi.m3u
@@ -89,15 +113,13 @@ jobs:
       # Kids.m3u
       # Food.m3u
       # -------------------------------------
-
       - name: Build category playlists
         run: |
           python build_category_playlists.py
 
       # -------------------------------------
-      # 9. Upload reports
+      # 10. Upload reports
       # -------------------------------------
-
       - name: Upload playlist reports
         uses: actions/upload-artifact@v7
         with:
@@ -108,28 +130,63 @@ jobs:
           if-no-files-found: warn
 
       # -------------------------------------
-      # 10. Commit generated files
+      # 11. Commit all updated/generated files
       # -------------------------------------
-
       - name: Commit updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add Master.m3u
-          git add Playlist.m3u
-          git add Offline.m3u
+          # Main/master files
+          if [ -f Master.m3u ]; then
+            git add Master.m3u
+          fi
 
-          git add Malayalam.m3u
-          git add Hindi.m3u
-          git add English.m3u
-          git add Tamil.m3u
-          git add Sports.m3u
-          git add Kids.m3u
-          git add Food.m3u
+          if [ -f Playlist.m3u ]; then
+            git add Playlist.m3u
+          fi
 
-          git add playlist_status.json
-          git add playlist_report.txt
+          if [ -f Offline.m3u ]; then
+            git add Offline.m3u
+          fi
+
+          # Individual category playlists
+          if [ -f Malayalam.m3u ]; then
+            git add Malayalam.m3u
+          fi
+
+          if [ -f Hindi.m3u ]; then
+            git add Hindi.m3u
+          fi
+
+          if [ -f English.m3u ]; then
+            git add English.m3u
+          fi
+
+          if [ -f Tamil.m3u ]; then
+            git add Tamil.m3u
+          fi
+
+          if [ -f Sports.m3u ]; then
+            git add Sports.m3u
+          fi
+
+          if [ -f Kids.m3u ]; then
+            git add Kids.m3u
+          fi
+
+          if [ -f Food.m3u ]; then
+            git add Food.m3u
+          fi
+
+          # Status/report files
+          if [ -f playlist_status.json ]; then
+            git add playlist_status.json
+          fi
+
+          if [ -f playlist_report.txt ]; then
+            git add playlist_report.txt
+          fi
 
           if [ -f source_update_report.txt ]; then
             git add source_update_report.txt
@@ -138,7 +195,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Update IPTV playlists"
+            git commit -m "Repair and update IPTV playlists"
             git pull --rebase
             git push
           fi
