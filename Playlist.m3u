@@ -332,9 +332,6 @@ https://rpn3.bozztv.com/dvrfl07/ushba-t4/playlist.m3u8
 #EXTINF:-1 tvg-id="MusicIndia.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143563_ld_h15_aa.png?lock=720x540" group-title="4.Hindi Music" tvg-group="09",Music India
 https://cdn-2.pishow.tv/live/226/master.m3u8
 
-#EXTINF:-1 tvg-id="SteelbirdMusic.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Steelbird_Music.png" group-title="4.Hindi Music" tvg-group="09",Steelbird Music
-https://cdn2.in/SteelbirdMusicTVhls/live.m3u8
-
 #EXTINF:-1 tvg-id="YRFMusic.in" tvg-logo="https://cdn.tvivu.com/logos/yrf-music-160.webp" group-title="4.Hindi Music" tvg-language="hin" tvg-country="IN" tvg-group="09",YRF Music
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8
 
@@ -373,9 +370,6 @@ https://30a-tv.com/feeds/vidaa/cars.m3u8
 
 #EXTINF:-1 tvg-id="AE.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/A%26E_Network_logo.svg/960px-A%26E_Network_logo.svg.png" group-title="5.English" tvg-group="04",A&E
 http://23.239.31.26:8989/aande/index.m3u8
-
-#EXTINF:-1 tvg-id="ABNBibleMoviesChannel.us" tvg-logo="https://cdn.tvivu.com/logos/abn-bible-movies-channel-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",ABN Bible Movies Channel
-https://mediaserver.abnvideos.com/streams/abnbiblemovies.m3u8
 
 #EXTINF:-1 tvg-id="ARTFLIXMovieClassics.us@SD" tvg-logo="https://i.imgur.com/5pOZQB4.png" group-title="5.English" tvg-group="04",Artflix Movie Classics
 https://amogonetworx-artflix-1-nl.samsung.wurl.tv/playlist.m3u8
