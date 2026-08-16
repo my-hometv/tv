@@ -14,8 +14,14 @@ https://eu.streamjo.com/eetlive/eettv.m3u8
 #EXTINF:-1 tvg-id="KalaignarMurasu.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143561_ld_h15_aa.png?lock=720x540" group-title="6.Tamil" tvg-group="10",Kalaignar Murasu
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/murasu_nim_https/050522/murasu/playlist.m3u8
 
+#EXTINF:-1 group-title="6.Tamil",Loop Tamil
+https://yet-plus.keralive.workers.dev/LiveApp/streams/looptamil.m3u8
+
 #EXTINF:-1 tvg-id="MKSix.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/MK_Six.png" group-title="6.Tamil" tvg-group="10",MK Six
 https://cdn-3.pishow.tv/live/1253/master.m3u8
+
+#EXTINF:-1 group-title="6.Tamil",Movies HD
+https://yet-plus.keralive.workers.dev/LiveApp/streams/movieshd.m3u8
 
 #EXTINF:-1 tvg-id="NTCTV.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ntvtamil.png" group-title="6.Tamil" tvg-group="10",NTC TV
 https://galaxyott.live/hls/ntv.m3u8
@@ -43,6 +49,9 @@ https://stream.galaxyott.live/live/subintv/index.m3u8
 
 #EXTINF:-1 tvg-id="SuriyaTV.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/suryatvtamil.png" group-title="6.Tamil" tvg-group="10",Suriya TV
 https://stream.ottlive.co.in/suryatvtamil/index.m3u8
+
+#EXTINF:-1 tvg-id="SuriyanTV.in@SD" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Suriyan-tv-logo_2000_X_1125_Transpharent.png" group-title="6.Tamil" tvg-group="10",Suriyan TV
+https://stream.sscloud7.com/live/suriyantv/index.m3u8
 
 #EXTINF:-1 tvg-id="TamilanTV.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Tamilan_Television.png" group-title="6.Tamil" tvg-group="10",Tamilan TV
 https://cdn.zionmediait.com/zionmediaitserver2024/97484f5ce6da96e496a9b87c439835d0.sdp/playlist.m3u8
