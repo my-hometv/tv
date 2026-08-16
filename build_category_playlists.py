@@ -3,7 +3,9 @@ from pathlib import Path
 from collections import defaultdict
 
 
-SOURCE_FILE = Path("Playlist.m3u")
+SOURCE_FILE = Path(
+    "Playlist.m3u"
+)
 
 
 CATEGORY_RULES = {
@@ -23,13 +25,6 @@ CATEGORY_RULES = {
         "tamil",
     ],
 
-    "Sports.m3u": [
-        "sports",
-        "sport",
-        "cricket",
-        "football",
-    ],
-
     "Kids.m3u": [
         "kids",
         "children",
@@ -39,17 +34,27 @@ CATEGORY_RULES = {
     "Food.m3u": [
         "food",
         "cooking",
-        "cook",
         "recipe",
+    ],
+
+    "Sports.m3u": [
+        "sports",
+        "sport",
+        "cricket",
+        "football",
     ],
 }
 
 
-def get_channel_name(extinf):
+def get_name(extinf):
     if "," not in extinf:
         return ""
 
-    return extinf.split(",", 1)[1].strip()
+    return (
+        extinf
+        .split(",", 1)[1]
+        .strip()
+    )
 
 
 def get_group(extinf):
@@ -60,7 +65,10 @@ def get_group(extinf):
     )
 
     if match:
-        return match.group(1).strip()
+        return (
+            match.group(1)
+            .strip()
+        )
 
     return ""
 
@@ -76,20 +84,27 @@ def natural_key(text):
     for part in parts:
         if part.isdigit():
             key.append(
-                (0, int(part))
+                (
+                    0,
+                    int(part),
+                )
             )
         else:
             key.append(
-                (1, part)
+                (
+                    1,
+                    part,
+                )
             )
 
     return key
 
 
-def parse_playlist():
+def parse_active_playlist():
     if not SOURCE_FILE.exists():
         raise SystemExit(
-            "Playlist.m3u not found"
+            "ERROR: Playlist.m3u "
+            "not found"
         )
 
     lines = SOURCE_FILE.read_text(
@@ -114,44 +129,46 @@ def parse_playlist():
     while i < len(lines):
         line = lines[i].strip()
 
-        if not line.startswith("#EXTINF:"):
+        if not line.startswith(
+            "#EXTINF:"
+        ):
             i += 1
             continue
 
         extinf = line
+
         block = [extinf]
 
-        name = get_channel_name(
-            extinf
-        )
-
-        group = get_group(
-            extinf
-        )
-
-        i += 1
+        name = get_name(extinf)
+        group = get_group(extinf)
 
         stream_found = False
 
-        while i < len(lines):
-            next_line = lines[i].strip()
+        i += 1
 
-            if next_line.startswith(
+        while i < len(lines):
+            value = lines[i].strip()
+
+            if value.startswith(
                 "#EXTINF:"
             ):
                 break
 
-            if next_line:
-                # Ignore generated section headings.
-                if not next_line.startswith(
+            # Ignore all generated
+            # section headings.
+            if (
+                value
+                and not value.startswith(
                     "# ====="
-                ):
-                    block.append(
-                        next_line
-                    )
+                )
+            ):
+                block.append(value)
 
-                if next_line.startswith(
-                    ("http://", "https://")
+                if value.startswith(
+                    (
+                        "http://",
+                        "https://",
+                    )
                 ):
                     stream_found = True
 
@@ -172,33 +189,43 @@ def parse_playlist():
 def find_category(group):
     group_lower = group.lower()
 
-    # Language categories get priority.
-    for filename in [
+    # Language groups first.
+    language_files = [
         "Malayalam.m3u",
         "Hindi.m3u",
         "English.m3u",
         "Tamil.m3u",
-    ]:
-        keywords = CATEGORY_RULES[
-            filename
-        ]
+    ]
 
-        for keyword in keywords:
-            if keyword.lower() in group_lower:
+    for filename in language_files:
+        for keyword in (
+            CATEGORY_RULES[
+                filename
+            ]
+        ):
+            if (
+                keyword.lower()
+                in group_lower
+            ):
                 return filename
 
-    # Then special categories.
-    for filename in [
-        "Sports.m3u",
+    # General categories second.
+    other_files = [
         "Kids.m3u",
         "Food.m3u",
-    ]:
-        keywords = CATEGORY_RULES[
-            filename
-        ]
+        "Sports.m3u",
+    ]
 
-        for keyword in keywords:
-            if keyword.lower() in group_lower:
+    for filename in other_files:
+        for keyword in (
+            CATEGORY_RULES[
+                filename
+            ]
+        ):
+            if (
+                keyword.lower()
+                in group_lower
+            ):
                 return filename
 
     return None
@@ -235,7 +262,8 @@ def write_category(
                 output.append("")
 
             output.append(
-                f"# ===== {group} ====="
+                f"# ===== "
+                f"{group} ====="
             )
 
             output.append("")
@@ -249,17 +277,19 @@ def write_category(
         output.append("")
 
     Path(filename).write_text(
-        "\n".join(output).rstrip()
+        "\n".join(output)
+        .rstrip()
         + "\n",
         encoding="utf-8",
     )
 
 
 def main():
-    header, entries = parse_playlist()
+    header, entries = (
+        parse_active_playlist()
+    )
 
     categories = defaultdict(list)
-
     unmatched = []
 
     for entry in entries:
@@ -278,7 +308,6 @@ def main():
         f"Total active channels: "
         f"{len(entries)}"
     )
-
     print()
 
     for filename in CATEGORY_RULES:
@@ -302,24 +331,22 @@ def main():
         )
 
     print()
-
     print(
         f"Unmatched channels: "
         f"{len(unmatched)}"
     )
 
     if unmatched:
-        print()
-        print(
-            "Groups not assigned:"
-        )
-
         groups = sorted(
             {
                 entry["group"]
                 for entry in unmatched
             },
             key=natural_key,
+        )
+
+        print(
+            "Unmatched groups:"
         )
 
         for group in groups:
