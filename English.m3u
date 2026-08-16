@@ -1,121 +1,123 @@
 #EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"
 
-# ==================== English ====================
+# ===== 5.English =====
 
-#EXTINF:-1 tvg-id="24HourFreeMovies.us@SD" tvg-logo="https://i.imgur.com/iSVnzR1.png" tvg-group="04" group-title="5.English",like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" tvg-group="04" group-title="5.English",24 Hour Free Movies
-https://d1b5mlajbmvkjv.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDU-DistroTV/145.m3u8?ads.vf=7FhdsxqVxOi
-
-#EXTINF:-1 tvg-id="30AGeorgiaHollywoodReview.us@SD" tvg-logo="https://images.axios.com/JiG3RuYBwpU_WZFeU6HHjt03FAU=/111x0:1191x1080/320x320/2023/11/09/1699558891265.jpg" tvg-group="04" group-title="5.English",30A Georgia Hollywood Review TV
-https://30a-tv.com/gh.m3u8
-
-#EXTINF:-1 tvg-id="30AMusic.us@SD" tvg-logo="https://i.imgur.com/gNWg9tl.png" tvg-group="04" group-title="5.English",30A Music
-https://30a-tv.com/music.m3u8
-
-#EXTINF:-1 tvg-id="30ARidiculousTV.us@SD" tvg-logo="https://30a.media/wp-content/uploads/2023/08/pzaz-30atv-2-230x366-ridiculous.jpg" tvg-group="04" group-title="5.English",30A Ridiculous TV
+#EXTINF:-1 tvg-id="30ARidiculousTV.us@SD" tvg-logo="https://30a.media/wp-content/uploads/2023/08/pzaz-30atv-2-230x366-ridiculous.jpg" group-title="5.English" tvg-group="04",30A Ridiculous TV
 https://30a-tv.com/feeds/720p/63.m3u8
 
-#EXTINF:-1 tvg-id="30ASidewalks.us@SD" tvg-logo="https://i.imgur.com/HSdwqZN.png" tvg-group="04" group-title="5.English",30A Sidewalks
+#EXTINF:-1 tvg-id="30ASidewalks.us@SD" tvg-logo="https://i.imgur.com/HSdwqZN.png" group-title="5.English" tvg-group="04",30A Sidewalks
 https://30a-tv.com/sidewalks.m3u8
 
-#EXTINF:-1 tvg-id="30ATelevisionChannel.us@SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTHiYfIB01K44LIBG81aEGAmDuIWw8MA0f2w&s" tvg-group="04" group-title="5.English",30A Television Channel
+#EXTINF:-1 tvg-id="30ATelevisionChannel.us@SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTHiYfIB01K44LIBG81aEGAmDuIWw8MA0f2w&s" group-title="5.English" tvg-group="04",30A Television Channel
 https://30a-tv.com/feeds/masters/30atv.m3u8
 
-#EXTINF:-1 tvg-id="30ATheBeachShow.us@SD" tvg-logo="https://i.imgur.com/0j5Aget.png" tvg-group="04" group-title="5.English",30A The Beach Show
+#EXTINF:-1 tvg-id="30ATheBeachShow.us@SD" tvg-logo="https://i.imgur.com/0j5Aget.png" group-title="5.English" tvg-group="04",30A The Beach Show
 https://30a-tv.com/beachy.m3u8
 
-#EXTINF:-1 tvg-id="30ATVClassicMovies.us@SD" tvg-logo="https://babaktv.com/wp-content/uploads/2023/09/30A-Classi-Movies.jpeg" tvg-group="04" group-title="5.English",30A TV Classic Movies
+#EXTINF:-1 tvg-id="30ATVClassicMovies.us@SD" tvg-logo="https://babaktv.com/wp-content/uploads/2023/09/30A-Classi-Movies.jpeg" group-title="5.English" tvg-group="04",30A TV Classic Movies
 https://30a-tv.com/feeds/pzaz/30atvmovies.m3u8
 
-#EXTINF:-1 tvg-id="30AWeLoveCars.us@SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxroqfE_hvEApKMQx03sSYXPeEh4ClaF5QSa8XfRwJW_So3vfSN0CjqzxN30H-qEBswqU&usqp=CAU" tvg-group="04" group-title="5.English",30A We Love Cars
-https://30a-tv.com/feeds/vidaa/cars.m3u8
-
-#EXTINF:-1 tvg-id="360TuneBox.nl@SD" tvg-logo="https://i.imgur.com/1Fyezng.png" tvg-group="04" group-title="5.English",360TuneBox
-https://dash3.antik.sk/live/test_360_tunebox_medium_atk/playlist.m3u8
-
-#EXTINF:-1 tvg-id="AE.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/A%26E_Network_logo.svg/960px-A%26E_Network_logo.svg.png" tvg-group="04" group-title="5.English",A&E
+#EXTINF:-1 tvg-id="AE.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/A%26E_Network_logo.svg/960px-A%26E_Network_logo.svg.png" group-title="5.English" tvg-group="04",A&E
 http://23.239.31.26:8989/aande/index.m3u8
 
-#EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/logos/abn-bible-movies-channel-160.webp" tvg-country="US" tvg-language="eng" tvg-id="ABNBibleMoviesChannel.us",ABN Bible Movies Channel
-https://mediaserver.abnvideos.com/streams/abnbiblemovies.m3u8
-
-#EXTINF:-1 tvg-id="ARTFLIXMovieClassics.us@SD" tvg-logo="https://i.imgur.com/5pOZQB4.png" tvg-group="04" group-title="5.English",Artflix Movie Classics
+#EXTINF:-1 tvg-id="ARTFLIXMovieClassics.us@SD" tvg-logo="https://i.imgur.com/5pOZQB4.png" group-title="5.English" tvg-group="04",Artflix Movie Classics
 https://amogonetworx-artflix-1-nl.samsung.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/logos/baywatch-160.webp" tvg-country="US" tvg-language="eng" tvg-id="Baywatch.us",Baywatch
+#EXTINF:-1 tvg-id="Baywatch.us" tvg-logo="https://cdn.tvivu.com/logos/baywatch-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",Baywatch
 https://amg00145-fremantlemedian-baywatch-samsungau-gtsd6.amagi.tv/playlist/amg00145-fremantlemedian-baywatch-samsungau/playlist.m3u8
 
-#EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/channels/bold-and-the-beautiful.webp" tvg-country="US" tvg-language="eng",Bold and the Beautiful
-https://www.youtube.com/watch?v=qALTGOsXIkw
-
-#EXTINF:-1 tvg-group="04" group-title="5.English"  tvg-logo="https://cdn.tvivu.com/logos/brat-tv-160.webp" tvg-country="US" tvg-language="eng" tvg-id="BratTV.us",Brat TV
+#EXTINF:-1 tvg-id="BratTV.us" tvg-logo="https://cdn.tvivu.com/logos/brat-tv-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",Brat TV
 https://brat-samsung-us.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-group="04" group-title="5.English"  tvg-logo="https://cdn.tvivu.com/logos/britbox-mysteries-us-160.webp" tvg-country="US" tvg-language="eng",BritBox Mysteries
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/britbox-mysteries-us-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",BritBox Mysteries
 https://aegis-cloudfront-1.tubi.video/c95700f8-e51c-4a36-ad46-56f70fc9f1d9/playlist.m3u8
 
-#EXTINF:-1  tvg-group="04" group-title="5.English"  tvg-logo="https://cdn.tvivu.com/logos/cgtn-documentary-160.webp" tvg-country="CN" tvg-language="eng" tvg-id="CGTNDocumentary.cn",CGTN Documentary
+#EXTINF:-1  group-title="5.English" tvg-language="eng" tvg-country="CA" tvg-group="04",BXX TV
+https://fl1004.bozztv.com/ushba-mafia/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="CGTNDocumentary.cn" tvg-logo="https://cdn.tvivu.com/logos/cgtn-documentary-160.webp" group-title="5.English" tvg-language="eng" tvg-country="CN" tvg-group="04",CGTN Documentary
 https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8
 
-#EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/logos/documentary-160.webp" tvg-country="US" tvg-language="eng" tvg-id="DocumentaryPlus.us",Documentary+
+#EXTINF:-1 tvg-id="DocumentaryPlus.us" tvg-logo="https://cdn.tvivu.com/logos/documentary-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",Documentary+
 https://1d153317c8db4250b3789601274e2402.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-887-DOCUMENTARYINTERNATIONAL-DOCUMENTARYPLUS/mt/documentaryplus/887/hls/master/playlist.m3u8
 
-#EXTINF:-1 tvg-id="DryBarComedyPlus.us@SD" tvg-logo="https://i.imgur.com/3N2C60N.png" tvg-group="04" group-title="5.English",Dry Bar Comedy
+#EXTINF:-1 tvg-id="DryBarComedyPlus.us@SD" tvg-logo="https://i.imgur.com/3N2C60N.png" group-title="5.English" tvg-group="04",Dry Bar Comedy
 https://drybar-drybarcomedy-1-au.samsung.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-group="04" group-title="5.English"  tvg-logo="https://cdn.tvivu.com/logos/entrepreneurtv-160.webp" tvg-country="US" tvg-language="eng" tvg-id="EntrepreneurTV.us",EntrepreneurTV
+#EXTINF:-1 group-title="5.English" tvg-group="04",ENT Family
+https://cdn.40mediagroup.com/live/c7eds/ENT_Family/SA_LIVE_hls_enc/master.m3u8
+
+#EXTINF:-1 tvg-id="EntrepreneurTV.us" tvg-logo="https://cdn.tvivu.com/logos/entrepreneurtv-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",EntrepreneurTV
 https://a-cdn.klowdtv.com/live3/entrepreneurtv_720p/playlist.m3u8
 
-
-#EXTINF:-1 tvg-id="FailArmy.us@Poland" tvg-logo="https://i.imgur.com/VIpQJxL.png" tvg-group="04" group-title="5.English",Fail Army
+#EXTINF:-1 tvg-id="FailArmy.us@Poland" tvg-logo="https://i.imgur.com/VIpQJxL.png" group-title="5.English" tvg-group="04",Fail Army
 https://bd93cfed.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZhaWxBcm15X0hMUw/playlist.m3u8
 
-#EXTINF:-1 tvg-id="FailArmy.us@US" tvg-logo="https://i.imgur.com/VIpQJxL.png" tvg-group="04" group-title="5.English",Failarmy International
+#EXTINF:-1 tvg-id="FailArmy.us@US" tvg-logo="https://i.imgur.com/VIpQJxL.png" group-title="5.English" tvg-group="04",Failarmy International
 https://failarmy-international-au.samsung.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/logos/fear-factor-160.webp" tvg-country="US" tvg-language="eng" tvg-id="FearFactor.us",Fear Factor
+#EXTINF:-1 tvg-id="FearFactor.us" tvg-logo="https://cdn.tvivu.com/logos/fear-factor-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",Fear Factor
 https://aegis-cloudfront-1.tubi.video/2a9fb8e7-51c2-40d0-9cc0-6eb963199568/playlist.m3u8
 
-#EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/logos/funbox-uhd-160.webp" tvg-country="NL" tvg-language="eng" tvg-id="FunBoxUHD.nl",FunBox UHD
+#EXTINF:-1  group-title="5.English" tvg-language="eng" tvg-country="CA" tvg-group="04",FTV
+https://ftv1.b-cdn.net/bfdbb576-83f7-11f0-9f89-0200170e3e04_1000028043_HLS/video_10801920_p_0.m3u8
+
+#EXTINF:-1 tvg-id="FunBoxUHD.nl" tvg-logo="https://cdn.tvivu.com/logos/funbox-uhd-160.webp" group-title="5.English" tvg-language="eng" tvg-country="NL" tvg-group="04",FunBox UHD
 https://webtvstream.bhtelecom.ba/hls15/funbox.m3u8
 
-#EXTINF:-1 tvg-id="Gagsnetwork.us@SD" tvg-logo="https://i.imgur.com/ENj5GIp.png" tvg-group="04" group-title="5.English",Gagsnetwork
+#EXTINF:-1 tvg-id="Gagsnetwork.us@SD" tvg-logo="https://i.imgur.com/ENj5GIp.png" group-title="5.English" tvg-group="04",Gagsnetwork
 http://hls127.freeott.top:8080/Gagsnetwork/video.m3u8
 
-#EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/logos/great-movies-160.webp" tvg-country="UK" tvg-language="eng" tvg-id="GREATmovies.uk",GREAT! movies
+#EXTINF:-1 tvg-id="GREATmovies.uk" tvg-logo="https://cdn.tvivu.com/logos/great-movies-160.webp" group-title="5.English" tvg-language="eng" tvg-country="UK" tvg-group="04",GREAT! movies
 https://jmp2.uk/stvp-GBBC900007Q5
 
-#EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/logos/hallmark-movies-more-us-160.webp" tvg-country="US" tvg-language="eng",Hallmark Movies & More
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/hallmark-movies-more-us-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",Hallmark Movies & More
 https://dbrb49pjoymg4.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/master.m3u8?ads.xumo_channelId=99991709
 
-#EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/logos/hot-ones-gb-160.webp" tvg-country="UK" tvg-language="eng",Hot Ones
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/hot-ones-gb-160.webp" group-title="5.English" tvg-language="eng" tvg-country="UK" tvg-group="04",Hot Ones
 https://jmp2.uk/stvp-GB4600001W9
 
-#EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/logos/love-nature-3-160.webp" tvg-country="US" tvg-language="eng",Love Nature
-https://www.youtube.com/watch?v=QhahoVG0BfI
+#EXTINF:-1  group-title="5.English" tvg-language="eng" tvg-country="CA" tvg-group="04",Kaloopi
+https://streamingserver000.viewtv.cloud/VIEWTVNETWORK-KALOOPY/tracks-v1a1/mono.ts.m3u8
 
-#EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/logos/midnight-pulp-160.webp" tvg-country="US" tvg-language="eng" tvg-id="MidnightPulp.us",Midnight Pulp
+#EXTINF:-1 tvg-id="MidnightPulp.us" tvg-logo="https://cdn.tvivu.com/logos/midnight-pulp-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",Midnight Pulp
 https://linear-897.frequency.stream/dist/cineverse/897/hls/master/playlist.m3u8
 
-#EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/logos/mix-hollywood-160.webp" tvg-country="EG" tvg-language="ara" tvg-id="MixHollywood.eg",Mix Hollywood
+#EXTINF:-1 tvg-id="MixHollywood.eg" tvg-logo="https://cdn.tvivu.com/logos/mix-hollywood-160.webp" group-title="5.English" tvg-language="ara" tvg-country="EG" tvg-group="04",Mix Hollywood
 https://ml-pull-hwc.myco.io/MixTV/hls/index.m3u8
 
-#EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/logos/moviesphere-160.webp" tvg-country="US" tvg-language="eng" tvg-id="MovieSphere.us",MovieSphere
+#EXTINF:-1 tvg-id="MovieSphere.us" tvg-logo="https://cdn.tvivu.com/logos/moviesphere-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",MovieSphere
 https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/logos/mr-bean-live-action-gb-160.webp" tvg-country="UK" tvg-language="eng",Mr Bean Live Action
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/mr-bean-live-action-gb-160.webp" group-title="5.English" tvg-language="eng" tvg-country="UK" tvg-group="04",Mr Bean Live Action
 https://amg00627-amg00627c40-rakuten-uk-5725.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanpopupcc-rakutenuk/playlist.m3u8
 
-#EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/logos/now-90s00s-160.webp" tvg-country="UK" tvg-language="eng" tvg-id="Now90s00s.uk",Now 90s00s
+#EXTINF:-1 tvg-id="Now90s00s.uk" tvg-logo="https://cdn.tvivu.com/logos/now-90s00s-160.webp" group-title="5.English" tvg-language="eng" tvg-country="UK" tvg-group="04",Now 90s00s
 https://amg01076-amg01076c19-rakuten-gb-8653.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg01076-lightning-now90s00s-rakutengb/cb513f19657460909bce2167d0d334dd844c3bdd0b61cb3071aa448f049f4b1bdae5a5d3ec4ae47821c04d873d5f66411f21c118dc7c1fc7c76adf046727486b9b9ab265d9896450f08d597562ac7b1c51e00e07c47100238ebb4e5dd670e7295243a5583f5063c0bf5fab704fc1d50bd8767dd8a9d963317c383ea57e657305d692dfd07777ae0eb3876a0ac47116b2a063f3e669dea0488f5371ac408451dfcdb0def92098b6937091938145c78e2062208d51b3b0e4ebc3a2a1ecfe51622a3b40f4ac83fb010c87554a4fc219aad541d21cd480298d6178ee4ec80fcc11846fb806aee50ef1fce09f6f4e3badc85e3a67b2f3fadba9657ded2fbb85ecde7873d6a7462809992dfe2b393d96f2d35bd59145d8e651e8de0e3c36c4834a9299c0e1bee1f705f642ffc9ff963255401972258353a78864d869fc76acdc1c28580d69a2985cc8839b321d6d4d8f8c5b942313b6d58e89bd566e2a01dfdb52cdbf8ef6cea6a54bcf99790ab8c7b3a23d0c/85/1920x1080_4716800/index.m3u8
 
-#EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/logos/outflix-movies-ca-160.webp" tvg-country="CA" tvg-language="eng",OUTflix Movies
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/outflix-movies-ca-160.webp" group-title="5.English" tvg-language="eng" tvg-country="CA" tvg-group="04",OUTflix Movies
 https://jmp2.uk/stvp-CA800002TN
 
-#EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/logos/wanted-dead-or-alive-160.webp" tvg-country="US" tvg-language="eng" tvg-id="WantedDeadorAlive.us",Wanted: Dead or Alive
+#EXTINF:-1 group-title="5.English" tvg-group="01",Sony Movies
+https://a-cdn.klowdtv.com/live1/smc_720p/playlist.m3u8
+
+#EXTINF:-1 tvg-id="WantedDeadorAlive.us" tvg-logo="https://cdn.tvivu.com/logos/wanted-dead-or-alive-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",Wanted: Dead or Alive
 https://aegis-cloudfront-1.tubi.video/d5171dc7-f8c6-469c-81eb-e1ffaaed5721/playlist.m3u8
 
-#EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/logos/wild-planet-gb-160.webp" tvg-country="UK" tvg-language="eng",Wild Planet
+#EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/wild-planet-gb-160.webp" group-title="5.English" tvg-language="eng" tvg-country="UK" tvg-group="04",Wild Planet
 https://jmp2.uk/stvp-GBBB5000002PL
 
-#EXTINF:-1 tvg-group="04" group-title="5.English" tvg-logo="https://cdn.tvivu.com/logos/wild-tv-160.webp" tvg-country="CA" tvg-language="eng" tvg-id="WildTV.ca",Wild TV
+#EXTINF:-1 tvg-id="WildTV.ca" tvg-logo="https://cdn.tvivu.com/logos/wild-tv-160.webp" group-title="5.English" tvg-language="eng" tvg-country="CA" tvg-group="04",Wild TV
 https://dfhsahpa45kk2.cloudfront.net/scheduler/scheduleMaster/476.m3u8
+
+#EXTINF:-1  group-title="5.English" tvg-language="eng" tvg-country="CA" tvg-group="04",World Fashion
+https://t.freetv.fun/live/world-fashion-channel-en.m3u8
+
+
+# ===== 5.English Music =====
+
+#EXTINF:-1 tvg-id="30AMusic.us@SD" tvg-logo="https://i.imgur.com/gNWg9tl.png" group-title="5.English Music" tvg-group="04",30A Music
+https://30a-tv.com/music.m3u8
+
+#EXTINF:-1 tvg-id="360TuneBox.nl@SD" tvg-logo="https://i.imgur.com/1Fyezng.png" group-title="5.English Music" tvg-group="04",360TuneBox
+https://dash3.antik.sk/live/test_360_tunebox_medium_atk/playlist.m3u8

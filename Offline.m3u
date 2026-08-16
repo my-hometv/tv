@@ -1,0 +1,37 @@
+#EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"
+
+# ===== 99.Offline =====
+
+#EXTINF:-1 tvg-id="AllTimeMovies.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ALL_TIME_MOVIES/images/LOGO_HD/image.png" group-title="99.Offline" tvg-group="08" original-group="4.Hindi",All Time Movies
+https://mumt03.tangotv.in/Dsly5z3HALLTIMEMOVIES/index.m3u8
+
+#EXTINF:-1 group-title="99.Offline" tvg-logo="https://www.facebook.com/photo/?fbid=4250871585231102&set=a.1395254334126189"tvg-group="01" original-group="1.Malayalam",CTV Mukkam
+https://live.skystream.in/live/ctv1805/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="99.Offline" tvg-group="01" original-group="1.Malayalam",KCN
+https://live.skystream.in/live/kcnksrgod/index.m3u8
+
+#EXTINF:-1 tvg-id="24HourFreeMovies.us@SD" tvg-logo="https://i.imgur.com/iSVnzR1.png" group-title="99.Offline" tvg-group="04",like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" tvg-group="04" group-title="5.English" original-group="5.English",24 Hour Free Movies
+https://d1b5mlajbmvkjv.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDU-DistroTV/145.m3u8?ads.vf=7FhdsxqVxOi
+
+#EXTINF:-1 tvg-id="MoviePlex.in@SD" tvg-logo="https://i.imgur.com/THJEAqJ.png" group-title="99.Offline" tvg-group="08" original-group="4.Hindi",MoviePlex
+https://mumt04.tangotv.in/m18aqlK4MOVIEPLEX/index.m3u8
+
+#EXTINF:-1 tvg-id="WayanadVision.in" group-title="99.Offline" original-group="1.Malayalam", Wayanad Vision Plus
+https://online.wayanadvision.in/hls/streaming1.m3u8
+# ===== 2.Malayalam News =====
+# ===== 2.Malayalam News =====
+# ===== 2.Malayalam News =====
+# ===== 2.Malayalam News =====
+# ===== 2.Malayalam News =====
+# ===== 2.Malayalam News =====
+# ===== 2.Malayalam News =====
+# ===== 2.Malayalam News =====
+# ===== 2.Malayalam News =====
+
+#EXTINF:-1 tvg-id="ZeeCinema.in@ME" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_CINEMA/images/LOGO_HD/LOGO_HD_image.png" group-title="99.Offline" tvg-group="08" original-group="4.Hindi",Zee Cinema ME
+http://41.205.77.102/ZEE-CINEMA/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeMalayalamNews.in@SD" tvg-logo="https://english.cdn.zeenews.com/images/logo/zee-malayalam-17.svg" group-title="99.Offline" tvg-group="02" original-group="2.Malayalam News",Zee Malayalam News
+https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
+# ===== 3.Malayalam Religious =====

@@ -1,8 +1,6 @@
 #EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"
 
+# ===== 9.Sports =====
 
-# ==================== Sports ====================
-
-#EXTINF:-1 tvg-group="05" group-title="8.Sports" tvg-logo="https://cdn.tvivu.com/logos/cricket-gold-160.webp" tvg-country="AU" tvg-language="eng" tvg-id="CricketGold.au",Cricket Gold
+#EXTINF:-1 tvg-id="CricketGold.au" tvg-logo="https://cdn.tvivu.com/logos/cricket-gold-160.webp" group-title="9.Sports" tvg-language="eng" tvg-country="AU" tvg-group="05",Cricket Gold
 https://d382r3rgbxdixq.cloudfront.net/scheduler/scheduleMaster/418.m3u8
-
