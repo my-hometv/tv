@@ -1,5 +1,4 @@
 import json
-import sys
 import time
 from pathlib import Path
 from urllib.parse import urlparse
@@ -7,26 +6,24 @@ from urllib.parse import urlparse
 import requests
 
 
-PLAYLIST_FILE = Path("Playlist.m3u")
-REPORT_FILE = Path("playlist_report.txt")
+MASTER_FILE = Path("Master.m3u")
 STATUS_FILE = Path("playlist_status.json")
+REPORT_FILE = Path("playlist_report.txt")
 
 TIMEOUT = 15
+HARD_FAILURE_LIMIT = 3
 
 HEADERS = {
     "User-Agent": (
-        "Mozilla/5.0 "
-        "(Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 "
-        "(KHTML, like Gecko) "
-        "Chrome/151.0.0.0 "
-        "Safari/537.36"
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/151.0.0.0 Safari/537.36"
     ),
     "Accept": "*/*",
 }
 
 
-def load_status():
+def load_previous_status():
     if not STATUS_FILE.exists():
         return {}
 
@@ -46,28 +43,45 @@ def save_status(data):
             data,
             indent=2,
             sort_keys=True,
-        )
-        + "\n",
+        ) + "\n",
         encoding="utf-8",
     )
 
 
-def get_entries():
-    if not PLAYLIST_FILE.exists():
+def get_group(extinf):
+    marker = 'group-title="'
+
+    if marker not in extinf:
+        return ""
+
+    try:
+        return (
+            extinf.split(marker, 1)[1]
+            .split('"', 1)[0]
+            .strip()
+        )
+    except Exception:
+        return ""
+
+
+def parse_master():
+    if not MASTER_FILE.exists():
         raise SystemExit(
-            "Playlist.m3u not found"
+            "ERROR: Master.m3u not found"
         )
 
-    lines = PLAYLIST_FILE.read_text(
+    lines = MASTER_FILE.read_text(
         encoding="utf-8",
         errors="replace",
     ).splitlines()
 
     entries = []
-    current_name = "Unknown channel"
 
-    for line in lines:
-        line = line.strip()
+    current_name = "Unknown"
+    current_group = ""
+
+    for raw_line in lines:
+        line = raw_line.strip()
 
         if line.startswith("#EXTINF:"):
             if "," in line:
@@ -75,6 +89,10 @@ def get_entries():
                     line.split(",", 1)[1]
                     .strip()
                 )
+            else:
+                current_name = "Unknown"
+
+            current_group = get_group(line)
 
         elif (
             line
@@ -86,15 +104,31 @@ def get_entries():
             entries.append(
                 {
                     "name": current_name,
+                    "group": current_group,
                     "url": line,
                 }
             )
 
-            current_name = (
-                "Unknown channel"
-            )
+            current_name = "Unknown"
+            current_group = ""
 
     return entries
+
+
+def is_hls_response(
+    content_type,
+    sample_text,
+):
+    content_type = content_type.lower()
+
+    return (
+        "#EXTM3U" in sample_text
+        or "#EXT-X-" in sample_text
+        or "application/vnd.apple.mpegurl"
+        in content_type
+        or "application/x-mpegurl"
+        in content_type
+    )
 
 
 def check_url(url):
@@ -104,10 +138,11 @@ def check_url(url):
         "http",
         "https",
     ):
-        return (
-            "INVALID",
-            "Unsupported URL scheme",
-        )
+        return {
+            "status": "INVALID",
+            "detail": "Unsupported URL scheme",
+            "hard_failure": False,
+        }
 
     try:
         response = requests.get(
@@ -118,9 +153,7 @@ def check_url(url):
             stream=True,
         )
 
-        status_code = (
-            response.status_code
-        )
+        status_code = response.status_code
 
         content_type = (
             response.headers.get(
@@ -129,21 +162,48 @@ def check_url(url):
             )
         )
 
+        # 401/403 are not proof that a stream
+        # is offline. They can depend on
+        # headers, region or client context.
+        if status_code in (401, 403):
+            response.close()
+
+            return {
+                "status":
+                    "ACCESS_RESTRICTED",
+                "detail":
+                    f"HTTP {status_code}",
+                "hard_failure":
+                    False,
+            }
+
+        # 404 and 410 are strong failures.
+        if status_code in (404, 410):
+            response.close()
+
+            return {
+                "status": "HTTP_ERROR",
+                "detail":
+                    f"HTTP {status_code}",
+                "hard_failure": True,
+            }
+
+        # Other HTTP errors are uncertain.
         if status_code >= 400:
             response.close()
 
-            return (
-                "HTTP_ERROR",
-                f"HTTP {status_code}",
-            )
+            return {
+                "status": "HTTP_ERROR",
+                "detail":
+                    f"HTTP {status_code}",
+                "hard_failure": False,
+            }
 
         sample = b""
 
         try:
-            for chunk in (
-                response.iter_content(
-                    chunk_size=4096
-                )
+            for chunk in response.iter_content(
+                chunk_size=4096
             ):
                 sample += chunk
 
@@ -157,75 +217,153 @@ def check_url(url):
             errors="ignore",
         )
 
-        looks_like_hls = (
-            "#EXTM3U" in sample_text
-            or "#EXT-X-" in sample_text
-            or
-            "application/vnd.apple.mpegurl"
-            in content_type.lower()
-            or
-            "application/x-mpegurl"
-            in content_type.lower()
-        )
-
-        if looks_like_hls:
-            return (
-                "OK",
-                f"HTTP {status_code}, "
-                "HLS playlist",
-            )
+        if is_hls_response(
+            content_type,
+            sample_text,
+        ):
+            return {
+                "status": "OK",
+                "detail": (
+                    f"HTTP {status_code}, "
+                    "HLS playlist"
+                ),
+                "hard_failure": False,
+            }
 
         if ".m3u8" in url.lower():
-            return (
-                "SUSPECT",
-                f"HTTP {status_code}, "
-                "not recognized as HLS",
-            )
+            return {
+                "status": "SUSPECT",
+                "detail": (
+                    f"HTTP {status_code}, "
+                    "response not recognized "
+                    "as HLS"
+                ),
+                "hard_failure": False,
+            }
 
-        return (
-            "WEBPAGE_OR_UNKNOWN",
-            f"HTTP {status_code}",
-        )
+        return {
+            "status":
+                "WEBPAGE_OR_UNKNOWN",
+            "detail":
+                f"HTTP {status_code}",
+            "hard_failure": False,
+        }
 
-    except requests.Timeout:
-        return (
-            "TIMEOUT",
-            f"Timed out after "
-            f"{TIMEOUT}s",
-        )
+    except requests.exceptions.Timeout:
+        return {
+            "status": "TIMEOUT",
+            "detail": (
+                f"Timed out after "
+                f"{TIMEOUT}s"
+            ),
+            "hard_failure": True,
+        }
 
     except (
-        requests.RequestException
+        requests.exceptions.RequestException
     ) as exc:
-        return (
-            "ERROR",
-            str(exc),
+        detail = str(exc)
+
+        hard_terms = [
+            "Failed to resolve",
+            "NameResolutionError",
+            "Name or service not known",
+            "No address associated with hostname",
+            "Connection refused",
+            "Failed to establish a new connection",
+        ]
+
+        hard_failure = any(
+            term.lower() in detail.lower()
+            for term in hard_terms
         )
+
+        return {
+            "status": "ERROR",
+            "detail": detail,
+            "hard_failure": hard_failure,
+        }
+
+    except Exception as exc:
+        return {
+            "status": "ERROR",
+            "detail": str(exc),
+            "hard_failure": False,
+        }
+
+
+def old_result_was_hard(info):
+    if not info:
+        return False
+
+    if info.get("hard_failure") is True:
+        return True
+
+    status = info.get(
+        "last_status",
+        "",
+    )
+
+    detail = info.get(
+        "last_detail",
+        "",
+    ).lower()
+
+    if status == "TIMEOUT":
+        return True
+
+    if "http 404" in detail:
+        return True
+
+    if "http 410" in detail:
+        return True
+
+    hard_terms = [
+        "failed to resolve",
+        "nameresolutionerror",
+        "name or service not known",
+        "connection refused",
+        "failed to establish a new connection",
+    ]
+
+    return any(
+        term in detail
+        for term in hard_terms
+    )
 
 
 def classify(
     status,
-    failures,
+    hard_failures,
 ):
     if status == "OK":
         return "WORKING"
 
-    if failures == 1:
+    if status == "ACCESS_RESTRICTED":
+        return "ACCESS_RESTRICTED"
+
+    if hard_failures == 1:
         return "TEMPORARY_FAILURE"
 
-    if failures == 2:
+    if hard_failures == 2:
         return "REPEATED_FAILURE"
 
-    return "CONSISTENTLY_BROKEN"
+    if (
+        hard_failures
+        >= HARD_FAILURE_LIMIT
+    ):
+        return "CONSISTENTLY_BROKEN"
+
+    return "CHECK_REQUIRED"
 
 
 def main():
-    entries = get_entries()
+    entries = parse_master()
+    previous = load_previous_status()
 
-    previous = load_status()
     current = {}
 
-    raw_counts = {}
+    status_counts = {}
     class_counts = {}
 
     report = [
@@ -240,20 +378,30 @@ def main():
         "",
     ]
 
-    for number, entry in enumerate(
+    print(
+        f"Checking {len(entries)} "
+        "channels from Master.m3u"
+    )
+
+    for index, entry in enumerate(
         entries,
-        1,
+        start=1,
     ):
         name = entry["name"]
+        group = entry["group"]
         url = entry["url"]
 
         print(
-            f"[{number}/"
-            f"{len(entries)}] {name}"
+            f"[{index}/{len(entries)}] "
+            f"{name}"
         )
 
-        status, detail = check_url(
-            url
+        result = check_url(url)
+
+        status = result["status"]
+        detail = result["detail"]
+        hard_failure = (
+            result["hard_failure"]
         )
 
         old = previous.get(
@@ -261,41 +409,60 @@ def main():
             {},
         )
 
-        previous_failures = old.get(
-            "consecutive_failures",
-            0,
+        old_count = old.get(
+            "consecutive_hard_failures",
+            old.get(
+                "consecutive_failures",
+                0,
+            ),
         )
 
         if status == "OK":
-            failures = 0
+            hard_count = 0
+
+        elif hard_failure:
+            if old_result_was_hard(old):
+                hard_count = old_count + 1
+            else:
+                hard_count = 1
+
         else:
-            failures = (
-                previous_failures + 1
-            )
+            # Access restricted / uncertain
+            # does not count toward hiding.
+            hard_count = 0
 
         classification = classify(
             status,
-            failures,
+            hard_count,
+        )
+
+        checked_time = time.strftime(
+            "%Y-%m-%d "
+            "%H:%M:%S UTC",
+            time.gmtime(),
         )
 
         current[url] = {
             "name": name,
+            "group": group,
             "last_status": status,
             "last_detail": detail,
+            "hard_failure":
+                hard_failure,
+            "consecutive_hard_failures":
+                hard_count,
+            # Keep old field too for
+            # compatibility.
             "consecutive_failures":
-                failures,
+                hard_count,
             "classification":
                 classification,
             "last_checked_utc":
-                time.strftime(
-                    "%Y-%m-%d "
-                    "%H:%M:%S UTC",
-                    time.gmtime(),
-                ),
+                checked_time,
         }
 
-        raw_counts[status] = (
-            raw_counts.get(
+        status_counts[status] = (
+            status_counts.get(
                 status,
                 0,
             )
@@ -312,17 +479,26 @@ def main():
             + 1
         )
 
+        print(
+            f"  {status} | "
+            f"{classification} | "
+            f"hard failures="
+            f"{hard_count}"
+        )
+
         report.extend(
             [
                 f"## {name}",
+                f"Group: {group}",
                 f"Status: {status}",
                 (
                     "Classification: "
                     f"{classification}"
                 ),
                 (
-                    "Consecutive failures: "
-                    f"{failures}"
+                    "Consecutive hard "
+                    "failures: "
+                    f"{hard_count}"
                 ),
                 f"Detail: {detail}",
                 f"URL: {url}",
@@ -330,13 +506,7 @@ def main():
             ]
         )
 
-        print(
-            f"  {status} | "
-            f"{classification} | "
-            f"{failures}"
-        )
-
-        time.sleep(0.2)
+        time.sleep(0.15)
 
     save_status(current)
 
@@ -347,24 +517,29 @@ def main():
         ]
     )
 
-    for status in sorted(
-        raw_counts
+    for key in sorted(
+        status_counts
     ):
         report.append(
-            f"{status}: "
-            f"{raw_counts[status]}"
+            f"{key}: "
+            f"{status_counts[key]}"
         )
 
     report.extend(
         [
             "",
-            "# SUMMARY BY CLASSIFICATION",
+            (
+                "# SUMMARY BY "
+                "CLASSIFICATION"
+            ),
             "",
         ]
     )
 
     for key in [
         "WORKING",
+        "ACCESS_RESTRICTED",
+        "CHECK_REQUIRED",
         "TEMPORARY_FAILURE",
         "REPEATED_FAILURE",
         "CONSISTENTLY_BROKEN",
@@ -375,19 +550,18 @@ def main():
         )
 
     REPORT_FILE.write_text(
-        "\n".join(report) + "\n",
+        "\n".join(report)
+        + "\n",
         encoding="utf-8",
     )
 
     print()
     print(
-        "playlist_report.txt created"
-    )
-    print(
         "playlist_status.json updated"
     )
-
-    sys.exit(0)
+    print(
+        "playlist_report.txt updated"
+    )
 
 
 if __name__ == "__main__":
