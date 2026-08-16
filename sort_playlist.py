@@ -2,16 +2,21 @@ import re
 from pathlib import Path
 
 
-PLAYLIST_FILE = Path("Playlist.m3u")
-OFFLINE_GROUP = "99.Offline"
-UNGROUPED_GROUP = "98.Ungrouped"
+PLAYLIST_FILES = [
+    Path("Playlist.m3u"),
+    Path("Offline.m3u"),
+]
 
 
-def get_channel_name(extinf):
+def get_name(extinf):
     if "," not in extinf:
         return ""
 
-    return extinf.split(",", 1)[1].strip()
+    return (
+        extinf
+        .split(",", 1)[1]
+        .strip()
+    )
 
 
 def get_group(extinf):
@@ -22,88 +27,65 @@ def get_group(extinf):
     )
 
     if match:
-        return match.group(1).strip()
+        return (
+            match.group(1)
+            .strip()
+        )
 
-    return UNGROUPED_GROUP
+    return "98.Ungrouped"
 
 
 def natural_key(text):
     parts = re.split(
         r"(\d+)",
-        text.lower()
+        text.lower(),
     )
 
-    key = []
+    result = []
 
     for part in parts:
         if part.isdigit():
-            key.append(
-                (0, int(part))
+            result.append(
+                (
+                    0,
+                    int(part),
+                )
             )
         else:
-            key.append(
-                (1, part)
+            result.append(
+                (
+                    1,
+                    part,
+                )
             )
 
-    return key
+    return result
 
 
-def group_sort_key(group):
-    group_lower = group.lower()
-
-    # Offline is ALWAYS at the very bottom.
-    if group_lower == OFFLINE_GROUP.lower():
-        return (
-            2,
-            [],
-        )
-
-    # Ungrouped goes just before Offline.
-    if group_lower == UNGROUPED_GROUP.lower():
-        return (
-            1,
-            natural_key(group),
-        )
-
-    return (
-        0,
-        natural_key(group),
+def parse_file(path):
+    text = path.read_text(
+        encoding="utf-8",
+        errors="replace",
     )
 
-
-def parse_playlist(text):
     lines = text.splitlines()
 
     header = "#EXTM3U"
+
+    if (
+        lines
+        and lines[0]
+        .strip()
+        .startswith("#EXTM3U")
+    ):
+        header = lines[0].strip()
+
     entries = []
 
     i = 0
 
-    if (
-        lines
-        and lines[0].strip().startswith(
-            "#EXTM3U"
-        )
-    ):
-        header = lines[0].strip()
-        i = 1
-
     while i < len(lines):
         line = lines[i].strip()
-
-        if not line:
-            i += 1
-            continue
-
-        # Ignore section comments.
-        if (
-            line.startswith("#")
-            and not line.startswith(
-                "#EXTINF:"
-            )
-        ):
-            i += 1
-            continue
 
         if not line.startswith(
             "#EXTINF:"
@@ -111,66 +93,61 @@ def parse_playlist(text):
             i += 1
             continue
 
-        extinf = lines[i].strip()
+        extinf = line
 
         block = [extinf]
 
         i += 1
 
         while i < len(lines):
-            next_line = lines[i].strip()
+            value = lines[i].strip()
 
-            if next_line.startswith(
+            if value.startswith(
                 "#EXTINF:"
             ):
                 break
 
-            if next_line:
-                block.append(
-                    next_line
+            # Never preserve old generated
+            # group comments.
+            if (
+                value
+                and not value.startswith(
+                    "# ====="
                 )
+            ):
+                block.append(value)
 
             i += 1
 
-        group = get_group(extinf)
-        name = get_channel_name(
-            extinf
-        )
-
         entries.append(
             {
-                "group": group,
-                "name": name,
-                "block": block,
+                "name":
+                    get_name(extinf),
+                "group":
+                    get_group(extinf),
+                "block":
+                    block,
             }
         )
 
     return header, entries
 
 
-def main():
-    if not PLAYLIST_FILE.exists():
-        raise SystemExit(
-            "Playlist.m3u not found"
+def sort_file(path):
+    if not path.exists():
+        print(
+            f"Skipping missing "
+            f"{path}"
         )
-
-    text = PLAYLIST_FILE.read_text(
-        encoding="utf-8",
-        errors="replace",
-    )
+        return
 
     header, entries = (
-        parse_playlist(text)
-    )
-
-    print(
-        f"Channels found: "
-        f"{len(entries)}"
+        parse_file(path)
     )
 
     entries.sort(
         key=lambda entry: (
-            group_sort_key(
+            natural_key(
                 entry["group"]
             ),
             natural_key(
@@ -194,9 +171,13 @@ def main():
             if previous_group is not None:
                 output.append("")
 
+            # Generate exactly ONE
+            # section header.
             output.append(
-                f"# ===== {group} ====="
+                f"# ===== "
+                f"{group} ====="
             )
+
             output.append("")
 
             previous_group = group
@@ -205,33 +186,30 @@ def main():
         output.extend(
             entry["block"]
         )
+
         output.append("")
 
-    PLAYLIST_FILE.write_text(
-        "\n".join(output).rstrip()
+    path.write_text(
+        "\n".join(output)
+        .rstrip()
         + "\n",
         encoding="utf-8",
     )
 
-    offline_count = sum(
-        1
-        for entry in entries
-        if entry["group"].lower()
-        == OFFLINE_GROUP.lower()
+    print(
+        f"{path.name}: "
+        f"{len(entries)} channels, "
+        f"{group_count} groups"
     )
 
-    print(
-        f"Groups found: "
-        f"{group_count}"
-    )
 
-    print(
-        f"Offline channels moved "
-        f"to bottom: {offline_count}"
-    )
+def main():
+    for path in PLAYLIST_FILES:
+        sort_file(path)
 
+    print()
     print(
-        "Playlist sorted successfully."
+        "Playlist sorting complete."
     )
 
 
