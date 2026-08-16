@@ -1,7 +1,7 @@
 CHANNEL: Malabar Plus
 CURRENT URL: https://logichost.keralive.workers.dev/live/mplus/index.m3u8
 CLASSIFICATION: CONSISTENTLY_BROKEN
-FAILURES: 18
+FAILURES: 19
 SOURCE RESULT: No direct .m3u8 exposed in page HTML
 RESULT: No replacement found
 
