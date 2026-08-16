@@ -347,8 +347,6 @@ https://dai.google.com/linear/hls/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8
 
 # ===== 5.English =====
 
-#EXTINF:-1 tvg-id="30AGeorgiaHollywoodReview.us@SD" tvg-logo="https://images.axios.com/JiG3RuYBwpU_WZFeU6HHjt03FAU=/111x0:1191x1080/320x320/2023/11/09/1699558891265.jpg" group-title="5.English" tvg-group="04",30A Georgia Hollywood Review TV
-https://30a-tv.com/gh.m3u8
 
 #EXTINF:-1 tvg-id="30ARidiculousTV.us@SD" tvg-logo="https://30a.media/wp-content/uploads/2023/08/pzaz-30atv-2-230x366-ridiculous.jpg" group-title="5.English" tvg-group="04",30A Ridiculous TV
 https://30a-tv.com/feeds/720p/63.m3u8
@@ -364,9 +362,6 @@ https://30a-tv.com/beachy.m3u8
 
 #EXTINF:-1 tvg-id="30ATVClassicMovies.us@SD" tvg-logo="https://babaktv.com/wp-content/uploads/2023/09/30A-Classi-Movies.jpeg" group-title="5.English" tvg-group="04",30A TV Classic Movies
 https://30a-tv.com/feeds/pzaz/30atvmovies.m3u8
-
-#EXTINF:-1 tvg-id="30AWeLoveCars.us@SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxroqfE_hvEApKMQx03sSYXPeEh4ClaF5QSa8XfRwJW_So3vfSN0CjqzxN30H-qEBswqU&usqp=CAU" group-title="5.English" tvg-group="04",30A We Love Cars
-https://30a-tv.com/feeds/vidaa/cars.m3u8
 
 #EXTINF:-1 tvg-id="AE.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/A%26E_Network_logo.svg/960px-A%26E_Network_logo.svg.png" group-title="5.English" tvg-group="04",A&E
 http://23.239.31.26:8989/aande/index.m3u8
