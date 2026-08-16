@@ -5,8 +5,10 @@ from pathlib import Path
 
 PLAYLIST_FILE = Path("Playlist.m3u")
 STATUS_FILE = Path("playlist_status.json")
+OFFLINE_FILE = Path("Offline.m3u")
 
-OFFLINE_GROUP = "99.Offline"
+# How many consecutive hard failures before hiding.
+HIDE_AFTER_FAILURES = 3
 
 
 def load_status():
@@ -18,6 +20,13 @@ def load_status():
     )
 
 
+def get_channel_name(extinf):
+    if "," not in extinf:
+        return "Unknown"
+
+    return extinf.split(",", 1)[1].strip()
+
+
 def get_group(extinf):
     match = re.search(
         r'group-title="([^"]*)"',
@@ -26,86 +35,188 @@ def get_group(extinf):
     )
 
     if match:
-        return match.group(1)
+        return match.group(1).strip()
 
-    return None
+    return "98.Ungrouped"
 
 
-def get_original_group(extinf):
-    match = re.search(
-        r'original-group="([^"]*)"',
-        extinf,
-        flags=re.IGNORECASE,
+def parse_playlist(text):
+    lines = text.splitlines()
+
+    header = "#EXTM3U"
+    entries = []
+
+    i = 0
+
+    if lines and lines[0].strip().startswith("#EXTM3U"):
+        header = lines[0].strip()
+        i = 1
+
+    while i < len(lines):
+        line = lines[i].strip()
+
+        if not line:
+            i += 1
+            continue
+
+        if not line.startswith("#EXTINF:"):
+            i += 1
+            continue
+
+        extinf = lines[i].strip()
+        block = [extinf]
+
+        i += 1
+        stream_url = None
+
+        while i < len(lines):
+            next_line = lines[i].strip()
+
+            if next_line.startswith("#EXTINF:"):
+                break
+
+            if next_line:
+                block.append(next_line)
+
+                if (
+                    stream_url is None
+                    and next_line.startswith(
+                        ("http://", "https://")
+                    )
+                ):
+                    stream_url = next_line
+
+            i += 1
+
+        if stream_url:
+            entries.append(
+                {
+                    "name": get_channel_name(extinf),
+                    "group": get_group(extinf),
+                    "url": stream_url,
+                    "block": block,
+                }
+            )
+
+    return header, entries
+
+
+def should_hide(info):
+    if not info:
+        return False
+
+    status = info.get("last_status", "")
+    detail = info.get("last_detail", "")
+    failures = info.get(
+        "consecutive_failures",
+        0,
     )
 
-    if match:
-        return match.group(1)
+    # Working stream: always visible.
+    if status == "OK":
+        return False
 
-    return None
-
-
-def set_group(extinf, group):
-    if re.search(
-        r'group-title="[^"]*"',
-        extinf,
-        flags=re.IGNORECASE,
+    # Do NOT hide access-restricted streams automatically.
+    #
+    # 401 / 403 may still work in an IPTV app,
+    # browser session, geographic region, or with
+    # legitimate source-specific headers.
+    if (
+        "HTTP 401" in detail
+        or "HTTP 403" in detail
     ):
-        return re.sub(
-            r'group-title="[^"]*"',
-            f'group-title="{group}"',
-            extinf,
-            count=1,
-            flags=re.IGNORECASE,
-        )
+        return False
 
-    comma = extinf.rfind(",")
+    # Don't hide webpage/unknown entries solely
+    # because they are not direct HLS.
+    if status == "WEBPAGE_OR_UNKNOWN":
+        return False
 
-    if comma != -1:
-        return (
-            extinf[:comma]
-            + f' group-title="{group}"'
-            + extinf[comma:]
-        )
+    # Require several consecutive failures.
+    if failures < HIDE_AFTER_FAILURES:
+        return False
 
-    return extinf
+    # Strong evidence that the stream is gone.
+    if "HTTP 404" in detail:
+        return True
+
+    if "HTTP 410" in detail:
+        return True
+
+    # DNS / hostname failure.
+    dns_terms = [
+        "Failed to resolve",
+        "NameResolutionError",
+        "Name or service not known",
+        "No address associated with hostname",
+    ]
+
+    if any(term in detail for term in dns_terms):
+        return True
+
+    # Connection refusal.
+    refusal_terms = [
+        "Connection refused",
+        "Failed to establish a new connection",
+    ]
+
+    if any(term in detail for term in refusal_terms):
+        return True
+
+    # Persistent timeouts can also be hidden,
+    # but only after the threshold.
+    if status == "TIMEOUT":
+        return True
+
+    return False
 
 
-def add_original_group(extinf, group):
-    if get_original_group(extinf):
-        return extinf
-
-    comma = extinf.rfind(",")
-
-    if comma == -1:
-        return extinf
-
-    return (
-        extinf[:comma]
-        + f' original-group="{group}"'
-        + extinf[comma:]
-    )
-
-
-def remove_original_group(extinf):
-    return re.sub(
-        r'\s*original-group="[^"]*"',
+def write_playlist(path, header, entries):
+    output = [
+        header,
         "",
-        extinf,
-        count=1,
-        flags=re.IGNORECASE,
+    ]
+
+    previous_group = None
+
+    for entry in entries:
+        group = entry["group"]
+
+        if group != previous_group:
+            if previous_group is not None:
+                output.append("")
+
+            output.append(
+                f"# ===== {group} ====="
+            )
+            output.append("")
+
+            previous_group = group
+
+        output.extend(entry["block"])
+        output.append("")
+
+    path.write_text(
+        "\n".join(output).rstrip() + "\n",
+        encoding="utf-8",
     )
 
 
-def status_by_url(status_data):
-    result = {}
+def natural_key(text):
+    parts = re.split(
+        r"(\d+)",
+        text.lower(),
+    )
 
-    for url, info in status_data.items():
-        result[url] = info.get(
-            "classification",
-            "",
-        )
+    key = []
 
-    return result
+    for part in parts:
+        if part.isdigit():
+            key.append((0, int(part)))
+        else:
+            key.append((1, part))
+
+    return key
 
 
 def main():
@@ -113,117 +224,81 @@ def main():
         raise SystemExit("Playlist.m3u not found")
 
     status_data = load_status()
-    classifications = status_by_url(status_data)
 
-    lines = PLAYLIST_FILE.read_text(
+    playlist_text = PLAYLIST_FILE.read_text(
         encoding="utf-8",
         errors="replace",
-    ).splitlines()
+    )
 
-    moved_offline = 0
-    restored = 0
+    header, entries = parse_playlist(
+        playlist_text
+    )
 
-    i = 0
+    active = []
+    offline = []
 
-    while i < len(lines):
-        if not lines[i].startswith("#EXTINF:"):
-            i += 1
-            continue
-
-        extinf_index = i
-        extinf = lines[i]
-
-        j = i + 1
-        stream_url = None
-
-        while j < len(lines):
-            value = lines[j].strip()
-
-            if value.startswith("#EXTINF:"):
-                break
-
-            if value.startswith(
-                ("http://", "https://")
-            ):
-                stream_url = value
-                break
-
-            j += 1
-
-        if not stream_url:
-            i += 1
-            continue
-
-        classification = classifications.get(
-            stream_url
+    for entry in entries:
+        info = status_data.get(
+            entry["url"]
         )
 
-        current_group = get_group(extinf)
-        original_group = get_original_group(extinf)
+        if should_hide(info):
+            offline.append(entry)
 
-        # Move consistently broken streams
-        # into 99.Offline.
-        if (
-            classification == "CONSISTENTLY_BROKEN"
-            and current_group != OFFLINE_GROUP
-        ):
-            if current_group:
-                extinf = add_original_group(
-                    extinf,
-                    current_group,
+            print(
+                f"HIDE: {entry['name']}"
+            )
+        else:
+            active.append(entry)
+
+            if (
+                info
+                and info.get("last_status")
+                == "OK"
+            ):
+                print(
+                    f"ACTIVE: {entry['name']}"
                 )
 
-            extinf = set_group(
-                extinf,
-                OFFLINE_GROUP,
-            )
+    # Sort by group, then channel name.
+    active.sort(
+        key=lambda entry: (
+            natural_key(entry["group"]),
+            natural_key(entry["name"]),
+        )
+    )
 
-            lines[extinf_index] = extinf
+    offline.sort(
+        key=lambda entry: (
+            natural_key(entry["group"]),
+            natural_key(entry["name"]),
+        )
+    )
 
-            moved_offline += 1
+    write_playlist(
+        PLAYLIST_FILE,
+        header,
+        active,
+    )
 
-            print(
-                f"OFFLINE: {stream_url}"
-            )
-
-        # Restore a recovered stream.
-        elif (
-            classification == "WORKING"
-            and current_group == OFFLINE_GROUP
-            and original_group
-        ):
-            extinf = set_group(
-                extinf,
-                original_group,
-            )
-
-            extinf = remove_original_group(
-                extinf
-            )
-
-            lines[extinf_index] = extinf
-
-            restored += 1
-
-            print(
-                f"RESTORED: {stream_url}"
-            )
-
-        i = max(i + 1, j)
-
-    PLAYLIST_FILE.write_text(
-        "\n".join(lines).rstrip() + "\n",
-        encoding="utf-8",
+    write_playlist(
+        OFFLINE_FILE,
+        header,
+        offline,
     )
 
     print()
     print(
-        f"Moved to {OFFLINE_GROUP}: "
-        f"{moved_offline}"
+        f"Active channels: {len(active)}"
     )
     print(
-        f"Restored to original group: "
-        f"{restored}"
+        f"Hidden/offline channels: {len(offline)}"
+    )
+    print(
+        "Playlist.m3u updated with active channels only."
+    )
+    print(
+        "Offline.m3u created/updated."
     )
 
 
