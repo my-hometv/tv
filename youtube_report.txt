@@ -1,19 +1,19 @@
 # YouTube Source Check Report
 
 Checked 1 URLs
-Time: 2026-08-16 12:21:51 UTC
+Time: 2026-08-16 18:16:29 UTC
 
 # SUMMARY
 
-OK: 0
-HTTP_ERROR: 1
+OK: 1
+HTTP_ERROR: 0
 ERROR: 0
 WEBPAGE_OR_UNKNOWN: 0
 
 # DETAILS
 
 ## Public TV Live
-Status: HTTP_ERROR
+Status: OK
 URL: https://www.youtube.com/watch?v=-8d8-c0yvyU
-Detail: 429
+Detail: 200
 Final URL: https://www.youtube.com/watch?v=-8d8-c0yvyU
