@@ -1,4 +1,4 @@
-name: Update and Check Playlist
+name: Update IPTV Playlists
 
 on:
   workflow_dispatch:
@@ -15,48 +15,91 @@ jobs:
 
     steps:
 
+      # -------------------------------------
+      # 1. Checkout repository
+      # -------------------------------------
+
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
+
+      # -------------------------------------
+      # 2. Python
+      # -------------------------------------
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
-          python-version: "3.x"
+          python-version: "3.13"
+
+      # -------------------------------------
+      # 3. Dependencies
+      # -------------------------------------
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests yt-dlp
 
-      # 1. Clean playlist
-      - name: Clean playlist
-        run: |
-          python update_playlist.py
+      # -------------------------------------
+      # 4. Refresh configured stream URLs
+      #
+      # update_sources.py should modify
+      # Master.m3u
+      # -------------------------------------
 
-      # 2. Test every stream ONCE
-      - name: Check playlist
-        run: |
-          python check_playlist.py
-
-      # 3. Try configured URL refreshes
-      - name: Refresh broken stream URLs
+      - name: Refresh eligible stream URLs
         run: |
           python update_sources.py
 
-      # 4. Move broken channels to 99.Offline
-      # and restore recovered channels.
-      - name: Reorganize offline channels
+      # -------------------------------------
+      # 5. Check every stream in Master.m3u
+      # exactly once
+      # -------------------------------------
+
+      - name: Check master playlist
+        run: |
+          python check_playlist.py
+
+      # -------------------------------------
+      # 6. Build active Playlist.m3u and
+      # Offline.m3u
+      # -------------------------------------
+
+      - name: Generate active and offline playlists
         run: |
           python reorganize_playlist.py
 
-      # 5. Sort group -> channel
-      - name: Sort playlist
+      # -------------------------------------
+      # 7. Sort Playlist.m3u and Offline.m3u
+      # group first, channel second
+      # -------------------------------------
+
+      - name: Sort generated playlists
         run: |
           python sort_playlist.py
 
-      # 6. Upload reports
+      # -------------------------------------
+      # 8. Build individual category files
+      #
+      # Malayalam.m3u
+      # Hindi.m3u
+      # English.m3u
+      # Tamil.m3u
+      # Sports.m3u
+      # Kids.m3u
+      # Food.m3u
+      # -------------------------------------
+
+      - name: Build category playlists
+        run: |
+          python build_category_playlists.py
+
+      # -------------------------------------
+      # 9. Upload reports
+      # -------------------------------------
+
       - name: Upload playlist reports
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: playlist-report
           path: |
@@ -64,13 +107,27 @@ jobs:
             source_update_report.txt
           if-no-files-found: warn
 
-      # 7. Commit everything
+      # -------------------------------------
+      # 10. Commit generated files
+      # -------------------------------------
+
       - name: Commit updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          git add Master.m3u
           git add Playlist.m3u
+          git add Offline.m3u
+
+          git add Malayalam.m3u
+          git add Hindi.m3u
+          git add English.m3u
+          git add Tamil.m3u
+          git add Sports.m3u
+          git add Kids.m3u
+          git add Food.m3u
+
           git add playlist_status.json
           git add playlist_report.txt
 
@@ -81,7 +138,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Update, organize and sort playlist"
+            git commit -m "Update IPTV playlists"
             git pull --rebase
             git push
           fi
