@@ -5,11 +5,6 @@ from collections import defaultdict
 
 SOURCE_FILE = Path("Playlist.m3u")
 
-# --------------------------------------------------
-# Output file -> words that identify its groups
-#
-# Add more languages/categories here whenever needed.
-# --------------------------------------------------
 
 CATEGORY_RULES = {
     "Malayalam.m3u": [
@@ -28,22 +23,24 @@ CATEGORY_RULES = {
         "tamil",
     ],
 
-    "Telugu.m3u": [
-        "telugu",
-    ],
-
-    "Kannada.m3u": [
-        "kannada",
-    ],
-
     "Sports.m3u": [
         "sports",
         "sport",
+        "cricket",
+        "football",
     ],
 
     "Kids.m3u": [
         "kids",
         "children",
+        "cartoon",
+    ],
+
+    "Food.m3u": [
+        "food",
+        "cooking",
+        "cook",
+        "recipe",
     ],
 }
 
@@ -124,8 +121,13 @@ def parse_playlist():
         extinf = line
         block = [extinf]
 
-        name = get_channel_name(extinf)
-        group = get_group(extinf)
+        name = get_channel_name(
+            extinf
+        )
+
+        group = get_group(
+            extinf
+        )
 
         i += 1
 
@@ -134,16 +136,19 @@ def parse_playlist():
         while i < len(lines):
             next_line = lines[i].strip()
 
-            if next_line.startswith("#EXTINF:"):
+            if next_line.startswith(
+                "#EXTINF:"
+            ):
                 break
 
             if next_line:
-                # Don't copy old generated
-                # section headings.
+                # Ignore generated section headings.
                 if not next_line.startswith(
                     "# ====="
                 ):
-                    block.append(next_line)
+                    block.append(
+                        next_line
+                    )
 
                 if next_line.startswith(
                     ("http://", "https://")
@@ -167,9 +172,31 @@ def parse_playlist():
 def find_category(group):
     group_lower = group.lower()
 
-    for filename, keywords in (
-        CATEGORY_RULES.items()
-    ):
+    # Language categories get priority.
+    for filename in [
+        "Malayalam.m3u",
+        "Hindi.m3u",
+        "English.m3u",
+        "Tamil.m3u",
+    ]:
+        keywords = CATEGORY_RULES[
+            filename
+        ]
+
+        for keyword in keywords:
+            if keyword.lower() in group_lower:
+                return filename
+
+    # Then special categories.
+    for filename in [
+        "Sports.m3u",
+        "Kids.m3u",
+        "Food.m3u",
+    ]:
+        keywords = CATEGORY_RULES[
+            filename
+        ]
+
         for keyword in keywords:
             if keyword.lower() in group_lower:
                 return filename
@@ -182,11 +209,14 @@ def write_category(
     header,
     entries,
 ):
-    # Sort group first, then channel.
     entries.sort(
         key=lambda entry: (
-            natural_key(entry["group"]),
-            natural_key(entry["name"]),
+            natural_key(
+                entry["group"]
+            ),
+            natural_key(
+                entry["name"]
+            ),
         )
     )
 
@@ -207,6 +237,7 @@ def write_category(
             output.append(
                 f"# ===== {group} ====="
             )
+
             output.append("")
 
             previous_group = group
@@ -214,6 +245,7 @@ def write_category(
         output.extend(
             entry["block"]
         )
+
         output.append("")
 
     Path(filename).write_text(
@@ -227,6 +259,7 @@ def main():
     header, entries = parse_playlist()
 
     categories = defaultdict(list)
+
     unmatched = []
 
     for entry in entries:
@@ -235,9 +268,9 @@ def main():
         )
 
         if category:
-            categories[category].append(
-                entry
-            )
+            categories[
+                category
+            ].append(entry)
         else:
             unmatched.append(entry)
 
@@ -245,9 +278,9 @@ def main():
         f"Total active channels: "
         f"{len(entries)}"
     )
+
     print()
 
-    # Generate every configured file.
     for filename in CATEGORY_RULES:
         category_entries = (
             categories.get(
@@ -264,10 +297,12 @@ def main():
 
         print(
             f"{filename}: "
-            f"{len(category_entries)} channels"
+            f"{len(category_entries)} "
+            "channels"
         )
 
     print()
+
     print(
         f"Unmatched channels: "
         f"{len(unmatched)}"
@@ -276,11 +311,10 @@ def main():
     if unmatched:
         print()
         print(
-            "Groups not assigned to "
-            "a category:"
+            "Groups not assigned:"
         )
 
-        unmatched_groups = sorted(
+        groups = sorted(
             {
                 entry["group"]
                 for entry in unmatched
@@ -288,9 +322,10 @@ def main():
             key=natural_key,
         )
 
-        for group in unmatched_groups:
+        for group in groups:
             print(
-                f"  - {group or 'NO GROUP'}"
+                f"  - "
+                f"{group or 'NO GROUP'}"
             )
 
     print()
