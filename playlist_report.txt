@@ -1,7 +1,7 @@
 # Playlist URL Check Report
 
 Checked 200 URLs
-Time: 2026-08-17 14:29:31 UTC
+Time: 2026-08-17 16:28:40 UTC
 
 ## Amrita TV
 Group: 1.Malayalam
@@ -29,10 +29,10 @@ URL: https://mumt03.tangotv.in/Dsly5z3HASIANETMIDDLEEAST/index.m3u8
 
 ## C Malayalam TV
 Group: 1.Malayalam
-Status: OK
-Classification: WORKING
-Consecutive hard failures: 0
-Detail: HTTP 200, HLS playlist
+Status: HTTP_ERROR
+Classification: TEMPORARY_FAILURE
+Consecutive hard failures: 1
+Detail: HTTP 404
 URL: https://2-fss-2.streamhoster.com/pl_120/206508-3261972-1/playlist.m3u8
 
 ## CCTV Kunnamkulam
@@ -246,8 +246,8 @@ URL: https://2-fss-2.themediacdn.com/pl_138/206324-3157542-1/chunklist.m3u8
 ## Magnavision TV
 Group: 1.Malayalam
 Status: HTTP_ERROR
-Classification: TEMPORARY_FAILURE
-Consecutive hard failures: 1
+Classification: REPEATED_FAILURE
+Consecutive hard failures: 2
 Detail: HTTP 404
 URL: https://j78dpa3edq5r-hls-live.5centscdn.com/abr/0864028584026e6ad9cdf922473177a4/playlist.m3u8
 
@@ -285,10 +285,10 @@ URL: https://kcnsdhlsapp.ylivestream.com/kcnsdapphls/index.m3u8
 
 ## N Vision
 Group: 1.Malayalam
-Status: ACCESS_RESTRICTED
-Classification: ACCESS_RESTRICTED
+Status: HTTP_ERROR
+Classification: CHECK_REQUIRED
 Consecutive hard failures: 0
-Detail: HTTP 403
+Detail: HTTP 503
 URL: https://ipcloud.live/nvision/nvisionhd/index.m3u8
 
 ## Network
@@ -333,10 +333,10 @@ URL: https://stream.onecloudlive.in/periyarvision/periyarvision/index.m3u8
 
 ## Powran
 Group: 1.Malayalam
-Status: OK
-Classification: WORKING
+Status: HTTP_ERROR
+Classification: CHECK_REQUIRED
 Consecutive hard failures: 0
-Detail: HTTP 200, HLS playlist
+Detail: HTTP 503
 URL: https://stream.onecloudlive.in/powranmedia/livestream/index.m3u8
 
 ## Pravasi Channel
@@ -797,10 +797,10 @@ URL: https://dai.google.com/linear/hls/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8
 
 ## 30A Ridiculous TV
 Group: 5.English
-Status: OK
-Classification: WORKING
+Status: ERROR
+Classification: CHECK_REQUIRED
 Consecutive hard failures: 0
-Detail: HTTP 200, HLS playlist
+Detail: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
 URL: https://30a-tv.com/feeds/720p/63.m3u8
 
 ## 30A Sidewalks
@@ -1375,7 +1375,7 @@ URL: https://d382r3rgbxdixq.cloudfront.net/scheduler/scheduleMaster/418.m3u8
 Group: 4.Hindi
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 12
+Consecutive hard failures: 13
 Detail: HTTP 404
 URL: https://mumt03.tangotv.in/Dsly5z3HALLTIMEMOVIES/index.m3u8
 
@@ -1399,7 +1399,7 @@ URL: https://m3uplay.com/stream.m3u8?id=comedyplus
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 12
+Consecutive hard failures: 13
 Detail: HTTP 404
 URL: https://live.skystream.in/live/ctv1805/tracks-v1a1/mono.m3u8
 
@@ -1415,7 +1415,7 @@ URL: https://bhoomtv.me/tv/restream-tv/stream.m3u8?id=29d7f16babf8&t=1785520327
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 12
+Consecutive hard failures: 13
 Detail: HTTP 404
 URL: https://live.skystream.in/live/kcnksrgod/index.m3u8
 
@@ -1431,7 +1431,7 @@ URL: https://edge1.tikilive.com/livehttporigin_tikilive/56275/amlst:mainstream/p
 Group: 5.English
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 12
+Consecutive hard failures: 13
 Detail: HTTP 404
 URL: https://d1b5mlajbmvkjv.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDU-DistroTV/145.m3u8?ads.vf=7FhdsxqVxOi
 
@@ -1479,7 +1479,7 @@ URL: https://www.youtube.com/watch?v=-8d8-c0yvyU
 Group: 4.Hindi
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 12
+Consecutive hard failures: 13
 Detail: HTTP 404
 URL: https://mumt04.tangotv.in/m18aqlK4MOVIEPLEX/index.m3u8
 
@@ -1581,17 +1581,17 @@ URL: https://stream.sscloud7.com/live/suriyantv/index.m3u8
 
 ## Wayanad Vision Plus
 Group: 1.Malayalam
-Status: OK
-Classification: WORKING
-Consecutive hard failures: 0
-Detail: HTTP 200, HLS playlist
+Status: HTTP_ERROR
+Classification: TEMPORARY_FAILURE
+Consecutive hard failures: 1
+Detail: HTTP 404
 URL: https://online.wayanadvision.in/hls/streaming1.m3u8
 
 ## Zee Cinema ME
 Group: 4.Hindi
 Status: ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 12
+Consecutive hard failures: 13
 Detail: HTTPConnectionPool(host='41.205.77.102', port=80): Max retries exceeded with url: /ZEE-CINEMA/index.m3u8 (Caused by NewConnectionError("HTTPConnection(host='41.205.77.102', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))
 URL: http://41.205.77.102/ZEE-CINEMA/index.m3u8
 
@@ -1599,23 +1599,23 @@ URL: http://41.205.77.102/ZEE-CINEMA/index.m3u8
 Group: 2.Malayalam News
 Status: ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 12
+Consecutive hard failures: 13
 Detail: HTTPSConnectionPool(host='d1ty2af03alkwd.cloudfront.net', port=443): Max retries exceeded with url: /index_4.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='d1ty2af03alkwd.cloudfront.net', port=443): Failed to resolve 'd1ty2af03alkwd.cloudfront.net' ([Errno -5] No address associated with hostname)"))
 URL: https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
 
 # SUMMARY BY STATUS
 
-ACCESS_RESTRICTED: 16
-ERROR: 5
-HTTP_ERROR: 6
-OK: 170
+ACCESS_RESTRICTED: 15
+ERROR: 6
+HTTP_ERROR: 10
+OK: 166
 WEBPAGE_OR_UNKNOWN: 3
 
 # SUMMARY BY CLASSIFICATION
 
-WORKING: 170
-ACCESS_RESTRICTED: 16
-CHECK_REQUIRED: 6
-TEMPORARY_FAILURE: 1
-REPEATED_FAILURE: 0
+WORKING: 166
+ACCESS_RESTRICTED: 15
+CHECK_REQUIRED: 9
+TEMPORARY_FAILURE: 2
+REPEATED_FAILURE: 1
 CONSISTENTLY_BROKEN: 7
