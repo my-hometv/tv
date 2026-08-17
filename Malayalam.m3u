@@ -176,6 +176,9 @@ https://online.wayanadvision.in/hls/wayanadvision.m3u8
 #EXTINF:-1 tvg-id="WayanadVision.in" group-title="1.Malayalam", Wayanad Vision Movies
 https://online.wayanadvision.in/hls/wvmovies.m3u8
 
+#EXTINF:-1 tvg-id="WayanadVision.in" group-title="1.Malayalam", Wayanad Vision Plus
+https://online.wayanadvision.in/hls/streaming1.m3u8
+
 
 # ===== 2.Malayalam News =====
 
