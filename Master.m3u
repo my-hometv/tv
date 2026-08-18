@@ -602,3 +602,69 @@ http://41.205.77.102/ZEE-CINEMA/index.m3u8
 
 #EXTINF:-1 tvg-id="ZeeMalayalamNews.in@SD" tvg-logo="https://english.cdn.zeenews.com/images/logo/zee-malayalam-17.svg" group-title="2.Malayalam News" tvg-group="02",Zee Malayalam News
 https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Bounce XL
+https://aegis-cloudfront-1.tubi.video/22eea4e9-00a6-427c-92dd-57e78cc160dc/playlist.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Celebrity Scene
+https://rpn.bozztv.com/gusa/gusa-celebrityscene/index.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Classic Cinema
+https://rpn.bozztv.com/gusa/gusa-classiccinema/index.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Gravitas
+https://d6dg3ebeih71x.cloudfront.net/Gravitas_Movies.m3u
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Great Entertainment
+https://a-cdn.klowdtv.com/live2/greattv_720p/playlist.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",History Asia
+https://freem3u.xyz/api/live/play.m3u8?vid=9856
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",History Hit
+https://lds-timeline-plex.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Hollywire
+https://bozztv.com/hwotta/playlist/playlist.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",We Tv East
+https://streamer1.nexgen.bz/WE_TV/index.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Great Romamce
+https://amg01753-narrativeentert-greatchristmas-samsunguk-8atls.amagi.tv/playlist/amg01753-narrativeentert-greatchristmas-samsunguk/playlist.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Wild TV
+https://dhiy0zcig7ty1.cloudfront.net/scheduler/scheduleMaster/491.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Wild West TV
+https://linear-799.frequency.stream/dist/xumo/799/hls/master/playlist.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",The Westerners
+https://xumo-xumoent-ch834-iwtka.fast.nbcuni.com/live/master.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",The Unsolved Mysteries
+https://d31z96rdrmwfsp.cloudfront.net/master.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Waypoint
+https://aegis-cloudfront-1.tubi.video/5f3c2b46-3b02-48e8-8e7b-3ce1d89395ce/playlist.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",The Universal Monsters
+https://xumo-xumoent-ch824-d4q5c.fast.nbcuni.com/live/master.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",The Shade Room
+https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=16481
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Mysteries Xplored
+https://dwqz6akge0ila.cloudfront.net/v1/aenetworks_mysteriesxplored_1/samsungheadend_us/latest/main/hls/playlist.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Magnificent Movies
+https://mmn1-301f.kxcdn.com/hls/MMN-HLS.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Kids Flix
+https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Kartoon
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-kartoonchannel-samsungnz/playlist.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Homefull
+https://aegis-cloudfront-1.tubi.video/9f31e187-3d43-4ed0-81ba-63bd3bc560aa/playlist.m3u8
