@@ -103,7 +103,7 @@ https://live.applelive.in/mediaplus/mediaplus/index.m3u8
 https://live.skystream.in/live/mediatday/index.m3u8?hls_ctx=p080313v
 
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",Metro Live
-https://kcnsdhlsapp.ylivestream.com/kcnsdapphls/index.m3u8
+https://kcnsdhlsapp.ylivestream.com/kcnsdapphls/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",N Vision
 https://ipcloud.live/nvision/nvisionhd/index.m3u8
