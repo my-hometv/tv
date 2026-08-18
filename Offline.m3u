@@ -5,6 +5,9 @@
 #EXTINF:-1 group-title="1.Malayalam" tvg-logo="https://www.facebook.com/photo/?fbid=4250871585231102&set=a.1395254334126189"tvg-group="01",CTV Mukkam
 https://live.skystream.in/live/ctv1805/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 tvg-id="KannurVision.in@SD" tvg-logo="https://i.imgur.com/FCXqPer.png" group-title="1.Malayalam" tvg-group="01",Kannur Vision
+https://stream.logichost.in/kannurvision/live/playlist.m3u8
+
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",KCN
 https://live.skystream.in/live/kcnksrgod/index.m3u8
 
