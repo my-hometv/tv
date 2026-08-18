@@ -119,9 +119,6 @@ https://live.skystream.in/live/networkpayyanur/index.m3u8
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",New Star
 https://live.skystream.in/live/newsstar2924/index.m3u8?hls_ctx=ix6cvu58
 
-#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",New Vision
-https://live.skystream.in/live/newvision2924/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://www.facebook.com/photo/?fbid=1300140362154625&set=a.594783942690274"tvg-name="NTV" group-title="1.Malayalam" tvg-group="01",NTV
 https://stream.logichost.in/NTV/live/playlist.m3u8
 
@@ -145,9 +142,6 @@ https://j78dp346yq5r-hls-live.5centscdn.com/safari/live.stream/playlist.m3u8
 
 #EXTINF:-1 tvg-name="FlowersTV" group-title="1.Malayalam" tvg-group="01",South Vision
 https://live.skystream.in/live/southvsnklm/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-id="Starnet.in@SD" tvg-logo="https://i.imgur.com/J3jB7Kr.png" group-title="1.Malayalam" tvg-group="01",Starnet
-https://5a1178b42cc03.streamlock.net/8220/8220/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Swantham.in@SD" tvg-logo="https://i.imgur.com/ye6v4GP.png" group-title="1.Malayalam" tvg-group="01",Swantham
 http://cloud.logichost.in:1935/SWANTHAM/live/index.m3u8
