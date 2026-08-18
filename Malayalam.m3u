@@ -164,9 +164,6 @@ https://em4qj6nedyvg-hls-live.wmncdn.net/liveunit/89b1e919eed04e59383cf820d644c2
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",V9
 https://5a1178b42cc03.streamlock.net/8212/8212/playlist.m3u8
 
-#EXTINF:-1 tvg-id="VCV.in@SD" tvg-logo="https://i.imgur.com/KbU36xI.png" group-title="1.Malayalam" tvg-group="01",VCV
-https://5a1178b42cc03.streamlock.net/8210/8210/playlist.m3u8
-
 #EXTINF:-1 tvg-name="Vibgyor TV" group-title="1.Malayalam" tvg-group="01",Vibgyor TV
 https://livestream.vibgyortv.com/hls/stream.m3u8
 
