@@ -1,7 +1,7 @@
 # Playlist URL Check Report
 
-Checked 230 URLs
-Time: 2026-08-19 16:33:06 UTC
+Checked 236 URLs
+Time: 2026-08-19 17:20:33 UTC
 
 ## Amrita TV
 Group: 1.Malayalam
@@ -87,7 +87,7 @@ URL: https://live.skystream.in/live/drishya5060/tracks-v1a1/mono.m3u8
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 3
+Consecutive hard failures: 4
 Detail: HTTP 404
 URL: https://live.skystream.in/live/drishyakarunagapally/index.m3u8?hls_ctx=64s22r57
 
@@ -205,10 +205,10 @@ URL: https://oqgdrkxby4rm-hls-live.5centscdn.com/kaumudytv/live.stream/playlist.
 
 ## KCL TV
 Group: 1.Malayalam
-Status: HTTP_ERROR
-Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 6
-Detail: HTTP 404
+Status: OK
+Classification: WORKING
+Consecutive hard failures: 0
+Detail: HTTP 200, HLS playlist
 URL: https://kcltv.livebox.co.in/kclhls/live.m3u8
 
 ## Kerala Vision
@@ -333,10 +333,10 @@ URL: https://stream.onecloudlive.in/periyarvision/periyarvision/index.m3u8
 
 ## Powran
 Group: 1.Malayalam
-Status: OK
-Classification: WORKING
+Status: HTTP_ERROR
+Classification: CHECK_REQUIRED
 Consecutive hard failures: 0
-Detail: HTTP 200, HLS playlist
+Detail: HTTP 503
 URL: https://stream.onecloudlive.in/powranmedia/livestream/index.m3u8
 
 ## Pravasi Channel
@@ -383,7 +383,7 @@ URL: https://live.skystream.in/live/southvsnklm/tracks-v1a1/mono.m3u8
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 13
+Consecutive hard failures: 14
 Detail: HTTP 404
 URL: https://5a1178b42cc03.streamlock.net/8220/8220/playlist.m3u8
 
@@ -1391,7 +1391,7 @@ URL: https://d382r3rgbxdixq.cloudfront.net/scheduler/scheduleMaster/418.m3u8
 Group: 4.Hindi
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 38
+Consecutive hard failures: 39
 Detail: HTTP 404
 URL: https://mumt03.tangotv.in/Dsly5z3HALLTIMEMOVIES/index.m3u8
 
@@ -1407,7 +1407,7 @@ URL: https://www.youtube.com/watch?v=qALTGOsXIkw
 Group: 5.English
 Status: ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 10
+Consecutive hard failures: 11
 Detail: HTTPSConnectionPool(host='m3uplay.com', port=443): Max retries exceeded with url: /stream.m3u8?id=comedyplus (Caused by NameResolutionError("HTTPSConnection(host='m3uplay.com', port=443): Failed to resolve 'm3uplay.com' ([Errno -3] Temporary failure in name resolution)"))
 URL: https://m3uplay.com/stream.m3u8?id=comedyplus
 
@@ -1415,7 +1415,7 @@ URL: https://m3uplay.com/stream.m3u8?id=comedyplus
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 38
+Consecutive hard failures: 39
 Detail: HTTP 404
 URL: https://live.skystream.in/live/ctv1805/tracks-v1a1/mono.m3u8
 
@@ -1431,7 +1431,7 @@ URL: https://bhoomtv.me/tv/restream-tv/stream.m3u8?id=29d7f16babf8&t=1785520327
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 38
+Consecutive hard failures: 39
 Detail: HTTP 404
 URL: https://live.skystream.in/live/kcnksrgod/index.m3u8
 
@@ -1447,7 +1447,7 @@ URL: https://edge1.tikilive.com/livehttporigin_tikilive/56275/amlst:mainstream/p
 Group: 5.English
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 38
+Consecutive hard failures: 39
 Detail: HTTP 404
 URL: https://d1b5mlajbmvkjv.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDU-DistroTV/145.m3u8?ads.vf=7FhdsxqVxOi
 
@@ -1495,7 +1495,7 @@ URL: https://www.youtube.com/watch?v=-8d8-c0yvyU
 Group: 4.Hindi
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 38
+Consecutive hard failures: 39
 Detail: HTTP 404
 URL: https://mumt04.tangotv.in/m18aqlK4MOVIEPLEX/index.m3u8
 
@@ -1519,7 +1519,7 @@ URL: https://maamusic.keralive.workers.dev/out/v1/a797c00cba954265ba781f92a57e2c
 Group: 7.Kids
 Status: ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 10
+Consecutive hard failures: 11
 Detail: HTTPSConnectionPool(host='m3uplay.com', port=443): Max retries exceeded with url: /stream.m3u8?id=mytoonz (Caused by NameResolutionError("HTTPSConnection(host='m3uplay.com', port=443): Failed to resolve 'm3uplay.com' ([Errno -3] Temporary failure in name resolution)"))
 URL: https://m3uplay.com/stream.m3u8?id=mytoonz
 
@@ -1607,7 +1607,7 @@ URL: https://online.wayanadvision.in/hls/streaming1.m3u8
 Group: 4.Hindi
 Status: ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 38
+Consecutive hard failures: 39
 Detail: HTTPConnectionPool(host='41.205.77.102', port=80): Max retries exceeded with url: /ZEE-CINEMA/index.m3u8 (Caused by NewConnectionError("HTTPConnection(host='41.205.77.102', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))
 URL: http://41.205.77.102/ZEE-CINEMA/index.m3u8
 
@@ -1615,7 +1615,7 @@ URL: http://41.205.77.102/ZEE-CINEMA/index.m3u8
 Group: 2.Malayalam News
 Status: ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 38
+Consecutive hard failures: 39
 Detail: HTTPSConnectionPool(host='d1ty2af03alkwd.cloudfront.net', port=443): Max retries exceeded with url: /index_4.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='d1ty2af03alkwd.cloudfront.net', port=443): Failed to resolve 'd1ty2af03alkwd.cloudfront.net' ([Errno -5] No address associated with hostname)"))
 URL: https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
 
@@ -1827,6 +1827,54 @@ Consecutive hard failures: 0
 Detail: HTTP 200, HLS playlist
 URL: https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50
 
+## Holidayscapes
+Group: 5.English
+Status: OK
+Classification: WORKING
+Consecutive hard failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://plextv.ott-channels.stingray.com/holidayscapes/master.m3u8
+
+## Love the Planet
+Group: 5.English
+Status: OK
+Classification: WORKING
+Consecutive hard failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://amg01821-lovetvchannels-lovetheplanetuksamsung-samsunguk-apopw.amagi.tv/playlist/amg01821-lovetvchannels-lovetheplanetuksamsung-samsunguk/playlist.m3u8
+
+## China Travel
+Group: 5.English
+Status: OK
+Classification: WORKING
+Consecutive hard failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://amg01314-amg01314c7-distrotv-us-10219.playouts.now.amagi.tv/playlist/amg01314-cgtn-cgtnchinatravel-distrotvus/playlist.m3u8
+
+## BBC Earth
+Group: 5.English
+Status: OK
+Classification: WORKING
+Consecutive hard failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist.m3u8
+
+## Plug TV
+Group: 5.English
+Status: OK
+Classification: WORKING
+Consecutive hard failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://live.ottdash.com/stream/10JQS-5Q8ERK5L/eyJ0eXAiOiJKV1QifQ.eyJleHAiOjAsImFjY291bnRfaWQiOiIzMzQwMiIsInZlcnNpb24iOiIxLjAifQ.gQJ_A2L3qs_sNFiAZCoC4YJ8mpdjG7AacXUV1i32GrDOHz8fBS7iTiIFjF2mOwtoFZHN5DnWoanLTr0P-3B1sA.m3u8
+
+## Action Hollywood Movies
+Group: 5.English
+Status: OK
+Classification: WORKING
+Consecutive hard failures: 0
+Detail: HTTP 200, HLS playlist
+URL: https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-actionhollywood-samsungnz/playlist.m3u8
+
 ## Kartoon
 Group: 5.English
 Status: OK
@@ -1848,14 +1896,14 @@ URL: https://aegis-cloudfront-1.tubi.video/9f31e187-3d43-4ed0-81ba-63bd3bc560aa/
 ACCESS_RESTRICTED: 14
 ERROR: 7
 HTTP_ERROR: 9
-OK: 197
+OK: 203
 WEBPAGE_OR_UNKNOWN: 3
 
 # SUMMARY BY CLASSIFICATION
 
-WORKING: 197
+WORKING: 203
 ACCESS_RESTRICTED: 14
-CHECK_REQUIRED: 7
+CHECK_REQUIRED: 8
 TEMPORARY_FAILURE: 0
 REPEATED_FAILURE: 0
-CONSISTENTLY_BROKEN: 12
+CONSISTENTLY_BROKEN: 11
