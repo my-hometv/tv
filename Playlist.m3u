@@ -41,9 +41,6 @@ https://live.skystream.in/live/DrisyaPala2924/index.m3u8?hls_ctx=351ad30d
 #EXTINF:-1 tvg-id="FlowersTVUSA.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/ml/1/1c/Flowers-Onam.png" group-title="1.Malayalam" tvg-group="01",Flowers TV USA
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/flowers_nim_https/050522/flowers/playlist.m3u8
 
-#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",G TV
-https://play.applelive.in/gtv/gtv.m3u8
-
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",G TV Max
 https://play.applelive.in/gtvmax/gtvmax.m3u8
 
@@ -76,9 +73,6 @@ https://live.skystream.in/live/kasaragodvsn/index.m3u8
 
 #EXTINF:-1 tvg-id="Kaumudi.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143259_ld_h15_aa.png?lock=720x540" group-title="1.Malayalam" tvg-group="01",Kaumudi
 https://oqgdrkxby4rm-hls-live.5centscdn.com/kaumudytv/live.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="KCLTV.in@SD" tvg-logo="https://i.imgur.com/bkp9dIm.png" group-title="1.Malayalam" tvg-group="01",KCL TV
-https://kcltv.livebox.co.in/kclhls/live.m3u8
 
 #EXTINF:-1 tvg-logo="https://commons.wikimedia.org/wiki/File:Kerala_Vision_TV_Logo.png"group-title="1.Malayalam" tvg-group="01",Kerala Vision
 https://yuppnimrestreammum.akamaized.net/181224/smil:keralavision.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
@@ -160,6 +154,9 @@ https://em4qj6nedyvg-hls-live.wmncdn.net/liveunit/89b1e919eed04e59383cf820d644c2
 
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",V9
 https://5a1178b42cc03.streamlock.net/8212/8212/playlist.m3u8
+
+#EXTINF:-1 tvg-id="VCV.in@SD" tvg-logo="https://i.imgur.com/KbU36xI.png" group-title="1.Malayalam" tvg-group="01",VCV
+https://5a1178b42cc03.streamlock.net/8210/8210/playlist.m3u8
 
 #EXTINF:-1 tvg-name="Vibgyor TV" group-title="1.Malayalam" tvg-group="01",Vibgyor TV
 https://livestream.vibgyortv.com/hls/stream.m3u8
