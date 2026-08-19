@@ -5,9 +5,6 @@
 #EXTINF:-1 group-title="1.Malayalam" tvg-logo="https://www.facebook.com/photo/?fbid=4250871585231102&set=a.1395254334126189"tvg-group="01",CTV Mukkam
 https://live.skystream.in/live/ctv1805/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-id="KannurVision.in@SD" tvg-logo="https://i.imgur.com/FCXqPer.png" group-title="1.Malayalam" tvg-group="01",Kannur Vision
-https://stream.logichost.in/kannurvision/live/playlist.m3u8
-
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",KCN
 https://live.skystream.in/live/kcnksrgod/index.m3u8
 
@@ -41,5 +38,14 @@ http://41.205.77.102/ZEE-CINEMA/index.m3u8
 
 # ===== 5.English =====
 
+#EXTINF:-1 group-title="5.English" tvg-group="04",Comedy Plus
+https://m3uplay.com/stream.m3u8?id=comedyplus
+
 #EXTINF:-1 tvg-id="24HourFreeMovies.us@SD" tvg-logo="https://i.imgur.com/iSVnzR1.png" group-title="5.English" tvg-group="04",like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" tvg-group="04" group-title="5.English",24 Hour Free Movies
 https://d1b5mlajbmvkjv.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDU-DistroTV/145.m3u8?ads.vf=7FhdsxqVxOi
+
+
+# ===== 7.Kids =====
+
+#EXTINF:-1 group-title="7.Kids"  tvg-group="06",My Toonz
+https://m3uplay.com/stream.m3u8?id=mytoonz
