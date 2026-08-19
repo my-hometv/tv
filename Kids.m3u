@@ -20,8 +20,14 @@ https://cc-t8lqe1o99pszu.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da6
 #EXTINF:-1 group-title="7.Kids"  tvg-group="06",Happy Kids TV
 https://mumbai-edge.smartplaytv.in/HappyKids/index.m3u8
 
+#EXTINF:-1 group-title="7.Kids" tvg-group="01",Kartoon
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-kartoonchannel-samsungnz/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/kartoon-channel-us-160.webp" group-title="7.Kids" tvg-language="eng" tvg-country="US" tvg-group="06",Kartoon Channel!
 https://lightning-fnf-samsungaus.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 group-title="7.Kids" tvg-group="01",Kids Flix
+https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50
 
 #EXTINF:-1 group-title="7.Kids"  tvg-group="06",Kids TV
 https://wurljansonmedia.global.transmit.live/hls/69029561e0b3f0f215eef867/playlist.m3u8?wurl_channel=1379&wurl_name=KidsTV&coppa=1&uid=[DEVICE_ID]&rdid=[IFA]&ifatype=[IFA_TYPE]&dnt=[LMT]&donotsell=[DNS]&isgdpr=[GDPR]&gdpr=[GDPR_CONSENT]&country=[COUNTRY]&pr=[US_PRIVACY]&appstoreurl=[APP_STOREURL]&bundleid=[APP_BUNDLE]&appname=[APP_NAME]&appversion=[APP_VERSION]&dt=[DEVICE_TYPE]&make=[DEVICE_MAKE]&model=[DEVICE_MODEL]&targetad=[TARGETAD_ALLOWED]&fck=[FCK]&viewsize=[VIEWSIZE]&nonce=[NONCE]
