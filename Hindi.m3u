@@ -62,11 +62,11 @@ https://runn-tv.keralive.workers.dev/runntv/stream/p_supjio/playlist.m3u8
 #EXTINF:-1 tvg-id="TheMovieClub.in@HD" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN38000072R_20260325T012318SQUARE.png" group-title="4.Hindi" tvg-group="08",The Movie Club
 https://sis-global.prod.samsungtv.plus/v1/tvpprd/sc-mp2ar4ca425xo.m3u8
 
-#EXTINF:-1 tvg-id="Zoom.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZOOM/images/LOGO_HD/image.png" group-title="4.Hindi" tvg-group="09",ZBollywood
-https://s3.itcnbd.live/channel/a5979fd53c01d1b2.m3u8
-
 
 # ===== 4.Hindi Music =====
+
+#EXTINF:-1 group-title="4.Hindi Music",9X Jalwa
+https://mumt03.tangotv.in/Dsly5z3H9XJALWA/index.m3u8
 
 #EXTINF:-1 tvg-id="9XMMusicIndia.in@SD" group-title="4.Hindi Music" tvg-group="09",9XM
 https://9xjio.wiseplayout.com/9XM/master.m3u8
@@ -100,6 +100,9 @@ https://shemaroo.keralive.workers.dev/du_filmigaane/du_filmigaane_1080/playlist.
 
 #EXTINF:-1 tvg-id="YRFMusic.in" tvg-logo="https://cdn.tvivu.com/logos/yrf-music-160.webp" group-title="4.Hindi Music" tvg-language="hin" tvg-country="IN" tvg-group="09",YRF Music
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Zoom.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZOOM/images/LOGO_HD/image.png" group-title="4.Hindi Music" tvg-group="09",ZBollywood
+https://s3.itcnbd.live/channel/a5979fd53c01d1b2.m3u8
 
 #EXTINF:-1 tvg-id="Zoom.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZOOM/images/LOGO_HD/image.png" group-title="4.Hindi Music" tvg-group="09",Zoom
 https://dai.google.com/linear/hls/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8

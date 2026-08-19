@@ -32,14 +32,14 @@ https://d2lk5u59tns74c.cloudfront.net/out/v1/c313674ffced4c9a90f1bba436df2b9b/in
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",Drishya
 https://live.skystream.in/live/drishya5060/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",Drishya
-https://live.skystream.in/live/drishyakarunagapally/index.m3u8?hls_ctx=64s22r57
-
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",Drishya Pala
 https://live.skystream.in/live/DrisyaPala2924/index.m3u8?hls_ctx=351ad30d
 
 #EXTINF:-1 tvg-id="FlowersTVUSA.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/ml/1/1c/Flowers-Onam.png" group-title="1.Malayalam" tvg-group="01",Flowers TV USA
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/flowers_nim_https/050522/flowers/playlist.m3u8
+
+#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",G TV
+https://play.applelive.in/gtv/gtv.m3u8
 
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",G TV Max
 https://play.applelive.in/gtvmax/gtvmax.m3u8
@@ -308,11 +308,11 @@ https://runn-tv.keralive.workers.dev/runntv/stream/p_supjio/playlist.m3u8
 #EXTINF:-1 tvg-id="TheMovieClub.in@HD" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN38000072R_20260325T012318SQUARE.png" group-title="4.Hindi" tvg-group="08",The Movie Club
 https://sis-global.prod.samsungtv.plus/v1/tvpprd/sc-mp2ar4ca425xo.m3u8
 
-#EXTINF:-1 tvg-id="Zoom.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZOOM/images/LOGO_HD/image.png" group-title="4.Hindi" tvg-group="09",ZBollywood
-https://s3.itcnbd.live/channel/a5979fd53c01d1b2.m3u8
-
 
 # ===== 4.Hindi Music =====
+
+#EXTINF:-1 group-title="4.Hindi Music",9X Jalwa
+https://mumt03.tangotv.in/Dsly5z3H9XJALWA/index.m3u8
 
 #EXTINF:-1 tvg-id="9XMMusicIndia.in@SD" group-title="4.Hindi Music" tvg-group="09",9XM
 https://9xjio.wiseplayout.com/9XM/master.m3u8
@@ -347,6 +347,9 @@ https://shemaroo.keralive.workers.dev/du_filmigaane/du_filmigaane_1080/playlist.
 #EXTINF:-1 tvg-id="YRFMusic.in" tvg-logo="https://cdn.tvivu.com/logos/yrf-music-160.webp" group-title="4.Hindi Music" tvg-language="hin" tvg-country="IN" tvg-group="09",YRF Music
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8
 
+#EXTINF:-1 tvg-id="Zoom.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZOOM/images/LOGO_HD/image.png" group-title="4.Hindi Music" tvg-group="09",ZBollywood
+https://s3.itcnbd.live/channel/a5979fd53c01d1b2.m3u8
+
 #EXTINF:-1 tvg-id="Zoom.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZOOM/images/LOGO_HD/image.png" group-title="4.Hindi Music" tvg-group="09",Zoom
 https://dai.google.com/linear/hls/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8
 
@@ -370,6 +373,9 @@ https://30a-tv.com/feeds/pzaz/30atvmovies.m3u8
 
 #EXTINF:-1 tvg-id="AE.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/A%26E_Network_logo.svg/960px-A%26E_Network_logo.svg.png" group-title="5.English" tvg-group="04",A&E
 http://23.239.31.26:8989/aande/index.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Action Hollywood Movies
+https://amg01076-lightningintern-actionhollywood-samsungau-rs69y.amagi.tv/playlist/amg01076-lightningintern-actionhollywood-samsungau/playlist.m3u8
 
 #EXTINF:-1 tvg-id="ARTFLIXMovieClassics.us@SD" tvg-logo="https://i.imgur.com/5pOZQB4.png" group-title="5.English" tvg-group="04",Artflix Movie Classics
 https://amogonetworx-artflix-1-nl.samsung.wurl.tv/playlist.m3u8
@@ -482,6 +488,12 @@ https://linear-897.frequency.stream/dist/cineverse/897/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="MixHollywood.eg" tvg-logo="https://cdn.tvivu.com/logos/mix-hollywood-160.webp" group-title="5.English" tvg-language="ara" tvg-country="EG" tvg-group="04",Mix Hollywood
 https://ml-pull-hwc.myco.io/MixTV/hls/index.m3u8
 
+#EXTINF:-1 group-title="5.English" tvg-group="01",Movie Sphere
+https://amg00353-lionsgatefilmsi-moviesphereaus-samsungau-7qzhf.amagi.tv/playlist/amg00353-lionsgatefilmsi-moviesphereaus-samsungau/playlist.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Movie Sphere
+https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8
+
 #EXTINF:-1 tvg-id="MovieSphere.us" tvg-logo="https://cdn.tvivu.com/logos/moviesphere-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",MovieSphere
 https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8
 
@@ -524,6 +536,9 @@ https://streamer1.nexgen.bz/WE_TV/index.m3u8
 #EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/wild-planet-gb-160.webp" group-title="5.English" tvg-language="eng" tvg-country="UK" tvg-group="04",Wild Planet
 https://jmp2.uk/stvp-GBBB5000002PL
 
+#EXTINF:-1 group-title="5.English" tvg-group="01",Wild Planet
+https://d1h8whhtg5u7om.cloudfront.net/WildPlanet_GB.m3u8
+
 #EXTINF:-1 tvg-id="WildTV.ca" tvg-logo="https://cdn.tvivu.com/logos/wild-tv-160.webp" group-title="5.English" tvg-language="eng" tvg-country="CA" tvg-group="04",Wild TV
 https://dfhsahpa45kk2.cloudfront.net/scheduler/scheduleMaster/476.m3u8
 
@@ -535,6 +550,12 @@ https://linear-799.frequency.stream/dist/xumo/799/hls/master/playlist.m3u8
 
 #EXTINF:-1  group-title="5.English" tvg-language="eng" tvg-country="CA" tvg-group="04",World Fashion
 https://t.freetv.fun/live/world-fashion-channel-en.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",World War TV
+https://aenetworks-worldwartv-rakuten.amagi.tv/playlist.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",XITE Hits
+https://amg01243-xitenetworksint-hitsuk-samsunguk-mvovq.amagi.tv/playlist/amg01243-xitenetworksint-hitsuk-samsunguk/playlist.m3u8
 
 
 # ===== 5.English Music =====
