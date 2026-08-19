@@ -119,6 +119,9 @@ https://live.skystream.in/live/networkpayyanur/index.m3u8
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",New Star
 https://live.skystream.in/live/newsstar2924/index.m3u8?hls_ctx=ix6cvu58
 
+#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",New Vision
+https://live.skystream.in/live/newvision2924/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://www.facebook.com/photo/?fbid=1300140362154625&set=a.594783942690274"tvg-name="NTV" group-title="1.Malayalam" tvg-group="01",NTV
 https://stream.logichost.in/NTV/live/playlist.m3u8
 
