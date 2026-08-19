@@ -1,7 +1,7 @@
 # Playlist URL Check Report
 
 Checked 223 URLs
-Time: 2026-08-18 22:25:31 UTC
+Time: 2026-08-19 01:18:51 UTC
 
 ## Amrita TV
 Group: 1.Malayalam
@@ -133,10 +133,10 @@ URL: https://livegeoroueu.akamaized.net/120723/smil:jeevan.smil/playlist.m3u8?hd
 
 ## K7 Keralam
 Group: 1.Malayalam
-Status: OK
-Classification: WORKING
-Consecutive hard failures: 0
-Detail: HTTP 200, HLS playlist
+Status: HTTP_ERROR
+Classification: TEMPORARY_FAILURE
+Consecutive hard failures: 1
+Detail: HTTP 404
 URL: https://live.skystream.in/live/keralam2742/index.m3u8
 
 ## Kairali Arabia
@@ -175,7 +175,7 @@ URL: http://server.applelive.in/kalikatv/kalikatv.m3u8
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 3
+Consecutive hard failures: 4
 Detail: HTTP 404
 URL: https://stream.logichost.in/kannurvision/live/playlist.m3u8
 
@@ -311,7 +311,7 @@ URL: https://live.skystream.in/live/newsstar2924/index.m3u8?hls_ctx=ix6cvu58
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 4
+Consecutive hard failures: 5
 Detail: HTTP 404
 URL: https://live.skystream.in/live/newvision2924/index.m3u8
 
@@ -383,7 +383,7 @@ URL: https://live.skystream.in/live/southvsnklm/tracks-v1a1/mono.m3u8
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 4
+Consecutive hard failures: 5
 Detail: HTTP 404
 URL: https://5a1178b42cc03.streamlock.net/8220/8220/playlist.m3u8
 
@@ -431,7 +431,7 @@ URL: https://5a1178b42cc03.streamlock.net/8212/8212/playlist.m3u8
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 15
+Consecutive hard failures: 16
 Detail: HTTP 404
 URL: https://5a1178b42cc03.streamlock.net/8210/8210/playlist.m3u8
 
@@ -805,10 +805,10 @@ URL: https://dai.google.com/linear/hls/event/JCAm25qkRXiKcK1AJMlvKQ/master.m3u8
 
 ## 30A Ridiculous TV
 Group: 5.English
-Status: ERROR
-Classification: CHECK_REQUIRED
+Status: OK
+Classification: WORKING
 Consecutive hard failures: 0
-Detail: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Detail: HTTP 200, HLS playlist
 URL: https://30a-tv.com/feeds/720p/63.m3u8
 
 ## 30A Sidewalks
@@ -1383,7 +1383,7 @@ URL: https://d382r3rgbxdixq.cloudfront.net/scheduler/scheduleMaster/418.m3u8
 Group: 4.Hindi
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 29
+Consecutive hard failures: 30
 Detail: HTTP 404
 URL: https://mumt03.tangotv.in/Dsly5z3HALLTIMEMOVIES/index.m3u8
 
@@ -1398,8 +1398,8 @@ URL: https://www.youtube.com/watch?v=qALTGOsXIkw
 ## Comedy Plus
 Group: 5.English
 Status: ERROR
-Classification: TEMPORARY_FAILURE
-Consecutive hard failures: 1
+Classification: REPEATED_FAILURE
+Consecutive hard failures: 2
 Detail: HTTPSConnectionPool(host='m3uplay.com', port=443): Max retries exceeded with url: /stream.m3u8?id=comedyplus (Caused by NameResolutionError("HTTPSConnection(host='m3uplay.com', port=443): Failed to resolve 'm3uplay.com' ([Errno -3] Temporary failure in name resolution)"))
 URL: https://m3uplay.com/stream.m3u8?id=comedyplus
 
@@ -1407,7 +1407,7 @@ URL: https://m3uplay.com/stream.m3u8?id=comedyplus
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 29
+Consecutive hard failures: 30
 Detail: HTTP 404
 URL: https://live.skystream.in/live/ctv1805/tracks-v1a1/mono.m3u8
 
@@ -1423,7 +1423,7 @@ URL: https://bhoomtv.me/tv/restream-tv/stream.m3u8?id=29d7f16babf8&t=1785520327
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 29
+Consecutive hard failures: 30
 Detail: HTTP 404
 URL: https://live.skystream.in/live/kcnksrgod/index.m3u8
 
@@ -1439,7 +1439,7 @@ URL: https://edge1.tikilive.com/livehttporigin_tikilive/56275/amlst:mainstream/p
 Group: 5.English
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 29
+Consecutive hard failures: 30
 Detail: HTTP 404
 URL: https://d1b5mlajbmvkjv.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDU-DistroTV/145.m3u8?ads.vf=7FhdsxqVxOi
 
@@ -1487,7 +1487,7 @@ URL: https://www.youtube.com/watch?v=-8d8-c0yvyU
 Group: 4.Hindi
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 29
+Consecutive hard failures: 30
 Detail: HTTP 404
 URL: https://mumt04.tangotv.in/m18aqlK4MOVIEPLEX/index.m3u8
 
@@ -1510,8 +1510,8 @@ URL: https://maamusic.keralive.workers.dev/out/v1/a797c00cba954265ba781f92a57e2c
 ## My Toonz
 Group: 7.Kids
 Status: ERROR
-Classification: TEMPORARY_FAILURE
-Consecutive hard failures: 1
+Classification: REPEATED_FAILURE
+Consecutive hard failures: 2
 Detail: HTTPSConnectionPool(host='m3uplay.com', port=443): Max retries exceeded with url: /stream.m3u8?id=mytoonz (Caused by NameResolutionError("HTTPSConnection(host='m3uplay.com', port=443): Failed to resolve 'm3uplay.com' ([Errno -3] Temporary failure in name resolution)"))
 URL: https://m3uplay.com/stream.m3u8?id=mytoonz
 
@@ -1599,7 +1599,7 @@ URL: https://online.wayanadvision.in/hls/streaming1.m3u8
 Group: 4.Hindi
 Status: ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 29
+Consecutive hard failures: 30
 Detail: HTTPConnectionPool(host='41.205.77.102', port=80): Max retries exceeded with url: /ZEE-CINEMA/index.m3u8 (Caused by NewConnectionError("HTTPConnection(host='41.205.77.102', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))
 URL: http://41.205.77.102/ZEE-CINEMA/index.m3u8
 
@@ -1607,7 +1607,7 @@ URL: http://41.205.77.102/ZEE-CINEMA/index.m3u8
 Group: 2.Malayalam News
 Status: ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 29
+Consecutive hard failures: 30
 Detail: HTTPSConnectionPool(host='d1ty2af03alkwd.cloudfront.net', port=443): Max retries exceeded with url: /index_4.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='d1ty2af03alkwd.cloudfront.net', port=443): Failed to resolve 'd1ty2af03alkwd.cloudfront.net' ([Errno -5] No address associated with hostname)"))
 URL: https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
 
@@ -1790,8 +1790,8 @@ URL: https://aegis-cloudfront-1.tubi.video/9f31e187-3d43-4ed0-81ba-63bd3bc560aa/
 # SUMMARY BY STATUS
 
 ACCESS_RESTRICTED: 16
-ERROR: 8
-HTTP_ERROR: 9
+ERROR: 7
+HTTP_ERROR: 10
 OK: 187
 WEBPAGE_OR_UNKNOWN: 3
 
@@ -1799,7 +1799,7 @@ WEBPAGE_OR_UNKNOWN: 3
 
 WORKING: 187
 ACCESS_RESTRICTED: 16
-CHECK_REQUIRED: 7
-TEMPORARY_FAILURE: 2
-REPEATED_FAILURE: 0
+CHECK_REQUIRED: 6
+TEMPORARY_FAILURE: 1
+REPEATED_FAILURE: 2
 CONSISTENTLY_BROKEN: 11

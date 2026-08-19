@@ -5,7 +5,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:30 UTC",
+    "last_checked_utc": "2026-08-19 01:21:39 UTC",
     "last_detail": "HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "StarPlus"
@@ -16,18 +16,18 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:57 UTC",
+    "last_checked_utc": "2026-08-19 01:20:14 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "A&E"
   },
   "http://41.205.77.102/ZEE-CINEMA/index.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 29,
-    "consecutive_hard_failures": 29,
+    "consecutive_failures": 30,
+    "consecutive_hard_failures": 30,
     "group": "4.Hindi",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-18 22:28:32 UTC",
+    "last_checked_utc": "2026-08-19 01:21:42 UTC",
     "last_detail": "HTTPConnectionPool(host='41.205.77.102', port=80): Max retries exceeded with url: /ZEE-CINEMA/index.m3u8 (Caused by NewConnectionError(\"HTTPConnection(host='41.205.77.102', port=80): Failed to establish a new connection: [Errno 111] Connection refused\"))",
     "last_status": "ERROR",
     "name": "Zee Cinema ME"
@@ -38,7 +38,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:07 UTC",
+    "last_checked_utc": "2026-08-19 01:19:24 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Swantham"
@@ -49,7 +49,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:20 UTC",
+    "last_checked_utc": "2026-08-19 01:19:37 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Malabar News"
@@ -60,7 +60,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:05 UTC",
+    "last_checked_utc": "2026-08-19 01:20:21 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Gagsnetwork"
@@ -71,7 +71,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:45 UTC",
+    "last_checked_utc": "2026-08-19 01:19:04 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Kalika TV"
@@ -82,7 +82,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:01 UTC",
+    "last_checked_utc": "2026-08-19 01:20:17 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Documentary+"
@@ -93,7 +93,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:34 UTC",
+    "last_checked_utc": "2026-08-19 01:18:54 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "C Malayalam TV"
@@ -104,7 +104,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:52 UTC",
+    "last_checked_utc": "2026-08-19 01:19:10 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "KV TV"
@@ -115,20 +115,20 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:56 UTC",
+    "last_checked_utc": "2026-08-19 01:20:13 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "30A The Beach Show"
   },
   "https://30a-tv.com/feeds/720p/63.m3u8": {
-    "classification": "CHECK_REQUIRED",
+    "classification": "WORKING",
     "consecutive_failures": 0,
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:54 UTC",
-    "last_detail": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "last_status": "ERROR",
+    "last_checked_utc": "2026-08-19 01:20:11 UTC",
+    "last_detail": "HTTP 200, HLS playlist",
+    "last_status": "OK",
     "name": "30A Ridiculous TV"
   },
   "https://30a-tv.com/feeds/masters/30atv.m3u8": {
@@ -137,7 +137,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:55 UTC",
+    "last_checked_utc": "2026-08-19 01:20:12 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "30A Television Channel"
@@ -148,7 +148,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:57 UTC",
+    "last_checked_utc": "2026-08-19 01:20:14 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "30A TV Classic Movies"
@@ -159,7 +159,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:16 UTC",
+    "last_checked_utc": "2026-08-19 01:20:32 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "30A Music"
@@ -170,18 +170,18 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:54 UTC",
+    "last_checked_utc": "2026-08-19 01:20:12 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "30A Sidewalks"
   },
   "https://5a1178b42cc03.streamlock.net/8210/8210/playlist.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 15,
-    "consecutive_hard_failures": 15,
+    "consecutive_failures": 16,
+    "consecutive_hard_failures": 16,
     "group": "1.Malayalam",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-18 22:26:11 UTC",
+    "last_checked_utc": "2026-08-19 01:19:29 UTC",
     "last_detail": "HTTP 404",
     "last_status": "HTTP_ERROR",
     "name": "VCV"
@@ -192,18 +192,18 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:10 UTC",
+    "last_checked_utc": "2026-08-19 01:19:28 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "V9"
   },
   "https://5a1178b42cc03.streamlock.net/8220/8220/playlist.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 4,
-    "consecutive_hard_failures": 4,
+    "consecutive_failures": 5,
+    "consecutive_hard_failures": 5,
     "group": "1.Malayalam",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-18 22:26:06 UTC",
+    "last_checked_utc": "2026-08-19 01:19:23 UTC",
     "last_detail": "HTTP 404",
     "last_status": "HTTP_ERROR",
     "name": "Starnet"
@@ -214,7 +214,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:37 UTC",
+    "last_checked_utc": "2026-08-19 01:20:49 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Vaanavil TV"
@@ -225,7 +225,7 @@
     "consecutive_hard_failures": 0,
     "group": "3.Malayalam Religious",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:26 UTC",
+    "last_checked_utc": "2026-08-19 01:19:48 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Harvest TV Keralam"
@@ -236,7 +236,7 @@
     "consecutive_hard_failures": 0,
     "group": "3.Malayalam Religious",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:25 UTC",
+    "last_checked_utc": "2026-08-19 01:19:44 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Harvest TV"
@@ -247,7 +247,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:51 UTC",
+    "last_checked_utc": "2026-08-19 01:19:09 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "KITE Victers"
@@ -258,7 +258,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:34 UTC",
+    "last_checked_utc": "2026-08-19 01:18:54 UTC",
     "last_detail": "HTTPSConnectionPool(host='96vd9q4kyxq7-hls-live.5centscdn.com', port=443): Max retries exceeded with url: /livestream/f25aeb3e9210967d546a077de6e105e4.sdp/playlist.m3u8 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))",
     "last_status": "ERROR",
     "name": "CCTV Kunnamkulam"
@@ -269,7 +269,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:47 UTC",
+    "last_checked_utc": "2026-08-19 01:20:05 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "9XM"
@@ -280,7 +280,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:13 UTC",
+    "last_checked_utc": "2026-08-19 01:20:29 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Sony Movies"
@@ -291,7 +291,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:35 UTC",
+    "last_checked_utc": "2026-08-19 01:21:45 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Great Entertainment"
@@ -302,7 +302,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:02 UTC",
+    "last_checked_utc": "2026-08-19 01:20:18 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "EntrepreneurTV"
@@ -313,7 +313,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:33 UTC",
+    "last_checked_utc": "2026-08-19 01:21:43 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Bounce XL"
@@ -324,7 +324,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:03 UTC",
+    "last_checked_utc": "2026-08-19 01:20:19 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Fear Factor"
@@ -335,7 +335,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:42 UTC",
+    "last_checked_utc": "2026-08-19 01:21:51 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Waypoint"
@@ -346,7 +346,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:45 UTC",
+    "last_checked_utc": "2026-08-19 01:21:55 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Homefull"
@@ -357,7 +357,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:59 UTC",
+    "last_checked_utc": "2026-08-19 01:20:15 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "BritBox Mysteries"
@@ -368,7 +368,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:13 UTC",
+    "last_checked_utc": "2026-08-19 01:20:29 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Wanted: Dead or Alive"
@@ -379,7 +379,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:42 UTC",
+    "last_checked_utc": "2026-08-19 01:20:01 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Shemaroo Josh"
@@ -390,7 +390,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:42 UTC",
+    "last_checked_utc": "2026-08-19 01:20:01 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Shemaroo TV"
@@ -401,7 +401,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:58 UTC",
+    "last_checked_utc": "2026-08-19 01:20:15 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Baywatch"
@@ -412,7 +412,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:00 UTC",
+    "last_checked_utc": "2026-08-19 01:20:16 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "CGTN Documentary"
@@ -423,7 +423,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:11 UTC",
+    "last_checked_utc": "2026-08-19 01:20:27 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Mr Bean Live Action"
@@ -434,7 +434,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:12 UTC",
+    "last_checked_utc": "2026-08-19 01:20:27 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Now 90s00s"
@@ -445,7 +445,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:19 UTC",
+    "last_checked_utc": "2026-08-19 01:19:35 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Kairali News"
@@ -456,7 +456,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:40 UTC",
+    "last_checked_utc": "2026-08-19 01:21:50 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Great Romamce"
@@ -467,7 +467,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:58 UTC",
+    "last_checked_utc": "2026-08-19 01:20:14 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Artflix Movie Classics"
@@ -478,7 +478,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:17 UTC",
+    "last_checked_utc": "2026-08-19 01:19:34 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Asianet News"
@@ -489,7 +489,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:02 UTC",
+    "last_checked_utc": "2026-08-19 01:20:18 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Fail Army"
@@ -500,7 +500,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:01 UTC",
+    "last_checked_utc": "2026-08-19 01:21:12 UTC",
     "last_detail": "HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Hindi Hits HD"
@@ -511,7 +511,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:27 UTC",
+    "last_checked_utc": "2026-08-19 01:21:37 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Real News Kerala"
@@ -522,7 +522,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:39 UTC",
+    "last_checked_utc": "2026-08-19 01:21:49 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Hollywire"
@@ -533,7 +533,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:59 UTC",
+    "last_checked_utc": "2026-08-19 01:20:15 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Brat TV"
@@ -544,7 +544,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:49 UTC",
+    "last_checked_utc": "2026-08-19 01:20:07 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Epic Music"
@@ -555,7 +555,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:36 UTC",
+    "last_checked_utc": "2026-08-19 01:19:56 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Epic TV"
@@ -566,7 +566,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:35 UTC",
+    "last_checked_utc": "2026-08-19 01:19:56 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Epic Bharat"
@@ -577,7 +577,7 @@
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:43 UTC",
+    "last_checked_utc": "2026-08-19 01:20:55 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Epic Kids"
@@ -588,7 +588,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:43 UTC",
+    "last_checked_utc": "2026-08-19 01:20:02 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "South Station"
@@ -599,7 +599,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:39 UTC",
+    "last_checked_utc": "2026-08-19 01:19:58 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Manoranjan Grand"
@@ -610,7 +610,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:51 UTC",
+    "last_checked_utc": "2026-08-19 01:20:09 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Music India"
@@ -621,7 +621,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:22 UTC",
+    "last_checked_utc": "2026-08-19 01:20:36 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "MK Six"
@@ -632,7 +632,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:19 UTC",
+    "last_checked_utc": "2026-08-19 01:19:36 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Kairali News"
@@ -643,7 +643,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:45 UTC",
+    "last_checked_utc": "2026-08-19 01:21:54 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Kartoon"
@@ -654,7 +654,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:52 UTC",
+    "last_checked_utc": "2026-08-19 01:20:10 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "YRF Music"
@@ -665,7 +665,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:01 UTC",
+    "last_checked_utc": "2026-08-19 01:20:18 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "ENT Family"
@@ -676,18 +676,18 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:34 UTC",
+    "last_checked_utc": "2026-08-19 01:20:46 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Tamilan TV"
   },
   "https://d1b5mlajbmvkjv.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDU-DistroTV/145.m3u8?ads.vf=7FhdsxqVxOi": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 29,
-    "consecutive_hard_failures": 29,
+    "consecutive_failures": 30,
+    "consecutive_hard_failures": 30,
     "group": "5.English",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-18 22:28:13 UTC",
+    "last_checked_utc": "2026-08-19 01:21:24 UTC",
     "last_detail": "HTTP 404",
     "last_status": "HTTP_ERROR",
     "name": "like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0\" tvg-group=\"04\" group-title=\"5.English\",24 Hour Free Movies"
@@ -698,7 +698,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:40 UTC",
+    "last_checked_utc": "2026-08-19 01:20:00 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "NH BollyFlix"
@@ -709,18 +709,18 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:47 UTC",
+    "last_checked_utc": "2026-08-19 01:19:05 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Kappa TV"
   },
   "https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 29,
-    "consecutive_hard_failures": 29,
+    "consecutive_failures": 30,
+    "consecutive_hard_failures": 30,
     "group": "2.Malayalam News",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-18 22:28:33 UTC",
+    "last_checked_utc": "2026-08-19 01:21:42 UTC",
     "last_detail": "HTTPSConnectionPool(host='d1ty2af03alkwd.cloudfront.net', port=443): Max retries exceeded with url: /index_4.m3u8 (Caused by NameResolutionError(\"HTTPSConnection(host='d1ty2af03alkwd.cloudfront.net', port=443): Failed to resolve 'd1ty2af03alkwd.cloudfront.net' ([Errno -5] No address associated with hostname)\"))",
     "last_status": "ERROR",
     "name": "Zee Malayalam News"
@@ -731,7 +731,7 @@
     "consecutive_hard_failures": 0,
     "group": "3.Malayalam Religious",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:27 UTC",
+    "last_checked_utc": "2026-08-19 01:19:50 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Shalom Global"
@@ -742,7 +742,7 @@
     "consecutive_hard_failures": 0,
     "group": "3.Malayalam Religious",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:27 UTC",
+    "last_checked_utc": "2026-08-19 01:19:49 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Shalom"
@@ -753,7 +753,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:17 UTC",
+    "last_checked_utc": "2026-08-19 01:19:34 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Big TV 24x7"
@@ -764,7 +764,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:39 UTC",
+    "last_checked_utc": "2026-08-19 01:19:59 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "NDTV GoodTimes"
@@ -775,7 +775,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:36 UTC",
+    "last_checked_utc": "2026-08-19 01:18:56 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "DD Malayalam"
@@ -786,7 +786,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:42 UTC",
+    "last_checked_utc": "2026-08-19 01:21:51 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "The Unsolved Mysteries"
@@ -797,7 +797,7 @@
     "consecutive_hard_failures": 0,
     "group": "9.Sports",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:49 UTC",
+    "last_checked_utc": "2026-08-19 01:21:00 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Cricket Gold"
@@ -808,7 +808,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:30 UTC",
+    "last_checked_utc": "2026-08-19 01:19:52 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "B4U Movies"
@@ -819,7 +819,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:34 UTC",
+    "last_checked_utc": "2026-08-19 01:19:54 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "DD National SD"
@@ -830,7 +830,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:35 UTC",
+    "last_checked_utc": "2026-08-19 01:21:44 UTC",
     "last_detail": "HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Gravitas"
@@ -841,7 +841,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:53 UTC",
+    "last_checked_utc": "2026-08-19 01:20:11 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Zoom"
@@ -852,7 +852,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:17 UTC",
+    "last_checked_utc": "2026-08-19 01:20:33 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "360TuneBox"
@@ -863,7 +863,7 @@
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:42 UTC",
+    "last_checked_utc": "2026-08-19 01:20:54 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Duck TV Plus"
@@ -874,7 +874,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:06 UTC",
+    "last_checked_utc": "2026-08-19 01:20:22 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Hallmark Movies & More"
@@ -885,7 +885,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:31 UTC",
+    "last_checked_utc": "2026-08-19 01:18:51 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Amrita TV"
@@ -896,7 +896,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:15 UTC",
+    "last_checked_utc": "2026-08-19 01:20:31 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Wild TV"
@@ -907,7 +907,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:41 UTC",
+    "last_checked_utc": "2026-08-19 01:21:50 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Wild TV"
@@ -918,7 +918,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:01 UTC",
+    "last_checked_utc": "2026-08-19 01:20:17 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Dry Bar Comedy"
@@ -929,7 +929,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:43 UTC",
+    "last_checked_utc": "2026-08-19 01:21:52 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Mysteries Xplored"
@@ -940,7 +940,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:13 UTC",
+    "last_checked_utc": "2026-08-19 01:21:23 UTC",
     "last_detail": "HTTP 401",
     "last_status": "ACCESS_RESTRICTED",
     "name": "KVTV News"
@@ -951,7 +951,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:09 UTC",
+    "last_checked_utc": "2026-08-19 01:19:27 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "UTV Utsav"
@@ -962,7 +962,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:08 UTC",
+    "last_checked_utc": "2026-08-19 01:19:26 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "UTV"
@@ -973,7 +973,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:21 UTC",
+    "last_checked_utc": "2026-08-19 01:20:35 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "EET TV"
@@ -984,7 +984,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:02 UTC",
+    "last_checked_utc": "2026-08-19 01:20:19 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Failarmy International"
@@ -995,7 +995,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:00 UTC",
+    "last_checked_utc": "2026-08-19 01:20:16 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "BXX TV"
@@ -1006,7 +1006,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:39 UTC",
+    "last_checked_utc": "2026-08-19 01:21:48 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "History Asia"
@@ -1017,7 +1017,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:03 UTC",
+    "last_checked_utc": "2026-08-19 01:20:19 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "FTV"
@@ -1028,7 +1028,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:23 UTC",
+    "last_checked_utc": "2026-08-19 01:20:38 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "NTC TV"
@@ -1039,7 +1039,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:56 UTC",
+    "last_checked_utc": "2026-08-19 01:19:14 UTC",
     "last_detail": "HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "N Vision"
@@ -1050,7 +1050,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:04 UTC",
+    "last_checked_utc": "2026-08-19 01:19:22 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Safari TV"
@@ -1061,7 +1061,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:53 UTC",
+    "last_checked_utc": "2026-08-19 01:19:11 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Magnavision TV"
@@ -1072,7 +1072,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:13 UTC",
+    "last_checked_utc": "2026-08-19 01:20:29 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "OUTflix Movies"
@@ -1083,7 +1083,7 @@
     "consecutive_hard_failures": 0,
     "group": "8.Food",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:48 UTC",
+    "last_checked_utc": "2026-08-19 01:20:59 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Bon App\u00e9tit"
@@ -1094,7 +1094,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:07 UTC",
+    "last_checked_utc": "2026-08-19 01:20:23 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Hot Ones"
@@ -1105,7 +1105,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:15 UTC",
+    "last_checked_utc": "2026-08-19 01:20:31 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Wild Planet"
@@ -1116,7 +1116,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:06 UTC",
+    "last_checked_utc": "2026-08-19 01:20:22 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "GREAT! movies"
@@ -1127,7 +1127,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:32 UTC",
+    "last_checked_utc": "2026-08-19 01:19:53 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Bollygold"
@@ -1138,7 +1138,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:49 UTC",
+    "last_checked_utc": "2026-08-19 01:19:07 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "KCL TV"
@@ -1149,7 +1149,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:55 UTC",
+    "last_checked_utc": "2026-08-19 01:19:13 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Metro Live"
@@ -1160,7 +1160,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:39 UTC",
+    "last_checked_utc": "2026-08-19 01:21:49 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "History Hit"
@@ -1171,7 +1171,7 @@
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:45 UTC",
+    "last_checked_utc": "2026-08-19 01:20:57 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Kartoon Channel!"
@@ -1182,7 +1182,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:41 UTC",
+    "last_checked_utc": "2026-08-19 01:21:50 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Wild West TV"
@@ -1193,7 +1193,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:08 UTC",
+    "last_checked_utc": "2026-08-19 01:20:24 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Midnight Pulp"
@@ -1204,7 +1204,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:33 UTC",
+    "last_checked_utc": "2026-08-19 01:18:52 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Anand TV"
@@ -1215,7 +1215,7 @@
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:41 UTC",
+    "last_checked_utc": "2026-08-19 01:20:53 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "D2h Kids"
@@ -1226,7 +1226,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:54 UTC",
+    "last_checked_utc": "2026-08-19 01:19:12 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Media Plus"
@@ -1237,7 +1237,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:34 UTC",
+    "last_checked_utc": "2026-08-19 01:20:47 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "TamilVision-TV"
@@ -1248,7 +1248,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:28 UTC",
+    "last_checked_utc": "2026-08-19 01:20:42 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Roja TV"
@@ -1259,7 +1259,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:38 UTC",
+    "last_checked_utc": "2026-08-19 01:18:57 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Drishya Pala"
@@ -1270,7 +1270,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:36 UTC",
+    "last_checked_utc": "2026-08-19 01:18:55 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "City Vision Kannur"
@@ -1281,18 +1281,18 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:35 UTC",
+    "last_checked_utc": "2026-08-19 01:18:55 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "City Channel"
   },
   "https://live.skystream.in/live/ctv1805/tracks-v1a1/mono.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 29,
-    "consecutive_hard_failures": 29,
+    "consecutive_failures": 30,
+    "consecutive_hard_failures": 30,
     "group": "1.Malayalam",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-18 22:28:01 UTC",
+    "last_checked_utc": "2026-08-19 01:21:12 UTC",
     "last_detail": "HTTP 404",
     "last_status": "HTTP_ERROR",
     "name": "CTV Mukkam"
@@ -1303,7 +1303,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:37 UTC",
+    "last_checked_utc": "2026-08-19 01:18:56 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Drishya"
@@ -1314,7 +1314,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:38 UTC",
+    "last_checked_utc": "2026-08-19 01:18:57 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Drishya"
@@ -1325,31 +1325,31 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:47 UTC",
+    "last_checked_utc": "2026-08-19 01:19:06 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Kasargod Vision"
   },
   "https://live.skystream.in/live/kcnksrgod/index.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 29,
-    "consecutive_hard_failures": 29,
+    "consecutive_failures": 30,
+    "consecutive_hard_failures": 30,
     "group": "1.Malayalam",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-18 22:28:12 UTC",
+    "last_checked_utc": "2026-08-19 01:21:23 UTC",
     "last_detail": "HTTP 404",
     "last_status": "HTTP_ERROR",
     "name": "KCN"
   },
   "https://live.skystream.in/live/keralam2742/index.m3u8": {
-    "classification": "WORKING",
-    "consecutive_failures": 0,
-    "consecutive_hard_failures": 0,
+    "classification": "TEMPORARY_FAILURE",
+    "consecutive_failures": 1,
+    "consecutive_hard_failures": 1,
     "group": "1.Malayalam",
-    "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:41 UTC",
-    "last_detail": "HTTP 200, HLS playlist",
-    "last_status": "OK",
+    "hard_failure": true,
+    "last_checked_utc": "2026-08-19 01:19:01 UTC",
+    "last_detail": "HTTP 404",
+    "last_status": "HTTP_ERROR",
     "name": "K7 Keralam"
   },
   "https://live.skystream.in/live/mediatday/index.m3u8?hls_ctx=p080313v": {
@@ -1358,7 +1358,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:55 UTC",
+    "last_checked_utc": "2026-08-19 01:19:13 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Media Today"
@@ -1369,7 +1369,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:57 UTC",
+    "last_checked_utc": "2026-08-19 01:19:15 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Network"
@@ -1380,18 +1380,18 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:58 UTC",
+    "last_checked_utc": "2026-08-19 01:19:15 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "New Star"
   },
   "https://live.skystream.in/live/newvision2924/index.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 4,
-    "consecutive_hard_failures": 4,
+    "consecutive_failures": 5,
+    "consecutive_hard_failures": 5,
     "group": "1.Malayalam",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-18 22:25:58 UTC",
+    "last_checked_utc": "2026-08-19 01:19:16 UTC",
     "last_detail": "HTTP 404",
     "last_status": "HTTP_ERROR",
     "name": "New Vision"
@@ -1402,7 +1402,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:05 UTC",
+    "last_checked_utc": "2026-08-19 01:19:22 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "South Vision"
@@ -1413,7 +1413,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:07 UTC",
+    "last_checked_utc": "2026-08-19 01:19:24 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "TCN"
@@ -1424,7 +1424,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:41 UTC",
+    "last_checked_utc": "2026-08-19 01:19:00 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Jeevan TV"
@@ -1435,7 +1435,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:25 UTC",
+    "last_checked_utc": "2026-08-19 01:20:39 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Raj Digital Plus"
@@ -1446,7 +1446,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:26 UTC",
+    "last_checked_utc": "2026-08-19 01:20:40 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Raj Musix"
@@ -1457,7 +1457,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:12 UTC",
+    "last_checked_utc": "2026-08-19 01:19:30 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Vibgyor TV"
@@ -1468,7 +1468,7 @@
     "consecutive_hard_failures": 0,
     "group": "3.Malayalam Religious",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:28 UTC",
+    "last_checked_utc": "2026-08-19 01:21:38 UTC",
     "last_detail": "HTTPSConnectionPool(host='livestreamcdn.net', port=444): Max retries exceeded with url: /ShalomTV/ShalomTV/playlist.m3u8 (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'livestreamcdn.net'. (_ssl.c:1032)\")))",
     "last_status": "ERROR",
     "name": "Shalom TV"
@@ -1479,7 +1479,7 @@
     "consecutive_hard_failures": 0,
     "group": "3.Malayalam Religious",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:29 UTC",
+    "last_checked_utc": "2026-08-19 01:19:51 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Shekinah TV"
@@ -1490,29 +1490,29 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:14 UTC",
+    "last_checked_utc": "2026-08-19 01:21:25 UTC",
     "last_detail": "HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Malabar Plus"
   },
   "https://m3uplay.com/stream.m3u8?id=comedyplus": {
-    "classification": "TEMPORARY_FAILURE",
-    "consecutive_failures": 1,
-    "consecutive_hard_failures": 1,
+    "classification": "REPEATED_FAILURE",
+    "consecutive_failures": 2,
+    "consecutive_hard_failures": 2,
     "group": "5.English",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-18 22:28:01 UTC",
+    "last_checked_utc": "2026-08-19 01:21:12 UTC",
     "last_detail": "HTTPSConnectionPool(host='m3uplay.com', port=443): Max retries exceeded with url: /stream.m3u8?id=comedyplus (Caused by NameResolutionError(\"HTTPSConnection(host='m3uplay.com', port=443): Failed to resolve 'm3uplay.com' ([Errno -3] Temporary failure in name resolution)\"))",
     "last_status": "ERROR",
     "name": "Comedy Plus"
   },
   "https://m3uplay.com/stream.m3u8?id=mytoonz": {
-    "classification": "TEMPORARY_FAILURE",
-    "consecutive_failures": 1,
-    "consecutive_hard_failures": 1,
+    "classification": "REPEATED_FAILURE",
+    "consecutive_failures": 2,
+    "consecutive_hard_failures": 2,
     "group": "7.Kids",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-18 22:28:26 UTC",
+    "last_checked_utc": "2026-08-19 01:21:36 UTC",
     "last_detail": "HTTPSConnectionPool(host='m3uplay.com', port=443): Max retries exceeded with url: /stream.m3u8?id=mytoonz (Caused by NameResolutionError(\"HTTPSConnection(host='m3uplay.com', port=443): Failed to resolve 'm3uplay.com' ([Errno -3] Temporary failure in name resolution)\"))",
     "last_status": "ERROR",
     "name": "My Toonz"
@@ -1523,7 +1523,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:02 UTC",
+    "last_checked_utc": "2026-08-19 01:19:19 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Pravasi Channel"
@@ -1534,7 +1534,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:38 UTC",
+    "last_checked_utc": "2026-08-19 01:19:58 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "India Life"
@@ -1545,7 +1545,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:16 UTC",
+    "last_checked_utc": "2026-08-19 01:21:26 UTC",
     "last_detail": "HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "MTV India"
@@ -1556,7 +1556,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:22 UTC",
+    "last_checked_utc": "2026-08-19 01:19:39 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Mathrubhumi"
@@ -1567,7 +1567,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:10 UTC",
+    "last_checked_utc": "2026-08-19 01:20:26 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Mix Hollywood"
@@ -1578,7 +1578,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:44 UTC",
+    "last_checked_utc": "2026-08-19 01:21:53 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Magnificent Movies"
@@ -1589,7 +1589,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:21 UTC",
+    "last_checked_utc": "2026-08-19 01:19:38 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Manorama News"
@@ -1600,7 +1600,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:11 UTC",
+    "last_checked_utc": "2026-08-19 01:20:27 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "MovieSphere"
@@ -1611,7 +1611,7 @@
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:44 UTC",
+    "last_checked_utc": "2026-08-19 01:20:56 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Happy Kids TV"
@@ -1622,7 +1622,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:29 UTC",
+    "last_checked_utc": "2026-08-19 01:20:43 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Sana Plus"
@@ -1633,7 +1633,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:43 UTC",
+    "last_checked_utc": "2026-08-19 01:19:03 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Kairali TV"
@@ -1644,7 +1644,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:45 UTC",
+    "last_checked_utc": "2026-08-19 01:19:04 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Kairali We"
@@ -1655,18 +1655,18 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:18 UTC",
+    "last_checked_utc": "2026-08-19 01:20:34 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "7S Music"
   },
   "https://mumt03.tangotv.in/Dsly5z3HALLTIMEMOVIES/index.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 29,
-    "consecutive_hard_failures": 29,
+    "consecutive_failures": 30,
+    "consecutive_hard_failures": 30,
     "group": "4.Hindi",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-18 22:27:50 UTC",
+    "last_checked_utc": "2026-08-19 01:21:01 UTC",
     "last_detail": "HTTP 404",
     "last_status": "HTTP_ERROR",
     "name": "All Time Movies"
@@ -1677,7 +1677,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:34 UTC",
+    "last_checked_utc": "2026-08-19 01:18:53 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Asianet Middle East"
@@ -1688,7 +1688,7 @@
     "consecutive_hard_failures": 0,
     "group": "8.Food",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:49 UTC",
+    "last_checked_utc": "2026-08-19 01:21:00 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Food Food"
@@ -1699,7 +1699,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:37 UTC",
+    "last_checked_utc": "2026-08-19 01:19:57 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Goldmines Bollywood"
@@ -1710,18 +1710,18 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:42 UTC",
+    "last_checked_utc": "2026-08-19 01:19:02 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Kairali Arabia"
   },
   "https://mumt04.tangotv.in/m18aqlK4MOVIEPLEX/index.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 29,
-    "consecutive_hard_failures": 29,
+    "consecutive_failures": 30,
+    "consecutive_hard_failures": 30,
     "group": "4.Hindi",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-18 22:28:16 UTC",
+    "last_checked_utc": "2026-08-19 01:21:26 UTC",
     "last_detail": "HTTP 404",
     "last_status": "HTTP_ERROR",
     "name": "MoviePlex"
@@ -1732,7 +1732,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:03 UTC",
+    "last_checked_utc": "2026-08-19 01:19:21 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "RajMusix Malayalam"
@@ -1743,7 +1743,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:38 UTC",
+    "last_checked_utc": "2026-08-19 01:20:50 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Vasanth TV"
@@ -1754,7 +1754,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:50 UTC",
+    "last_checked_utc": "2026-08-19 01:20:08 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Evergreen Hits"
@@ -1765,7 +1765,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:35 UTC",
+    "last_checked_utc": "2026-08-19 01:20:48 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Thanthi One"
@@ -1776,7 +1776,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:16 UTC",
+    "last_checked_utc": "2026-08-19 01:19:33 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "24 News"
@@ -1787,7 +1787,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:23 UTC",
+    "last_checked_utc": "2026-08-19 01:19:40 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "News18 Kerala"
@@ -1798,7 +1798,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:32 UTC",
+    "last_checked_utc": "2026-08-19 01:21:41 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Wayanad Vision Plus"
@@ -1809,7 +1809,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:14 UTC",
+    "last_checked_utc": "2026-08-19 01:19:31 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Wayanad Vision Live"
@@ -1820,7 +1820,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:15 UTC",
+    "last_checked_utc": "2026-08-19 01:19:32 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Wayanad Vision Movies"
@@ -1831,7 +1831,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:48 UTC",
+    "last_checked_utc": "2026-08-19 01:19:07 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Kaumudi"
@@ -1842,7 +1842,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:39 UTC",
+    "last_checked_utc": "2026-08-19 01:18:59 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "G TV"
@@ -1853,7 +1853,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:40 UTC",
+    "last_checked_utc": "2026-08-19 01:18:59 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "G TV Max"
@@ -1864,7 +1864,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:52 UTC",
+    "last_checked_utc": "2026-08-19 01:19:10 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Koickal"
@@ -1875,7 +1875,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:02 UTC",
+    "last_checked_utc": "2026-08-19 01:19:20 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Pulari TV"
@@ -1886,7 +1886,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:34 UTC",
+    "last_checked_utc": "2026-08-19 01:21:43 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Celebrity Scene"
@@ -1897,7 +1897,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:34 UTC",
+    "last_checked_utc": "2026-08-19 01:21:44 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Classic Cinema"
@@ -1908,7 +1908,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:51 UTC",
+    "last_checked_utc": "2026-08-19 01:20:09 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "M Tunes"
@@ -1919,7 +1919,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:30 UTC",
+    "last_checked_utc": "2026-08-19 01:21:39 UTC",
     "last_detail": "HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Superfine Movies"
@@ -1930,7 +1930,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:29 UTC",
+    "last_checked_utc": "2026-08-19 01:21:38 UTC",
     "last_detail": "HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Shemaroo Filmi Gaane"
@@ -1941,7 +1941,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:48 UTC",
+    "last_checked_utc": "2026-08-19 01:20:06 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "B4U Music"
@@ -1952,7 +1952,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:46 UTC",
+    "last_checked_utc": "2026-08-19 01:20:05 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "ZBollywood"
@@ -1963,7 +1963,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:24 UTC",
+    "last_checked_utc": "2026-08-19 01:19:41 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Reporter TV"
@@ -1974,7 +1974,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:30 UTC",
+    "last_checked_utc": "2026-08-19 01:20:43 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Sirippoli TV"
@@ -1985,7 +1985,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:28 UTC",
+    "last_checked_utc": "2026-08-19 01:21:38 UTC",
     "last_detail": "HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Shemaroo Bollywood"
@@ -1996,7 +1996,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:28 UTC",
+    "last_checked_utc": "2026-08-19 01:21:38 UTC",
     "last_detail": "HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Shemaroo Comedy"
@@ -2007,7 +2007,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:29 UTC",
+    "last_checked_utc": "2026-08-19 01:21:38 UTC",
     "last_detail": "HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Shemaroo Music Hits"
@@ -2018,7 +2018,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:45 UTC",
+    "last_checked_utc": "2026-08-19 01:20:03 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "The Movie Club"
@@ -2029,7 +2029,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:33 UTC",
+    "last_checked_utc": "2026-08-19 01:19:54 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Bollyood Masala"
@@ -2040,7 +2040,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:44 UTC",
+    "last_checked_utc": "2026-08-19 01:21:53 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Kids Flix"
@@ -2051,7 +2051,7 @@
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:39 UTC",
+    "last_checked_utc": "2026-08-19 01:20:51 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Afro Kiddos"
@@ -2062,7 +2062,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:43 UTC",
+    "last_checked_utc": "2026-08-19 01:21:52 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "The Shade Room"
@@ -2073,7 +2073,7 @@
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:39 UTC",
+    "last_checked_utc": "2026-08-19 01:20:51 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Camp Spoopy"
@@ -2084,7 +2084,7 @@
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:47 UTC",
+    "last_checked_utc": "2026-08-19 01:20:58 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Sparkle Power"
@@ -2095,7 +2095,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:31 UTC",
+    "last_checked_utc": "2026-08-19 01:20:45 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Subin TV"
@@ -2106,18 +2106,18 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:59 UTC",
+    "last_checked_utc": "2026-08-19 01:19:17 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "NTV"
   },
   "https://stream.logichost.in/kannurvision/live/playlist.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 3,
-    "consecutive_hard_failures": 3,
+    "consecutive_failures": 4,
+    "consecutive_hard_failures": 4,
     "group": "1.Malayalam",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-18 22:25:46 UTC",
+    "last_checked_utc": "2026-08-19 01:19:05 UTC",
     "last_detail": "HTTP 404",
     "last_status": "HTTP_ERROR",
     "name": "Kannur Vision"
@@ -2128,7 +2128,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:00 UTC",
+    "last_checked_utc": "2026-08-19 01:19:18 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Periyar Vision"
@@ -2139,7 +2139,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:01 UTC",
+    "last_checked_utc": "2026-08-19 01:19:19 UTC",
     "last_detail": "HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Powran"
@@ -2150,7 +2150,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:20 UTC",
+    "last_checked_utc": "2026-08-19 01:20:35 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Aaryaa TV"
@@ -2161,7 +2161,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:32 UTC",
+    "last_checked_utc": "2026-08-19 01:20:45 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Suriya TV"
@@ -2172,7 +2172,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:36 UTC",
+    "last_checked_utc": "2026-08-19 01:20:48 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Ultimate TV"
@@ -2183,7 +2183,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:27 UTC",
+    "last_checked_utc": "2026-08-19 01:20:41 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Roja Movies"
@@ -2194,7 +2194,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:31 UTC",
+    "last_checked_utc": "2026-08-19 01:21:40 UTC",
     "last_detail": "HTTPSConnectionPool(host='stream.sscloud7.com', port=443): Max retries exceeded with url: /live/suriyantv/index.m3u8 (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'stream.sscloud7.com'. (_ssl.c:1032)\")))",
     "last_status": "ERROR",
     "name": "Suriyan TV"
@@ -2205,7 +2205,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:40 UTC",
+    "last_checked_utc": "2026-08-19 01:21:49 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "We Tv East"
@@ -2216,7 +2216,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:08 UTC",
+    "last_checked_utc": "2026-08-19 01:20:23 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Kaloopi"
@@ -2227,7 +2227,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:16 UTC",
+    "last_checked_utc": "2026-08-19 01:20:32 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "World Fashion"
@@ -2238,7 +2238,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:24 UTC",
+    "last_checked_utc": "2026-08-19 01:19:40 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "News Malayalalm 24x7"
@@ -2249,7 +2249,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:04 UTC",
+    "last_checked_utc": "2026-08-19 01:20:20 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "FunBox UHD"
@@ -2260,7 +2260,7 @@
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:45 UTC",
+    "last_checked_utc": "2026-08-19 01:20:57 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Kids TV"
@@ -2271,7 +2271,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:15 UTC",
+    "last_checked_utc": "2026-08-19 01:21:25 UTC",
     "last_detail": "HTTP 200",
     "last_status": "WEBPAGE_OR_UNKNOWN",
     "name": "Media One"
@@ -2282,7 +2282,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:14 UTC",
+    "last_checked_utc": "2026-08-19 01:21:24 UTC",
     "last_detail": "HTTP 200",
     "last_status": "WEBPAGE_OR_UNKNOWN",
     "name": "Love Nature"
@@ -2293,7 +2293,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:50 UTC",
+    "last_checked_utc": "2026-08-19 01:21:01 UTC",
     "last_detail": "HTTP 200",
     "last_status": "WEBPAGE_OR_UNKNOWN",
     "name": "Bold and the Beautiful"
@@ -2304,7 +2304,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:43 UTC",
+    "last_checked_utc": "2026-08-19 01:21:52 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "The Universal Monsters"
@@ -2315,7 +2315,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:42 UTC",
+    "last_checked_utc": "2026-08-19 01:21:51 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "The Westerners"
@@ -2326,7 +2326,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:13 UTC",
+    "last_checked_utc": "2026-08-19 01:21:24 UTC",
     "last_detail": "HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Loop HD"
@@ -2337,7 +2337,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:14 UTC",
+    "last_checked_utc": "2026-08-19 01:21:24 UTC",
     "last_detail": "HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Loop Tamil"
@@ -2348,7 +2348,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:28:16 UTC",
+    "last_checked_utc": "2026-08-19 01:21:26 UTC",
     "last_detail": "HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Movies HD"
@@ -2359,7 +2359,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:39 UTC",
+    "last_checked_utc": "2026-08-19 01:18:58 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Flowers TV USA"
@@ -2370,7 +2370,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:18 UTC",
+    "last_checked_utc": "2026-08-19 01:19:35 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Janam TV"
@@ -2381,7 +2381,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:53 UTC",
+    "last_checked_utc": "2026-08-19 01:19:11 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Mazhavil Manorama"
@@ -2392,7 +2392,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:27:21 UTC",
+    "last_checked_utc": "2026-08-19 01:20:35 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Kalaignar Murasu"
@@ -2403,7 +2403,7 @@
     "consecutive_hard_failures": 0,
     "group": "3.Malayalam Religious",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:26 UTC",
+    "last_checked_utc": "2026-08-19 01:19:49 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Power Vision"
@@ -2414,7 +2414,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:36 UTC",
+    "last_checked_utc": "2026-08-19 01:18:55 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Darshana"
@@ -2425,7 +2425,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:25:50 UTC",
+    "last_checked_utc": "2026-08-19 01:19:08 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Kerala Vision"
@@ -2436,7 +2436,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-18 22:26:17 UTC",
+    "last_checked_utc": "2026-08-19 01:19:34 UTC",
     "last_detail": "HTTP 200, HLS playlist",
     "last_status": "OK",
     "name": "Jaihind TV"
