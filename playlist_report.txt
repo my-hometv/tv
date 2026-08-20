@@ -1,7 +1,7 @@
 # Playlist URL Check Report
 
 Checked 235 URLs
-Time: 2026-08-20 17:40:03 UTC
+Time: 2026-08-20 18:40:34 UTC
 
 ## Amrita TV
 Group: 1.Malayalam
@@ -31,7 +31,7 @@ URL: https://mumt03.tangotv.in/Dsly5z3HASIANETMIDDLEEAST/index.m3u8
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 12
+Consecutive hard failures: 13
 Detail: Manifest HTTP 404
 URL: https://2-fss-2.streamhoster.com/pl_120/206508-3261972-1/playlist.m3u8
 
@@ -93,10 +93,10 @@ URL: https://live.skystream.in/live/drishyakarunagapally/index.m3u8?hls_ctx=64s2
 
 ## Drishya Pala
 Group: 1.Malayalam
-Status: SEGMENT_FAILED
-Classification: TEMPORARY_FAILURE
-Consecutive hard failures: 1
-Detail: Segment HTTP 404
+Status: IPTV_PLAYABLE
+Classification: WORKING
+Consecutive hard failures: 0
+Detail: Manifest and media segment reachable
 URL: https://live.skystream.in/live/DrisyaPala2924/index.m3u8?hls_ctx=351ad30d
 
 ## Flowers TV USA
@@ -141,10 +141,10 @@ URL: https://live.skystream.in/live/keralam2742/index.m3u8
 
 ## Kairali Arabia
 Group: 1.Malayalam
-Status: SEGMENT_FAILED
-Classification: TEMPORARY_FAILURE
-Consecutive hard failures: 1
-Detail: Segment HTTP 404
+Status: IPTV_PLAYABLE
+Classification: WORKING
+Consecutive hard failures: 0
+Detail: Manifest and media segment reachable
 URL: https://mumt03.tangotv.in/Dsly5z3HKAIRALIARABIA/index.m3u8
 
 ## Kairali TV
@@ -207,16 +207,16 @@ URL: https://oqgdrkxby4rm-hls-live.5centscdn.com/kaumudytv/live.stream/playlist.
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 12
+Consecutive hard failures: 13
 Detail: Manifest HTTP 404
 URL: https://kcltv.livebox.co.in/kclhls/live.m3u8
 
 ## Kerala Vision
 Group: 1.Malayalam
 Status: HTTP_ERROR
-Classification: CHECK_REQUIRED
-Consecutive hard failures: 0
-Detail: Variant playlist HTTP 504
+Classification: TEMPORARY_FAILURE
+Consecutive hard failures: 1
+Detail: Variant playlist HTTP 404
 URL: https://yuppnimrestreammum.akamaized.net/181224/smil:keralavision.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 
 ## KITE Victers
@@ -277,18 +277,18 @@ URL: https://live.skystream.in/live/mediatday/index.m3u8?hls_ctx=p080313v
 
 ## Metro Live
 Group: 1.Malayalam
-Status: SEGMENT_FAILED
-Classification: TEMPORARY_FAILURE
-Consecutive hard failures: 1
-Detail: Segment HTTP 404
+Status: IPTV_PLAYABLE
+Classification: WORKING
+Consecutive hard failures: 0
+Detail: Manifest and media segment reachable
 URL: https://kcnsdhlsapp.ylivestream.com/kcnsdapphls/tracks-v1a1/mono.m3u8
 
 ## N Vision
 Group: 1.Malayalam
-Status: ACCESS_RESTRICTED
-Classification: ACCESS_RESTRICTED
+Status: IPTV_PLAYABLE
+Classification: WORKING
 Consecutive hard failures: 0
-Detail: Manifest HTTP 403
+Detail: Manifest and media segment reachable
 URL: https://ipcloud.live/nvision/nvisionhd/index.m3u8
 
 ## Network
@@ -325,18 +325,18 @@ URL: https://stream.logichost.in/NTV/live/playlist.m3u8
 
 ## Periyar Vision
 Group: 1.Malayalam
-Status: IPTV_PLAYABLE
-Classification: WORKING
-Consecutive hard failures: 0
-Detail: Manifest and media segment reachable
+Status: SEGMENT_FAILED
+Classification: TEMPORARY_FAILURE
+Consecutive hard failures: 1
+Detail: Segment HTTP 404
 URL: https://stream.onecloudlive.in/periyarvision/periyarvision/index.m3u8
 
 ## Powran
 Group: 1.Malayalam
-Status: HTTP_ERROR
-Classification: CHECK_REQUIRED
+Status: IPTV_PLAYABLE
+Classification: WORKING
 Consecutive hard failures: 0
-Detail: Manifest HTTP 503
+Detail: Manifest and media segment reachable
 URL: https://stream.onecloudlive.in/powranmedia/livestream/index.m3u8
 
 ## Pravasi Channel
@@ -373,17 +373,17 @@ URL: https://j78dp346yq5r-hls-live.5centscdn.com/safari/live.stream/playlist.m3u
 
 ## South Vision
 Group: 1.Malayalam
-Status: IPTV_PLAYABLE
-Classification: WORKING
-Consecutive hard failures: 0
-Detail: Manifest and media segment reachable
+Status: SEGMENT_FAILED
+Classification: TEMPORARY_FAILURE
+Consecutive hard failures: 1
+Detail: Segment HTTP 404
 URL: https://live.skystream.in/live/southvsnklm/tracks-v1a1/mono.m3u8
 
 ## Starnet
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 30
+Consecutive hard failures: 31
 Detail: Manifest HTTP 404
 URL: https://5a1178b42cc03.streamlock.net/8220/8220/playlist.m3u8
 
@@ -439,7 +439,7 @@ URL: https://5a1178b42cc03.streamlock.net/8210/8210/playlist.m3u8
 Group: 1.Malayalam
 Status: ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 8
+Consecutive hard failures: 9
 Detail: HTTPSConnectionPool(host='livestream.vibgyortv.com', port=443): Max retries exceeded with url: /hls/stream.m3u8 (Caused by NewConnectionError("HTTPSConnection(host='livestream.vibgyortv.com', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
 URL: https://livestream.vibgyortv.com/hls/stream.m3u8
 
@@ -741,10 +741,10 @@ URL: https://s3.itcnbd.live/channel/a5979fd53c01d1b2.m3u8
 
 ## 9X Jalwa
 Group: 4.Hindi Music
-Status: SEGMENT_FAILED
-Classification: TEMPORARY_FAILURE
-Consecutive hard failures: 1
-Detail: Segment HTTP 404
+Status: IPTV_PLAYABLE
+Classification: WORKING
+Consecutive hard failures: 0
+Detail: Manifest and media segment reachable
 URL: https://mumt03.tangotv.in/Dsly5z3H9XJALWA/index.m3u8
 
 ## 9XM
@@ -821,10 +821,10 @@ URL: https://30a-tv.com/feeds/720p/63.m3u8
 
 ## 30A Sidewalks
 Group: 5.English
-Status: ERROR
-Classification: CHECK_REQUIRED
+Status: IPTV_PLAYABLE
+Classification: WORKING
 Consecutive hard failures: 0
-Detail: Variant fetch failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Detail: Manifest and media segment reachable
 URL: https://30a-tv.com/sidewalks.m3u8
 
 ## 30A Television Channel
@@ -845,10 +845,10 @@ URL: https://30a-tv.com/beachy.m3u8
 
 ## 30A TV Classic Movies
 Group: 5.English
-Status: IPTV_PLAYABLE
-Classification: WORKING
+Status: ERROR
+Classification: CHECK_REQUIRED
 Consecutive hard failures: 0
-Detail: Manifest and media segment reachable
+Detail: Variant fetch failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
 URL: https://30a-tv.com/feeds/pzaz/30atvmovies.m3u8
 
 ## A&E
@@ -893,10 +893,10 @@ URL: https://aegis-cloudfront-1.tubi.video/c95700f8-e51c-4a36-ad46-56f70fc9f1d9/
 
 ## BXX TV
 Group: 5.English
-Status: SEGMENT_FAILED
-Classification: TEMPORARY_FAILURE
-Consecutive hard failures: 1
-Detail: Segment HTTP 404
+Status: IPTV_PLAYABLE
+Classification: WORKING
+Consecutive hard failures: 0
+Detail: Manifest and media segment reachable
 URL: https://fl1004.bozztv.com/ushba-mafia/tracks-v1a1/mono.m3u8
 
 ## CGTN Documentary
@@ -1167,7 +1167,7 @@ URL: https://cdn-3.pishow.tv/live/1253/master.m3u8
 Group: 6.Tamil
 Status: SEGMENT_FAILED
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 4
+Consecutive hard failures: 5
 Detail: Segment HTTP 404
 URL: https://galaxyott.live/hls/ntv.m3u8
 
@@ -1325,10 +1325,10 @@ URL: https://cc-t8lqe1o99pszu.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b
 
 ## Happy Kids TV
 Group: 7.Kids
-Status: SEGMENT_FAILED
-Classification: REPEATED_FAILURE
-Consecutive hard failures: 2
-Detail: Segment HTTP 404
+Status: IPTV_PLAYABLE
+Classification: WORKING
+Consecutive hard failures: 0
+Detail: Manifest and media segment reachable
 URL: https://mumbai-edge.smartplaytv.in/HappyKids/index.m3u8
 
 ## Kartoon Channel!
@@ -1349,10 +1349,10 @@ URL: https://wurljansonmedia.global.transmit.live/hls/69029561e0b3f0f215eef867/p
 
 ## KidsFlix
 Group: 7.Kids
-Status: HLS_NO_SEGMENT
-Classification: CHECK_REQUIRED
+Status: IPTV_PLAYABLE
+Classification: WORKING
 Consecutive hard failures: 0
-Detail: HLS manifest loaded but no media segment found
+Detail: Manifest and media segment reachable
 URL: https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50
 
 ## Sparkle Power
@@ -1391,7 +1391,7 @@ URL: https://d382r3rgbxdixq.cloudfront.net/scheduler/scheduleMaster/418.m3u8
 Group: 4.Hindi
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 55
+Consecutive hard failures: 56
 Detail: Manifest HTTP 404
 URL: https://mumt03.tangotv.in/Dsly5z3HALLTIMEMOVIES/index.m3u8
 
@@ -1407,7 +1407,7 @@ URL: https://www.youtube.com/watch?v=qALTGOsXIkw
 Group: 5.English
 Status: ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 27
+Consecutive hard failures: 28
 Detail: HTTPSConnectionPool(host='m3uplay.com', port=443): Max retries exceeded with url: /stream.m3u8?id=comedyplus (Caused by NameResolutionError("HTTPSConnection(host='m3uplay.com', port=443): Failed to resolve 'm3uplay.com' ([Errno -3] Temporary failure in name resolution)"))
 URL: https://m3uplay.com/stream.m3u8?id=comedyplus
 
@@ -1415,7 +1415,7 @@ URL: https://m3uplay.com/stream.m3u8?id=comedyplus
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 55
+Consecutive hard failures: 56
 Detail: Manifest HTTP 404
 URL: https://live.skystream.in/live/ctv1805/tracks-v1a1/mono.m3u8
 
@@ -1431,7 +1431,7 @@ URL: https://bhoomtv.me/tv/restream-tv/stream.m3u8?id=29d7f16babf8&t=1785520327
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 55
+Consecutive hard failures: 56
 Detail: Manifest HTTP 404
 URL: https://live.skystream.in/live/kcnksrgod/index.m3u8
 
@@ -1447,7 +1447,7 @@ URL: https://edge1.tikilive.com/livehttporigin_tikilive/56275/amlst:mainstream/p
 Group: 5.English
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 55
+Consecutive hard failures: 56
 Detail: Manifest HTTP 404
 URL: https://d1b5mlajbmvkjv.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDU-DistroTV/145.m3u8?ads.vf=7FhdsxqVxOi
 
@@ -1495,7 +1495,7 @@ URL: https://www.youtube.com/watch?v=-8d8-c0yvyU
 Group: 4.Hindi
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 55
+Consecutive hard failures: 56
 Detail: Manifest HTTP 404
 URL: https://mumt04.tangotv.in/m18aqlK4MOVIEPLEX/index.m3u8
 
@@ -1519,7 +1519,7 @@ URL: https://maamusic.keralive.workers.dev/out/v1/a797c00cba954265ba781f92a57e2c
 Group: 7.Kids
 Status: ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 27
+Consecutive hard failures: 28
 Detail: HTTPSConnectionPool(host='m3uplay.com', port=443): Max retries exceeded with url: /stream.m3u8?id=mytoonz (Caused by NameResolutionError("HTTPSConnection(host='m3uplay.com', port=443): Failed to resolve 'm3uplay.com' ([Errno -3] Temporary failure in name resolution)"))
 URL: https://m3uplay.com/stream.m3u8?id=mytoonz
 
@@ -1607,7 +1607,7 @@ URL: https://online.wayanadvision.in/hls/streaming1.m3u8
 Group: 4.Hindi
 Status: ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 55
+Consecutive hard failures: 56
 Detail: HTTPConnectionPool(host='41.205.77.102', port=80): Max retries exceeded with url: /ZEE-CINEMA/index.m3u8 (Caused by NewConnectionError("HTTPConnection(host='41.205.77.102', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))
 URL: http://41.205.77.102/ZEE-CINEMA/index.m3u8
 
@@ -1615,7 +1615,7 @@ URL: http://41.205.77.102/ZEE-CINEMA/index.m3u8
 Group: 2.Malayalam News
 Status: ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 55
+Consecutive hard failures: 56
 Detail: HTTPSConnectionPool(host='d1ty2af03alkwd.cloudfront.net', port=443): Max retries exceeded with url: /index_4.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='d1ty2af03alkwd.cloudfront.net', port=443): Failed to resolve 'd1ty2af03alkwd.cloudfront.net' ([Errno -5] No address associated with hostname)"))
 URL: https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
 
@@ -1821,10 +1821,10 @@ URL: https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8
 
 ## Kids Flix
 Group: 7.Kids
-Status: HLS_NO_SEGMENT
-Classification: CHECK_REQUIRED
+Status: IPTV_PLAYABLE
+Classification: WORKING
 Consecutive hard failures: 0
-Detail: HLS manifest loaded but no media segment found
+Detail: Manifest and media segment reachable
 URL: https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50
 
 ## Holidayscapes
@@ -1885,20 +1885,20 @@ URL: https://aegis-cloudfront-1.tubi.video/9f31e187-3d43-4ed0-81ba-63bd3bc560aa/
 
 # SUMMARY BY STATUS
 
-ACCESS_RESTRICTED: 15
+ACCESS_RESTRICTED: 14
 ERROR: 9
-HLS_NO_SEGMENT: 5
-HTTP_ERROR: 10
-IPTV_PLAYABLE: 180
-SEGMENT_FAILED: 7
+HLS_NO_SEGMENT: 3
+HTTP_ERROR: 9
+IPTV_PLAYABLE: 188
+SEGMENT_FAILED: 3
 WEBPAGE_OR_UNKNOWN: 6
 WEBPAGE_SOURCE: 3
 
 # SUMMARY BY CLASSIFICATION
 
-WORKING: 180
-ACCESS_RESTRICTED: 15
-CHECK_REQUIRED: 20
-TEMPORARY_FAILURE: 5
-REPEATED_FAILURE: 1
+WORKING: 188
+ACCESS_RESTRICTED: 14
+CHECK_REQUIRED: 16
+TEMPORARY_FAILURE: 3
+REPEATED_FAILURE: 0
 CONSISTENTLY_BROKEN: 14
