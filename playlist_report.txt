@@ -1,7 +1,7 @@
 # Playlist URL Check Report
 
 Checked 235 URLs
-Time: 2026-08-20 06:47:57 UTC
+Time: 2026-08-20 08:40:17 UTC
 
 ## Amrita TV
 Group: 1.Malayalam
@@ -31,7 +31,7 @@ URL: https://mumt03.tangotv.in/Dsly5z3HASIANETMIDDLEEAST/index.m3u8
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 3
+Consecutive hard failures: 4
 Detail: HTTP 404
 URL: https://2-fss-2.streamhoster.com/pl_120/206508-3261972-1/playlist.m3u8
 
@@ -53,10 +53,10 @@ URL: https://live.skystream.in/live/citytv2924/index.m3u8
 
 ## City Vision Kannur
 Group: 1.Malayalam
-Status: HTTP_ERROR
-Classification: TEMPORARY_FAILURE
-Consecutive hard failures: 1
-Detail: HTTP 404
+Status: OK
+Classification: WORKING
+Consecutive hard failures: 0
+Detail: HTTP 200, HLS playlist
 URL: https://live.skystream.in/live/citykannurcity/index.m3u8
 
 ## Darshana
@@ -87,7 +87,7 @@ URL: https://live.skystream.in/live/drishya5060/tracks-v1a1/mono.m3u8
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 11
+Consecutive hard failures: 12
 Detail: HTTP 404
 URL: https://live.skystream.in/live/drishyakarunagapally/index.m3u8?hls_ctx=64s22r57
 
@@ -165,10 +165,10 @@ URL: https://mumt01.tangotv.in/O5aw8Zn3WETV/index.m3u8
 
 ## Kalika TV
 Group: 1.Malayalam
-Status: OK
-Classification: WORKING
-Consecutive hard failures: 0
-Detail: HTTP 200, HLS playlist
+Status: HTTP_ERROR
+Classification: TEMPORARY_FAILURE
+Consecutive hard failures: 1
+Detail: HTTP 404
 URL: http://server.applelive.in/kalikatv/kalikatv.m3u8
 
 ## Kannur Vision
@@ -207,7 +207,7 @@ URL: https://oqgdrkxby4rm-hls-live.5centscdn.com/kaumudytv/live.stream/playlist.
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 3
+Consecutive hard failures: 4
 Detail: HTTP 404
 URL: https://kcltv.livebox.co.in/kclhls/live.m3u8
 
@@ -383,7 +383,7 @@ URL: https://live.skystream.in/live/southvsnklm/tracks-v1a1/mono.m3u8
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 21
+Consecutive hard failures: 22
 Detail: HTTP 404
 URL: https://5a1178b42cc03.streamlock.net/8220/8220/playlist.m3u8
 
@@ -1391,7 +1391,7 @@ URL: https://d382r3rgbxdixq.cloudfront.net/scheduler/scheduleMaster/418.m3u8
 Group: 4.Hindi
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 46
+Consecutive hard failures: 47
 Detail: HTTP 404
 URL: https://mumt03.tangotv.in/Dsly5z3HALLTIMEMOVIES/index.m3u8
 
@@ -1407,7 +1407,7 @@ URL: https://www.youtube.com/watch?v=qALTGOsXIkw
 Group: 5.English
 Status: ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 18
+Consecutive hard failures: 19
 Detail: HTTPSConnectionPool(host='m3uplay.com', port=443): Max retries exceeded with url: /stream.m3u8?id=comedyplus (Caused by NameResolutionError("HTTPSConnection(host='m3uplay.com', port=443): Failed to resolve 'm3uplay.com' ([Errno -3] Temporary failure in name resolution)"))
 URL: https://m3uplay.com/stream.m3u8?id=comedyplus
 
@@ -1415,7 +1415,7 @@ URL: https://m3uplay.com/stream.m3u8?id=comedyplus
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 46
+Consecutive hard failures: 47
 Detail: HTTP 404
 URL: https://live.skystream.in/live/ctv1805/tracks-v1a1/mono.m3u8
 
@@ -1431,7 +1431,7 @@ URL: https://bhoomtv.me/tv/restream-tv/stream.m3u8?id=29d7f16babf8&t=1785520327
 Group: 1.Malayalam
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 46
+Consecutive hard failures: 47
 Detail: HTTP 404
 URL: https://live.skystream.in/live/kcnksrgod/index.m3u8
 
@@ -1447,7 +1447,7 @@ URL: https://edge1.tikilive.com/livehttporigin_tikilive/56275/amlst:mainstream/p
 Group: 5.English
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 46
+Consecutive hard failures: 47
 Detail: HTTP 404
 URL: https://d1b5mlajbmvkjv.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDU-DistroTV/145.m3u8?ads.vf=7FhdsxqVxOi
 
@@ -1495,7 +1495,7 @@ URL: https://www.youtube.com/watch?v=-8d8-c0yvyU
 Group: 4.Hindi
 Status: HTTP_ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 46
+Consecutive hard failures: 47
 Detail: HTTP 404
 URL: https://mumt04.tangotv.in/m18aqlK4MOVIEPLEX/index.m3u8
 
@@ -1519,7 +1519,7 @@ URL: https://maamusic.keralive.workers.dev/out/v1/a797c00cba954265ba781f92a57e2c
 Group: 7.Kids
 Status: ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 18
+Consecutive hard failures: 19
 Detail: HTTPSConnectionPool(host='m3uplay.com', port=443): Max retries exceeded with url: /stream.m3u8?id=mytoonz (Caused by NameResolutionError("HTTPSConnection(host='m3uplay.com', port=443): Failed to resolve 'm3uplay.com' ([Errno -3] Temporary failure in name resolution)"))
 URL: https://m3uplay.com/stream.m3u8?id=mytoonz
 
@@ -1607,7 +1607,7 @@ URL: https://online.wayanadvision.in/hls/streaming1.m3u8
 Group: 4.Hindi
 Status: ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 46
+Consecutive hard failures: 47
 Detail: HTTPConnectionPool(host='41.205.77.102', port=80): Max retries exceeded with url: /ZEE-CINEMA/index.m3u8 (Caused by NewConnectionError("HTTPConnection(host='41.205.77.102', port=80): Failed to establish a new connection: [Errno 111] Connection refused"))
 URL: http://41.205.77.102/ZEE-CINEMA/index.m3u8
 
@@ -1615,7 +1615,7 @@ URL: http://41.205.77.102/ZEE-CINEMA/index.m3u8
 Group: 2.Malayalam News
 Status: ERROR
 Classification: CONSISTENTLY_BROKEN
-Consecutive hard failures: 46
+Consecutive hard failures: 47
 Detail: HTTPSConnectionPool(host='d1ty2af03alkwd.cloudfront.net', port=443): Max retries exceeded with url: /index_4.m3u8 (Caused by NameResolutionError("HTTPSConnection(host='d1ty2af03alkwd.cloudfront.net', port=443): Failed to resolve 'd1ty2af03alkwd.cloudfront.net' ([Errno -5] No address associated with hostname)"))
 URL: https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
 
