@@ -1,0 +1,40 @@
+# Duplicate Channel Report
+
+Original channels: 235
+Channels after cleanup: 235
+Duplicates automatically deleted: 0
+Possible duplicates kept: 5
+
+# AUTOMATICALLY DELETED
+
+No exact duplicates found.
+
+# POSSIBLE DUPLICATES
+
+These entries were NOT deleted because they have different stream URLs.
+
+CHANNEL: Drishya
+GROUP: 1.Malayalam
+URL: https://live.skystream.in/live/drishya5060/tracks-v1a1/mono.m3u8
+URL: https://live.skystream.in/live/drishyakarunagapally/index.m3u8?hls_ctx=64s22r57
+
+CHANNEL: Kairali News
+GROUP: 2.Malayalam News
+URL: https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/ts-ap-s1-n1/playlist/amg01448-samsungindia-historychannelhindi-samsungin/playlist.m3u8
+URL: https://cdn-3.pishow.tv/live/1469/master.m3u8
+
+CHANNEL: Wild Planet
+GROUP: 5.English
+URL: https://jmp2.uk/stvp-GBBB5000002PL
+URL: https://d1h8whhtg5u7om.cloudfront.net/WildPlanet_GB.m3u8
+
+CHANNEL: Wild TV
+GROUP: 5.English
+URL: https://dfhsahpa45kk2.cloudfront.net/scheduler/scheduleMaster/476.m3u8
+URL: https://dhiy0zcig7ty1.cloudfront.net/scheduler/scheduleMaster/491.m3u8
+
+CHANNEL: Movie Sphere
+GROUP: 5.English
+URL: https://amg00353-lionsgatefilmsi-moviesphereaus-samsungau-7qzhf.amagi.tv/playlist/amg00353-lionsgatefilmsi-moviesphereaus-samsungau/playlist.m3u8
+URL: https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8
+
