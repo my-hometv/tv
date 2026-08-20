@@ -10,10 +10,12 @@ REPORT_FILE = Path("duplicate_report.txt")
 def normalize_name(name):
     name = name.casefold().strip()
 
-    # Remove repeated whitespace.
-    name = re.sub(r"\s+", " ", name)
+    name = re.sub(
+        r"\s+",
+        " ",
+        name,
+    )
 
-    # Remove harmless punctuation differences.
     name = re.sub(
         r"[\-_.,:;]+",
         " ",
@@ -34,7 +36,8 @@ def get_name(extinf):
         return ""
 
     return (
-        extinf.split(",", 1)[1]
+        extinf
+        .split(",", 1)[1]
         .strip()
     )
 
@@ -47,7 +50,10 @@ def get_group(extinf):
     )
 
     if match:
-        return match.group(1).strip()
+        return (
+            match.group(1)
+            .strip()
+        )
 
     return ""
 
@@ -80,7 +86,9 @@ def parse_master():
     while i < len(lines):
         line = lines[i].strip()
 
-        if not line.startswith("#EXTINF:"):
+        if not line.startswith(
+            "#EXTINF:"
+        ):
             i += 1
             continue
 
@@ -97,10 +105,12 @@ def parse_master():
         while i < len(lines):
             value = lines[i].strip()
 
-            if value.startswith("#EXTINF:"):
+            if value.startswith(
+                "#EXTINF:"
+            ):
                 break
 
-            # Ignore generated group comments.
+            # Ignore generated headings.
             if (
                 value
                 and not value.startswith(
@@ -150,6 +160,7 @@ def write_master(
         output.extend(
             entry["block"]
         )
+
         output.append("")
 
     MASTER_FILE.write_text(
@@ -165,56 +176,50 @@ def main():
     original_count = len(entries)
 
     kept = []
-
-    # Track exact duplicates.
-    seen_name_url = set()
-
-    # Track identical URLs.
-    seen_urls = {}
-
-    # Used later for possible duplicate report.
-    names = defaultdict(list)
-
     deleted = []
 
+    seen_name_url = set()
+    seen_urls = {}
+
+    names = defaultdict(list)
+
     for entry in entries:
-        name_key = (
+        exact_key = (
             entry["normalized_name"],
             entry["url"],
         )
 
-        # --------------------------------
-        # DUPLICATE TYPE 1
-        #
-        # Same channel name + same URL
-        # --------------------------------
-        if name_key in seen_name_url:
+        # ----------------------------------
+        # Exact duplicate:
+        # same name + same URL
+        # ----------------------------------
+        if exact_key in seen_name_url:
             deleted.append(
                 {
-                    "name": entry["name"],
-                    "group": entry["group"],
-                    "url": entry["url"],
+                    "name":
+                        entry["name"],
+                    "group":
+                        entry["group"],
+                    "url":
+                        entry["url"],
                     "reason":
-                        "Same name and same URL",
+                        (
+                            "Same channel name "
+                            "and same URL"
+                        ),
                 }
             )
 
             continue
 
-        # --------------------------------
-        # DUPLICATE TYPE 2
-        #
-        # Exact same stream URL already
-        # exists.
-        # --------------------------------
+        # ----------------------------------
+        # Same URL + same normalized name
+        # ----------------------------------
         if entry["url"] in seen_urls:
             previous = seen_urls[
                 entry["url"]
             ]
 
-            # Only auto-delete if names
-            # are identical after
-            # normalization.
             if (
                 previous[
                     "normalized_name"
@@ -239,7 +244,7 @@ def main():
                 continue
 
         seen_name_url.add(
-            name_key
+            exact_key
         )
 
         seen_urls[
@@ -257,15 +262,14 @@ def main():
             )
         ].append(entry)
 
-    # ------------------------------------
-    # Detect possible duplicates.
+    # --------------------------------------
+    # Possible duplicates:
     #
-    # Same name + same group
-    # but DIFFERENT URLs.
+    # same name + same group
+    # but different URLs.
     #
-    # We DO NOT delete these automatically.
-    # ------------------------------------
-
+    # Keep them; only report.
+    # --------------------------------------
     possible_duplicates = []
 
     for (
@@ -318,8 +322,7 @@ def main():
             f"deleted: {len(deleted)}"
         ),
         (
-            f"Possible duplicates kept "
-            f"for review: "
+            f"Possible duplicates kept: "
             f"{len(possible_duplicates)}"
         ),
         "",
@@ -351,19 +354,21 @@ def main():
                 ]
             )
     else:
-        report.append(
-            "No exact duplicates found."
+        report.extend(
+            [
+                "No exact duplicates found.",
+                "",
+            ]
         )
-        report.append("")
 
     report.extend(
         [
             "# POSSIBLE DUPLICATES",
             "",
             (
-                "These were NOT deleted "
-                "because they use different "
-                "stream URLs."
+                "These entries were NOT "
+                "deleted because they have "
+                "different stream URLs."
             ),
             "",
         ]
@@ -391,15 +396,23 @@ def main():
                 duplicate["entries"]
             ):
                 report.append(
-                    f"URL: {item['url']}"
+                    (
+                        f"URL: "
+                        f"{item['url']}"
+                    )
                 )
 
             report.append("")
     else:
-        report.append(
-            "No possible duplicates found."
+        report.extend(
+            [
+                (
+                    "No possible duplicates "
+                    "found."
+                ),
+                "",
+            ]
         )
-        report.append("")
 
     REPORT_FILE.write_text(
         "\n".join(report)
