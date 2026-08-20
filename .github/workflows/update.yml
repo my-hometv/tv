@@ -16,103 +16,73 @@ jobs:
 
     steps:
 
-      # =====================================
-      # 1. Checkout
-      # =====================================
       - name: Checkout repository
         uses: actions/checkout@v7
 
-      # =====================================
-      # 2. Python
-      # =====================================
       - name: Set up Python
         uses: actions/setup-python@v7
         with:
           python-version: "3.13"
 
-      # =====================================
-      # 3. Dependencies
-      # =====================================
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests yt-dlp
 
       # =====================================
-      # 4. Remove exact duplicate channels
-      #
-      # Works only on Master.m3u.
-      #
-      # Same name + same URL:
-      # automatically delete duplicate.
-      #
-      # Same name + different URL:
-      # keep and report for review.
+      # 1. Duplicate cleanup
       # =====================================
       - name: Check and remove duplicate channels
         run: |
           python deduplicate_master.py
 
       # =====================================
-      # 5. Refresh configured broken URLs
-      #
-      # update_sources.py must use:
-      #
-      # PLAYLIST_FILE = Path("Master.m3u")
+      # 2. Refresh configured broken URLs
       # =====================================
       - name: Refresh eligible stream URLs
         run: |
           python update_sources.py
 
       # =====================================
-      # 6. Check every channel in Master.m3u
-      #
-      # Every stream is checked ONCE
-      # per workflow run.
+      # 3. Deep IPTV/HLS check
       # =====================================
       - name: Check master playlist
         run: |
           python check_playlist.py
 
       # =====================================
-      # 7. Generate active/offline files
-      #
-      # Playlist.m3u:
-      # active + uncertain channels
-      #
-      # Offline.m3u:
-      # CONSISTENTLY_BROKEN only
+      # 4. Generate active/offline playlists
       # =====================================
       - name: Generate active and offline playlists
         run: |
           python reorganize_playlist.py
 
       # =====================================
-      # 8. Sort generated playlists
-      #
-      # group -> channel name
+      # 5. Sort generated playlists
       # =====================================
       - name: Sort generated playlists
         run: |
           python sort_playlist.py
 
       # =====================================
-      # 9. Build category/language playlists
-      #
-      # Malayalam.m3u
-      # Hindi.m3u
-      # English.m3u
-      # Tamil.m3u
-      # Kids.m3u
-      # Food.m3u
-      # Sports.m3u
+      # 6. Build language/category playlists
       # =====================================
       - name: Build category playlists
         run: |
           python build_category_playlists.py
 
       # =====================================
-      # 10. Upload reports
+      # 7. Scan BhoomTV Malayalam
+      #
+      # REPORT ONLY.
+      # Does NOT modify Master.m3u.
+      # =====================================
+      - name: Scan BhoomTV Malayalam
+        run: |
+          python scan_bhoomtv.py
+
+      # =====================================
+      # 8. Upload reports
       # =====================================
       - name: Upload playlist reports
         uses: actions/upload-artifact@v7
@@ -122,10 +92,11 @@ jobs:
             playlist_report.txt
             source_update_report.txt
             duplicate_report.txt
+            bhoomtv_malayalam_report.txt
           if-no-files-found: warn
 
       # =====================================
-      # 11. Commit everything
+      # 9. Commit generated files
       # =====================================
       - name: Commit updates
         run: |
@@ -188,10 +159,14 @@ jobs:
             git add duplicate_report.txt
           fi
 
+          if [ -f bhoomtv_malayalam_report.txt ]; then
+            git add bhoomtv_malayalam_report.txt
+          fi
+
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Update IPTV playlists"
+            git commit -m "Update IPTV playlists and BhoomTV scan"
             git pull --rebase
             git push
           fi
