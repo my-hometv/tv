@@ -596,9 +596,6 @@ https://cdn-3.pishow.tv/live/1253/master.m3u8
 #EXTINF:-1 group-title="6.Tamil",Movies HD
 https://yet-plus.keralive.workers.dev/LiveApp/streams/movieshd.m3u8
 
-#EXTINF:-1 tvg-id="NTCTV.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ntvtamil.png" group-title="6.Tamil" tvg-group="10",NTC TV
-https://galaxyott.live/hls/ntv.m3u8
-
 #EXTINF:-1 tvg-id="RajDigitalPlus.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RAJ_DIGITAL_PLUS/images/LOGO_HD/image.png" group-title="6.Tamil" tvg-group="10",Raj Digital Plus
 https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/RajTV_Digital_plus/master_1.m3u8
 

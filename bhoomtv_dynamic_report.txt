@@ -1,0 +1,208 @@
+# BhoomTV Dynamic Malayalam Report
+
+Category: https://bhoomtv.me/channel/malayalam/
+
+# SUMMARY
+
+Channel pages: 30
+HLS URLs discovered: 0
+DASH URLs discovered: 0
+YouTube URLs discovered: 0
+No stream discovered: 30
+
+# DETAILS
+
+## Kairali TV
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/kairali-tv/
+STREAM: NOT FOUND
+
+## Kairali We
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/kairali-we/
+STREAM: NOT FOUND
+
+## Kairali Arabia
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/kairali-arabia/
+STREAM: NOT FOUND
+
+## Mollywood TV
+PAGE STATUS: OK
+IN MASTER: NO
+PAGE: https://bhoomtv.me/live/mollywood-tv/
+STREAM: NOT FOUND
+
+## Mollywood Plus
+PAGE STATUS: OK
+IN MASTER: NO
+PAGE: https://bhoomtv.me/live/mollywood-plus/
+STREAM: NOT FOUND
+
+## Mollywood Max
+PAGE STATUS: OK
+IN MASTER: NO
+PAGE: https://bhoomtv.me/live/mollywood-max/
+STREAM: NOT FOUND
+
+## Raj Music Malayalam
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/raj-music-malayalam/
+STREAM: NOT FOUND
+
+## Flowers TV USA
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/flowers-tv-usa/
+STREAM: NOT FOUND
+
+## Flowers TV
+PAGE STATUS: OK
+IN MASTER: NO
+PAGE: https://bhoomtv.me/live/flowers-tv/
+STREAM: NOT FOUND
+
+## Amrita TV
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/amrita-tv/
+STREAM: NOT FOUND
+
+## Middle East
+PAGE STATUS: OK
+IN MASTER: NO
+PAGE: https://bhoomtv.me/live/middle-east/
+STREAM: NOT FOUND
+
+## Vibgyor TV
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/vibgyor-tv/
+STREAM: NOT FOUND
+
+## NTV UAE HD
+PAGE STATUS: OK
+IN MASTER: NO
+PAGE: https://bhoomtv.me/live/ntv-uae-hd/
+STREAM: NOT FOUND
+
+## Mazhavil Manorama HD
+PAGE STATUS: OK
+IN MASTER: NO
+PAGE: https://bhoomtv.me/live/mazhavil-hd/
+STREAM: NOT FOUND
+
+## Mazhavil Manorama
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/mazhavil-manorama-sd/
+STREAM: NOT FOUND
+
+## Safari TV
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/safari-tv/
+STREAM: NOT FOUND
+
+## Kappa TV
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/kappa-tv/
+STREAM: NOT FOUND
+
+## DD Malayalam
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/dd-malayalam/
+STREAM: NOT FOUND
+
+## Kerala Vision
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/kerala-vision-st/
+STREAM: NOT FOUND
+
+## Kaumudy TV
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/kaumudy-tv/
+STREAM: NOT FOUND
+
+## Magnavision TV
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/magnavision-tv/
+STREAM: NOT FOUND
+
+## Jeevan TV
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/jeevan-tv/
+STREAM: NOT FOUND
+
+## Darshana TV
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/darshana-tv/
+STREAM: NOT FOUND
+
+## Anand TV
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/anand-tv/
+STREAM: NOT FOUND
+
+## KCL Kozhikode
+PAGE STATUS: OK
+IN MASTER: NO
+PAGE: https://bhoomtv.me/live/kcl-kozhikode/
+STREAM: NOT FOUND
+
+## Kasaragod Vision
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/kasaragod-vision/
+STREAM: NOT FOUND
+
+## V9 News Vadakkencherry
+PAGE STATUS: OK
+IN MASTER: NO
+PAGE: https://bhoomtv.me/live/v9-news-vadakkencherry/
+STREAM: NOT FOUND
+
+## Gowri Vision
+PAGE STATUS: OK
+IN MASTER: NO
+PAGE: https://bhoomtv.me/live/gowri-vision/
+STREAM: NOT FOUND
+
+## Newstar
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/newstar/
+STREAM: NOT FOUND
+
+## Media Plus
+PAGE STATUS: OK
+IN MASTER: YES
+PAGE: https://bhoomtv.me/live/media-plus/
+STREAM: NOT FOUND
+
+# NOT FOUND IN MASTER
+
+Count: 10
+
+Mollywood TV
+Mollywood Plus
+Mollywood Max
+Flowers TV
+Middle East
+NTV UAE HD
+Mazhavil Manorama HD
+KCL Kozhikode
+V9 News Vadakkencherry
+Gowri Vision

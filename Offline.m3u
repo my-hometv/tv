@@ -48,6 +48,12 @@ https://m3uplay.com/stream.m3u8?id=comedyplus
 https://d1b5mlajbmvkjv.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDU-DistroTV/145.m3u8?ads.vf=7FhdsxqVxOi
 
 
+# ===== 6.Tamil =====
+
+#EXTINF:-1 tvg-id="NTCTV.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ntvtamil.png" group-title="6.Tamil" tvg-group="10",NTC TV
+https://galaxyott.live/hls/ntv.m3u8
+
+
 # ===== 7.Kids =====
 
 #EXTINF:-1 group-title="7.Kids"  tvg-group="06",My Toonz
