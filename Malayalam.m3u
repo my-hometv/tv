@@ -11,9 +11,6 @@ https://live-anandtv.anandmedia.net/anandtvapp/anandtv/index.m3u8
 #EXTINF:-1 tvg-id="AsianetMiddleEast.in" tvg-logo="https://cdn.tvivu.com/logos/asianet-middle-east-160.webp" group-title="1.Malayalam" tvg-language="mal" tvg-country="IN" tvg-group="01",Asianet Middle East
 https://mumt03.tangotv.in/Dsly5z3HASIANETMIDDLEEAST/index.m3u8
 
-#EXTINF:-1 tvg-id="CMalayalamTV.ca@SD" tvg-logo="https://i.imgur.com/rpg0bQA.png" group-title="1.Malayalam" tvg-group="01",C Malayalam TV
-https://2-fss-2.streamhoster.com/pl_120/206508-3261972-1/playlist.m3u8
-
 #EXTINF:-1 group-title="1.Malayalam" tvg-logo="https://www.facebook.com/photo/?fbid=1016387497972990&set=a.104545892490493" tvg-group="01",CCTV Kunnamkulam
 https://96vd9q4kyxq7-hls-live.5centscdn.com/livestream/f25aeb3e9210967d546a077de6e105e4.sdp/playlist.m3u8
 
@@ -73,9 +70,6 @@ https://live.skystream.in/live/kasaragodvsn/index.m3u8
 
 #EXTINF:-1 tvg-id="Kaumudi.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143259_ld_h15_aa.png?lock=720x540" group-title="1.Malayalam" tvg-group="01",Kaumudi
 https://oqgdrkxby4rm-hls-live.5centscdn.com/kaumudytv/live.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="KCLTV.in@SD" tvg-logo="https://i.imgur.com/bkp9dIm.png" group-title="1.Malayalam" tvg-group="01",KCL TV
-https://kcltv.livebox.co.in/kclhls/live.m3u8
 
 #EXTINF:-1 tvg-logo="https://commons.wikimedia.org/wiki/File:Kerala_Vision_TV_Logo.png"group-title="1.Malayalam" tvg-group="01",Kerala Vision
 https://yuppnimrestreammum.akamaized.net/181224/smil:keralavision.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
