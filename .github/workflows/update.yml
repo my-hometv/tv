@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
 
   schedule:
+    # Run every 2 hours
     - cron: "0 */2 * * *"
 
 permissions:
@@ -38,9 +39,23 @@ jobs:
           pip install requests yt-dlp
 
       # =====================================
-      # 4. Refresh configured URLs
+      # 4. Remove exact duplicate channels
       #
-      # IMPORTANT:
+      # Works only on Master.m3u.
+      #
+      # Same name + same URL:
+      # automatically delete duplicate.
+      #
+      # Same name + different URL:
+      # keep and report for review.
+      # =====================================
+      - name: Check and remove duplicate channels
+        run: |
+          python deduplicate_master.py
+
+      # =====================================
+      # 5. Refresh configured broken URLs
+      #
       # update_sources.py must use:
       #
       # PLAYLIST_FILE = Path("Master.m3u")
@@ -50,41 +65,54 @@ jobs:
           python update_sources.py
 
       # =====================================
-      # 5. Check every Master.m3u channel
-      # exactly ONCE
+      # 6. Check every channel in Master.m3u
+      #
+      # Every stream is checked ONCE
+      # per workflow run.
       # =====================================
       - name: Check master playlist
         run: |
           python check_playlist.py
 
       # =====================================
-      # 6. Generate:
+      # 7. Generate active/offline files
       #
-      # Playlist.m3u = active
-      # Offline.m3u  = confirmed offline
+      # Playlist.m3u:
+      # active + uncertain channels
+      #
+      # Offline.m3u:
+      # CONSISTENTLY_BROKEN only
       # =====================================
       - name: Generate active and offline playlists
         run: |
           python reorganize_playlist.py
 
       # =====================================
-      # 7. Sort active and offline playlists
+      # 8. Sort generated playlists
       #
-      # group -> channel
+      # group -> channel name
       # =====================================
       - name: Sort generated playlists
         run: |
           python sort_playlist.py
 
       # =====================================
-      # 8. Build individual category files
+      # 9. Build category/language playlists
+      #
+      # Malayalam.m3u
+      # Hindi.m3u
+      # English.m3u
+      # Tamil.m3u
+      # Kids.m3u
+      # Food.m3u
+      # Sports.m3u
       # =====================================
       - name: Build category playlists
         run: |
           python build_category_playlists.py
 
       # =====================================
-      # 9. Upload reports
+      # 10. Upload reports
       # =====================================
       - name: Upload playlist reports
         uses: actions/upload-artifact@v7
@@ -93,10 +121,11 @@ jobs:
           path: |
             playlist_report.txt
             source_update_report.txt
+            duplicate_report.txt
           if-no-files-found: warn
 
       # =====================================
-      # 10. Commit changes
+      # 11. Commit everything
       # =====================================
       - name: Commit updates
         run: |
@@ -153,6 +182,10 @@ jobs:
 
           if [ -f source_update_report.txt ]; then
             git add source_update_report.txt
+          fi
+
+          if [ -f duplicate_report.txt ]; then
+            git add duplicate_report.txt
           fi
 
           if git diff --cached --quiet; then
