@@ -31,39 +31,45 @@ jobs:
           python-version: "3.13"
 
       # =====================================
-      # 3. Install Python dependencies
+      # 3. Install dependencies
       # =====================================
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests yt-dlp playwright
-          python -m playwright install chromium
+          pip install requests yt-dlp
 
       # =====================================
-      # 4. Remove exact duplicate channels
+      # 4. Check/remove safe duplicates
       #
-      # Safe rule:
-      # same name + same URL -> remove
-      # same name + different URL -> report only
+      # Same name + same URL:
+      # delete duplicate
+      #
+      # Same name + different URL:
+      # keep and report only
       # =====================================
       - name: Check and remove duplicate channels
         run: |
           python deduplicate_master.py
 
       # =====================================
-      # 5. Refresh configured stream URLs
+      # 5. Refresh configured broken URLs
       #
-      # update_sources.py must modify:
-      # Master.m3u
+      # update_sources.py must use:
+      #
+      # PLAYLIST_FILE = Path("Master.m3u")
       # =====================================
       - name: Refresh eligible stream URLs
         run: |
           python update_sources.py
 
       # =====================================
-      # 6. Deep IPTV/HLS health check
+      # 6. Deep stream check
       #
-      # Checks manifest + variant + segment
+      # check_playlist.py checks:
+      #
+      # manifest
+      # variant playlist
+      # one media segment
       # =====================================
       - name: Check master playlist
         run: |
@@ -72,8 +78,11 @@ jobs:
       # =====================================
       # 7. Generate active/offline playlists
       #
-      # Playlist.m3u = active/usable/uncertain
-      # Offline.m3u  = confirmed broken only
+      # Playlist.m3u:
+      # visible channels
+      #
+      # Offline.m3u:
+      # CONSISTENTLY_BROKEN only
       # =====================================
       - name: Generate active and offline playlists
         run: |
@@ -81,13 +90,16 @@ jobs:
 
       # =====================================
       # 8. Sort generated playlists
+      #
+      # group
+      # then channel name
       # =====================================
       - name: Sort generated playlists
         run: |
           python sort_playlist.py
 
       # =====================================
-      # 9. Build individual category files
+      # 9. Build category/language playlists
       #
       # Malayalam.m3u
       # Hindi.m3u
@@ -102,29 +114,7 @@ jobs:
           python build_category_playlists.py
 
       # =====================================
-      # 10. Static BhoomTV Malayalam scan
-      #
-      # Report only
-      # =====================================
-      - name: Scan BhoomTV Malayalam
-        run: |
-          python scan_bhoomtv.py
-
-      # =====================================
-      # 11. Dynamic BhoomTV scan
-      #
-      # Uses Playwright/Chromium to observe
-      # network requests created by JS/player.
-      #
-      # Report only.
-      # Does NOT modify Master.m3u.
-      # =====================================
-      - name: Scan BhoomTV dynamically
-        run: |
-          python scan_bhoomtv_dynamic.py
-
-      # =====================================
-      # 12. Upload reports
+      # 10. Upload reports
       # =====================================
       - name: Upload playlist reports
         uses: actions/upload-artifact@v7
@@ -134,12 +124,10 @@ jobs:
             playlist_report.txt
             source_update_report.txt
             duplicate_report.txt
-            bhoomtv_malayalam_report.txt
-            bhoomtv_dynamic_report.txt
           if-no-files-found: warn
 
       # =====================================
-      # 13. Commit all generated changes
+      # 11. Commit updated/generated files
       # =====================================
       - name: Commit updates
         run: |
@@ -202,18 +190,10 @@ jobs:
             git add duplicate_report.txt
           fi
 
-          if [ -f bhoomtv_malayalam_report.txt ]; then
-            git add bhoomtv_malayalam_report.txt
-          fi
-
-          if [ -f bhoomtv_dynamic_report.txt ]; then
-            git add bhoomtv_dynamic_report.txt
-          fi
-
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Update IPTV playlists and BhoomTV reports"
+            git commit -m "Update IPTV playlists"
             git pull --rebase
             git push
           fi
