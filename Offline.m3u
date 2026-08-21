@@ -23,6 +23,9 @@ https://livestream.vibgyortv.com/hls/stream.m3u8
 
 # ===== 2.Malayalam News =====
 
+#EXTINF:-1 tvg-id="MalabarNews.in@SD" tvg-logo="https://i.imgur.com/Un2gxt4.png" group-title="2.Malayalam News" tvg-group="02",Malabar News
+http://cloud.logichost.in:1935/live/malabarnews/index.m3u8
+
 #EXTINF:-1 tvg-id="ZeeMalayalamNews.in@SD" tvg-logo="https://english.cdn.zeenews.com/images/logo/zee-malayalam-17.svg" group-title="2.Malayalam News" tvg-group="02",Zee Malayalam News
 https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
 
