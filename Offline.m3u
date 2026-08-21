@@ -11,6 +11,9 @@ https://kcltv.livebox.co.in/kclhls/live.m3u8
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",KCN
 https://live.skystream.in/live/kcnksrgod/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://commons.wikimedia.org/wiki/File:Kerala_Vision_TV_Logo.png"group-title="1.Malayalam" tvg-group="01",Kerala Vision
+https://yuppnimrestreammum.akamaized.net/181224/smil:keralavision.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+
 #EXTINF:-1 tvg-id="Starnet.in@SD" tvg-logo="https://i.imgur.com/J3jB7Kr.png" group-title="1.Malayalam" tvg-group="01",Starnet
 https://5a1178b42cc03.streamlock.net/8220/8220/playlist.m3u8
 
@@ -37,6 +40,12 @@ http://41.205.77.102/ZEE-CINEMA/index.m3u8
 
 
 # ===== 5.English =====
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Celebrity Scene
+https://rpn.bozztv.com/gusa/gusa-celebrityscene/index.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Classic Cinema
+https://rpn.bozztv.com/gusa/gusa-classiccinema/index.m3u8
 
 #EXTINF:-1 group-title="5.English" tvg-group="04",Comedy Plus
 https://m3uplay.com/stream.m3u8?id=comedyplus

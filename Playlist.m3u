@@ -77,9 +77,6 @@ https://live.skystream.in/live/kasaragodvsn/index.m3u8
 #EXTINF:-1 tvg-id="Kaumudi.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143259_ld_h15_aa.png?lock=720x540" group-title="1.Malayalam" tvg-group="01",Kaumudi
 https://oqgdrkxby4rm-hls-live.5centscdn.com/kaumudytv/live.stream/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://commons.wikimedia.org/wiki/File:Kerala_Vision_TV_Logo.png"group-title="1.Malayalam" tvg-group="01",Kerala Vision
-https://yuppnimrestreammum.akamaized.net/181224/smil:keralavision.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
-
 #EXTINF:-1 tvg-id="KiteVicters.in@SD" tvg-logo="https://i.imgur.com/kj4OEsb.png" group-title="1.Malayalam" tvg-group="01",KITE Victers
 https://932y4x26ljv8-hls-live.5centscdn.com/victers/tv.stream/playlist.m3u8
 
@@ -401,17 +398,11 @@ https://aegis-cloudfront-1.tubi.video/c95700f8-e51c-4a36-ad46-56f70fc9f1d9/playl
 #EXTINF:-1  group-title="5.English" tvg-language="eng" tvg-country="CA" tvg-group="04",BXX TV
 https://fl1004.bozztv.com/ushba-mafia/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="5.English" tvg-group="01",Celebrity Scene
-https://rpn.bozztv.com/gusa/gusa-celebrityscene/index.m3u8
-
 #EXTINF:-1 tvg-id="CGTNDocumentary.cn" tvg-logo="https://cdn.tvivu.com/logos/cgtn-documentary-160.webp" group-title="5.English" tvg-language="eng" tvg-country="CN" tvg-group="04",CGTN Documentary
 https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8
 
 #EXTINF:-1 group-title="5.English" tvg-group="01",China Travel
 https://amg01314-amg01314c7-distrotv-us-10219.playouts.now.amagi.tv/playlist/amg01314-cgtn-cgtnchinatravel-distrotvus/playlist.m3u8
-
-#EXTINF:-1 group-title="5.English" tvg-group="01",Classic Cinema
-https://rpn.bozztv.com/gusa/gusa-classiccinema/index.m3u8
 
 #EXTINF:-1 tvg-id="DocumentaryPlus.us" tvg-logo="https://cdn.tvivu.com/logos/documentary-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",Documentary+
 https://1d153317c8db4250b3789601274e2402.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-887-DOCUMENTARYINTERNATIONAL-DOCUMENTARYPLUS/mt/documentaryplus/887/hls/master/playlist.m3u8
