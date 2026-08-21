@@ -3,7 +3,7 @@
 Original channels: 235
 Channels after cleanup: 235
 Duplicates automatically deleted: 0
-Possible duplicates kept: 5
+Possible duplicates kept: 4
 
 # AUTOMATICALLY DELETED
 
@@ -12,11 +12,6 @@ No exact duplicates found.
 # POSSIBLE DUPLICATES
 
 These entries were NOT deleted because they have different stream URLs.
-
-CHANNEL: Drishya
-GROUP: 1.Malayalam
-URL: https://live.skystream.in/live/drishya5060/tracks-v1a1/mono.m3u8
-URL: https://live.skystream.in/live/drishyakarunagapally/index.m3u8?hls_ctx=64s22r57
 
 CHANNEL: Kairali News
 GROUP: 2.Malayalam News
