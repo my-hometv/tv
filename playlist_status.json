@@ -5,7 +5,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:20 UTC",
+    "last_checked_utc": "2026-08-21 14:42:24 UTC",
     "last_detail": "HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "StarPlus"
@@ -16,18 +16,18 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:51 UTC",
+    "last_checked_utc": "2026-08-21 14:39:54 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "A&E"
   },
   "http://41.205.77.102/ZEE-CINEMA/index.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 65,
-    "consecutive_hard_failures": 65,
+    "consecutive_failures": 66,
+    "consecutive_hard_failures": 66,
     "group": "4.Hindi",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:56:24 UTC",
+    "last_checked_utc": "2026-08-21 14:42:27 UTC",
     "last_detail": "HTTPConnectionPool(host='41.205.77.102', port=80): Max retries exceeded with url: /ZEE-CINEMA/index.m3u8 (Caused by NewConnectionError(\"HTTPConnection(host='41.205.77.102', port=80): Failed to establish a new connection: [Errno 111] Connection refused\"))",
     "last_status": "ERROR",
     "name": "Zee Cinema ME"
@@ -38,7 +38,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:46 UTC",
+    "last_checked_utc": "2026-08-21 14:38:01 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Swantham"
@@ -49,7 +49,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:19 UTC",
+    "last_checked_utc": "2026-08-21 14:38:28 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Malabar News"
@@ -60,20 +60,20 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:05 UTC",
+    "last_checked_utc": "2026-08-21 14:40:07 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Gagsnetwork"
   },
   "http://server.applelive.in/kalikatv/kalikatv.m3u8": {
-    "classification": "WORKING",
-    "consecutive_failures": 0,
-    "consecutive_hard_failures": 0,
+    "classification": "TEMPORARY_FAILURE",
+    "consecutive_failures": 1,
+    "consecutive_hard_failures": 1,
     "group": "1.Malayalam",
-    "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:03 UTC",
-    "last_detail": "Manifest and media segment reachable",
-    "last_status": "IPTV_PLAYABLE",
+    "hard_failure": true,
+    "last_checked_utc": "2026-08-21 14:37:17 UTC",
+    "last_detail": "Manifest HTTP 404",
+    "last_status": "HTTP_ERROR",
     "name": "Kalika TV"
   },
   "https://1d153317c8db4250b3789601274e2402.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-887-DOCUMENTARYINTERNATIONAL-DOCUMENTARYPLUS/mt/documentaryplus/887/hls/master/playlist.m3u8": {
@@ -82,7 +82,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:57 UTC",
+    "last_checked_utc": "2026-08-21 14:40:00 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Documentary+"
@@ -93,7 +93,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:50:34 UTC",
+    "last_checked_utc": "2026-08-21 14:36:50 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "C Malayalam TV"
@@ -104,7 +104,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:15 UTC",
+    "last_checked_utc": "2026-08-21 14:37:30 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "KV TV"
@@ -115,7 +115,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:49 UTC",
+    "last_checked_utc": "2026-08-21 14:39:52 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "30A The Beach Show"
@@ -126,7 +126,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:43 UTC",
+    "last_checked_utc": "2026-08-21 14:39:47 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "30A Ridiculous TV"
@@ -137,20 +137,20 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:47 UTC",
+    "last_checked_utc": "2026-08-21 14:39:51 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "30A Television Channel"
   },
   "https://30a-tv.com/feeds/pzaz/30atvmovies.m3u8": {
-    "classification": "CHECK_REQUIRED",
+    "classification": "WORKING",
     "consecutive_failures": 0,
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:51 UTC",
-    "last_detail": "Variant fetch failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "last_status": "ERROR",
+    "last_checked_utc": "2026-08-21 14:39:54 UTC",
+    "last_detail": "Manifest and media segment reachable",
+    "last_status": "IPTV_PLAYABLE",
     "name": "30A TV Classic Movies"
   },
   "https://30a-tv.com/music.m3u8": {
@@ -159,20 +159,20 @@
     "consecutive_hard_failures": 0,
     "group": "5.English Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:22 UTC",
+    "last_checked_utc": "2026-08-21 14:40:24 UTC",
     "last_detail": "Variant fetch failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "last_status": "ERROR",
     "name": "30A Music"
   },
   "https://30a-tv.com/sidewalks.m3u8": {
-    "classification": "WORKING",
+    "classification": "CHECK_REQUIRED",
     "consecutive_failures": 0,
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:45 UTC",
-    "last_detail": "Manifest and media segment reachable",
-    "last_status": "IPTV_PLAYABLE",
+    "last_checked_utc": "2026-08-21 14:39:49 UTC",
+    "last_detail": "Variant fetch failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "last_status": "ERROR",
     "name": "30A Sidewalks"
   },
   "https://5a1178b42cc03.streamlock.net/8210/8210/playlist.m3u8": {
@@ -181,7 +181,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:58 UTC",
+    "last_checked_utc": "2026-08-21 14:38:09 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "VCV"
@@ -192,18 +192,18 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:55 UTC",
+    "last_checked_utc": "2026-08-21 14:38:07 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "V9"
   },
   "https://5a1178b42cc03.streamlock.net/8220/8220/playlist.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 40,
-    "consecutive_hard_failures": 40,
+    "consecutive_failures": 41,
+    "consecutive_hard_failures": 41,
     "group": "1.Malayalam",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:51:45 UTC",
+    "last_checked_utc": "2026-08-21 14:37:59 UTC",
     "last_detail": "Manifest HTTP 404",
     "last_status": "HTTP_ERROR",
     "name": "Starnet"
@@ -214,7 +214,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:15 UTC",
+    "last_checked_utc": "2026-08-21 14:41:14 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Vaanavil TV"
@@ -225,7 +225,7 @@
     "consecutive_hard_failures": 0,
     "group": "3.Malayalam Religious",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:33 UTC",
+    "last_checked_utc": "2026-08-21 14:38:39 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Harvest TV Keralam"
@@ -236,7 +236,7 @@
     "consecutive_hard_failures": 0,
     "group": "3.Malayalam Religious",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:32 UTC",
+    "last_checked_utc": "2026-08-21 14:38:38 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Harvest TV"
@@ -247,7 +247,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:13 UTC",
+    "last_checked_utc": "2026-08-21 14:37:28 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "KITE Victers"
@@ -258,7 +258,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:50:35 UTC",
+    "last_checked_utc": "2026-08-21 14:36:51 UTC",
     "last_detail": "HTTPSConnectionPool(host='96vd9q4kyxq7-hls-live.5centscdn.com', port=443): Max retries exceeded with url: /livestream/f25aeb3e9210967d546a077de6e105e4.sdp/playlist.m3u8 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))",
     "last_status": "ERROR",
     "name": "CCTV Kunnamkulam"
@@ -269,7 +269,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:22 UTC",
+    "last_checked_utc": "2026-08-21 14:39:32 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "9XM"
@@ -280,7 +280,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:16 UTC",
+    "last_checked_utc": "2026-08-21 14:40:19 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Sony Movies"
@@ -291,7 +291,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:56 UTC",
+    "last_checked_utc": "2026-08-21 14:42:31 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Great Entertainment"
@@ -302,7 +302,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:59 UTC",
+    "last_checked_utc": "2026-08-21 14:40:02 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "EntrepreneurTV"
@@ -313,7 +313,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:25 UTC",
+    "last_checked_utc": "2026-08-21 14:42:28 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Bounce XL"
@@ -324,7 +324,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:01 UTC",
+    "last_checked_utc": "2026-08-21 14:40:03 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Fear Factor"
@@ -335,7 +335,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:09 UTC",
+    "last_checked_utc": "2026-08-21 14:42:46 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Waypoint"
@@ -346,7 +346,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:28 UTC",
+    "last_checked_utc": "2026-08-21 14:43:05 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Homefull"
@@ -357,7 +357,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:24 UTC",
+    "last_checked_utc": "2026-08-21 14:43:01 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "BBC Earth"
@@ -368,7 +368,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:54 UTC",
+    "last_checked_utc": "2026-08-21 14:39:57 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "BritBox Mysteries"
@@ -379,7 +379,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:17 UTC",
+    "last_checked_utc": "2026-08-21 14:40:19 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Wanted: Dead or Alive"
@@ -390,7 +390,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:19 UTC",
+    "last_checked_utc": "2026-08-21 14:42:56 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "World War TV"
@@ -401,7 +401,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:07 UTC",
+    "last_checked_utc": "2026-08-21 14:39:08 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Shemaroo Josh"
@@ -412,7 +412,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:08 UTC",
+    "last_checked_utc": "2026-08-21 14:39:09 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Shemaroo TV"
@@ -423,7 +423,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:53 UTC",
+    "last_checked_utc": "2026-08-21 14:39:55 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Baywatch"
@@ -434,7 +434,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:13 UTC",
+    "last_checked_utc": "2026-08-21 14:42:52 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Movie Sphere"
@@ -445,7 +445,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:57 UTC",
+    "last_checked_utc": "2026-08-21 14:39:58 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "CGTN Documentary"
@@ -456,7 +456,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:14 UTC",
+    "last_checked_utc": "2026-08-21 14:40:16 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Mr Bean Live Action"
@@ -467,7 +467,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:15 UTC",
+    "last_checked_utc": "2026-08-21 14:40:16 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Now 90s00s"
@@ -478,7 +478,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:15 UTC",
+    "last_checked_utc": "2026-08-21 14:42:53 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Action Hollywood Movies"
@@ -489,7 +489,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:17 UTC",
+    "last_checked_utc": "2026-08-21 14:42:55 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "XITE Hits"
@@ -500,7 +500,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:24 UTC",
+    "last_checked_utc": "2026-08-21 14:43:00 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "China Travel"
@@ -511,7 +511,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:15 UTC",
+    "last_checked_utc": "2026-08-21 14:38:24 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Kairali News"
@@ -522,7 +522,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:05 UTC",
+    "last_checked_utc": "2026-08-21 14:42:41 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Great Romamce"
@@ -533,7 +533,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:23 UTC",
+    "last_checked_utc": "2026-08-21 14:42:59 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Love the Planet"
@@ -544,7 +544,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:52 UTC",
+    "last_checked_utc": "2026-08-21 14:39:55 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Artflix Movie Classics"
@@ -555,7 +555,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:09 UTC",
+    "last_checked_utc": "2026-08-21 14:38:18 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Asianet News"
@@ -566,7 +566,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:00 UTC",
+    "last_checked_utc": "2026-08-21 14:40:02 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Fail Army"
@@ -577,7 +577,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:52 UTC",
+    "last_checked_utc": "2026-08-21 14:41:55 UTC",
     "last_detail": "Manifest HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Hindi Hits HD"
@@ -588,7 +588,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:18 UTC",
+    "last_checked_utc": "2026-08-21 14:42:22 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Real News Kerala"
@@ -599,7 +599,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:02 UTC",
+    "last_checked_utc": "2026-08-21 14:42:38 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Hollywire"
@@ -610,7 +610,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:54 UTC",
+    "last_checked_utc": "2026-08-21 14:39:56 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Brat TV"
@@ -621,7 +621,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:29 UTC",
+    "last_checked_utc": "2026-08-21 14:39:37 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Epic Music"
@@ -632,7 +632,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:55 UTC",
+    "last_checked_utc": "2026-08-21 14:38:57 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Epic TV"
@@ -643,7 +643,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:52 UTC",
+    "last_checked_utc": "2026-08-21 14:38:54 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Epic Bharat"
@@ -654,7 +654,7 @@
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:27 UTC",
+    "last_checked_utc": "2026-08-21 14:41:31 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Epic Kids"
@@ -665,7 +665,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:11 UTC",
+    "last_checked_utc": "2026-08-21 14:39:13 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "South Station"
@@ -676,7 +676,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:01 UTC",
+    "last_checked_utc": "2026-08-21 14:39:03 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Manoranjan Grand"
@@ -687,7 +687,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:37 UTC",
+    "last_checked_utc": "2026-08-21 14:39:43 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Music India"
@@ -698,7 +698,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:36 UTC",
+    "last_checked_utc": "2026-08-21 14:40:35 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "MK Six"
@@ -709,7 +709,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:18 UTC",
+    "last_checked_utc": "2026-08-21 14:38:26 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Kairali News"
@@ -720,7 +720,7 @@
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:27 UTC",
+    "last_checked_utc": "2026-08-21 14:43:04 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Kartoon"
@@ -731,7 +731,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:39 UTC",
+    "last_checked_utc": "2026-08-21 14:39:45 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "YRF Music"
@@ -742,7 +742,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:59 UTC",
+    "last_checked_utc": "2026-08-21 14:40:01 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "ENT Family"
@@ -753,18 +753,18 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:05 UTC",
+    "last_checked_utc": "2026-08-21 14:41:04 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Tamilan TV"
   },
   "https://d1b5mlajbmvkjv.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDU-DistroTV/145.m3u8?ads.vf=7FhdsxqVxOi": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 65,
-    "consecutive_hard_failures": 65,
+    "consecutive_failures": 66,
+    "consecutive_hard_failures": 66,
     "group": "5.English",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:56:03 UTC",
+    "last_checked_utc": "2026-08-21 14:42:07 UTC",
     "last_detail": "Manifest HTTP 404",
     "last_status": "HTTP_ERROR",
     "name": "like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0\" tvg-group=\"04\" group-title=\"5.English\",24 Hour Free Movies"
@@ -775,7 +775,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:04 UTC",
+    "last_checked_utc": "2026-08-21 14:39:06 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "NH BollyFlix"
@@ -786,7 +786,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:16 UTC",
+    "last_checked_utc": "2026-08-21 14:42:54 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Wild Planet"
@@ -797,18 +797,18 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:07 UTC",
+    "last_checked_utc": "2026-08-21 14:37:20 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Kappa TV"
   },
   "https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 65,
-    "consecutive_hard_failures": 65,
+    "consecutive_failures": 66,
+    "consecutive_hard_failures": 66,
     "group": "2.Malayalam News",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:56:24 UTC",
+    "last_checked_utc": "2026-08-21 14:42:27 UTC",
     "last_detail": "HTTPSConnectionPool(host='d1ty2af03alkwd.cloudfront.net', port=443): Max retries exceeded with url: /index_4.m3u8 (Caused by NameResolutionError(\"HTTPSConnection(host='d1ty2af03alkwd.cloudfront.net', port=443): Failed to resolve 'd1ty2af03alkwd.cloudfront.net' ([Errno -5] No address associated with hostname)\"))",
     "last_status": "ERROR",
     "name": "Zee Malayalam News"
@@ -819,7 +819,7 @@
     "consecutive_hard_failures": 0,
     "group": "3.Malayalam Religious",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:38 UTC",
+    "last_checked_utc": "2026-08-21 14:38:43 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Shalom Global"
@@ -830,7 +830,7 @@
     "consecutive_hard_failures": 0,
     "group": "3.Malayalam Religious",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:37 UTC",
+    "last_checked_utc": "2026-08-21 14:38:42 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Shalom"
@@ -841,7 +841,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:10 UTC",
+    "last_checked_utc": "2026-08-21 14:38:18 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Big TV 24x7"
@@ -852,7 +852,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:02 UTC",
+    "last_checked_utc": "2026-08-21 14:39:04 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "NDTV GoodTimes"
@@ -863,7 +863,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:50:40 UTC",
+    "last_checked_utc": "2026-08-21 14:36:57 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "DD Malayalam"
@@ -874,7 +874,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:08 UTC",
+    "last_checked_utc": "2026-08-21 14:42:45 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "The Unsolved Mysteries"
@@ -885,7 +885,7 @@
     "consecutive_hard_failures": 0,
     "group": "9.Sports",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:39 UTC",
+    "last_checked_utc": "2026-08-21 14:41:43 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Cricket Gold"
@@ -896,7 +896,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:41 UTC",
+    "last_checked_utc": "2026-08-21 14:38:47 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "B4U Movies"
@@ -907,7 +907,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:48 UTC",
+    "last_checked_utc": "2026-08-21 14:38:51 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "DD National SD"
@@ -918,7 +918,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:56 UTC",
+    "last_checked_utc": "2026-08-21 14:42:30 UTC",
     "last_detail": "HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Gravitas"
@@ -929,7 +929,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:41 UTC",
+    "last_checked_utc": "2026-08-21 14:39:46 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Zoom"
@@ -940,7 +940,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:23 UTC",
+    "last_checked_utc": "2026-08-21 14:40:25 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "360TuneBox"
@@ -951,7 +951,7 @@
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:22 UTC",
+    "last_checked_utc": "2026-08-21 14:41:21 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Duck TV Plus"
@@ -962,20 +962,20 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:07 UTC",
+    "last_checked_utc": "2026-08-21 14:40:09 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Hallmark Movies & More"
   },
   "https://ddash74r36xqp.cloudfront.net/master.m3u8": {
-    "classification": "WORKING",
+    "classification": "CHECK_REQUIRED",
     "consecutive_failures": 0,
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:50:27 UTC",
-    "last_detail": "Manifest and media segment reachable",
-    "last_status": "IPTV_PLAYABLE",
+    "last_checked_utc": "2026-08-21 14:36:43 UTC",
+    "last_detail": "Variant fetch failed: HTTPSConnectionPool(host='ddash74r36xqp.cloudfront.net', port=443): Read timed out. (read timeout=15)",
+    "last_status": "ERROR",
     "name": "Amrita TV"
   },
   "https://dfhsahpa45kk2.cloudfront.net/scheduler/scheduleMaster/476.m3u8": {
@@ -984,7 +984,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:19 UTC",
+    "last_checked_utc": "2026-08-21 14:40:22 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Wild TV"
@@ -995,7 +995,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:05 UTC",
+    "last_checked_utc": "2026-08-21 14:42:43 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Wild TV"
@@ -1006,7 +1006,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:58 UTC",
+    "last_checked_utc": "2026-08-21 14:40:00 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Dry Bar Comedy"
@@ -1017,7 +1017,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:11 UTC",
+    "last_checked_utc": "2026-08-21 14:42:51 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Mysteries Xplored"
@@ -1028,7 +1028,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:03 UTC",
+    "last_checked_utc": "2026-08-21 14:42:06 UTC",
     "last_detail": "Manifest HTTP 401",
     "last_status": "ACCESS_RESTRICTED",
     "name": "KVTV News"
@@ -1039,7 +1039,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:52 UTC",
+    "last_checked_utc": "2026-08-21 14:38:05 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "UTV Utsav"
@@ -1050,7 +1050,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:51 UTC",
+    "last_checked_utc": "2026-08-21 14:38:04 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "UTV"
@@ -1061,7 +1061,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:32 UTC",
+    "last_checked_utc": "2026-08-21 14:40:32 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "EET TV"
@@ -1072,7 +1072,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:01 UTC",
+    "last_checked_utc": "2026-08-21 14:40:03 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Failarmy International"
@@ -1083,7 +1083,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:55 UTC",
+    "last_checked_utc": "2026-08-21 14:39:57 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "BXX TV"
@@ -1094,7 +1094,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:01 UTC",
+    "last_checked_utc": "2026-08-21 14:42:37 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "History Asia"
@@ -1105,31 +1105,31 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:03 UTC",
+    "last_checked_utc": "2026-08-21 14:40:04 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "FTV"
   },
   "https://galaxyott.live/hls/ntv.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 14,
-    "consecutive_hard_failures": 14,
+    "consecutive_failures": 15,
+    "consecutive_hard_failures": 15,
     "group": "6.Tamil",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:54:38 UTC",
+    "last_checked_utc": "2026-08-21 14:40:37 UTC",
     "last_detail": "Segment HTTP 404",
     "last_status": "SEGMENT_FAILED",
     "name": "NTC TV"
   },
   "https://ipcloud.live/nvision/nvisionhd/index.m3u8": {
-    "classification": "ACCESS_RESTRICTED",
+    "classification": "WORKING",
     "consecutive_failures": 0,
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:24 UTC",
-    "last_detail": "Manifest HTTP 403",
-    "last_status": "ACCESS_RESTRICTED",
+    "last_checked_utc": "2026-08-21 14:37:42 UTC",
+    "last_detail": "Manifest and media segment reachable",
+    "last_status": "IPTV_PLAYABLE",
     "name": "N Vision"
   },
   "https://j78dp346yq5r-hls-live.5centscdn.com/safari/live.stream/playlist.m3u8": {
@@ -1138,7 +1138,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:43 UTC",
+    "last_checked_utc": "2026-08-21 14:37:58 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Safari TV"
@@ -1149,7 +1149,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:16 UTC",
+    "last_checked_utc": "2026-08-21 14:37:32 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Magnavision TV"
@@ -1160,7 +1160,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:16 UTC",
+    "last_checked_utc": "2026-08-21 14:40:18 UTC",
     "last_detail": "HTTP 200",
     "last_status": "WEBPAGE_OR_UNKNOWN",
     "name": "OUTflix Movies"
@@ -1171,7 +1171,7 @@
     "consecutive_hard_failures": 0,
     "group": "8.Food",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:35 UTC",
+    "last_checked_utc": "2026-08-21 14:41:39 UTC",
     "last_detail": "HTTP 200",
     "last_status": "WEBPAGE_OR_UNKNOWN",
     "name": "Bon App\u00e9tit"
@@ -1182,7 +1182,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:08 UTC",
+    "last_checked_utc": "2026-08-21 14:40:10 UTC",
     "last_detail": "HTTP 200",
     "last_status": "WEBPAGE_OR_UNKNOWN",
     "name": "Hot Ones"
@@ -1193,7 +1193,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:18 UTC",
+    "last_checked_utc": "2026-08-21 14:40:21 UTC",
     "last_detail": "HTTP 200",
     "last_status": "WEBPAGE_OR_UNKNOWN",
     "name": "Wild Planet"
@@ -1204,7 +1204,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:07 UTC",
+    "last_checked_utc": "2026-08-21 14:40:08 UTC",
     "last_detail": "HTTP 200",
     "last_status": "WEBPAGE_OR_UNKNOWN",
     "name": "GREAT! movies"
@@ -1215,31 +1215,31 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:43 UTC",
+    "last_checked_utc": "2026-08-21 14:38:49 UTC",
     "last_detail": "HTTP 200",
     "last_status": "WEBPAGE_OR_UNKNOWN",
     "name": "Bollygold"
   },
   "https://kcltv.livebox.co.in/kclhls/live.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 22,
-    "consecutive_hard_failures": 22,
+    "consecutive_failures": 23,
+    "consecutive_hard_failures": 23,
     "group": "1.Malayalam",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:51:11 UTC",
+    "last_checked_utc": "2026-08-21 14:37:24 UTC",
     "last_detail": "Manifest HTTP 404",
     "last_status": "HTTP_ERROR",
     "name": "KCL TV"
   },
   "https://kcnsdhlsapp.ylivestream.com/kcnsdapphls/tracks-v1a1/mono.m3u8": {
-    "classification": "TEMPORARY_FAILURE",
-    "consecutive_failures": 1,
-    "consecutive_hard_failures": 1,
+    "classification": "WORKING",
+    "consecutive_failures": 0,
+    "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
-    "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:51:23 UTC",
-    "last_detail": "Segment HTTP 404",
-    "last_status": "SEGMENT_FAILED",
+    "hard_failure": false,
+    "last_checked_utc": "2026-08-21 14:37:38 UTC",
+    "last_detail": "Manifest and media segment reachable",
+    "last_status": "IPTV_PLAYABLE",
     "name": "Metro Live"
   },
   "https://lds-timeline-plex.amagi.tv/playlist.m3u8": {
@@ -1248,7 +1248,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:02 UTC",
+    "last_checked_utc": "2026-08-21 14:42:38 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "History Hit"
@@ -1259,7 +1259,7 @@
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:32 UTC",
+    "last_checked_utc": "2026-08-21 14:41:36 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Kartoon Channel!"
@@ -1270,7 +1270,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:07 UTC",
+    "last_checked_utc": "2026-08-21 14:42:44 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Wild West TV"
@@ -1281,7 +1281,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:09 UTC",
+    "last_checked_utc": "2026-08-21 14:40:11 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Midnight Pulp"
@@ -1292,7 +1292,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:50:30 UTC",
+    "last_checked_utc": "2026-08-21 14:36:47 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Anand TV"
@@ -1303,7 +1303,7 @@
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:21 UTC",
+    "last_checked_utc": "2026-08-21 14:41:20 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "D2h Kids"
@@ -1314,7 +1314,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:20 UTC",
+    "last_checked_utc": "2026-08-21 14:37:36 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Media Plus"
@@ -1325,7 +1325,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:06 UTC",
+    "last_checked_utc": "2026-08-21 14:41:04 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "TamilVision-TV"
@@ -1336,20 +1336,20 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:25 UTC",
+    "last_checked_utc": "2026-08-21 14:43:02 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Plug TV"
   },
   "https://live.rojatv.cloud/rojatv/rojatv/index.m3u8": {
-    "classification": "TEMPORARY_FAILURE",
-    "consecutive_failures": 1,
-    "consecutive_hard_failures": 1,
+    "classification": "WORKING",
+    "consecutive_failures": 0,
+    "consecutive_hard_failures": 0,
     "group": "6.Tamil",
-    "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:54:53 UTC",
-    "last_detail": "Segment HTTP 404",
-    "last_status": "SEGMENT_FAILED",
+    "hard_failure": false,
+    "last_checked_utc": "2026-08-21 14:40:50 UTC",
+    "last_detail": "Manifest and media segment reachable",
+    "last_status": "IPTV_PLAYABLE",
     "name": "Roja TV"
   },
   "https://live.skystream.in/live/DrisyaPala2924/index.m3u8?hls_ctx=351ad30d": {
@@ -1358,7 +1358,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:50:44 UTC",
+    "last_checked_utc": "2026-08-21 14:37:00 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Drishya Pala"
@@ -1369,7 +1369,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:50:38 UTC",
+    "last_checked_utc": "2026-08-21 14:36:53 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "City Vision Kannur"
@@ -1380,18 +1380,18 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:50:36 UTC",
+    "last_checked_utc": "2026-08-21 14:36:52 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "City Channel"
   },
   "https://live.skystream.in/live/ctv1805/tracks-v1a1/mono.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 65,
-    "consecutive_hard_failures": 65,
+    "consecutive_failures": 66,
+    "consecutive_hard_failures": 66,
     "group": "1.Malayalam",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:55:51 UTC",
+    "last_checked_utc": "2026-08-21 14:41:54 UTC",
     "last_detail": "Manifest HTTP 404",
     "last_status": "HTTP_ERROR",
     "name": "CTV Mukkam"
@@ -1402,7 +1402,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:50:41 UTC",
+    "last_checked_utc": "2026-08-21 14:36:58 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Drishya"
@@ -1413,7 +1413,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:50:43 UTC",
+    "last_checked_utc": "2026-08-21 14:36:59 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Drishya TV"
@@ -1424,18 +1424,18 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:09 UTC",
+    "last_checked_utc": "2026-08-21 14:37:21 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Kasargod Vision"
   },
   "https://live.skystream.in/live/kcnksrgod/index.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 65,
-    "consecutive_hard_failures": 65,
+    "consecutive_failures": 66,
+    "consecutive_hard_failures": 66,
     "group": "1.Malayalam",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:56:02 UTC",
+    "last_checked_utc": "2026-08-21 14:42:06 UTC",
     "last_detail": "Manifest HTTP 404",
     "last_status": "HTTP_ERROR",
     "name": "KCN"
@@ -1446,7 +1446,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:50:51 UTC",
+    "last_checked_utc": "2026-08-21 14:37:07 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "K7 Keralam"
@@ -1457,7 +1457,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:22 UTC",
+    "last_checked_utc": "2026-08-21 14:37:37 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Media Today"
@@ -1468,7 +1468,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:26 UTC",
+    "last_checked_utc": "2026-08-21 14:37:43 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Network"
@@ -1479,7 +1479,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:27 UTC",
+    "last_checked_utc": "2026-08-21 14:37:44 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "New Star"
@@ -1490,7 +1490,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:29 UTC",
+    "last_checked_utc": "2026-08-21 14:37:45 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "New Vision"
@@ -1501,7 +1501,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:44 UTC",
+    "last_checked_utc": "2026-08-21 14:37:58 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "South Vision"
@@ -1512,7 +1512,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:48 UTC",
+    "last_checked_utc": "2026-08-21 14:38:02 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "TCN"
@@ -1523,7 +1523,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:50:50 UTC",
+    "last_checked_utc": "2026-08-21 14:37:06 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Jeevan TV"
@@ -1534,7 +1534,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:42 UTC",
+    "last_checked_utc": "2026-08-21 14:40:41 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Raj Digital Plus"
@@ -1545,18 +1545,18 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:46 UTC",
+    "last_checked_utc": "2026-08-21 14:40:45 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Raj Musix"
   },
   "https://livestream.vibgyortv.com/hls/stream.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 18,
-    "consecutive_hard_failures": 18,
+    "consecutive_failures": 19,
+    "consecutive_hard_failures": 19,
     "group": "1.Malayalam",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:51:58 UTC",
+    "last_checked_utc": "2026-08-21 14:38:09 UTC",
     "last_detail": "HTTPSConnectionPool(host='livestream.vibgyortv.com', port=443): Max retries exceeded with url: /hls/stream.m3u8 (Caused by NewConnectionError(\"HTTPSConnection(host='livestream.vibgyortv.com', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))",
     "last_status": "ERROR",
     "name": "Vibgyor TV"
@@ -1567,7 +1567,7 @@
     "consecutive_hard_failures": 0,
     "group": "3.Malayalam Religious",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:19 UTC",
+    "last_checked_utc": "2026-08-21 14:42:22 UTC",
     "last_detail": "HTTPSConnectionPool(host='livestreamcdn.net', port=444): Max retries exceeded with url: /ShalomTV/ShalomTV/playlist.m3u8 (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'livestreamcdn.net'. (_ssl.c:1032)\")))",
     "last_status": "ERROR",
     "name": "Shalom TV"
@@ -1578,7 +1578,7 @@
     "consecutive_hard_failures": 0,
     "group": "3.Malayalam Religious",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:39 UTC",
+    "last_checked_utc": "2026-08-21 14:38:45 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Shekinah TV"
@@ -1589,29 +1589,29 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:04 UTC",
+    "last_checked_utc": "2026-08-21 14:42:08 UTC",
     "last_detail": "Manifest HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Malabar Plus"
   },
   "https://m3uplay.com/stream.m3u8?id=comedyplus": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 37,
-    "consecutive_hard_failures": 37,
+    "consecutive_failures": 38,
+    "consecutive_hard_failures": 38,
     "group": "5.English",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:55:51 UTC",
+    "last_checked_utc": "2026-08-21 14:41:54 UTC",
     "last_detail": "HTTPSConnectionPool(host='m3uplay.com', port=443): Max retries exceeded with url: /stream.m3u8?id=comedyplus (Caused by NameResolutionError(\"HTTPSConnection(host='m3uplay.com', port=443): Failed to resolve 'm3uplay.com' ([Errno -3] Temporary failure in name resolution)\"))",
     "last_status": "ERROR",
     "name": "Comedy Plus"
   },
   "https://m3uplay.com/stream.m3u8?id=mytoonz": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 37,
-    "consecutive_hard_failures": 37,
+    "consecutive_failures": 38,
+    "consecutive_hard_failures": 38,
     "group": "7.Kids",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:56:16 UTC",
+    "last_checked_utc": "2026-08-21 14:42:19 UTC",
     "last_detail": "HTTPSConnectionPool(host='m3uplay.com', port=443): Max retries exceeded with url: /stream.m3u8?id=mytoonz (Caused by NameResolutionError(\"HTTPSConnection(host='m3uplay.com', port=443): Failed to resolve 'm3uplay.com' ([Errno -3] Temporary failure in name resolution)\"))",
     "last_status": "ERROR",
     "name": "My Toonz"
@@ -1622,7 +1622,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:37 UTC",
+    "last_checked_utc": "2026-08-21 14:37:53 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Pravasi Channel"
@@ -1633,7 +1633,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:58 UTC",
+    "last_checked_utc": "2026-08-21 14:39:00 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "India Life"
@@ -1644,7 +1644,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:06 UTC",
+    "last_checked_utc": "2026-08-21 14:42:09 UTC",
     "last_detail": "Manifest HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "MTV India"
@@ -1655,7 +1655,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:24 UTC",
+    "last_checked_utc": "2026-08-21 14:38:31 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Mathrubhumi"
@@ -1666,7 +1666,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:12 UTC",
+    "last_checked_utc": "2026-08-21 14:40:15 UTC",
     "last_detail": "HLS manifest loaded but no media segment found",
     "last_status": "HLS_NO_SEGMENT",
     "name": "Mix Hollywood"
@@ -1677,7 +1677,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:12 UTC",
+    "last_checked_utc": "2026-08-21 14:42:51 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Magnificent Movies"
@@ -1688,7 +1688,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:21 UTC",
+    "last_checked_utc": "2026-08-21 14:38:29 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Manorama News"
@@ -1699,7 +1699,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:19 UTC",
+    "last_checked_utc": "2026-08-21 14:42:57 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Movie Sphere"
@@ -1710,7 +1710,7 @@
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:30 UTC",
+    "last_checked_utc": "2026-08-21 14:41:34 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Happy Kids TV"
@@ -1721,7 +1721,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:56 UTC",
+    "last_checked_utc": "2026-08-21 14:40:54 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Sana Plus"
@@ -1732,7 +1732,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:50:58 UTC",
+    "last_checked_utc": "2026-08-21 14:37:13 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Kairali TV"
@@ -1743,20 +1743,20 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:02 UTC",
+    "last_checked_utc": "2026-08-21 14:37:16 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Kairali We"
   },
   "https://mumt03.tangotv.in/Dsly5z3H7SMUSIC/index.m3u8": {
-    "classification": "WORKING",
-    "consecutive_failures": 0,
-    "consecutive_hard_failures": 0,
+    "classification": "TEMPORARY_FAILURE",
+    "consecutive_failures": 1,
+    "consecutive_hard_failures": 1,
     "group": "6.Tamil",
-    "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:26 UTC",
-    "last_detail": "Manifest and media segment reachable",
-    "last_status": "IPTV_PLAYABLE",
+    "hard_failure": true,
+    "last_checked_utc": "2026-08-21 14:40:27 UTC",
+    "last_detail": "Segment HTTP 404",
+    "last_status": "SEGMENT_FAILED",
     "name": "7S Music"
   },
   "https://mumt03.tangotv.in/Dsly5z3H9XJALWA/index.m3u8": {
@@ -1765,31 +1765,31 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:20 UTC",
+    "last_checked_utc": "2026-08-21 14:39:23 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "9X Jalwa"
   },
   "https://mumt03.tangotv.in/Dsly5z3HALLTIMEMOVIES/index.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 65,
-    "consecutive_hard_failures": 65,
+    "consecutive_failures": 66,
+    "consecutive_hard_failures": 66,
     "group": "4.Hindi",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:55:40 UTC",
+    "last_checked_utc": "2026-08-21 14:41:44 UTC",
     "last_detail": "Manifest HTTP 404",
     "last_status": "HTTP_ERROR",
     "name": "All Time Movies"
   },
   "https://mumt03.tangotv.in/Dsly5z3HASIANETMIDDLEEAST/index.m3u8": {
-    "classification": "WORKING",
-    "consecutive_failures": 0,
-    "consecutive_hard_failures": 0,
+    "classification": "TEMPORARY_FAILURE",
+    "consecutive_failures": 1,
+    "consecutive_hard_failures": 1,
     "group": "1.Malayalam",
-    "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:50:33 UTC",
-    "last_detail": "Manifest and media segment reachable",
-    "last_status": "IPTV_PLAYABLE",
+    "hard_failure": true,
+    "last_checked_utc": "2026-08-21 14:36:50 UTC",
+    "last_detail": "Segment HTTP 404",
+    "last_status": "SEGMENT_FAILED",
     "name": "Asianet Middle East"
   },
   "https://mumt03.tangotv.in/Dsly5z3HFOODFOOD/index.m3u8": {
@@ -1798,7 +1798,7 @@
     "consecutive_hard_failures": 0,
     "group": "8.Food",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:39 UTC",
+    "last_checked_utc": "2026-08-21 14:41:42 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Food Food"
@@ -1809,7 +1809,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:57 UTC",
+    "last_checked_utc": "2026-08-21 14:38:59 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Goldmines Bollywood"
@@ -1820,18 +1820,18 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:50:55 UTC",
+    "last_checked_utc": "2026-08-21 14:37:10 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Kairali Arabia"
   },
   "https://mumt04.tangotv.in/m18aqlK4MOVIEPLEX/index.m3u8": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 65,
-    "consecutive_hard_failures": 65,
+    "consecutive_failures": 66,
+    "consecutive_hard_failures": 66,
     "group": "4.Hindi",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:56:05 UTC",
+    "last_checked_utc": "2026-08-21 14:42:09 UTC",
     "last_detail": "Manifest HTTP 404",
     "last_status": "HTTP_ERROR",
     "name": "MoviePlex"
@@ -1842,7 +1842,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:41 UTC",
+    "last_checked_utc": "2026-08-21 14:37:56 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "RajMusix Malayalam"
@@ -1853,7 +1853,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:18 UTC",
+    "last_checked_utc": "2026-08-21 14:41:17 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Vasanth TV"
@@ -1864,7 +1864,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:33 UTC",
+    "last_checked_utc": "2026-08-21 14:39:40 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Evergreen Hits"
@@ -1875,7 +1875,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:09 UTC",
+    "last_checked_utc": "2026-08-21 14:41:07 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Thanthi One"
@@ -1886,7 +1886,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:06 UTC",
+    "last_checked_utc": "2026-08-21 14:38:16 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "24 News"
@@ -1897,7 +1897,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:26 UTC",
+    "last_checked_utc": "2026-08-21 14:38:34 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "News18 Kerala"
@@ -1908,7 +1908,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:23 UTC",
+    "last_checked_utc": "2026-08-21 14:42:27 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Wayanad Vision Plus"
@@ -1919,7 +1919,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:01 UTC",
+    "last_checked_utc": "2026-08-21 14:38:11 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Wayanad Vision Live"
@@ -1930,7 +1930,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:03 UTC",
+    "last_checked_utc": "2026-08-21 14:38:13 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Wayanad Vision Movies"
@@ -1941,7 +1941,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:10 UTC",
+    "last_checked_utc": "2026-08-21 14:37:24 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Kaumudi"
@@ -1952,7 +1952,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:50:47 UTC",
+    "last_checked_utc": "2026-08-21 14:37:03 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "G TV"
@@ -1963,7 +1963,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:50:48 UTC",
+    "last_checked_utc": "2026-08-21 14:37:05 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "G TV Max"
@@ -1974,7 +1974,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:15 UTC",
+    "last_checked_utc": "2026-08-21 14:37:30 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Koickal"
@@ -1985,7 +1985,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:21 UTC",
+    "last_checked_utc": "2026-08-21 14:42:58 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Holidayscapes"
@@ -1996,31 +1996,31 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:38 UTC",
+    "last_checked_utc": "2026-08-21 14:37:54 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Pulari TV"
   },
   "https://rpn.bozztv.com/gusa/gusa-celebrityscene/index.m3u8": {
-    "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 3,
-    "consecutive_hard_failures": 3,
+    "classification": "WORKING",
+    "consecutive_failures": 0,
+    "consecutive_hard_failures": 0,
     "group": "5.English",
-    "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:56:40 UTC",
-    "last_detail": "Manifest timed out after 15s",
-    "last_status": "TIMEOUT",
+    "hard_failure": false,
+    "last_checked_utc": "2026-08-21 14:42:29 UTC",
+    "last_detail": "Manifest and media segment reachable",
+    "last_status": "IPTV_PLAYABLE",
     "name": "Celebrity Scene"
   },
   "https://rpn.bozztv.com/gusa/gusa-classiccinema/index.m3u8": {
-    "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 3,
-    "consecutive_hard_failures": 3,
+    "classification": "WORKING",
+    "consecutive_failures": 0,
+    "consecutive_hard_failures": 0,
     "group": "5.English",
-    "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:56:55 UTC",
-    "last_detail": "Manifest timed out after 15s",
-    "last_status": "TIMEOUT",
+    "hard_failure": false,
+    "last_checked_utc": "2026-08-21 14:42:30 UTC",
+    "last_detail": "Manifest and media segment reachable",
+    "last_status": "IPTV_PLAYABLE",
     "name": "Classic Cinema"
   },
   "https://rpn3.bozztv.com/dvrfl07/ushba-t4/playlist.m3u8": {
@@ -2029,7 +2029,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:34 UTC",
+    "last_checked_utc": "2026-08-21 14:39:41 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "M Tunes"
@@ -2040,7 +2040,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:21 UTC",
+    "last_checked_utc": "2026-08-21 14:42:24 UTC",
     "last_detail": "Manifest HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Superfine Movies"
@@ -2051,7 +2051,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:19 UTC",
+    "last_checked_utc": "2026-08-21 14:42:23 UTC",
     "last_detail": "Manifest HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Shemaroo Filmi Gaane"
@@ -2062,7 +2062,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:25 UTC",
+    "last_checked_utc": "2026-08-21 14:39:35 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "B4U Music"
@@ -2073,7 +2073,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:16 UTC",
+    "last_checked_utc": "2026-08-21 14:39:20 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "ZBollywood"
@@ -2084,7 +2084,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:30 UTC",
+    "last_checked_utc": "2026-08-21 14:38:37 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Reporter TV"
@@ -2095,7 +2095,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:57 UTC",
+    "last_checked_utc": "2026-08-21 14:40:54 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Sirippoli TV"
@@ -2106,7 +2106,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:19 UTC",
+    "last_checked_utc": "2026-08-21 14:42:23 UTC",
     "last_detail": "Manifest HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Shemaroo Bollywood"
@@ -2117,7 +2117,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:19 UTC",
+    "last_checked_utc": "2026-08-21 14:42:23 UTC",
     "last_detail": "Manifest HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Shemaroo Comedy"
@@ -2128,7 +2128,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi Music",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:20 UTC",
+    "last_checked_utc": "2026-08-21 14:42:23 UTC",
     "last_detail": "Manifest HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Shemaroo Music Hits"
@@ -2139,7 +2139,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:53:14 UTC",
+    "last_checked_utc": "2026-08-21 14:39:16 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "The Movie Club"
@@ -2150,20 +2150,20 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:46 UTC",
+    "last_checked_utc": "2026-08-21 14:38:50 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Bollyood Masala"
   },
   "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50": {
-    "classification": "CHECK_REQUIRED",
+    "classification": "WORKING",
     "consecutive_failures": 0,
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:20 UTC",
-    "last_detail": "HLS manifest loaded but no media segment found",
-    "last_status": "HLS_NO_SEGMENT",
+    "last_checked_utc": "2026-08-21 14:42:57 UTC",
+    "last_detail": "Manifest and media segment reachable",
+    "last_status": "IPTV_PLAYABLE",
     "name": "Kids Flix"
   },
   "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=13775": {
@@ -2172,7 +2172,7 @@
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:19 UTC",
+    "last_checked_utc": "2026-08-21 14:41:17 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Afro Kiddos"
@@ -2183,7 +2183,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:11 UTC",
+    "last_checked_utc": "2026-08-21 14:42:50 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "The Shade Room"
@@ -2194,31 +2194,31 @@
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:20 UTC",
+    "last_checked_utc": "2026-08-21 14:41:18 UTC",
     "last_detail": "HLS manifest loaded but no media segment found",
     "last_status": "HLS_NO_SEGMENT",
     "name": "Camp Spoopy"
   },
   "https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=35&avod=1&coppa=1&is_lat=1&dnt=1&td=6&us_privacy=1NNN&delivery_type=fast&did=&ifa_type=sessionid&app_bundle=&app_store_url=&app_domain=toongoggles.com&app_name=Toon%20Goggles&custom_targeting=web&delivery_partner=internal&custom_4=internal&player_height=720&player_width=1280&content_channel=ToonGoggles&content_network=ToonGoggles&content_language=en&content_cat=IAB1-5,IAB1-7&partner_domain=toongoggles.com&content_dist_name=internal&device_make=&device_model=&device_os=web&device_language=en&preferred_language=EN&gdpr=0&custom_12=0&custom_15=en&custom_16=EN&custom_17=en&country=in&country_region=kerala&postal_code=682030&site_page=https%3A%2F%2Fwww.toongoggles.com%2Flinear%2Fsparkle-power&sdid=6c7aa25c-f38f-85c7-2d0b-8ca09fc21edd&preroll_duration=30&preroll=1&livestream=1&custom_param_0=&custom_param_1=desktop&custom_param_2=&custom_param_3=&custom_param_4=internal&custom_param_5=web&timestamp=1777797597&id=261897&ip=2401:4900:8fdc:dc52:1c24:90b6:dfc2:84f5&override_expiration=1500&sign=FNr04LuzONfCP8TkOBxQBx4rva2Nq2LhSgfegmx1gRM=": {
-    "classification": "WORKING",
+    "classification": "CHECK_REQUIRED",
     "consecutive_failures": 0,
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:34 UTC",
-    "last_detail": "Manifest and media segment reachable",
-    "last_status": "IPTV_PLAYABLE",
+    "last_checked_utc": "2026-08-21 14:41:38 UTC",
+    "last_detail": "HLS manifest loaded but no media segment found",
+    "last_status": "HLS_NO_SEGMENT",
     "name": "Sparkle Power"
   },
   "https://stream.galaxyott.live/live/subintv/index.m3u8": {
-    "classification": "TEMPORARY_FAILURE",
-    "consecutive_failures": 1,
-    "consecutive_hard_failures": 1,
+    "classification": "WORKING",
+    "consecutive_failures": 0,
+    "consecutive_hard_failures": 0,
     "group": "6.Tamil",
-    "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:55:00 UTC",
-    "last_detail": "Segment HTTP 404",
-    "last_status": "SEGMENT_FAILED",
+    "hard_failure": false,
+    "last_checked_utc": "2026-08-21 14:40:58 UTC",
+    "last_detail": "Manifest and media segment reachable",
+    "last_status": "IPTV_PLAYABLE",
     "name": "Subin TV"
   },
   "https://stream.logichost.in/NTV/live/playlist.m3u8": {
@@ -2227,7 +2227,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:32 UTC",
+    "last_checked_utc": "2026-08-21 14:37:48 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "NTV"
@@ -2238,20 +2238,20 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:06 UTC",
+    "last_checked_utc": "2026-08-21 14:37:19 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Kannur Vision"
   },
   "https://stream.onecloudlive.in/periyarvision/periyarvision/index.m3u8": {
-    "classification": "TEMPORARY_FAILURE",
-    "consecutive_failures": 1,
-    "consecutive_hard_failures": 1,
+    "classification": "WORKING",
+    "consecutive_failures": 0,
+    "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
-    "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:51:35 UTC",
-    "last_detail": "Segment HTTP 404",
-    "last_status": "SEGMENT_FAILED",
+    "hard_failure": false,
+    "last_checked_utc": "2026-08-21 14:37:51 UTC",
+    "last_detail": "Manifest and media segment reachable",
+    "last_status": "IPTV_PLAYABLE",
     "name": "Periyar Vision"
   },
   "https://stream.onecloudlive.in/powranmedia/livestream/index.m3u8": {
@@ -2260,7 +2260,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:36 UTC",
+    "last_checked_utc": "2026-08-21 14:37:52 UTC",
     "last_detail": "Manifest HTTP 503",
     "last_status": "HTTP_ERROR",
     "name": "Powran"
@@ -2271,7 +2271,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:31 UTC",
+    "last_checked_utc": "2026-08-21 14:40:31 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Aaryaa TV"
@@ -2282,20 +2282,20 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:03 UTC",
+    "last_checked_utc": "2026-08-21 14:41:01 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Suriya TV"
   },
   "https://stream.ottlive.co.in/utvtamil/index.m3u8": {
-    "classification": "WORKING",
-    "consecutive_failures": 0,
-    "consecutive_hard_failures": 0,
+    "classification": "TEMPORARY_FAILURE",
+    "consecutive_failures": 1,
+    "consecutive_hard_failures": 1,
     "group": "6.Tamil",
-    "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:13 UTC",
-    "last_detail": "Manifest and media segment reachable",
-    "last_status": "IPTV_PLAYABLE",
+    "hard_failure": true,
+    "last_checked_utc": "2026-08-21 14:41:12 UTC",
+    "last_detail": "Segment HTTP 404",
+    "last_status": "SEGMENT_FAILED",
     "name": "Ultimate TV"
   },
   "https://stream.rojatv.cloud/rojatv/rojatv/index.m3u8": {
@@ -2304,7 +2304,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:49 UTC",
+    "last_checked_utc": "2026-08-21 14:40:48 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Roja Movies"
@@ -2315,7 +2315,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:21 UTC",
+    "last_checked_utc": "2026-08-21 14:42:25 UTC",
     "last_detail": "HTTPSConnectionPool(host='stream.sscloud7.com', port=443): Max retries exceeded with url: /live/suriyantv/index.m3u8 (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'stream.sscloud7.com'. (_ssl.c:1032)\")))",
     "last_status": "ERROR",
     "name": "Suriyan TV"
@@ -2326,7 +2326,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:04 UTC",
+    "last_checked_utc": "2026-08-21 14:42:40 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "We Tv East"
@@ -2337,7 +2337,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:09 UTC",
+    "last_checked_utc": "2026-08-21 14:40:10 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Kaloopi"
@@ -2348,7 +2348,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:20 UTC",
+    "last_checked_utc": "2026-08-21 14:40:23 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "World Fashion"
@@ -2359,20 +2359,20 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:29 UTC",
+    "last_checked_utc": "2026-08-21 14:38:36 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "News Malayalalm 24x7"
   },
   "https://webtvstream.bhtelecom.ba/hls15/funbox.m3u8": {
-    "classification": "CHECK_REQUIRED",
+    "classification": "WORKING",
     "consecutive_failures": 0,
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:04 UTC",
-    "last_detail": "HTTPSConnectionPool(host='webtvstream.bhtelecom.ba', port=443): Max retries exceeded with url: /hls15/funbox.m3u8 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)')))",
-    "last_status": "ERROR",
+    "last_checked_utc": "2026-08-21 14:40:06 UTC",
+    "last_detail": "Manifest and media segment reachable",
+    "last_status": "IPTV_PLAYABLE",
     "name": "FunBox UHD"
   },
   "https://wurljansonmedia.global.transmit.live/hls/69029561e0b3f0f215eef867/playlist.m3u8?wurl_channel=1379&wurl_name=KidsTV&coppa=1&uid=[DEVICE_ID]&rdid=[IFA]&ifatype=[IFA_TYPE]&dnt=[LMT]&donotsell=[DNS]&isgdpr=[GDPR]&gdpr=[GDPR_CONSENT]&country=[COUNTRY]&pr=[US_PRIVACY]&appstoreurl=[APP_STOREURL]&bundleid=[APP_BUNDLE]&appname=[APP_NAME]&appversion=[APP_VERSION]&dt=[DEVICE_TYPE]&make=[DEVICE_MAKE]&model=[DEVICE_MODEL]&targetad=[TARGETAD_ALLOWED]&fck=[FCK]&viewsize=[VIEWSIZE]&nonce=[NONCE]": {
@@ -2381,7 +2381,7 @@
     "consecutive_hard_failures": 0,
     "group": "7.Kids",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:32 UTC",
+    "last_checked_utc": "2026-08-21 14:41:37 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Kids TV"
@@ -2392,7 +2392,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:04 UTC",
+    "last_checked_utc": "2026-08-21 14:42:08 UTC",
     "last_detail": "YouTube page URL, not direct HLS",
     "last_status": "WEBPAGE_SOURCE",
     "name": "Media One"
@@ -2403,7 +2403,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:04 UTC",
+    "last_checked_utc": "2026-08-21 14:42:07 UTC",
     "last_detail": "YouTube page URL, not direct HLS",
     "last_status": "WEBPAGE_SOURCE",
     "name": "Love Nature"
@@ -2414,7 +2414,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:55:41 UTC",
+    "last_checked_utc": "2026-08-21 14:41:44 UTC",
     "last_detail": "YouTube page URL, not direct HLS",
     "last_status": "WEBPAGE_SOURCE",
     "name": "Bold and the Beautiful"
@@ -2425,7 +2425,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:10 UTC",
+    "last_checked_utc": "2026-08-21 14:42:49 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "The Universal Monsters"
@@ -2436,7 +2436,7 @@
     "consecutive_hard_failures": 0,
     "group": "5.English",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:57:08 UTC",
+    "last_checked_utc": "2026-08-21 14:42:44 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "The Westerners"
@@ -2447,7 +2447,7 @@
     "consecutive_hard_failures": 0,
     "group": "4.Hindi",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:03 UTC",
+    "last_checked_utc": "2026-08-21 14:42:07 UTC",
     "last_detail": "Manifest HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Loop HD"
@@ -2458,7 +2458,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:03 UTC",
+    "last_checked_utc": "2026-08-21 14:42:07 UTC",
     "last_detail": "Manifest HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Loop Tamil"
@@ -2469,7 +2469,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:56:05 UTC",
+    "last_checked_utc": "2026-08-21 14:42:09 UTC",
     "last_detail": "Manifest HTTP 403",
     "last_status": "ACCESS_RESTRICTED",
     "name": "Movies HD"
@@ -2480,7 +2480,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:50:45 UTC",
+    "last_checked_utc": "2026-08-21 14:37:01 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Flowers TV USA"
@@ -2491,7 +2491,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:13 UTC",
+    "last_checked_utc": "2026-08-21 14:38:21 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Janam TV"
@@ -2502,7 +2502,7 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:51:17 UTC",
+    "last_checked_utc": "2026-08-21 14:37:33 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Mazhavil Manorama"
@@ -2513,7 +2513,7 @@
     "consecutive_hard_failures": 0,
     "group": "6.Tamil",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:54:33 UTC",
+    "last_checked_utc": "2026-08-21 14:40:32 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Kalaignar Murasu"
@@ -2524,7 +2524,7 @@
     "consecutive_hard_failures": 0,
     "group": "3.Malayalam Religious",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:36 UTC",
+    "last_checked_utc": "2026-08-21 14:38:41 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Power Vision"
@@ -2535,18 +2535,18 @@
     "consecutive_hard_failures": 0,
     "group": "1.Malayalam",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:50:38 UTC",
+    "last_checked_utc": "2026-08-21 14:36:55 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Darshana"
   },
   "https://yuppnimrestreammum.akamaized.net/181224/smil:keralavision.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b": {
     "classification": "CONSISTENTLY_BROKEN",
-    "consecutive_failures": 3,
-    "consecutive_hard_failures": 3,
+    "consecutive_failures": 4,
+    "consecutive_hard_failures": 4,
     "group": "1.Malayalam",
     "hard_failure": true,
-    "last_checked_utc": "2026-08-21 12:51:12 UTC",
+    "last_checked_utc": "2026-08-21 14:37:25 UTC",
     "last_detail": "Variant playlist HTTP 404",
     "last_status": "HTTP_ERROR",
     "name": "Kerala Vision"
@@ -2557,7 +2557,7 @@
     "consecutive_hard_failures": 0,
     "group": "2.Malayalam News",
     "hard_failure": false,
-    "last_checked_utc": "2026-08-21 12:52:12 UTC",
+    "last_checked_utc": "2026-08-21 14:38:20 UTC",
     "last_detail": "Manifest and media segment reachable",
     "last_status": "IPTV_PLAYABLE",
     "name": "Jaihind TV"
