@@ -8,14 +8,14 @@ https://live.skystream.in/live/ctv1805/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",Drishya TV
 https://live.skystream.in/live/drishyakarunagapally/index.m3u8?hls_ctx=64s22r57
 
+#EXTINF:-1 tvg-id="KairaliTV.in@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Kairali_TV.svg/500px-Kairali_TV.svg.png" group-title="1.Malayalam" tvg-group="01",Kairali TV
+https://mumt01.tangotv.in/O5aw8Zn3KAIRALI/index.m3u8
+
 #EXTINF:-1 tvg-id="KCLTV.in@SD" tvg-logo="https://i.imgur.com/bkp9dIm.png" group-title="1.Malayalam" tvg-group="01",KCL TV
 https://kcltv.livebox.co.in/kclhls/live.m3u8
 
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",KCN
 https://live.skystream.in/live/kcnksrgod/index.m3u8
-
-#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",New Vision
-https://live.skystream.in/live/newvision2924/index.m3u8
 
 
 # ===== 4.Hindi =====

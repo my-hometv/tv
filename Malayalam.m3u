@@ -53,9 +53,6 @@ https://live.skystream.in/live/keralam2742/index.m3u8
 #EXTINF:-1 tvg-id="KairaliArabia.in@SD" tvg-logo="https://i.imgur.com/BBEfplL.png" group-title="1.Malayalam" tvg-group="01",Kairali Arabia
 https://mumt03.tangotv.in/Dsly5z3HKAIRALIARABIA/index.m3u8
 
-#EXTINF:-1 tvg-id="KairaliTV.in@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Kairali_TV.svg/500px-Kairali_TV.svg.png" group-title="1.Malayalam" tvg-group="01",Kairali TV
-https://mumt01.tangotv.in/O5aw8Zn3KAIRALI/index.m3u8
-
 #EXTINF:-1 tvg-id="KairaliWe.in@SD" tvg-logo="https://www.wikiwand.com/en/Kairali_TV#/media/File:Kairali_WE_TV_Logo.png" group-title="1.Malayalam" tvg-group="01",Kairali We
 https://mumt01.tangotv.in/O5aw8Zn3WETV/index.m3u8
 
@@ -75,7 +72,7 @@ https://live.skystream.in/live/kasaragodvsn/index.m3u8
 https://oqgdrkxby4rm-hls-live.5centscdn.com/kaumudytv/live.stream/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://commons.wikimedia.org/wiki/File:Kerala_Vision_TV_Logo.png"group-title="1.Malayalam" tvg-group="01",Kerala Vision
-https://colorsportscreen.com/freetv/stream.m3u8?id=6048f319b391
+https://mumt03.tangotv.in/Dsly5z3HKERALAVISION/index.m3u8
 
 #EXTINF:-1 tvg-id="KiteVicters.in@SD" tvg-logo="https://i.imgur.com/kj4OEsb.png" group-title="1.Malayalam" tvg-group="01",KITE Victers
 https://932y4x26ljv8-hls-live.5centscdn.com/victers/tv.stream/playlist.m3u8
@@ -112,6 +109,9 @@ https://live.skystream.in/live/networkpayyanur/index.m3u8
 
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",New Star
 https://live.skystream.in/live/newsstar2924/index.m3u8?hls_ctx=ix6cvu58
+
+#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",New Vision
+https://live.skystream.in/live/newvision2924/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.facebook.com/photo/?fbid=1300140362154625&set=a.594783942690274"tvg-name="NTV" group-title="1.Malayalam" tvg-group="01",NTV
 https://stream.logichost.in/NTV/live/playlist.m3u8

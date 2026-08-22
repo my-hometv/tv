@@ -1,7 +1,7 @@
 # Playlist URL Check Report
 
 Checked 236 channels
-Time: 2026-08-22 18:32:10 UTC
+Time: 2026-08-22 20:24:33 UTC
 
 ## Amrita TV
 Group: 1.Malayalam
@@ -25,13 +25,13 @@ Detail: Manifest and media segment reachable
 
 ## Asianet Middle East
 Group: 1.Malayalam
-Classification: TEMPORARY_FAILURE
-Selected URL: NONE
-Consecutive hard failures: 1
+Classification: WORKING
+Selected URL: https://mumt03.tangotv.in/Dsly5z3HASIANETMIDDLEEAST/index.m3u8
+Consecutive hard failures: 0
 
 URL: https://mumt03.tangotv.in/Dsly5z3HASIANETMIDDLEEAST/index.m3u8
-Status: SEGMENT_FAILED
-Detail: Segment HTTP 404
+Status: IPTV_PLAYABLE
+Detail: Manifest and media segment reachable
 
 ## C Malayalam TV
 Group: 1.Malayalam
@@ -107,7 +107,7 @@ Detail: Manifest and media segment reachable
 Group: 1.Malayalam
 Classification: CONSISTENTLY_BROKEN
 Selected URL: NONE
-Consecutive hard failures: 3
+Consecutive hard failures: 4
 
 URL: https://live.skystream.in/live/drishyakarunagapally/index.m3u8?hls_ctx=64s22r57
 Status: HTTP_ERROR
@@ -185,9 +185,9 @@ Detail: Manifest and media segment reachable
 
 ## Kairali TV
 Group: 1.Malayalam
-Classification: REPEATED_FAILURE
+Classification: CONSISTENTLY_BROKEN
 Selected URL: NONE
-Consecutive hard failures: 2
+Consecutive hard failures: 3
 
 URL: https://mumt01.tangotv.in/O5aw8Zn3KAIRALI/index.m3u8
 Status: HTTP_ERROR
@@ -235,13 +235,13 @@ Detail: Manifest and media segment reachable
 
 ## Kasargod Vision
 Group: 1.Malayalam
-Classification: REPEATED_FAILURE
-Selected URL: NONE
-Consecutive hard failures: 2
+Classification: WORKING
+Selected URL: https://live.skystream.in/live/kasaragodvsn/index.m3u8
+Consecutive hard failures: 0
 
 URL: https://live.skystream.in/live/kasaragodvsn/index.m3u8
-Status: SEGMENT_FAILED
-Detail: Segment HTTP 404
+Status: IPTV_PLAYABLE
+Detail: Manifest and media segment reachable
 
 ## Kaumudi
 Group: 1.Malayalam
@@ -257,7 +257,7 @@ Detail: Manifest and media segment reachable
 Group: 1.Malayalam
 Classification: CONSISTENTLY_BROKEN
 Selected URL: NONE
-Consecutive hard failures: 4
+Consecutive hard failures: 5
 
 URL: https://kcltv.livebox.co.in/kclhls/live.m3u8
 Status: SEGMENT_FAILED
@@ -265,8 +265,8 @@ Detail: Segment HTTP 404
 
 ## Kerala Vision
 Group: 1.Malayalam
-Classification: ACCESS_RESTRICTED
-Selected URL: https://colorsportscreen.com/freetv/stream.m3u8?id=6048f319b391
+Classification: WORKING
+Selected URL: https://mumt03.tangotv.in/Dsly5z3HKERALAVISION/index.m3u8
 Consecutive hard failures: 0
 
 URL: https://yuppnimrestreammum.akamaized.net/181224/smil:keralavision.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
@@ -278,8 +278,8 @@ Status: ACCESS_RESTRICTED
 Detail: Manifest HTTP 403
 
 URL: https://mumt03.tangotv.in/Dsly5z3HKERALAVISION/index.m3u8
-Status: SEGMENT_FAILED
-Detail: Segment HTTP 404
+Status: IPTV_PLAYABLE
+Detail: Manifest and media segment reachable
 
 ## KITE Victers
 Group: 1.Malayalam
@@ -293,9 +293,9 @@ Detail: Manifest and media segment reachable
 
 ## Koickal
 Group: 1.Malayalam
-Classification: TEMPORARY_FAILURE
+Classification: REPEATED_FAILURE
 Selected URL: NONE
-Consecutive hard failures: 1
+Consecutive hard failures: 2
 
 URL: https://play.applelive.in/koickalnews/koickalnews.m3u8
 Status: HTTP_ERROR
@@ -369,13 +369,13 @@ Detail: Manifest and media segment reachable
 
 ## Metro Live
 Group: 1.Malayalam
-Classification: WORKING
-Selected URL: https://kcnsdhlsapp.ylivestream.com/kcnsdapphls/tracks-v1a1/mono.m3u8
-Consecutive hard failures: 0
+Classification: TEMPORARY_FAILURE
+Selected URL: NONE
+Consecutive hard failures: 1
 
 URL: https://kcnsdhlsapp.ylivestream.com/kcnsdapphls/tracks-v1a1/mono.m3u8
-Status: IPTV_PLAYABLE
-Detail: Manifest and media segment reachable
+Status: SEGMENT_FAILED
+Detail: Segment HTTP 404
 
 ## N Vision
 Group: 1.Malayalam
@@ -409,13 +409,13 @@ Detail: Manifest and media segment reachable
 
 ## New Vision
 Group: 1.Malayalam
-Classification: CONSISTENTLY_BROKEN
-Selected URL: NONE
-Consecutive hard failures: 3
+Classification: WORKING
+Selected URL: https://live.skystream.in/live/newvision2924/index.m3u8
+Consecutive hard failures: 0
 
 URL: https://live.skystream.in/live/newvision2924/index.m3u8
-Status: HTTP_ERROR
-Detail: Manifest HTTP 404
+Status: IPTV_PLAYABLE
+Detail: Manifest and media segment reachable
 
 ## NTV
 Group: 1.Malayalam
@@ -439,13 +439,13 @@ Detail: Manifest and media segment reachable
 
 ## Powran
 Group: 1.Malayalam
-Classification: WORKING
-Selected URL: https://stream.onecloudlive.in/powranmedia/livestream/index.m3u8
+Classification: CHECK_REQUIRED
+Selected URL: NONE
 Consecutive hard failures: 0
 
 URL: https://stream.onecloudlive.in/powranmedia/livestream/index.m3u8
-Status: IPTV_PLAYABLE
-Detail: Manifest and media segment reachable
+Status: HTTP_ERROR
+Detail: Manifest HTTP 503
 
 ## Pravasi Channel
 Group: 1.Malayalam
@@ -489,13 +489,13 @@ Detail: Manifest and media segment reachable
 
 ## South Vision
 Group: 1.Malayalam
-Classification: TEMPORARY_FAILURE
-Selected URL: NONE
-Consecutive hard failures: 1
+Classification: WORKING
+Selected URL: https://live.skystream.in/live/southvsnklm/tracks-v1a1/mono.m3u8
+Consecutive hard failures: 0
 
 URL: https://live.skystream.in/live/southvsnklm/tracks-v1a1/mono.m3u8
-Status: SEGMENT_FAILED
-Detail: Segment HTTP 404
+Status: IPTV_PLAYABLE
+Detail: Manifest and media segment reachable
 
 ## Starnet
 Group: 1.Malayalam
@@ -843,13 +843,13 @@ Detail: Manifest and media segment reachable
 
 ## Goldmines Bollywood
 Group: 4.Hindi
-Classification: TEMPORARY_FAILURE
-Selected URL: NONE
-Consecutive hard failures: 1
+Classification: WORKING
+Selected URL: https://mumt03.tangotv.in/Dsly5z3HGOLDMINESBOLLYWOOD/tracks-v2a1/mono.m3u8
+Consecutive hard failures: 0
 
 URL: https://mumt03.tangotv.in/Dsly5z3HGOLDMINESBOLLYWOOD/tracks-v2a1/mono.m3u8
-Status: SEGMENT_FAILED
-Detail: Segment HTTP 404
+Status: IPTV_PLAYABLE
+Detail: Manifest and media segment reachable
 
 ## India Life
 Group: 4.Hindi
@@ -943,13 +943,13 @@ Detail: Response does not look like HLS
 
 ## 9X Jalwa
 Group: 4.Hindi Music
-Classification: TEMPORARY_FAILURE
-Selected URL: NONE
-Consecutive hard failures: 1
+Classification: WORKING
+Selected URL: https://mumt03.tangotv.in/Dsly5z3H9XJALWA/index.m3u8
+Consecutive hard failures: 0
 
 URL: https://mumt03.tangotv.in/Dsly5z3H9XJALWA/index.m3u8
-Status: SEGMENT_FAILED
-Detail: Segment HTTP 404
+Status: IPTV_PLAYABLE
+Detail: Manifest and media segment reachable
 
 ## 9XM
 Group: 4.Hindi Music
@@ -1053,13 +1053,13 @@ Detail: Manifest and media segment reachable
 
 ## 30A Television Channel
 Group: 5.English
-Classification: WORKING
-Selected URL: https://30a-tv.com/feeds/masters/30atv.m3u8
-Consecutive hard failures: 0
+Classification: TEMPORARY_FAILURE
+Selected URL: NONE
+Consecutive hard failures: 1
 
 URL: https://30a-tv.com/feeds/masters/30atv.m3u8
-Status: IPTV_PLAYABLE
-Detail: Manifest and media segment reachable
+Status: SEGMENT_FAILED
+Detail: Segment HTTP 404
 
 ## 30A The Beach Show
 Group: 5.English
@@ -1411,13 +1411,13 @@ Detail: Manifest and media segment reachable
 
 ## 30A Music
 Group: 5.English Music
-Classification: WORKING
-Selected URL: https://30a-tv.com/music.m3u8
+Classification: CHECK_REQUIRED
+Selected URL: NONE
 Consecutive hard failures: 0
 
 URL: https://30a-tv.com/music.m3u8
-Status: IPTV_PLAYABLE
-Detail: Manifest and media segment reachable
+Status: ERROR
+Detail: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
 
 ## 360TuneBox
 Group: 5.English Music
@@ -1483,7 +1483,7 @@ Detail: Manifest and media segment reachable
 Group: 6.Tamil
 Classification: CONSISTENTLY_BROKEN
 Selected URL: NONE
-Consecutive hard failures: 4
+Consecutive hard failures: 5
 
 URL: https://galaxyott.live/hls/ntv.m3u8
 Status: SEGMENT_FAILED
@@ -1551,13 +1551,13 @@ Detail: Manifest and media segment reachable
 
 ## Subin TV
 Group: 6.Tamil
-Classification: TEMPORARY_FAILURE
-Selected URL: NONE
-Consecutive hard failures: 1
+Classification: WORKING
+Selected URL: https://stream.galaxyott.live/live/subintv/index.m3u8
+Consecutive hard failures: 0
 
 URL: https://stream.galaxyott.live/live/subintv/index.m3u8
-Status: SEGMENT_FAILED
-Detail: Segment HTTP 404
+Status: IPTV_PLAYABLE
+Detail: Manifest and media segment reachable
 
 ## Suriya TV
 Group: 6.Tamil
@@ -1581,13 +1581,13 @@ Detail: Manifest and media segment reachable
 
 ## TamilVision-TV
 Group: 6.Tamil
-Classification: WORKING
-Selected URL: https://live.cmr24.fm/TVI/HD/chunks.m3u8
-Consecutive hard failures: 0
+Classification: TEMPORARY_FAILURE
+Selected URL: NONE
+Consecutive hard failures: 1
 
 URL: https://live.cmr24.fm/TVI/HD/chunks.m3u8
-Status: IPTV_PLAYABLE
-Detail: Manifest and media segment reachable
+Status: SEGMENT_FAILED
+Detail: Segment HTTP 404
 
 ## Thanthi One
 Group: 6.Tamil
@@ -1681,13 +1681,13 @@ Detail: Manifest and media segment reachable
 
 ## Happy Kids TV
 Group: 7.Kids
-Classification: TEMPORARY_FAILURE
-Selected URL: NONE
-Consecutive hard failures: 1
+Classification: WORKING
+Selected URL: https://mumbai-edge.smartplaytv.in/HappyKids/index.m3u8
+Consecutive hard failures: 0
 
 URL: https://mumbai-edge.smartplaytv.in/HappyKids/index.m3u8
-Status: SEGMENT_FAILED
-Detail: Segment HTTP 404
+Status: IPTV_PLAYABLE
+Detail: Manifest and media segment reachable
 
 ## Kartoon Channel!
 Group: 7.Kids
@@ -1763,7 +1763,7 @@ Detail: Manifest and media segment reachable
 Group: 4.Hindi
 Classification: CONSISTENTLY_BROKEN
 Selected URL: NONE
-Consecutive hard failures: 4
+Consecutive hard failures: 5
 
 URL: https://mumt03.tangotv.in/Dsly5z3HALLTIMEMOVIES/index.m3u8
 Status: HTTP_ERROR
@@ -1793,7 +1793,7 @@ Detail: HTTPSConnectionPool(host='m3uplay.com', port=443): Max retries exceeded 
 Group: 1.Malayalam
 Classification: CONSISTENTLY_BROKEN
 Selected URL: NONE
-Consecutive hard failures: 4
+Consecutive hard failures: 5
 
 URL: https://live.skystream.in/live/ctv1805/tracks-v1a1/mono.m3u8
 Status: HTTP_ERROR
@@ -1813,7 +1813,7 @@ Detail: Manifest HTTP 403
 Group: 1.Malayalam
 Classification: CONSISTENTLY_BROKEN
 Selected URL: NONE
-Consecutive hard failures: 4
+Consecutive hard failures: 5
 
 URL: https://live.skystream.in/live/kcnksrgod/index.m3u8
 Status: HTTP_ERROR
@@ -1833,7 +1833,7 @@ Detail: Manifest HTTP 401
 Group: 5.English
 Classification: CONSISTENTLY_BROKEN
 Selected URL: NONE
-Consecutive hard failures: 4
+Consecutive hard failures: 5
 
 URL: https://d1b5mlajbmvkjv.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDU-DistroTV/145.m3u8?ads.vf=7FhdsxqVxOi
 Status: HTTP_ERROR
@@ -1893,7 +1893,7 @@ Detail: YouTube page URL, not direct HLS
 Group: 4.Hindi
 Classification: CONSISTENTLY_BROKEN
 Selected URL: NONE
-Consecutive hard failures: 4
+Consecutive hard failures: 5
 
 URL: https://mumt04.tangotv.in/m18aqlK4MOVIEPLEX/index.m3u8
 Status: HTTP_ERROR
