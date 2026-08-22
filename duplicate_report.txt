@@ -1,24 +1,6 @@
 # Duplicate Channel Report
 
-Original channel entries: 242
+Original channel entries: 236
 Channels after merge: 236
-Duplicate channel entries merged: 6
-
-CHANNEL: Kairali News
-Fallback URLs added: 1
-
-CHANNEL: Superfine Movies
-Fallback URLs added: 1
-
-CHANNEL: Wild TV
-Fallback URLs added: 1
-
-CHANNEL: Wild Planet
-Fallback URLs added: 1
-
-CHANNEL: Movie Sphere
-Fallback URLs added: 1
-
-CHANNEL: BBC Earth
-Fallback URLs added: 1
+Duplicate channel entries merged: 0
 
