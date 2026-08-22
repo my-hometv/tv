@@ -7,13 +7,8 @@ STATUS_FILE = Path(
     "playlist_status.json"
 )
 
-ACTIVE_FILE = Path(
-    "Playlist.m3u"
-)
-
-OFFLINE_FILE = Path(
-    "Offline.m3u"
-)
+ACTIVE_FILE = Path("Playlist.m3u")
+OFFLINE_FILE = Path("Offline.m3u")
 
 
 def load_status():
@@ -28,6 +23,16 @@ def load_status():
         )
     except Exception:
         return {}
+
+
+def get_name(extinf):
+    if "," not in extinf:
+        return "Unknown"
+
+    return (
+        extinf.split(",", 1)[1]
+        .strip()
+    )
 
 
 def parse_master():
@@ -65,18 +70,9 @@ def parse_master():
             continue
 
         extinf = line
+        name = get_name(extinf)
 
-        if "," in extinf:
-            name = (
-                extinf
-                .split(",", 1)[1]
-                .strip()
-            )
-        else:
-            name = "Unknown"
-
-        block = [extinf]
-        stream_url = None
+        urls = []
 
         i += 1
 
@@ -88,39 +84,19 @@ def parse_master():
             ):
                 break
 
-            # Completely ignore all
-            # generated section comments:
-            #
-            # # ===== GROUP =====
-            #
-            # This prevents duplicates.
-            if (
-                value
-                and not value.startswith(
-                    "# ====="
-                )
+            if value.startswith(
+                ("http://", "https://")
             ):
-                block.append(value)
-
-                if (
-                    stream_url is None
-                    and value.startswith(
-                        (
-                            "http://",
-                            "https://",
-                        )
-                    )
-                ):
-                    stream_url = value
+                urls.append(value)
 
             i += 1
 
-        if stream_url:
+        if urls:
             entries.append(
                 {
                     "name": name,
-                    "url": stream_url,
-                    "block": block,
+                    "extinf": extinf,
+                    "urls": urls,
                 }
             )
 
@@ -138,8 +114,12 @@ def write_playlist(
     ]
 
     for entry in entries:
-        output.extend(
-            entry["block"]
+        output.append(
+            entry["extinf"]
+        )
+
+        output.append(
+            entry["url"]
         )
 
         output.append("")
@@ -154,15 +134,16 @@ def write_playlist(
 
 def main():
     status_data = load_status()
-
     header, entries = parse_master()
 
     active = []
     offline = []
 
     for entry in entries:
+        name = entry["name"]
+
         info = status_data.get(
-            entry["url"],
+            name,
             {},
         )
 
@@ -171,21 +152,56 @@ def main():
             "CHECK_REQUIRED",
         )
 
-        # Only confirmed persistent
-        # HARD failures are hidden.
+        selected_url = info.get(
+            "selected_url"
+        )
+
         if (
             classification
             == "CONSISTENTLY_BROKEN"
         ):
-            offline.append(entry)
-
-            print(
-                f"OFFLINE: "
-                f"{entry['name']}"
+            offline_url = (
+                entry["urls"][0]
             )
 
+            offline.append(
+                {
+                    "extinf":
+                        entry["extinf"],
+                    "url":
+                        offline_url,
+                }
+            )
+
+            print(
+                f"OFFLINE: {name}"
+            )
+
+            continue
+
+        # Prefer the working URL selected
+        # by the checker.
+        if selected_url:
+            active_url = selected_url
         else:
-            active.append(entry)
+            # No confirmed working URL yet.
+            # Keep first fallback visible.
+            active_url = (
+                entry["urls"][0]
+            )
+
+        active.append(
+            {
+                "extinf":
+                    entry["extinf"],
+                "url":
+                    active_url,
+            }
+        )
+
+        print(
+            f"ACTIVE: {name}"
+        )
 
     write_playlist(
         ACTIVE_FILE,
@@ -201,15 +217,6 @@ def main():
 
     print()
     print(
-        "=============================="
-    )
-    print(
-        "PLAYLIST GENERATION"
-    )
-    print(
-        "=============================="
-    )
-    print(
         f"Master channels: "
         f"{len(entries)}"
     )
@@ -220,13 +227,6 @@ def main():
     print(
         f"Offline channels: "
         f"{len(offline)}"
-    )
-    print()
-    print(
-        "Playlist.m3u = active only"
-    )
-    print(
-        "Offline.m3u = hidden channels"
     )
 
 
