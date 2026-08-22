@@ -1,20 +1,15 @@
 import re
 from pathlib import Path
-from collections import defaultdict
 
 
 MASTER_FILE = Path("Master.m3u")
-REPORT_FILE = Path("duplicate_report.txt")
+REPORT_FILE = Path(
+    "duplicate_report.txt"
+)
 
 
 def normalize_name(name):
     name = name.casefold().strip()
-
-    name = re.sub(
-        r"\s+",
-        " ",
-        name,
-    )
 
     name = re.sub(
         r"[\-_.,:;]+",
@@ -36,26 +31,9 @@ def get_name(extinf):
         return ""
 
     return (
-        extinf
-        .split(",", 1)[1]
+        extinf.split(",", 1)[1]
         .strip()
     )
-
-
-def get_group(extinf):
-    match = re.search(
-        r'group-title="([^"]*)"',
-        extinf,
-        flags=re.IGNORECASE,
-    )
-
-    if match:
-        return (
-            match.group(1)
-            .strip()
-        )
-
-    return ""
 
 
 def parse_master():
@@ -93,12 +71,9 @@ def parse_master():
             continue
 
         extinf = line
-        block = [extinf]
-
         name = get_name(extinf)
-        group = get_group(extinf)
 
-        url = None
+        urls = []
 
         i += 1
 
@@ -110,37 +85,22 @@ def parse_master():
             ):
                 break
 
-            # Ignore generated headings.
-            if (
-                value
-                and not value.startswith(
-                    "# ====="
-                )
+            if value.startswith(
+                ("http://", "https://")
             ):
-                block.append(value)
-
-                if (
-                    url is None
-                    and value.startswith(
-                        (
-                            "http://",
-                            "https://",
-                        )
-                    )
-                ):
-                    url = value
+                if value not in urls:
+                    urls.append(value)
 
             i += 1
 
-        if url:
+        if urls:
             entries.append(
                 {
                     "name": name,
                     "normalized_name":
                         normalize_name(name),
-                    "group": group,
-                    "url": url,
-                    "block": block,
+                    "extinf": extinf,
+                    "urls": urls,
                 }
             )
 
@@ -157,14 +117,18 @@ def write_master(
     ]
 
     for entry in entries:
-        output.extend(
-            entry["block"]
+        output.append(
+            entry["extinf"]
         )
+
+        for url in entry["urls"]:
+            output.append(url)
 
         output.append("")
 
     MASTER_FILE.write_text(
-        "\n".join(output).rstrip()
+        "\n".join(output)
+        .rstrip()
         + "\n",
         encoding="utf-8",
     )
@@ -175,129 +139,41 @@ def main():
 
     original_count = len(entries)
 
+    seen = {}
     kept = []
     deleted = []
 
-    seen_name_url = set()
-    seen_urls = {}
-
-    names = defaultdict(list)
-
     for entry in entries:
-        exact_key = (
-            entry["normalized_name"],
-            entry["url"],
-        )
+        key = entry[
+            "normalized_name"
+        ]
 
-        # ----------------------------------
-        # Exact duplicate:
-        # same name + same URL
-        # ----------------------------------
-        if exact_key in seen_name_url:
-            deleted.append(
-                {
-                    "name":
-                        entry["name"],
-                    "group":
-                        entry["group"],
-                    "url":
-                        entry["url"],
-                    "reason":
-                        (
-                            "Same channel name "
-                            "and same URL"
-                        ),
-                }
-            )
-
+        if key not in seen:
+            seen[key] = entry
+            kept.append(entry)
             continue
 
-        # ----------------------------------
-        # Same URL + same normalized name
-        # ----------------------------------
-        if entry["url"] in seen_urls:
-            previous = seen_urls[
-                entry["url"]
-            ]
+        previous = seen[key]
 
-            if (
-                previous[
-                    "normalized_name"
-                ]
-                == entry[
-                    "normalized_name"
-                ]
-            ):
-                deleted.append(
-                    {
-                        "name":
-                            entry["name"],
-                        "group":
-                            entry["group"],
-                        "url":
-                            entry["url"],
-                        "reason":
-                            "Repeated stream URL",
-                    }
+        # Same channel name:
+        # merge fallback URLs into the
+        # first occurrence instead of
+        # creating a second channel.
+        added = 0
+
+        for url in entry["urls"]:
+            if url not in previous["urls"]:
+                previous["urls"].append(
+                    url
                 )
+                added += 1
 
-                continue
-
-        seen_name_url.add(
-            exact_key
-        )
-
-        seen_urls[
-            entry["url"]
-        ] = entry
-
-        kept.append(entry)
-
-        names[
-            (
-                entry[
-                    "normalized_name"
-                ],
-                entry["group"],
-            )
-        ].append(entry)
-
-    # --------------------------------------
-    # Possible duplicates:
-    #
-    # same name + same group
-    # but different URLs.
-    #
-    # Keep them; only report.
-    # --------------------------------------
-    possible_duplicates = []
-
-    for (
-        normalized_name,
-        group,
-    ), group_entries in names.items():
-
-        if len(group_entries) <= 1:
-            continue
-
-        unique_urls = {
-            item["url"]
-            for item in group_entries
-        }
-
-        if len(unique_urls) <= 1:
-            continue
-
-        possible_duplicates.append(
+        deleted.append(
             {
                 "name":
-                    group_entries[0][
-                        "name"
-                    ],
-                "group":
-                    group,
-                "entries":
-                    group_entries,
+                    entry["name"],
+                "fallbacks_added":
+                    added,
             }
         )
 
@@ -310,109 +186,34 @@ def main():
         "# Duplicate Channel Report",
         "",
         (
-            f"Original channels: "
+            f"Original channel entries: "
             f"{original_count}"
         ),
         (
-            f"Channels after cleanup: "
+            f"Channels after merge: "
             f"{len(kept)}"
         ),
         (
-            f"Duplicates automatically "
-            f"deleted: {len(deleted)}"
+            f"Duplicate channel entries "
+            f"merged: {len(deleted)}"
         ),
-        (
-            f"Possible duplicates kept: "
-            f"{len(possible_duplicates)}"
-        ),
-        "",
-        "# AUTOMATICALLY DELETED",
         "",
     ]
 
-    if deleted:
-        for item in deleted:
-            report.extend(
-                [
-                    (
-                        f"CHANNEL: "
-                        f"{item['name']}"
-                    ),
-                    (
-                        f"GROUP: "
-                        f"{item['group']}"
-                    ),
-                    (
-                        f"REASON: "
-                        f"{item['reason']}"
-                    ),
-                    (
-                        f"URL: "
-                        f"{item['url']}"
-                    ),
-                    "",
-                ]
-            )
-    else:
-        report.extend(
-            [
-                "No exact duplicates found.",
-                "",
-            ]
-        )
-
-    report.extend(
-        [
-            "# POSSIBLE DUPLICATES",
-            "",
+    for item in deleted:
+        report.append(
             (
-                "These entries were NOT "
-                "deleted because they have "
-                "different stream URLs."
-            ),
-            "",
-        ]
-    )
-
-    if possible_duplicates:
-        for duplicate in (
-            possible_duplicates
-        ):
-            report.append(
-                (
-                    f"CHANNEL: "
-                    f"{duplicate['name']}"
-                )
+                f"CHANNEL: "
+                f"{item['name']}"
             )
-
-            report.append(
-                (
-                    f"GROUP: "
-                    f"{duplicate['group']}"
-                )
-            )
-
-            for item in (
-                duplicate["entries"]
-            ):
-                report.append(
-                    (
-                        f"URL: "
-                        f"{item['url']}"
-                    )
-                )
-
-            report.append("")
-    else:
-        report.extend(
-            [
-                (
-                    "No possible duplicates "
-                    "found."
-                ),
-                "",
-            ]
         )
+        report.append(
+            (
+                "Fallback URLs added: "
+                f"{item['fallbacks_added']}"
+            )
+        )
+        report.append("")
 
     REPORT_FILE.write_text(
         "\n".join(report)
@@ -421,33 +222,16 @@ def main():
     )
 
     print(
-        "=============================="
-    )
-    print(
-        "DUPLICATE CHECK"
-    )
-    print(
-        "=============================="
-    )
-    print(
-        f"Original channels: "
+        f"Original entries: "
         f"{original_count}"
     )
     print(
-        f"Exact duplicates deleted: "
-        f"{len(deleted)}"
-    )
-    print(
-        f"Possible duplicates: "
-        f"{len(possible_duplicates)}"
-    )
-    print(
-        f"Remaining channels: "
+        f"Channels after merge: "
         f"{len(kept)}"
     )
-    print()
     print(
-        "duplicate_report.txt created."
+        f"Duplicate channel entries "
+        f"merged: {len(deleted)}"
     )
 
 
