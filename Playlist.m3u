@@ -35,9 +35,6 @@ https://live.skystream.in/live/drishya5060/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",Drishya Pala
 https://live.skystream.in/live/DrisyaPala2924/index.m3u8?hls_ctx=351ad30d
 
-#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",Drishya TV
-https://live.skystream.in/live/drishyakarunagapally/index.m3u8?hls_ctx=64s22r57
-
 #EXTINF:-1 tvg-id="FlowersTVUSA.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/ml/1/1c/Flowers-Onam.png" group-title="1.Malayalam" tvg-group="01",Flowers TV USA
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/flowers_nim_https/050522/flowers/playlist.m3u8
 
@@ -78,7 +75,7 @@ https://live.skystream.in/live/kasaragodvsn/index.m3u8
 https://oqgdrkxby4rm-hls-live.5centscdn.com/kaumudytv/live.stream/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://commons.wikimedia.org/wiki/File:Kerala_Vision_TV_Logo.png"group-title="1.Malayalam" tvg-group="01",Kerala Vision
-https://mumt03.tangotv.in/Dsly5z3HKERALAVISION/index.m3u8
+https://colorsportscreen.com/freetv/stream.m3u8?id=6048f319b391
 
 #EXTINF:-1 tvg-id="KiteVicters.in@SD" tvg-logo="https://i.imgur.com/kj4OEsb.png" group-title="1.Malayalam" tvg-group="01",KITE Victers
 https://932y4x26ljv8-hls-live.5centscdn.com/victers/tv.stream/playlist.m3u8
@@ -116,9 +113,6 @@ https://live.skystream.in/live/networkpayyanur/index.m3u8
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",New Star
 https://live.skystream.in/live/newsstar2924/index.m3u8?hls_ctx=ix6cvu58
 
-#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",New Vision
-https://live.skystream.in/live/newvision2924/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://www.facebook.com/photo/?fbid=1300140362154625&set=a.594783942690274"tvg-name="NTV" group-title="1.Malayalam" tvg-group="01",NTV
 https://stream.logichost.in/NTV/live/playlist.m3u8
 
@@ -142,6 +136,9 @@ https://j78dp346yq5r-hls-live.5centscdn.com/safari/live.stream/playlist.m3u8
 
 #EXTINF:-1 tvg-name="FlowersTV" group-title="1.Malayalam" tvg-group="01",South Vision
 https://live.skystream.in/live/southvsnklm/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="Starnet.in@SD" tvg-logo="https://i.imgur.com/J3jB7Kr.png" group-title="1.Malayalam" tvg-group="01",Starnet
+https://5a1178b42cc03.streamlock.net/8220/8220/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Swantham.in@SD" tvg-logo="https://i.imgur.com/ye6v4GP.png" group-title="1.Malayalam" tvg-group="01",Swantham
 http://cloud.logichost.in:1935/SWANTHAM/live/index.m3u8
