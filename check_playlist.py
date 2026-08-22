@@ -64,6 +64,16 @@ def get_group(extinf):
         return ""
 
 
+def get_name(extinf):
+    if "," not in extinf:
+        return "Unknown"
+
+    return (
+        extinf.split(",", 1)[1]
+        .strip()
+    )
+
+
 def parse_master():
     if not MASTER_FILE.exists():
         raise SystemExit(
@@ -77,53 +87,47 @@ def parse_master():
 
     entries = []
 
-    current_name = "Unknown"
-    current_group = ""
+    i = 0
 
-    for raw_line in lines:
-        line = raw_line.strip()
+    while i < len(lines):
+        line = lines[i].strip()
 
-        if line.startswith("#EXTINF:"):
-            if "," in line:
-                current_name = (
-                    line.split(",", 1)[1]
-                    .strip()
-                )
-            else:
-                current_name = "Unknown"
+        if not line.startswith("#EXTINF:"):
+            i += 1
+            continue
 
-            current_group = get_group(line)
+        extinf = line
+        name = get_name(extinf)
+        group = get_group(extinf)
 
-        elif (
-            line
-            and not line.startswith("#")
-            and line.startswith(
+        urls = []
+
+        i += 1
+
+        while i < len(lines):
+            value = lines[i].strip()
+
+            if value.startswith("#EXTINF:"):
+                break
+
+            if value.startswith(
                 ("http://", "https://")
-            )
-        ):
+            ):
+                urls.append(value)
+
+            i += 1
+
+        if urls:
             entries.append(
                 {
-                    "name": current_name,
-                    "group": current_group,
-                    "url": line,
+                    "name": name,
+                    "group": group,
+                    "extinf": extinf,
+                    "urls": urls,
                 }
             )
 
-            current_name = "Unknown"
-            current_group = ""
-
     return entries
-
-
-def fetch_text(url):
-    response = requests.get(
-        url,
-        headers=HEADERS,
-        timeout=TIMEOUT,
-        allow_redirects=True,
-    )
-
-    return response
 
 
 def parse_manifest_lines(text):
@@ -134,14 +138,9 @@ def parse_manifest_lines(text):
     ]
 
 
-def find_variant_url(
-    base_url,
-    lines,
-):
+def find_variant_url(base_url, lines):
     for i, line in enumerate(lines):
-        if line.startswith(
-            "#EXT-X-STREAM-INF"
-        ):
+        if line.startswith("#EXT-X-STREAM-INF"):
             j = i + 1
 
             while j < len(lines):
@@ -158,19 +157,12 @@ def find_variant_url(
     return None
 
 
-def find_segment_url(
-    base_url,
-    lines,
-):
+def find_segment_url(base_url, lines):
     for line in lines:
         if line.startswith("#"):
             continue
 
-        lower = line.lower()
-
-        # Avoid choosing another playlist
-        # as the media segment.
-        if ".m3u8" in lower:
+        if ".m3u8" in line.lower():
             continue
 
         return urljoin(
@@ -197,7 +189,6 @@ def test_segment(segment_url):
             response.close()
 
             return {
-                "ok": False,
                 "status":
                     "SEGMENT_ACCESS_RESTRICTED",
                 "detail":
@@ -210,7 +201,6 @@ def test_segment(segment_url):
             response.close()
 
             return {
-                "ok": False,
                 "status":
                     "SEGMENT_FAILED",
                 "detail":
@@ -223,7 +213,6 @@ def test_segment(segment_url):
             response.close()
 
             return {
-                "ok": False,
                 "status":
                     "SEGMENT_FAILED",
                 "detail":
@@ -232,21 +221,19 @@ def test_segment(segment_url):
                     False,
             }
 
-        # Read only a small amount.
-        found_data = False
+        got_data = False
 
         for chunk in response.iter_content(
             chunk_size=4096
         ):
             if chunk:
-                found_data = True
+                got_data = True
                 break
 
         response.close()
 
-        if found_data:
+        if got_data:
             return {
-                "ok": True,
                 "status":
                     "IPTV_PLAYABLE",
                 "detail":
@@ -256,7 +243,6 @@ def test_segment(segment_url):
             }
 
         return {
-            "ok": False,
             "status":
                 "SEGMENT_FAILED",
             "detail":
@@ -267,7 +253,6 @@ def test_segment(segment_url):
 
     except requests.exceptions.Timeout:
         return {
-            "ok": False,
             "status":
                 "SEGMENT_TIMEOUT",
             "detail":
@@ -277,65 +262,53 @@ def test_segment(segment_url):
         }
 
     except requests.exceptions.RequestException as exc:
-        detail = str(exc)
-
-        hard_terms = [
-            "failed to resolve",
-            "nameresolutionerror",
-            "name or service not known",
-            "connection refused",
-            "failed to establish a new connection",
-        ]
-
-        hard_failure = any(
-            term in detail.lower()
-            for term in hard_terms
-        )
-
         return {
-            "ok": False,
             "status":
                 "SEGMENT_ERROR",
-            "detail": detail,
+            "detail":
+                str(exc),
             "hard_failure":
-                hard_failure,
+                False,
         }
 
 
 def check_hls_deep(url):
     try:
-        response = fetch_text(url)
-
-        status_code = (
-            response.status_code
+        response = requests.get(
+            url,
+            headers=HEADERS,
+            timeout=TIMEOUT,
+            allow_redirects=True,
         )
 
-        if status_code in (401, 403):
+        status = response.status_code
+
+        if status in (401, 403):
             return {
                 "status":
                     "ACCESS_RESTRICTED",
                 "detail":
-                    f"Manifest HTTP {status_code}",
+                    f"Manifest HTTP {status}",
                 "hard_failure":
                     False,
             }
 
-        if status_code in (404, 410):
+        if status in (404, 410):
             return {
                 "status":
                     "HTTP_ERROR",
                 "detail":
-                    f"Manifest HTTP {status_code}",
+                    f"Manifest HTTP {status}",
                 "hard_failure":
                     True,
             }
 
-        if status_code >= 400:
+        if status >= 400:
             return {
                 "status":
                     "HTTP_ERROR",
                 "detail":
-                    f"Manifest HTTP {status_code}",
+                    f"Manifest HTTP {status}",
                 "hard_failure":
                     False,
             }
@@ -350,10 +323,7 @@ def check_hls_deep(url):
                 "status":
                     "SUSPECT",
                 "detail":
-                    (
-                        f"HTTP {status_code}, "
-                        "response does not look like HLS"
-                    ),
+                    "Response does not look like HLS",
                 "hard_failure":
                     False,
             }
@@ -362,110 +332,47 @@ def check_hls_deep(url):
             text
         )
 
-        variant_url = (
-            find_variant_url(
-                response.url,
-                lines,
-            )
+        variant_url = find_variant_url(
+            response.url,
+            lines,
         )
 
-        # Master playlist:
-        # follow one variant.
         if variant_url:
-            try:
-                variant_response = (
-                    fetch_text(
-                        variant_url
-                    )
-                )
+            variant_response = requests.get(
+                variant_url,
+                headers=HEADERS,
+                timeout=TIMEOUT,
+                allow_redirects=True,
+            )
 
-                variant_status = (
-                    variant_response
-                    .status_code
-                )
+            variant_status = (
+                variant_response.status_code
+            )
 
-                if variant_status in (
-                    401,
-                    403,
-                ):
-                    return {
-                        "status":
-                            "ACCESS_RESTRICTED",
-                        "detail":
-                            (
-                                "Variant playlist "
-                                f"HTTP {variant_status}"
-                            ),
-                        "hard_failure":
-                            False,
-                    }
-
-                if variant_status in (
-                    404,
-                    410,
-                ):
-                    return {
-                        "status":
-                            "HTTP_ERROR",
-                        "detail":
-                            (
-                                "Variant playlist "
-                                f"HTTP {variant_status}"
-                            ),
-                        "hard_failure":
-                            True,
-                    }
-
-                if variant_status >= 400:
-                    return {
-                        "status":
-                            "HTTP_ERROR",
-                        "detail":
-                            (
-                                "Variant playlist "
-                                f"HTTP {variant_status}"
-                            ),
-                        "hard_failure":
-                            False,
-                    }
-
-                variant_text = (
-                    variant_response.text
-                )
-
-                variant_lines = (
-                    parse_manifest_lines(
-                        variant_text
-                    )
-                )
-
-                segment_url = (
-                    find_segment_url(
-                        variant_response.url,
-                        variant_lines,
-                    )
-                )
-
-            except requests.exceptions.RequestException as exc:
+            if variant_status >= 400:
                 return {
                     "status":
-                        "ERROR",
+                        "HTTP_ERROR",
                     "detail":
                         (
-                            "Variant fetch failed: "
-                            f"{exc}"
+                            "Variant playlist "
+                            f"HTTP {variant_status}"
                         ),
                     "hard_failure":
-                        False,
+                        variant_status in (404, 410),
                 }
 
+            segment_url = find_segment_url(
+                variant_response.url,
+                parse_manifest_lines(
+                    variant_response.text
+                ),
+            )
+
         else:
-            # Media playlist directly.
-            segment_url = (
-                find_segment_url(
-                    response.url,
-                    lines,
-                )
+            segment_url = find_segment_url(
+                response.url,
+                lines,
             )
 
         if not segment_url:
@@ -473,67 +380,28 @@ def check_hls_deep(url):
                 "status":
                     "HLS_NO_SEGMENT",
                 "detail":
-                    (
-                        "HLS manifest loaded but "
-                        "no media segment found"
-                    ),
+                    "No media segment found",
                 "hard_failure":
                     False,
             }
 
-        segment_result = (
-            test_segment(
-                segment_url
-            )
+        return test_segment(
+            segment_url
         )
-
-        return {
-            "status":
-                segment_result[
-                    "status"
-                ],
-            "detail":
-                segment_result[
-                    "detail"
-                ],
-            "hard_failure":
-                segment_result[
-                    "hard_failure"
-                ],
-        }
 
     except requests.exceptions.Timeout:
         return {
             "status": "TIMEOUT",
             "detail":
-                (
-                    f"Manifest timed out "
-                    f"after {TIMEOUT}s"
-                ),
+                f"Timed out after {TIMEOUT}s",
             "hard_failure": True,
         }
 
     except requests.exceptions.RequestException as exc:
-        detail = str(exc)
-
-        hard_terms = [
-            "failed to resolve",
-            "nameresolutionerror",
-            "name or service not known",
-            "connection refused",
-            "failed to establish a new connection",
-        ]
-
-        hard_failure = any(
-            term in detail.lower()
-            for term in hard_terms
-        )
-
         return {
             "status": "ERROR",
-            "detail": detail,
-            "hard_failure":
-                hard_failure,
+            "detail": str(exc),
+            "hard_failure": False,
         }
 
 
@@ -545,18 +413,14 @@ def check_url(url):
         "https",
     ):
         return {
-            "status":
-                "INVALID",
+            "status": "INVALID",
             "detail":
                 "Unsupported URL scheme",
-            "hard_failure":
-                False,
+            "hard_failure": False,
         }
 
     lower_url = url.lower()
 
-    # YouTube watch pages are source pages,
-    # not direct IPTV HLS streams.
     if (
         "youtube.com/watch" in lower_url
         or "youtu.be/" in lower_url
@@ -571,9 +435,7 @@ def check_url(url):
         }
 
     if ".m3u8" in lower_url:
-        return check_hls_deep(
-            url
-        )
+        return check_hls_deep(url)
 
     try:
         response = requests.get(
@@ -645,81 +507,89 @@ def check_url(url):
         }
 
 
-def old_result_was_hard(info):
-    if not info:
-        return False
-
-    if info.get(
-        "hard_failure"
-    ) is True:
-        return True
-
-    status = info.get(
-        "last_status",
-        "",
-    )
-
-    detail = info.get(
-        "last_detail",
-        "",
-    ).lower()
-
-    if status in (
-        "TIMEOUT",
-        "SEGMENT_TIMEOUT",
-    ):
-        return True
-
-    hard_terms = [
-        "http 404",
-        "http 410",
-        "failed to resolve",
-        "nameresolutionerror",
-        "name or service not known",
-        "connection refused",
-        "failed to establish a new connection",
+def classify_channel(
+    results,
+    old_info,
+):
+    working = [
+        item
+        for item in results
+        if item["status"]
+        == "IPTV_PLAYABLE"
     ]
 
-    return any(
-        term in detail
-        for term in hard_terms
+    if working:
+        return {
+            "classification": "WORKING",
+            "selected_url":
+                working[0]["url"],
+            "hard_failures": 0,
+        }
+
+    restricted = [
+        item
+        for item in results
+        if item["status"] in (
+            "ACCESS_RESTRICTED",
+            "SEGMENT_ACCESS_RESTRICTED",
+        )
+    ]
+
+    if restricted:
+        return {
+            "classification":
+                "ACCESS_RESTRICTED",
+            "selected_url":
+                restricted[0]["url"],
+            "hard_failures": 0,
+        }
+
+    all_hard = (
+        len(results) > 0
+        and all(
+            item["hard_failure"]
+            for item in results
+        )
     )
 
+    old_count = old_info.get(
+        "consecutive_hard_failures",
+        old_info.get(
+            "consecutive_failures",
+            0,
+        ),
+    )
 
-def classify(
-    status,
-    hard_failures,
-):
-    if status == "IPTV_PLAYABLE":
-        return "WORKING"
+    if all_hard:
+        hard_count = old_count + 1
+    else:
+        hard_count = 0
 
-    if status in (
-        "ACCESS_RESTRICTED",
-        "SEGMENT_ACCESS_RESTRICTED",
-    ):
-        return "ACCESS_RESTRICTED"
+    if hard_count == 1:
+        classification = (
+            "TEMPORARY_FAILURE"
+        )
+    elif hard_count == 2:
+        classification = (
+            "REPEATED_FAILURE"
+        )
+    elif hard_count >= HARD_FAILURE_LIMIT:
+        classification = (
+            "CONSISTENTLY_BROKEN"
+        )
+    else:
+        classification = (
+            "CHECK_REQUIRED"
+        )
 
-    if status in (
-        "WEBPAGE_SOURCE",
-        "WEBPAGE_OR_UNKNOWN",
-        "SUSPECT",
-        "HLS_NO_SEGMENT",
-    ):
-        return "CHECK_REQUIRED"
-
-    if hard_failures == 1:
-        return "TEMPORARY_FAILURE"
-
-    if hard_failures == 2:
-        return "REPEATED_FAILURE"
-
-    if (
-        hard_failures
-        >= HARD_FAILURE_LIMIT
-    ):
-        return "CONSISTENTLY_BROKEN"
-
-    return "CHECK_REQUIRED"
+    return {
+        "classification":
+            classification,
+        "selected_url":
+            None,
+        "hard_failures":
+            hard_count,
+    }
 
 
 def main():
@@ -727,14 +597,10 @@ def main():
     previous = load_previous_status()
 
     current = {}
-
-    status_counts = {}
-    class_counts = {}
-
     report = [
         "# Playlist URL Check Report",
         "",
-        f"Checked {len(entries)} URLs",
+        f"Checked {len(entries)} channels",
         time.strftime(
             "Time: %Y-%m-%d "
             "%H:%M:%S UTC",
@@ -754,183 +620,117 @@ def main():
     ):
         name = entry["name"]
         group = entry["group"]
-        url = entry["url"]
+        urls = entry["urls"]
 
+        print()
         print(
             f"[{index}/{len(entries)}] "
             f"{name}"
         )
 
-        result = check_url(
-            url
-        )
+        results = []
 
-        status = result[
-            "status"
-        ]
+        for url_index, url in enumerate(
+            urls,
+            start=1,
+        ):
+            print(
+                f"  URL {url_index}/"
+                f"{len(urls)}"
+            )
 
-        detail = result[
-            "detail"
-        ]
+            result = check_url(url)
 
-        hard_failure = (
-            result[
-                "hard_failure"
-            ]
-        )
+            result["url"] = url
+            results.append(result)
 
-        old = previous.get(
-            url,
+            print(
+                f"    {result['status']}"
+            )
+
+        old_info = previous.get(
+            name,
             {},
         )
 
-        old_count = old.get(
-            "consecutive_hard_failures",
-            old.get(
-                "consecutive_failures",
-                0,
-            ),
+        decision = classify_channel(
+            results,
+            old_info,
         )
 
-        if status == "IPTV_PLAYABLE":
-            hard_count = 0
-
-        elif hard_failure:
-            if old_result_was_hard(
-                old
-            ):
-                hard_count = (
-                    old_count + 1
-                )
-            else:
-                hard_count = 1
-
-        else:
-            hard_count = 0
-
-        classification = classify(
-            status,
-            hard_count,
+        classification = (
+            decision["classification"]
         )
 
-        checked_time = (
-            time.strftime(
-                "%Y-%m-%d "
-                "%H:%M:%S UTC",
-                time.gmtime(),
-            )
+        selected_url = (
+            decision["selected_url"]
         )
 
-        current[url] = {
+        hard_failures = (
+            decision["hard_failures"]
+        )
+
+        current[name] = {
             "name": name,
             "group": group,
-            "last_status":
-                status,
-            "last_detail":
-                detail,
-            "hard_failure":
-                hard_failure,
-            "consecutive_hard_failures":
-                hard_count,
-            "consecutive_failures":
-                hard_count,
             "classification":
                 classification,
+            "selected_url":
+                selected_url,
+            "consecutive_hard_failures":
+                hard_failures,
+            "consecutive_failures":
+                hard_failures,
+            "urls":
+                results,
             "last_checked_utc":
-                checked_time,
+                time.strftime(
+                    "%Y-%m-%d "
+                    "%H:%M:%S UTC",
+                    time.gmtime(),
+                ),
         }
-
-        status_counts[
-            status
-        ] = (
-            status_counts.get(
-                status,
-                0,
-            )
-            + 1
-        )
-
-        class_counts[
-            classification
-        ] = (
-            class_counts.get(
-                classification,
-                0,
-            )
-            + 1
-        )
-
-        print(
-            f"  {status} | "
-            f"{classification} | "
-            f"hard failures="
-            f"{hard_count}"
-        )
 
         report.extend(
             [
                 f"## {name}",
                 f"Group: {group}",
-                f"Status: {status}",
                 (
                     "Classification: "
                     f"{classification}"
                 ),
                 (
+                    "Selected URL: "
+                    f"{selected_url or 'NONE'}"
+                ),
+                (
                     "Consecutive hard "
                     "failures: "
-                    f"{hard_count}"
+                    f"{hard_failures}"
                 ),
-                f"Detail: {detail}",
-                f"URL: {url}",
                 "",
             ]
         )
 
-        time.sleep(0.15)
+        for item in results:
+            report.extend(
+                [
+                    f"URL: {item['url']}",
+                    (
+                        f"Status: "
+                        f"{item['status']}"
+                    ),
+                    (
+                        f"Detail: "
+                        f"{item['detail']}"
+                    ),
+                    "",
+                ]
+            )
 
-    save_status(
-        current
-    )
+        time.sleep(0.1)
 
-    report.extend(
-        [
-            "# SUMMARY BY STATUS",
-            "",
-        ]
-    )
-
-    for key in sorted(
-        status_counts
-    ):
-        report.append(
-            f"{key}: "
-            f"{status_counts[key]}"
-        )
-
-    report.extend(
-        [
-            "",
-            (
-                "# SUMMARY BY "
-                "CLASSIFICATION"
-            ),
-            "",
-        ]
-    )
-
-    for key in [
-        "WORKING",
-        "ACCESS_RESTRICTED",
-        "CHECK_REQUIRED",
-        "TEMPORARY_FAILURE",
-        "REPEATED_FAILURE",
-        "CONSISTENTLY_BROKEN",
-    ]:
-        report.append(
-            f"{key}: "
-            f"{class_counts.get(key, 0)}"
-        )
+    save_status(current)
 
     REPORT_FILE.write_text(
         "\n".join(report)
