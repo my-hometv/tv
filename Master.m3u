@@ -80,6 +80,8 @@ https://kcltv.livebox.co.in/kclhls/live.m3u8
 
 #EXTINF:-1 tvg-logo="https://commons.wikimedia.org/wiki/File:Kerala_Vision_TV_Logo.png"group-title="1.Malayalam" tvg-group="01",Kerala Vision
 https://yuppnimrestreammum.akamaized.net/181224/smil:keralavision.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+https://colorsportscreen.com/freetv/stream.m3u8?id=6048f319b391
+https://mumt03.tangotv.in/Dsly5z3HKERALAVISION/index.m3u8
 
 #EXTINF:-1 tvg-id="KiteVicters.in@SD" tvg-logo="https://i.imgur.com/kj4OEsb.png" group-title="1.Malayalam" tvg-group="01",KITE Victers
 https://932y4x26ljv8-hls-live.5centscdn.com/victers/tv.stream/playlist.m3u8
@@ -95,6 +97,11 @@ https://j78dpa3edq5r-hls-live.5centscdn.com/abr/0864028584026e6ad9cdf922473177a4
 
 #EXTINF:-1 tvg-id="MazhavilManorama.in@SD" tvg-logo="https://i.imgur.com/fjgzW20.png" group-title="1.Malayalam" tvg-group="01",Mazhavil Manorama
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/mazhavilmanorama_nim_https/050522/mazhavilmanorama/playlist.m3u8
+https://mazhavil.keralive.workers.dev/v1/manifest/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/mm_https/44cb2687-767a-4a88-ba5e-194969515f5f/1.m3u8?hdntl=exp=1787491277~acl=%2f*~data=hdntl~hmac=04cb4082db9000883dc1ffedd73fbaf5bda32af0829c01a4323f684b96000564
+https://mmtv-vglivessai.akamaized.net/v1/manifest/673630b269b766886555eebfddd4f27f3de3ab50/f8a0827f-030f-4a0d-b7e5-338996c09a5b/1ff70ed8-55b8-4380-af86-cabe9770f9ca/0.m3u8
+https://ddozob4sbfsmt.cloudfront.net/out/v1/51aaeddf56854312add90dfa8df07e39/index.m3u8
+https://mazhavil.keralive.workers.dev/v1/manifest/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/mm_https/44cb2687-767a-4a88-ba5e-194969515f5f/0.m3u8?hdntl=exp=1787491277~acl=%2f*~data=hdntl~hmac=04cb4082db9000883dc1ffedd73fbaf5bda32af0829c01a4323f684b96000564
+
 
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",Media Plus
 https://live.applelive.in/mediaplus/mediaplus/index.m3u8
@@ -633,6 +640,23 @@ https://bozztv.com/hwotta/playlist/playlist.m3u8
 #EXTINF:-1 group-title="5.English" tvg-group="01",We Tv East
 https://streamer1.nexgen.bz/WE_TV/index.m3u8
 
+#EXTINF:-1 group-title="5.English" tvg-group="01",Romance Plus
+https://techtraveleat.in/stream.m3u8?id=romanceplus
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Sony PIX
+https://playyonogames.in/sliv/stream.m3u8?id=1000009258
+
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Movie Hub Action
+https://aka-live1050.delivery.roku.com/be8e0aad-9c0d-4b4d-ac10-d0c72bb6c7f3/t2-origin/out/v1/live.m3u8
+
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Movie Hub
+https://aka-live1050.delivery.roku.com/4eddfb64-e03e-4a12-b889-53eed835572e/t2-origin/out/v1/live.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Superfine Movies
+https://runn-tv.keralive.workers.dev/runntv/stream/p_supflm/playlist.m3u8
+
 #EXTINF:-1 group-title="5.English" tvg-group="01",Great Romamce
 https://amg01753-narrativeentert-greatchristmas-samsunguk-8atls.amagi.tv/playlist/amg01753-narrativeentert-greatchristmas-samsunguk/playlist.m3u8
 
@@ -695,6 +719,9 @@ https://amg01314-amg01314c7-distrotv-us-10219.playouts.now.amagi.tv/playlist/amg
 
 #EXTINF:-1 group-title="5.English" tvg-group="01",BBC Earth
 https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Miramax
+https://linear-798.frequency.stream/mt/plex/798/hls/master/playlist.m3u8
 
 #EXTINF:-1 group-title="9.English" tvg-group="01",BBC Earth
 https://ep48-czh.filmon.com/live/4598.low.stream/playlist.m3u8?id=0ad5aac39bb13fbec7af192c861ebd5495b50787c91e561cd773300ec510553a442d7a3fc4186a0ae63d71654164eafd4f98403f7feea219c3bb6ff01d9df13e57afe2d462eab8d3c2b80479b5eedad3d7741f7e0ed39b77b5b71f3d8bde0b9df3a437dc5107b21e8e1a5aa41f691d8bc73b8e21e1f40ead88d450237c654edf661edb52abe645058d88309fb3778108cfe951d28c2c158e9ba3ea943cc91a7ecc5aa37dd371a101
