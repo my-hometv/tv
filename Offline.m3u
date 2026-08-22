@@ -11,6 +11,9 @@ https://kcltv.livebox.co.in/kclhls/live.m3u8
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",KCN
 https://live.skystream.in/live/kcnksrgod/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://commons.wikimedia.org/wiki/File:Kerala_Vision_TV_Logo.png"group-title="1.Malayalam" tvg-group="01",Kerala Vision
+https://yuppnimrestreammum.akamaized.net/181224/smil:keralavision.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+
 #EXTINF:-1 tvg-id="Starnet.in@SD" tvg-logo="https://i.imgur.com/J3jB7Kr.png" group-title="1.Malayalam" tvg-group="01",Starnet
 https://5a1178b42cc03.streamlock.net/8220/8220/playlist.m3u8
 
@@ -19,9 +22,6 @@ https://livestream.vibgyortv.com/hls/stream.m3u8
 
 
 # ===== 2.Malayalam News =====
-
-#EXTINF:-1 tvg-id="MalabarNews.in@SD" tvg-logo="https://i.imgur.com/Un2gxt4.png" group-title="2.Malayalam News" tvg-group="02",Malabar News
-http://cloud.logichost.in:1935/live/malabarnews/index.m3u8
 
 #EXTINF:-1 tvg-id="ZeeMalayalamNews.in@SD" tvg-logo="https://english.cdn.zeenews.com/images/logo/zee-malayalam-17.svg" group-title="2.Malayalam News" tvg-group="02",Zee Malayalam News
 https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
