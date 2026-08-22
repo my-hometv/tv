@@ -23,6 +23,9 @@ https://live.skystream.in/live/citytv2924/index.m3u8
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",City Vision Kannur
 https://live.skystream.in/live/citykannurcity/index.m3u8
 
+#EXTINF:-1 group-title="1.Malayalam" tvg-logo="https://www.facebook.com/photo/?fbid=4250871585231102&set=a.1395254334126189"tvg-group="01",CTV Mukkam
+https://live.skystream.in/live/ctv1805/tracks-v1a1/mono.m3u8
+
 #EXTINF:-1 group-title="1.Malayalam" tvg-group="01",Darshana
 https://yuppnimrestreammum.akamaized.net/181224/smil:darshanatv.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 
@@ -76,6 +79,12 @@ https://live.skystream.in/live/kasaragodvsn/index.m3u8
 
 #EXTINF:-1 tvg-id="Kaumudi.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143259_ld_h15_aa.png?lock=720x540" group-title="1.Malayalam" tvg-group="01",Kaumudi
 https://oqgdrkxby4rm-hls-live.5centscdn.com/kaumudytv/live.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="KCLTV.in@SD" tvg-logo="https://i.imgur.com/bkp9dIm.png" group-title="1.Malayalam" tvg-group="01",KCL TV
+https://kcltv.livebox.co.in/kclhls/live.m3u8
+
+#EXTINF:-1 group-title="1.Malayalam" tvg-group="01",KCN
+https://live.skystream.in/live/kcnksrgod/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://commons.wikimedia.org/wiki/File:Kerala_Vision_TV_Logo.png"group-title="1.Malayalam" tvg-group="01",Kerala Vision
 https://yuppnimrestreammum.akamaized.net/181224/smil:keralavision.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
@@ -143,6 +152,9 @@ https://j78dp346yq5r-hls-live.5centscdn.com/safari/live.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="FlowersTV" group-title="1.Malayalam" tvg-group="01",South Vision
 https://live.skystream.in/live/southvsnklm/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 tvg-id="Starnet.in@SD" tvg-logo="https://i.imgur.com/J3jB7Kr.png" group-title="1.Malayalam" tvg-group="01",Starnet
+https://5a1178b42cc03.streamlock.net/8220/8220/playlist.m3u8
+
 #EXTINF:-1 tvg-id="Swantham.in@SD" tvg-logo="https://i.imgur.com/ye6v4GP.png" group-title="1.Malayalam" tvg-group="01",Swantham
 http://cloud.logichost.in:1935/SWANTHAM/live/index.m3u8
 
@@ -194,9 +206,6 @@ https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccda
 #EXTINF:-1 tvg-id="KairaliNews.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143246_ld_h15_aa.png?lock=720x540" group-title="2.Malayalam News" tvg-group="02",Kairali News
 https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/ts-ap-s1-n1/playlist/amg01448-samsungindia-historychannelhindi-samsungin/playlist.m3u8
 
-#EXTINF:-1 tvg-id="KairaliNews.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143246_ld_h15_aa.png?lock=720x540" group-title="2.Malayalam News" tvg-group="02",Kairali News
-https://cdn-3.pishow.tv/live/1469/master.m3u8
-
 #EXTINF:-1 tvg-name="FlowersTV" group-title="2.Malayalam News" tvg-group="01",KVTV News
 https://edge1.tikilive.com/livehttporigin_tikilive/56275/amlst:mainstream/playlist.m3u8?p=local&op_id=19&ts_chunk_length=6&userId=0&channelId=56275&stime=1785566373&etime=1785652773&token=07297ac249a446629979d&ip=31.219.230.51&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F150.0.0.0+Safari%2F537.36&live=1&site_page=https%253A%252F%252Fwww.tikilive.com%252Fchannel%252Fnone-1&domain=tikilive.com&cb=1785566100&ccpa=1---&consent=0&device_type=&did=&gdpr=0&h=720&w=1080&livestream=1&min_ad_duration=5&max_ad_duration=66&site_domain=https%3A%2F%2Fwww.tikilive.com%2F&site_name=TikiLIVE%C2%AE+v9.3.0&hls_marker=1&debug=true&gender=&age=&preroll=1&preroll_duration=66&content_genre=News&content_id=56275&content_title=KVTV%2BNEWS%2BCHANNEL&network_name=kvtv&content_owner=147230&viewing_user=guest&oid=19&bid=147230
 
@@ -223,6 +232,9 @@ https://bk7l298nyx53-hls-live.5centscdn.com/realnews/e7dee419f91aa9e65939d3677fb
 
 #EXTINF:-1 tvg-id="ReporterTV.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s85096_ld_h15_aa.png?lock=720x540" group-title="2.Malayalam News" tvg-group="02",Reporter TV
 https://segment.yuppcdn.net/050522/reporter/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ZeeMalayalamNews.in@SD" tvg-logo="https://english.cdn.zeenews.com/images/logo/zee-malayalam-17.svg" group-title="2.Malayalam News" tvg-group="02",Zee Malayalam News
+https://d1ty2af03alkwd.cloudfront.net/index_4.m3u8
 
 
 # ===== 3.Malayalam Religious =====

@@ -59,6 +59,9 @@ https://amg01314-amg01314c7-distrotv-us-10219.playouts.now.amagi.tv/playlist/amg
 #EXTINF:-1 group-title="5.English" tvg-group="01",Classic Cinema
 https://rpn.bozztv.com/gusa/gusa-classiccinema/index.m3u8
 
+#EXTINF:-1 group-title="5.English" tvg-group="04",Comedy Plus
+https://m3uplay.com/stream.m3u8?id=comedyplus
+
 #EXTINF:-1 tvg-id="DocumentaryPlus.us" tvg-logo="https://cdn.tvivu.com/logos/documentary-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",Documentary+
 https://1d153317c8db4250b3789601274e2402.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-887-DOCUMENTARYINTERNATIONAL-DOCUMENTARYPLUS/mt/documentaryplus/887/hls/master/playlist.m3u8
 
@@ -125,6 +128,9 @@ https://jmp2.uk/stvp-GB4600001W9
 #EXTINF:-1  group-title="5.English" tvg-language="eng" tvg-country="CA" tvg-group="04",Kaloopi
 https://streamingserver000.viewtv.cloud/VIEWTVNETWORK-KALOOPY/tracks-v1a1/mono.ts.m3u8
 
+#EXTINF:-1 tvg-id="24HourFreeMovies.us@SD" tvg-logo="https://i.imgur.com/iSVnzR1.png" group-title="5.English" tvg-group="04",like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" tvg-group="04" group-title="5.English",24 Hour Free Movies
+https://d1b5mlajbmvkjv.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/UDU-DistroTV/145.m3u8?ads.vf=7FhdsxqVxOi
+
 #EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/love-nature-3-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",Love Nature
 https://www.youtube.com/watch?v=QhahoVG0BfI
 
@@ -137,14 +143,20 @@ https://mmn1-301f.kxcdn.com/hls/MMN-HLS.m3u8
 #EXTINF:-1 tvg-id="MidnightPulp.us" tvg-logo="https://cdn.tvivu.com/logos/midnight-pulp-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",Midnight Pulp
 https://linear-897.frequency.stream/dist/cineverse/897/hls/master/playlist.m3u8
 
+#EXTINF:-1 group-title="5.English" tvg-group="01",Miramax
+https://linear-798.frequency.stream/mt/plex/798/hls/master/playlist.m3u8
+
 #EXTINF:-1 tvg-id="MixHollywood.eg" tvg-logo="https://cdn.tvivu.com/logos/mix-hollywood-160.webp" group-title="5.English" tvg-language="ara" tvg-country="EG" tvg-group="04",Mix Hollywood
 https://ml-pull-hwc.myco.io/MixTV/hls/index.m3u8
 
-#EXTINF:-1 group-title="5.English" tvg-group="01",Movie Sphere
-https://amg00353-lionsgatefilmsi-moviesphereaus-samsungau-7qzhf.amagi.tv/playlist/amg00353-lionsgatefilmsi-moviesphereaus-samsungau/playlist.m3u8
+#EXTINF:-1 group-title="5.English" tvg-group="01",Movie Hub
+https://aka-live1050.delivery.roku.com/4eddfb64-e03e-4a12-b889-53eed835572e/t2-origin/out/v1/live.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Movie Hub Action
+https://aka-live1050.delivery.roku.com/be8e0aad-9c0d-4b4d-ac10-d0c72bb6c7f3/t2-origin/out/v1/live.m3u8
 
 #EXTINF:-1 group-title="5.English" tvg-group="01",Movie Sphere
-https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8
+https://amg00353-lionsgatefilmsi-moviesphereaus-samsungau-7qzhf.amagi.tv/playlist/amg00353-lionsgatefilmsi-moviesphereaus-samsungau/playlist.m3u8
 
 #EXTINF:-1 tvg-id="MovieSphere.us" tvg-logo="https://cdn.tvivu.com/logos/moviesphere-160.webp" group-title="5.English" tvg-language="eng" tvg-country="US" tvg-group="04",MovieSphere
 https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8
@@ -164,8 +176,14 @@ https://jmp2.uk/stvp-CA800002TN
 #EXTINF:-1 group-title="5.English" tvg-group="01",Plug TV
 https://live.ottdash.com/stream/10JQS-5Q8ERK5L/eyJ0eXAiOiJKV1QifQ.eyJleHAiOjAsImFjY291bnRfaWQiOiIzMzQwMiIsInZlcnNpb24iOiIxLjAifQ.gQJ_A2L3qs_sNFiAZCoC4YJ8mpdjG7AacXUV1i32GrDOHz8fBS7iTiIFjF2mOwtoFZHN5DnWoanLTr0P-3B1sA.m3u8
 
+#EXTINF:-1 group-title="5.English" tvg-group="01",Romance Plus
+https://techtraveleat.in/stream.m3u8?id=romanceplus
+
 #EXTINF:-1 group-title="5.English" tvg-group="01",Sony Movies
 https://a-cdn.klowdtv.com/live1/smc_720p/playlist.m3u8
+
+#EXTINF:-1 group-title="5.English" tvg-group="01",Sony PIX
+https://playyonogames.in/sliv/stream.m3u8?id=1000009258
 
 #EXTINF:-1 group-title="5.English" tvg-group="01",The Shade Room
 https://stream.ads.ottera.tv/playlist.m3u8?content_livestream=1&network_id=16481
@@ -189,16 +207,10 @@ https://aegis-cloudfront-1.tubi.video/5f3c2b46-3b02-48e8-8e7b-3ce1d89395ce/playl
 https://streamer1.nexgen.bz/WE_TV/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.tvivu.com/logos/wild-planet-gb-160.webp" group-title="5.English" tvg-language="eng" tvg-country="UK" tvg-group="04",Wild Planet
-https://jmp2.uk/stvp-GBBB5000002PL
-
-#EXTINF:-1 group-title="5.English" tvg-group="01",Wild Planet
 https://d1h8whhtg5u7om.cloudfront.net/WildPlanet_GB.m3u8
 
 #EXTINF:-1 tvg-id="WildTV.ca" tvg-logo="https://cdn.tvivu.com/logos/wild-tv-160.webp" group-title="5.English" tvg-language="eng" tvg-country="CA" tvg-group="04",Wild TV
 https://dfhsahpa45kk2.cloudfront.net/scheduler/scheduleMaster/476.m3u8
-
-#EXTINF:-1 group-title="5.English" tvg-group="01",Wild TV
-https://dhiy0zcig7ty1.cloudfront.net/scheduler/scheduleMaster/491.m3u8
 
 #EXTINF:-1 group-title="5.English" tvg-group="01",Wild West TV
 https://linear-799.frequency.stream/dist/xumo/799/hls/master/playlist.m3u8
