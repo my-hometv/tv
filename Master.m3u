@@ -696,6 +696,9 @@ https://amg01314-amg01314c7-distrotv-us-10219.playouts.now.amagi.tv/playlist/amg
 #EXTINF:-1 group-title="5.English" tvg-group="01",BBC Earth
 https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist.m3u8
 
+#EXTINF:-1 group-title="9.English" tvg-group="01",BBC Earth
+https://ep48-czh.filmon.com/live/4598.low.stream/playlist.m3u8?id=0ad5aac39bb13fbec7af192c861ebd5495b50787c91e561cd773300ec510553a442d7a3fc4186a0ae63d71654164eafd4f98403f7feea219c3bb6ff01d9df13e57afe2d462eab8d3c2b80479b5eedad3d7741f7e0ed39b77b5b71f3d8bde0b9df3a437dc5107b21e8e1a5aa41f691d8bc73b8e21e1f40ead88d450237c654edf661edb52abe645058d88309fb3778108cfe951d28c2c158e9ba3ea943cc91a7ecc5aa37dd371a101
+
 #EXTINF:-1 group-title="5.English" tvg-group="01",Plug TV
 https://live.ottdash.com/stream/10JQS-5Q8ERK5L/eyJ0eXAiOiJKV1QifQ.eyJleHAiOjAsImFjY291bnRfaWQiOiIzMzQwMiIsInZlcnNpb24iOiIxLjAifQ.gQJ_A2L3qs_sNFiAZCoC4YJ8mpdjG7AacXUV1i32GrDOHz8fBS7iTiIFjF2mOwtoFZHN5DnWoanLTr0P-3B1sA.m3u8
 
